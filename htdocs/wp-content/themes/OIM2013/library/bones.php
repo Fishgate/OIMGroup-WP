@@ -130,7 +130,13 @@ function bones_scripts_and_styles() {
 
     // register main stylesheet
     wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
-
+    
+    // register responsiveSlides stylesheet <----------- ADDED BY TYRONE
+    wp_register_style( 'responsive-slides', get_stylesheet_directory_uri() . '/library/css/responsiveslides.css', array(), '', 'all' );
+    
+    // register megafish stylesheet <----------- ADDED BY TYRONE
+    wp_register_style( 'megafish', get_stylesheet_directory_uri() . '/library/css/megafish.css', array(), '', 'all' );
+    
     // ie-only style sheet
     wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
 
@@ -141,10 +147,21 @@ function bones_scripts_and_styles() {
 
     //adding scripts file in the footer
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
+    
+    //adding scripts file for responsiveSlides <------------- ADDED BY TYRONE
+    wp_register_script( 'responsive-slides-js', get_stylesheet_directory_uri() . '/library/js/responsiveslides.js', array( 'jquery' ), '', true );
+    //adding scripts file for responsiveSlides <------------- ADDED BY TYRONE
+    wp_register_script( 'hoverintent-js', get_stylesheet_directory_uri() . '/library/js/hoverIntent.js', array( 'jquery' ), '', true );
+    //adding scripts file for responsiveSlides <------------- ADDED BY TYRONE
+    wp_register_script( 'superfish-js', get_stylesheet_directory_uri() . '/library/js/superfish.js', array( 'jquery' ), '', true );
+    //adding scripts file for simply scroll <------------- ADDED BY TYRONE
+    wp_register_script( 'simplyscroll-js', get_stylesheet_directory_uri() . '/library/js/simplyscroll.js', array( 'jquery' ), '', true );
 
     // enqueue styles and scripts
     wp_enqueue_script( 'bones-modernizr' );
     wp_enqueue_style( 'bones-stylesheet' );
+    wp_enqueue_style( 'responsive-slides' );//<------------- ADDED BY TYRONE
+    wp_enqueue_style( 'megafish' );//<------------- ADDED BY TYRONE
     wp_enqueue_style('bones-ie-only');
 
     $wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
@@ -155,7 +172,12 @@ function bones_scripts_and_styles() {
     and your site will load faster.
     */
     wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'responsive-slides-js' );//<------------- ADDED BY TYRONE
+    wp_enqueue_script( 'hoverintent-js' );//<------------- ADDED BY TYRONE
+    wp_enqueue_script( 'superfish-js' );//<------------- ADDED BY TYRONE
+    wp_enqueue_script( 'simplyscroll-js' );//<------------- ADDED BY TYRONE
     wp_enqueue_script( 'bones-js' );
+    
 
   }
 }

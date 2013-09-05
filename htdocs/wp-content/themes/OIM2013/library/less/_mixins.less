@@ -19,7 +19,8 @@ remember less is more.
 /*********************
 CLEARFIXIN'
 *********************/
-
+.left{float: left;}
+.right{float: right;}
 // Contain floats: nicolasgallagher.com/micro-clearfix-hack/
 .clearfix {
   zoom: 1;
@@ -51,10 +52,25 @@ Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
 
+@oim_blue_light: #5482AB;
+@oim_red: #A22B38;
+@oim_red_darker: darken(@oim_red, 9%);
+@oim_blue_dark: #00204E;
+@oim_blue_darker: #002450;
+@oim_blue_lighter: #024594;
+
+
+@oim_grey_light: #f8f8f8;
+@oim_grey_medium: #f1f1f1;
+@oim_grey: #666666;
+
+
 @alert-yellow:      #ebe16f;
 @alert-red:         #fbe3e4;
 @alert-green:       #e6efc2;
 @alert-blue:        #d5edf8;
+
+@second-nav-hover: darken(@oim_blue_dark, 5%);
 
 @black:             #000;
 @white:             #fff;
@@ -76,7 +92,42 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 
-@sans-serif:         "Helvetica Neue", Helvetica, Arial, sans-serif; 
+@font-face {
+    	font-family: 'opensans';
+    	src: url('../fonts/OpenSans-Regular-webfont.eot');
+    	src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+             url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+             url('../fonts/OpenSans-Regular-webfont.svg#OpenSans-Regular-webfont') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+@font-face {
+    	font-family: 'opensansLight';
+    	src: url('../fonts/OpenSans-Light-webfont.eot');
+    	src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+             url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+             url('../fonts/OpenSans-Light-webfont.svg#OpenSans-Light-webfont') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+
+@font-face {
+    	font-family: 'icons';
+    	src: url('../fonts/fontawesome-webfont.eot');
+    	src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/fontawesome-webfont.woff') format('woff'),
+             url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+             url('../fonts/fontawesome-webfont.svg#fontawesome-webfont') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+
+@sans-serif-generic: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+@icons:              "icons", Cambria, Times New Roman, Times, serif; 
+@sans-serif-light:   "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+@sans-serif:         "opensans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 @serif:              "Georgia", Cambria, Times New Roman, Times, serif; 
 
 
@@ -88,17 +139,6 @@ TYPOGRAPHY
 	Be sure to remove the comment brackets.
 */
 
-/*	@font-face {
-    	font-family: 'Font Name';
-    	src: url('../fonts/font-name.eot');
-    	src: url('../fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/font-name.woff') format('woff'),
-             url('../fonts/font-name.ttf') format('truetype'),
-             url('../fonts/font-name.svg#font-name') format('svg');
-    	font-weight: normal;
-    	font-style: normal;
-	}
-*/
 
 /* 
 use the best ampersand 
@@ -215,13 +255,11 @@ BUTTONS
 *********************/
 
 .button, .button:visited {
-	border: 1px solid darken(@bones-pink, 13%);
-	border-top-color: darken(@bones-pink, 7%);
-	border-left-color: darken(@bones-pink, 7%);
-	padding: 4px 12px;
+        font-family: @sans-serif-light;
+	padding: 10px 15px;
 	color: @white;
 	display: inline-block;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: bold;
 	text-decoration: none;
 	text-shadow: 0 1px rgba(0,0,0, .75);
@@ -229,15 +267,11 @@ BUTTONS
 	margin-bottom: 20px;
 	line-height: 21px;
 	.transition();
-	.border-radius(4px);
-	.css-gradient(@bones-pink,darken(@bones-pink, 5%));
+	background: @oim_red;
 
 	&:hover, &:focus {
 		color: @white;
-	  border: 1px solid darken(@bones-pink, 13%);
-	  border-top-color: darken(@bones-pink, 20%);
-	 	border-left-color: darken(@bones-pink, 20%);
-		.css-gradient(darken(@bones-pink, 5%),darken(@bones-pink, 10%));
+                background: @oim_red_darker;
 	}
 	
 	&:active {

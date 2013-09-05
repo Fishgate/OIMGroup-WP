@@ -22,13 +22,31 @@ if (!window.getComputedStyle) {
                 });
             }
             return el.currentStyle[prop] ? el.currentStyle[prop] : null;
-        }
+        };
         return this;
-    }
+    };
 }
 
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
+    
+//------------ TYRONE ADDS RESPONSIVE SLIDES
+$(".rslides").responsiveSlides({
+    "timeout": 10000
+});
+
+//------------ TYRONE INIT SUPERFISH MENUS
+$('ul.sf-menu').superfish();
+
+//------------ TYRONE EXPANDABLE 3RD LEVEL DROPDOWNS
+$('.secondary-link').each(function(){
+    $(this).live('click', function(){
+        $('.flyout').removeClass('expand');
+        $(this).find('.flyout').addClass('expand');
+    });
+});
+//------------ TYRONE simply scroll init
+$("#scroller").simplyScroll();
 
     /*
     Responsive jQuery is a tricky thing.

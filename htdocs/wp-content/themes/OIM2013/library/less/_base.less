@@ -38,12 +38,14 @@ html, body {
 	/* height: 100%; */
 }
 body {
-	font-family: @serif;
+	font-family: @sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
-	color: #565656;
+	color: @oim_grey;;
 }
-
+p{
+font-size: 11px;
+}
 /********************
 02. WORDPRESS BODY CLASSES
     style a page via class
@@ -128,7 +130,7 @@ a, a:visited {
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: @sans-serif;
+	font-family: @sans-serif-light;
 	text-rendering: optimizelegibility;
 	font-weight: 400;
 	/*
@@ -143,14 +145,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 2.5em;
+	font-size: 1.8em;
 	line-height: 1.333em;
 }
 
 h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
+    font-family: @sans-serif;
+	font-size: 14px;
+	line-height: 1em;
 	margin-bottom: 0.375em;
+        color: @oim_blue_dark;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 25px 0;
 }
 
 h3, .h3 {
@@ -190,6 +197,56 @@ h5, .h5 {
 		}
 	}
 }
+/*------------------------------- ADDED BY TYRONE ---*/
+#tagline{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @oim_blue_dark;
+}
+#inner-header{
+    position: relative;
+}
+#mega-holder{
+    background: @oim_grey_light;
+    position: relative;
+}
+/*--------- responsiveslides -------*/
+    .rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
 
 /*********************
 07. NAVIGATION STYLES
@@ -204,7 +261,7 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
+	border: 1px solid red;
 	border-bottom: 0;
 
 	li {
@@ -274,13 +331,274 @@ and more scalable.
 
 } /* end .nav */
 
+/*============================================
+        RESONSIVE SLIDES CALL TO ACTION
+=============================================*/
+.calltoaction{
+    width: 96%;
+    position: absolute;
+    top: 110px;
+    margin-left: -48%;
+    left: 50%;
+}
+.quote{
+    display: block;
+    font-size: 20px;
+    color: @white;
+    font-family: @sans-serif-light;
+    padding: 0 0 20px 0;
+    font-style: italic;
+}
+
+/*=======================================
+TYRONE ADDS MEGA MENU STYLES
+========================================*/
+.home-holder{
+    width: 10%;
+    padding: 10px 0;
+}
+#border-left{
+    border-left: 1px dotted #ccc;
+}
+#border-right{
+    border-right: 1px dotted #ccc;
+}
+.sf-menu{
+    font-family: @sans-serif-light;
+    font-size: 13px;
+}
+.secondary-ul{
+    position: absolute;
+    top: 37px;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 1.666% 0.833%;
+}
+.head-secondary{
+    font-family: @sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    color: @oim_grey;
+    background: @oim_grey_medium;
+    padding: 15px;
+    font-size: 14px;
+}
+.secondary-holder{
+    width: 100%;
+}
+
+.icon-people{
+    padding-left: 50px;
+    background: url('../images/icon-people.jpg') @oim_grey_medium no-repeat 20px 15px;
+}
+.icon-organisation{
+    padding-left: 50px;
+    background: url('../images/icon-organisation.jpg') @oim_grey_medium no-repeat 20px 15px;
+}
+.icon-operation{
+    padding-left: 50px;
+    background: url('../images/icon-operation.jpg') @oim_grey_medium no-repeat 20px 15px;
+}
+
+.icon{
+    font-family: @icons;
+}
+.icons{
+    color: @oim_blue_light;
+    font-family: @icons;
+    vertical-align: middle;
+    padding: 0 0 0 10px;
+}
+.home-icon{
+    font-family: @icons;
+    font-size: 20px;
+    padding: 0 25px;
+}
+.generic-type{
+    font-family: @sans-serif-generic;
+}
+
+.generic-type-mega{
+    font-family: @sans-serif-generic;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.secondary-link{
+    font-family: @sans-serif-light;
+    font-size: 12px;
+    border-bottom: 1px dotted @oim_grey;
+    color: @oim_blue_light;
+    background: url('../images/arrow.png') no-repeat 5px 5px;
+    padding: 0 0 0 35px;
+}
+
+.flyout{
+    padding: 0 0 0 15px;
+    height: 0;
+    overflow: hidden;
+    border-style: none;
+}
+.expand{
+    border-top: 1px dotted @oim_grey;
+    height: auto;
+}
+/*-------------------------------------------------------
+                  HEAD SEARCH FORM
+---------------------------------------------------------*/
+.search-holder{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#s{
+    border: none;
+    font-size: 14px;
+    padding: 17px 10px;
+    vertical-align: top;
+    background: @oim_grey_light;
+    color: @oim_blue_light;
+}
+.screen-reader-text{
+    visibility: hidden!important;
+}
+#searchsubmit{
+    width: 50px;
+    height: 50px;
+    background: url('../images/search.png') no-repeat;
+    border: none!important;
+}
+.borderright-0 a{
+    border-right: 1px solid transparent!important;
+}
+
+/*-------------------------------------------------------
+                  HOME BODY STYLES
+---------------------------------------------------------*/
+a.service-link{
+    color: @oim_blue_dark;
+    font-family: @sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px;
+    display: inline-block;
+}
+#home-service{
+    border-top: 1px dotted #999;
+    border-bottom: 1px dotted #999;
+    margin: 40px 0;
+}
+#home-service p{
+    max-width: 80%;
+    padding: 30px 40px;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+}
+.dynamic-service{
+    /*outline: 1px solid yellow;*/
+    margin-bottom: 50px;
+}
+.dynamic-service img{
+float: left;
+width: 30%;
+
+}
+.service-copy{
+float: left;
+width: 70%;
+padding: 0 0 0 20px;
+}
+.service-copy h2{
+    margin-top: 0;
+}
+.service-copy a{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    border-top: 1px dotted @oim_grey;
+    border-bottom: 1px dotted @oim_grey;
+    text-decoration: none;
+    color: @oim_blue_light;
+    font-size: 12px;
+}
+
+/*========================================================================
+ SIMPLY SCROLL CSS ADDED 
+=========================================================================*/
+
+/* Container DIV - automatically generated */
+.simply-scroll-container { 
+	position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip { 
+	position: relative;
+	overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list { 
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li img {
+	border: none;
+	display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+/* Container DIV */
+.simply-scroll { 
+	width: 100%;
+	height: 145px;
+	margin-bottom: 1em;
+        background: @oim_grey_light;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+	width: 100%;
+	height: 200px;
+}
+	
+/* Explicitly set height/width of each list item */	
+.simply-scroll .simply-scroll-list li {
+	float: left; /* Horizontal scroll only */
+	width: 290px;
+	height: 200px;
+}
+
+
+
 
 /*********************
 08. POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 2.2em;
+        position: relative;
+        z-index: 100;
+	margin: -68px 0 0 0;
 
 	#inner-content {}
 }
@@ -363,7 +681,7 @@ and more scalable.
 			}
 
 			img {
-				margin: 0 0 1.5em 0;
+				/*margin: 0 0 1.5em 0;*/
 				max-width: 100%;
 				height: auto;
 			}
@@ -850,8 +1168,10 @@ and more scalable.
 *********************/
 
 .footer {
+        background: @oim_grey_light;
 	clear: both;
 	#inner-footer {
+            padding: 25px 1%;
 	}
 	nav {
 		ul.nav {
@@ -886,5 +1206,23 @@ and more scalable.
 	} /* end .footer-links */
 
 
-	.copyright {}
+	.copyright {
+            color: #ccc;
+        }
+        #footer-nav-holder{
+            max-width: 94%;
+            width: 1100px;
+            margin: 50px auto;
+        }
+        #footer-nav{
+            position: relative;
+            right: 0;
+            top: 30px;
+        }
+        #footer-nav a{
+            color: @oim_grey;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 0 0 10px;
+        }
 

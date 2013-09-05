@@ -48,15 +48,300 @@
 				<div id="inner-header" class="wrap clearfix">
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					<p id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" alt="OIM Logo" /></a></p>
 
 					<!-- if you'd like to use the site description you can un-comment it below -->
-					<?php // bloginfo('description'); ?>
+                                        <div id="tagline">
+					<?php  bloginfo('description'); ?>
+                                        </div>
 
-
-					<nav role="navigation">
-						<?php bones_main_nav(); ?>
-					</nav>
+                                   <!-- =============================
+                                               MEGA MENU by Tyrone
+                                        =============================== -->
+                                        <nav id="mega-holder">
+                                            
+                                            <div class="clearfix">
+                                                <div class="left home-holder">
+                                                    <span class="left home-icon">F</span>
+                                                    <span class="left generic-type-mega">in</span>
+                                                </div>
+                                                <ul class="left sf-menu">
+<!--                                                    <li>
+                                                        <span class="left home-icon">F</span>
+                                                        <span class="left generic-type-mega">in</span>
+                                                    </li>-->
+                                                    <li id="border-left">
+                                                        Our Methodology <span class="icons">&#xe0ab;</span>
+                                                        <ul class="secondary-ul">
+                                                            <li>
+                                                                <div class="clearfix">
+                                                                    <div class="secondary-holder left clearfix">
+                                                                          <h2 class="head-secondary icon-people">People</h2>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                    </div>
+                                                                    <div class="secondary-holder left clearfix">
+                                                                          <h2 class="head-secondary icon-organisation">Organisation</h2>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                    </div>
+                                                                    <div class="secondary-holder left clearfix">
+                                                                          <h2 class="head-secondary icon-operation">Operations</h2>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Product &amp; Services <span class="icons">&#xe0ab;</span>
+                                                        <ul class="secondary-ul">
+                                                            <li>
+                                                                <div class="clearfix">
+                                                                    <div class="secondary-holder left clearfix">
+                                                                          <h2 class="head-secondary icon-people">People</h2>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                    </div>
+                                                                    <div class="secondary-holder left clearfix">
+                                                                          <h2 class="head-secondary icon-organisation">Organisation</h2>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                    </div>
+                                                                    <div class="secondary-holder left clearfix">
+                                                                          <h2 class="head-secondary icon-operation">Operations</h2>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              One
+                                                                              <div class="flyout">
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                                  TWO<br />
+                                                                              </div>
+                                                                          </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="border-right">
+                                                        Contact<span class="icons">&#xe0ab;</span>
+                                                        <ul class="secondary-ul">
+                                                            <li>
+                                                                <div>
+                                                                    <h1>Hey Homie</h1>
+                                                                    CONTACT DETAILS GO HERE I GUESS
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <div class="right search-holder">
+                                                    <?php echo get_search_form($echo = true); ?>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                         <!-- end mega menu -->
+                                        
+					<!--==== Tyrone removes <nav role="navigation"><'?'php bones_main_nav(); '?'> </nav> from here and placed it on index for now ====-->
 
 				</div> <!-- end #inner-header -->
 

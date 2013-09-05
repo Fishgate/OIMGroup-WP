@@ -1,11 +1,20 @@
 <?php get_header(); ?>
 
-			<div id="content">
 
+			<div id="content">
 				<div id="inner-content" class="wrap clearfix">
 
-						<div id="main" class="eightcol first clearfix" role="main">
+						<div id="main" class="twelvecol first clearfix" role="main">
 
+                                                    <!--==============================================
+                                                          TYRONE INSERTS NAV HERE FROM HEADER
+                                                    ================================================-->
+                                                    <nav role="navigation">
+                                                        <?php bones_main_nav(); ?>
+                                                    </nav>
+                                                    <!-- nav end -->
+                                                    
+                                                    
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
@@ -63,7 +72,7 @@
 
 						</div> <!-- end #main -->
 
-						<?php get_sidebar(); ?>
+						<!--<?php// get_sidebar(); ?>-->
 
 				</div> <!-- end #inner-content -->
 

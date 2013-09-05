@@ -1,5 +1,5 @@
 /******************************************************************
-Site Name:
+Site Name:  OIM
 Author:
 
 Stylesheet: Tablet & Small Desktop Stylesheet
@@ -39,24 +39,46 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
+
+/*-------------------------------------------------------
+                  SECOND NAV IN BODY
+---------------------------------------------------------*/
+
+.top-nav ul{
+    margin: 0!important;
+    padding: 0!important;
+}
+
+
+
 .nav {
-	background: #eee;
+	background: @oim_blue_dark;
 	border: 0;
 
 	li {
+                width: 16.666%;
 		float: left;
 		position: relative;
 
 		a {
-			border-bottom: 0;
+			color: @white;
+                        background: @oim_blue_dark;
+                        text-align: center;
+                        color: @white;
+                        font-family: @sans-serif-light;
+                        font-size: 11px;
+                        padding: 18px 0;
+                        border-left: 1px solid @oim_blue_darker;
+                        border-right: 1px solid @oim_blue_lighter;
+                        border-bottom: none;
 
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				background-color: #dedede;
-
+				background-color: @oim_red;
+                                color: @white;
 			}
 		}
 
@@ -280,3 +302,34 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
+
+
+
+
+/*============================================================
+TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
+==============================================================*/
+.dynamic-service{
+    margin-bottom: 25px;
+}
+.dynamic-service img{
+    min-width: 100%;
+}
+.service-copy{
+    width: 100%;
+    padding: 0;
+}
+.service-copy p{
+    min-height: 130px;
+}
+.service-copy h2{
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+
+.secondary-holder{
+    width: 31.666%;
+    margin: 0 0.833%
+}
