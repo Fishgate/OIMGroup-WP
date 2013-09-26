@@ -145,8 +145,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 1.8em;
+        font-family: @sans-serif-light;
+	font-size: 18px;
 	line-height: 1.333em;
+}
+.h1-nostyle{
+    background: none!important;
+    padding: 0!important;
+    color: @oim_grey!important;
+    margin: 0.67em 0 0 0!important;
+    font-size: 28px;
 }
 
 h2, .h2 {
@@ -161,7 +169,9 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 1.125em;
+        font-family: @sans-serif;
+	font-size: 0.9em;
+        padding-bottom: 0;
 }
 
 h4, .h4 {
@@ -473,6 +483,23 @@ TYRONE ADDS MEGA MENU STYLES
 }
 .borderright-0 a{
     border-right: 1px solid transparent!important;
+}
+
+/*-------------------------------------------------------
+                  GENERIC ENTRY "RESETS"
+---------------------------------------------------------*/
+.entry-content ul{
+    margin: 0 0 0 25px;
+}
+.entry-content ul li{
+    font-size: 11px;
+    list-style-type: disc;
+}
+.entry-content h1{
+    background: @oim_blue_light;
+    padding: 15px;
+    color: @white;
+    margin: 0 0 0.67em;
 }
 
 /*-------------------------------------------------------
@@ -1140,7 +1167,13 @@ Class name automatically added to element */
 
 .sidebar {}
 
-	.widgettitle {}
+	h4.widgettitle {
+            background: @oim_blue_light;
+            color: @white;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-top: 0;
+        }
 
 	.widget {
 
@@ -1226,3 +1259,14 @@ Class name automatically added to element */
             margin: 0 0 0 10px;
         }
 
+
+
+/*********************
+     BREADCRUMBS
+*********************/
+#breadcrumb-holder{
+    font-size: 12px;
+    font-family: @sans-serif-light;
+    outline: 1px solid yellow;
+    margin: 35px 0 15px 0;
+}

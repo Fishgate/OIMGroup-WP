@@ -66,10 +66,6 @@
                                                     <span class="left generic-type-mega">in</span>
                                                 </div>
                                                 <ul class="left sf-menu">
-<!--                                                    <li>
-                                                        <span class="left home-icon">F</span>
-                                                        <span class="left generic-type-mega">in</span>
-                                                    </li>-->
                                                     <li id="border-left">
                                                         Our Methodology <span class="icons">&#xe0ab;</span>
                                                         <ul class="secondary-ul">

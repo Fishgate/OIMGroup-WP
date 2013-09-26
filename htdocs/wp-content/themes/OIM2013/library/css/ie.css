@@ -339,7 +339,14 @@ FOOTER STYLES
 check your menus here. do they look good?
 do they need tweaking?
 */
-/* end .footer-links *//* import grid */
+/* end .footer-links */
+/************************************
+       WIDGET UNIFORM STYLES
+************************************/
+#wp-calendar {
+  width: 100%;
+}
+/* import grid */
 /******************************************************************
 Site Name:
 Author:
@@ -549,15 +556,15 @@ NAVIGATION STYLES
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
-  margin-top: 2.2em;
+  /*margin-top: 2.2em;*/
+
 }
 .widgettitle {
-  border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 .widget {
   padding: 0 10px;
-  margin: 2.2em 0;
+  margin: 0 0 2.2em 0;
 }
 .widget ul li {
   margin-bottom: 0.75em;

@@ -56,7 +56,7 @@ Template Name: Home
 
 								<section class="entry-content clearfix" itemprop="articleBody">
                                                                     <center>
-                                                                        <h1>Business Performance Specialist in core areas of</h1>
+                                                                        <h1 class="h1-nostyle">Business Performance Specialist in core areas of</h1>
                                                                      
                                                                             <a class="service-link" href="#">People Management</a>
 

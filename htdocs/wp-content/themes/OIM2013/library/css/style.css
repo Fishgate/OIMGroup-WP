@@ -902,8 +902,16 @@ h5 a,
 }
 h1,
 .h1 {
-  font-size: 1.8em;
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.333em;
+}
+.h1-nostyle {
+  background: none!important;
+  padding: 0!important;
+  color: #666666 !important;
+  margin: 0.67em 0 0 0!important;
+  font-size: 28px;
 }
 h2,
 .h2 {
@@ -918,7 +926,9 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 1.125em;
+  font-family: "opensans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  padding-bottom: 0;
 }
 h4,
 .h4 {
@@ -1165,6 +1175,22 @@ TYRONE ADDS MEGA MENU STYLES
 }
 .borderright-0 a {
   border-right: 1px solid transparent!important;
+}
+/*-------------------------------------------------------
+                  GENERIC ENTRY "RESETS"
+---------------------------------------------------------*/
+.entry-content ul {
+  margin: 0 0 0 25px;
+}
+.entry-content ul li {
+  font-size: 11px;
+  list-style-type: disc;
+}
+.entry-content h1 {
+  background: #5482ab;
+  padding: 15px;
+  color: #ffffff;
+  margin: 0 0 0.67em;
 }
 /*-------------------------------------------------------
                   HOME BODY STYLES
@@ -1607,6 +1633,13 @@ Class name automatically added to element */
 /*********************
 12. SIDEBARS & ASIDES
 *********************/
+h4.widgettitle {
+  background: #5482ab;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 0;
+}
 .widget ul li {
   /* deep nesting */
 
@@ -1649,6 +1682,15 @@ Class name automatically added to element */
   text-decoration: none;
   font-size: 12px;
   margin: 0 0 0 10px;
+}
+/*********************
+     BREADCRUMBS
+*********************/
+#breadcrumb-holder {
+  font-size: 12px;
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  outline: 1px solid yellow;
+  margin: 35px 0 15px 0;
 }
 /*
 LARGER MOBILE DEVICES
@@ -1739,6 +1781,12 @@ tweeners.
   do they need tweaking?
   */
   /* end .footer-links */
+  /************************************
+         WIDGET UNIFORM STYLES
+  ************************************/
+  #wp-calendar {
+    width: 100%;
+  }
 }
 /*
 TABLET & SMALLER LAPTOPS
@@ -1956,15 +2004,15 @@ you can add resource intensive styles.
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
-    margin-top: 2.2em;
+    /*margin-top: 2.2em;*/
+  
   }
   .widgettitle {
-    border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
   .widget {
     padding: 0 10px;
-    margin: 2.2em 0;
+    margin: 0 0 2.2em 0;
   }
   .widget ul li {
     margin-bottom: 0.75em;
