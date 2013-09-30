@@ -787,7 +787,7 @@ body {
   color: #666666;
 }
 p {
-  font-size: 11px;
+  font-size: 12px;
 }
 /********************
 02. WORDPRESS BODY CLASSES
@@ -1082,10 +1082,10 @@ TYRONE ADDS MEGA MENU STYLES
 .secondary-ul {
   position: absolute;
   top: 37px;
-  left: 0;
+  left: -6%;
   z-index: 100;
   background: #fafafa;
-  width: 100%;
+  width: 111.2%;
   padding: 1.666% 0.833%;
 }
 .head-secondary {
@@ -1192,7 +1192,7 @@ TYRONE ADDS MEGA MENU STYLES
 }
 .entry-content h1 {
   background: #5482ab;
-  padding: 15px;
+  padding: 13px;
   color: #ffffff;
   margin: 0 0 0.67em;
 }
@@ -1246,6 +1246,23 @@ a.service-link {
   text-decoration: none;
   color: #5482ab;
   font-size: 12px;
+}
+/*-------------------------------------------------------
+                  CONTENT HEADING CAPTIONS
+---------------------------------------------------------*/
+.caption {
+  border: 1px solid #999999;
+  height: 50px;
+}
+.caption span {
+  position: relative;
+  background: #ffffff;
+  padding: 17px;
+  text-align: center;
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  top: -5px;
 }
 /*========================================================================
  SIMPLY SCROLL CSS ADDED 
@@ -1644,6 +1661,11 @@ h4.widgettitle {
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 0;
+  font-weight: 300;
+  padding: 13px 13px 13px 63px;
+  margin: 0 0 30px 0;
+  background-repeat: no-repeat;
+  font-weight: lighter;
 }
 .widget ul li {
   /* deep nesting */
@@ -1695,8 +1717,13 @@ h4.widgettitle {
 #breadcrumb-holder {
   font-size: 12px;
   font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  outline: 1px solid yellow;
   margin: 35px 0 15px 0;
+}
+#breadcrumb-holder .icon {
+  font-size: 14px;
+}
+.red {
+  color: #a22b38;
 }
 /*
 LARGER MOBILE DEVICES

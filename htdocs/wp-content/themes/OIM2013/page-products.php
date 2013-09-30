@@ -8,7 +8,7 @@ Template Name: Products
 
 
 
-<!-- Header Slideshow  [INSERT ONE IMAGE]-->
+<!-- Header Slideshow  -->
 <div style="height: 420px; overflow: hidden;">
     <ul class="rslides" id="slider1">
       <li>
@@ -16,7 +16,7 @@ Template Name: Products
               <span class="quote">In an ever-changing world,<br />constant improvement is an integral part<br />of continued success</span>
               <div class="button">Read More &nbsp;<span class="icon">&#xe0eb;</span></div>
           </div>
-          <img src="<?php echo get_template_directory_uri(); ?>/library/images/1.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/home1.jpg" alt="">
       </li>
     </ul>
 </div>
@@ -33,9 +33,10 @@ Template Name: Products
                                                         <?php bones_main_nav(); ?>
                                                     </nav>
                                                     <!-- nav end -->
+                                                    
                                                     <!-- BREDCRUMBS -->
                                                     <div id="breadcrumb-holder">
-                                                        <span class="icon red">&#xe060;</span>YOU ARE HERE: Products &amp; Services <span class="slash">/</span> Talent Management <span class="slash">/</span> Individual Performance Management
+                                                        <span class="icon red">&#xe060;</span><strong>YOU ARE HERE:</strong> Products &amp; Services <!--<span class="slash">/</span> Talent Management <span class="slash">/</span> Individual Performance Management-->
                                                     </div>
                                                     <!-- END BREADCRUMBS -->
                                                     <div id="main" class="eightcol first clearfix" role="main">
