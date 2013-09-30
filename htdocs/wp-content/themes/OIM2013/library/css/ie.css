@@ -474,7 +474,8 @@ NAVIGATION STYLES
   padding: 0!important;
 }
 .nav {
-  background: #00204e;
+  /*background: @oim_blue_dark;*/
+
   border: 0;
   /* end .menu ul li */
 
@@ -495,14 +496,15 @@ NAVIGATION STYLES
 
 }
 .nav li a {
-  background: #00204e;
+  background: rgba(9, 10, 14, 0.5);
   text-align: center;
   color: #ffffff;
   font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 11px;
   padding: 18px 0;
-  border-left: 1px solid #002450;
-  border-right: 1px solid #024594;
+  /*border-left: 1px solid @oim_blue_darker;
+                        border-right: 1px solid @oim_blue_lighter;*/
+
   border-bottom: none;
   /*
 			you can use hover styles here even though this size
@@ -552,6 +554,15 @@ NAVIGATION STYLES
   display: block;
 }
 /* end .nav */
+/*-------------------------------------------------------
+                  HOME - dynamic-service divs
+---------------------------------------------------------*/
+.dynamic-service {
+  width: 31%;
+}
+.dynamic-service-mid {
+  margin: 0 3.5%;
+}
 /*********************
 SIDEBARS & ASIDES
 *********************/
@@ -607,7 +618,7 @@ mobile. Make sure to double check these!
 TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
 ==============================================================*/
 .dynamic-service {
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 .dynamic-service img {
   min-width: 100%;
@@ -624,8 +635,15 @@ TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
   margin-top: 25px;
 }
 .secondary-holder {
-  width: 31.666%;
-  margin: 0 0.833%;
+  width: 32%;
+}
+.secondary-holder-mid {
+  margin: 0 2%;
+}
+.details {
+  padding: 8px 20px;
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
 }
 /******************************************************************
 Site Name: OIM

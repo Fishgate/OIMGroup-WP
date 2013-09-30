@@ -29,6 +29,10 @@
   display: block;
   height: auto;
   float: left;
-  width: 100%;
+  /*width: 100%;*/
   border: 0;
+  
+  position: relative;
+  margin-left: -960px;
+  left: 50%;
   }

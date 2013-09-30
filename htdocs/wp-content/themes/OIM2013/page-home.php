@@ -16,21 +16,14 @@ Template Name: Home
               <span class="quote">In an ever-changing world,<br />constant improvement is an integral part<br />of continued success</span>
               <div class="button">Read More &nbsp;<span class="icon">&#xe0eb;</span></div>
           </div>
-          <img src="<?php echo get_template_directory_uri(); ?>/library/images/1.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/home1.jpg" alt="">
       </li>
       <li>
           <div class="calltoaction">
               <span class="quote">Adventure Time!<br />with Jake the dog<br />and Fin the human</span>
               <div class="button">Read More &nbsp;<span class="icon">&#xe0eb;</span></div>
           </div>
-          <img src="<?php echo get_template_directory_uri(); ?>/library/images/2.jpg" alt="">
-      </li>
-      <li>
-          <div class="calltoaction">
-              <span class="quote">Yoghurt Factory,<br />possibly the worst place<br />you could imagine</span>
-              <div class="button">Read More &nbsp;<span class="icon">&#xe0eb;</span></div>
-          </div>
-          <img src="<?php echo get_template_directory_uri(); ?>/library/images/3.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/home2.jpg" alt="">
       </li>
     </ul>
 </div>
@@ -66,7 +59,7 @@ Template Name: Home
                                                                     </center>
                                                                     <?php the_content(); ?>
                                                                     <!-- TYRONE ADDS 3 DIVS FOR DYNAMIC SERVICES-->
-                                                                        <div class="threecol dynamic-service clearfix">
+                                                                        <div class="left dynamic-service clearfix">
                                                                             <img src="<?php echo get_template_directory_uri(); ?>/library/images/methodology_mini.jpg" alt="Our Methodology" />
                                                                             <div class="service-copy">
                                                                                 <h2>Our Methodology</h2>
@@ -74,7 +67,7 @@ Template Name: Home
                                                                                 <a href="#">Methodology &amp; Services</a>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="threecol dynamic-service clearfix">
+                                                                        <div class="left dynamic-service dynamic-service-mid clearfix">
                                                                             <img src="<?php echo get_template_directory_uri(); ?>/library/images/about_mini.jpg" alt="About OIM" />
                                                                             <div class="service-copy">
                                                                                 <h2>About OIM</h2>
@@ -82,7 +75,7 @@ Template Name: Home
                                                                                 <a href="#">Read more about OIM</a>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="threecol dynamic-service clearfix">
+                                                                        <div class="left dynamic-service clearfix">
                                                                             <img src="<?php echo get_template_directory_uri(); ?>/library/images/testimonials_mini.jpg" alt="Testimonials" />
                                                                             <div class="service-copy">
                                                                                 <h2>Client Testimonials</h2>
