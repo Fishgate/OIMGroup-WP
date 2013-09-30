@@ -42,7 +42,7 @@
                                                       </div>
                                                   </div>
                                             </div>
-                                            <div class="secondary-holder left clearfix">
+                                            <div class="secondary-holder secondary-holder-mid left clearfix">
                                                   <h2 class="head-secondary icon-organisation">Organisation</h2>
                                                   <div class="secondary-link">
                                                       One

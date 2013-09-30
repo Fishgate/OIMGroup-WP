@@ -840,7 +840,8 @@ p {
 *********************/
 a,
 a:visited {
-  color: #f01d4f;
+  color: #5482ab;
+  text-decoration: none;
   /* on hover */
 
   /* on click */
@@ -852,7 +853,7 @@ a:hover,
 a:visited:hover,
 a:focus,
 a:visited:focus {
-  color: #d10e3c;
+  color: #a22b38;
 }
 a:link,
 a:visited:link {
@@ -902,8 +903,16 @@ h5 a,
 }
 h1,
 .h1 {
-  font-size: 1.8em;
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.333em;
+}
+.h1-nostyle {
+  background: none!important;
+  padding: 0!important;
+  color: #666666 !important;
+  margin: 0.67em 0 0 0!important;
+  font-size: 28px;
 }
 h2,
 .h2 {
@@ -918,7 +927,9 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 1.125em;
+  font-family: "opensans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  padding-bottom: 0;
 }
 h4,
 .h4 {
@@ -978,7 +989,8 @@ h5,
   display: block;
   height: auto;
   float: left;
-  width: 100%;
+  /*width: 100%;*/
+
   border: 0;
 }
 /*********************
@@ -1015,7 +1027,8 @@ and more scalable.
   display: block;
   text-decoration: none;
   padding: 10px 10px;
-  background-color: #eee;
+  /*background-color: #eee;*/
+
   border-bottom: 1px solid #ccc;
   /*
 			remember this is for mobile ONLY, so there's no need
@@ -1036,6 +1049,7 @@ and more scalable.
 .calltoaction {
   width: 96%;
   position: absolute;
+  z-index: 100;
   top: 110px;
   margin-left: -48%;
   left: 50%;
@@ -1052,7 +1066,7 @@ and more scalable.
 TYRONE ADDS MEGA MENU STYLES
 ========================================*/
 .home-holder {
-  width: 10%;
+  width: 60px;
   padding: 10px 0;
 }
 #border-left {
@@ -1070,7 +1084,7 @@ TYRONE ADDS MEGA MENU STYLES
   top: 37px;
   left: 0;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.7);
+  background: #fafafa;
   width: 100%;
   padding: 1.666% 0.833%;
 }
@@ -1167,6 +1181,22 @@ TYRONE ADDS MEGA MENU STYLES
   border-right: 1px solid transparent!important;
 }
 /*-------------------------------------------------------
+                  GENERIC ENTRY "RESETS"
+---------------------------------------------------------*/
+.entry-content ul {
+  margin: 0 0 0 25px;
+}
+.entry-content ul li {
+  font-size: 11px;
+  list-style-type: disc;
+}
+.entry-content h1 {
+  background: #5482ab;
+  padding: 15px;
+  color: #ffffff;
+  margin: 0 0 0.67em;
+}
+/*-------------------------------------------------------
                   HOME BODY STYLES
 ---------------------------------------------------------*/
 a.service-link {
@@ -1194,7 +1224,6 @@ a.service-link {
 .dynamic-service {
   /*outline: 1px solid yellow;*/
 
-  margin-bottom: 50px;
 }
 .dynamic-service img {
   float: left;
@@ -1229,6 +1258,7 @@ a.service-link {
 .simply-scroll-clip {
   position: relative;
   overflow: hidden;
+  height: 145px!important;
 }
 /* UL/OL/DIV - the element that simplyScroll is inited on
 Class name automatically added to element */
@@ -1241,7 +1271,7 @@ Class name automatically added to element */
 .simply-scroll-list li {
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style-type: none!important;
 }
 .simply-scroll-list li img {
   border: none;
@@ -1267,7 +1297,8 @@ Class name automatically added to element */
   /* Horizontal scroll only */
 
   width: 290px;
-  height: 200px;
+  /*height: 200px;*/
+
 }
 /*********************
 08. POSTS & CONTENT STYLES
@@ -1607,6 +1638,13 @@ Class name automatically added to element */
 /*********************
 12. SIDEBARS & ASIDES
 *********************/
+h4.widgettitle {
+  background: #5482ab;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 0;
+}
 .widget ul li {
   /* deep nesting */
 
@@ -1619,7 +1657,8 @@ Class name automatically added to element */
   clear: both;
 }
 .footer #inner-footer {
-  padding: 25px 1%;
+  padding: 25px 0;
+  margin-top: 80px;
 }
 /*
 	if you checked out the link above:
@@ -1649,6 +1688,15 @@ Class name automatically added to element */
   text-decoration: none;
   font-size: 12px;
   margin: 0 0 0 10px;
+}
+/*********************
+     BREADCRUMBS
+*********************/
+#breadcrumb-holder {
+  font-size: 12px;
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  outline: 1px solid yellow;
+  margin: 35px 0 15px 0;
 }
 /*
 LARGER MOBILE DEVICES
@@ -1739,6 +1787,12 @@ tweeners.
   do they need tweaking?
   */
   /* end .footer-links */
+  /************************************
+         WIDGET UNIFORM STYLES
+  ************************************/
+  #wp-calendar {
+    width: 100%;
+  }
 }
 /*
 TABLET & SMALLER LAPTOPS
@@ -1874,7 +1928,8 @@ you can add resource intensive styles.
     padding: 0!important;
   }
   .nav {
-    background: #00204e;
+    /*background: @oim_blue_dark;*/
+  
     border: 0;
     /* end .menu ul li */
   
@@ -1895,14 +1950,15 @@ you can add resource intensive styles.
   
   }
   .nav li a {
-    background: #00204e;
+    background: rgba(9, 10, 14, 0.5);
     text-align: center;
     color: #ffffff;
     font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 11px;
     padding: 18px 0;
-    border-left: 1px solid #002450;
-    border-right: 1px solid #024594;
+    /*border-left: 1px solid @oim_blue_darker;
+                          border-right: 1px solid @oim_blue_lighter;*/
+  
     border-bottom: none;
     /*
   			you can use hover styles here even though this size
@@ -1952,19 +2008,28 @@ you can add resource intensive styles.
     display: block;
   }
   /* end .nav */
+  /*-------------------------------------------------------
+                    HOME - dynamic-service divs
+  ---------------------------------------------------------*/
+  .dynamic-service {
+    width: 31%;
+  }
+  .dynamic-service-mid {
+    margin: 0 3.5%;
+  }
   /*********************
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
-    margin-top: 2.2em;
+    /*margin-top: 2.2em;*/
+  
   }
   .widgettitle {
-    border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
   .widget {
     padding: 0 10px;
-    margin: 2.2em 0;
+    margin: 0 0 2.2em 0;
   }
   .widget ul li {
     margin-bottom: 0.75em;
@@ -2007,7 +2072,7 @@ you can add resource intensive styles.
   TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
   ==============================================================*/
   .dynamic-service {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
   .dynamic-service img {
     min-width: 100%;
@@ -2024,8 +2089,15 @@ you can add resource intensive styles.
     margin-top: 25px;
   }
   .secondary-holder {
-    width: 31.666%;
-    margin: 0 0.833%;
+    width: 32%;
+  }
+  .secondary-holder-mid {
+    margin: 0 2%;
+  }
+  .details {
+    padding: 8px 20px;
+    font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
   }
 }
 /*

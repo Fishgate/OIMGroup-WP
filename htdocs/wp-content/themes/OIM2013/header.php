@@ -62,14 +62,10 @@
                                             
                                             <div class="clearfix">
                                                 <div class="left home-holder">
-                                                    <span class="left home-icon">F</span>
-                                                    <span class="left generic-type-mega">in</span>
+                                                    <a href='<?php echo home_url(); ?>'><span class="left home-icon">F</span></a>
+                                                    <!--<span class="left generic-type-mega">in</span>-->
                                                 </div>
                                                 <ul class="left sf-menu">
-<!--                                                    <li>
-                                                        <span class="left home-icon">F</span>
-                                                        <span class="left generic-type-mega">in</span>
-                                                    </li>-->
                                                     <li id="border-left">
                                                         Our Methodology <span class="icons">&#xe0ab;</span>
                                                         <ul class="secondary-ul">
@@ -335,7 +331,11 @@
                                                     </li>
                                                 </ul>
                                                 <div class="right search-holder">
-                                                    <?php echo get_search_form($echo = true); ?>
+                                                    <div class="right clearfix"><!-- CONTACT DETAILS -->
+                                                        
+                                                        <div class="right details border-left"><a href="http://za.linkedin.com/company/oim-international-pty-ltd?trk=ppro_cprof" target="_blank"><span class="home-icon">&#xe021;</span></a></div>
+                                                        <div class="right details"><span class="home-icon" style="padding-right: 20px; color: #5482AB;">@</span>+27 21 913 8814/5</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </nav>
