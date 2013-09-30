@@ -56,7 +56,7 @@ function custom_post_example() {
 	register_taxonomy_for_object_type('category', 'custom_type');
 	/* this adds your post tags to your custom post type */
 	register_taxonomy_for_object_type('post_tag', 'custom_type');
-	
+        
 } 
 
 	// adding the function to the Wordpress init

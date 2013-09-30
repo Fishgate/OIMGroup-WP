@@ -1,3 +1,5 @@
+/htdocs/.htaccess
+
 # Don't add the Local settings file to the repository #
 /htdocs/wp-config-local.php
  
