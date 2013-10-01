@@ -30,17 +30,43 @@ if (!window.getComputedStyle) {
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
     
+//------------ TYRONE SEARCHER REVEAL
+var opacity = 0;
+
+$('.searchicon').click(function(){
+    if(opacity === 0){
+        $('#the-search').css('display', 'block');
+        $('#the-search').animate({opacity: '1'}, 'fast');
+        opacity = 1;
+    }else{
+        $('#the-search').animate({opacity: '0'}, 'fast', function(){
+            $('#the-search').css('display', 'none');
+        });
+        opacity = 0;
+    }
+});
+    
 //------------ TYRONE ADDS RESPONSIVE SLIDES
 $(".rslides").responsiveSlides({
     "timeout": 10000
 });
+
+//--check window.resize width of calltoaction
+//$(window).resize(function(){
+//    var menuwidth = $('#menu-menu_oim').width();
+//    var menuwidthoffset = -menuwidth/2;
+//
+//    $('.calltoaction').css('width', menuwidth);
+//    $('.calltoaction').css('margin-left', menuwidthoffset);
+//    $('.calltoaction').css('left', '50%');
+//});
 
 //------------ TYRONE INIT SUPERFISH MENUS
 $('ul.sf-menu').superfish();
 
 //------------ TYRONE EXPANDABLE 3RD LEVEL DROPDOWNS
 $('.secondary-link').each(function(){
-    $(this).live('click', function(){
+    $(this).live('mouseenter', function(){
         $('.flyout').removeClass('expand');
         $(this).find('.flyout').addClass('expand');
     });
@@ -60,7 +86,7 @@ $("#scroller").simplyScroll();
     
     /* if is below 481px */
     if (responsive_viewport < 481) {
-    
+        
     } /* end smallest screen */
     
     /* if is larger than 481px */
@@ -75,7 +101,6 @@ $("#scroller").simplyScroll();
         $('.comment img[data-gravatar]').each(function(){
             $(this).attr('src',$(this).attr('data-gravatar'));
         });
-        
     }
     
     /* off the bat large screen actions */

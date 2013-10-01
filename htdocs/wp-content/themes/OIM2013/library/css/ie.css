@@ -346,6 +346,9 @@ do they need tweaking?
 #wp-calendar {
   width: 100%;
 }
+/*============================================
+        RESONSIVE SLIDES CALL TO ACTION
+=============================================*/
 /* import grid */
 /******************************************************************
 Site Name:
@@ -458,7 +461,7 @@ GENERAL STYLES
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
-  max-width: 1140px;
+  max-width: 960px;
 }
 /*********************
 HEADER STYLES
@@ -645,6 +648,27 @@ TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
   font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
+.flyout li {
+  border-bottom: 1px dotted #024594;
+}
+/*============================================
+        RESONSIVE SLIDES CALL TO ACTION
+=============================================*/
+/*.calltoaction{
+    outline: 1px dashed red;
+    position: absolute;
+    z-index: 100;
+    top: 110px;
+
+}
+.quote{
+    display: block;
+    font-size: 20px;
+    color: @white;
+    font-family: @sans-serif-light;
+    padding: 0 0 20px 0;
+    font-style: italic;
+}*/
 /******************************************************************
 Site Name: OIM
 Author: Tyrone @ Fishgate Advertsing
@@ -655,13 +679,6 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop. 
 
 ******************************************************************/
-.calltoaction {
-  width: 1140px;
-  position: absolute;
-  top: 110px;
-  margin-left: -570px;
-  left: 50%;
-}
 /* 
 you can call the larger styles if you want, but there's really no need 
 */

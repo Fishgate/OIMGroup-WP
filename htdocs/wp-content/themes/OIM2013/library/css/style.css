@@ -962,6 +962,7 @@ h5,
 #mega-holder {
   background: #f8f8f8;
   position: relative;
+  z-index: 102;
 }
 /*--------- responsiveslides -------*/
 .rslides {
@@ -1046,22 +1047,6 @@ and more scalable.
 /*============================================
         RESONSIVE SLIDES CALL TO ACTION
 =============================================*/
-.calltoaction {
-  width: 96%;
-  position: absolute;
-  z-index: 100;
-  top: 110px;
-  margin-left: -48%;
-  left: 50%;
-}
-.quote {
-  display: block;
-  font-size: 20px;
-  color: #ffffff;
-  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0 0 20px 0;
-  font-style: italic;
-}
 /*=======================================
 TYRONE ADDS MEGA MENU STYLES
 ========================================*/
@@ -1069,10 +1054,10 @@ TYRONE ADDS MEGA MENU STYLES
   width: 60px;
   padding: 10px 0;
 }
-#border-left {
+.border-left {
   border-left: 1px dotted #ccc;
 }
-#border-right {
+.border-right {
   border-right: 1px dotted #ccc;
 }
 .sf-menu {
@@ -1082,7 +1067,7 @@ TYRONE ADDS MEGA MENU STYLES
 .secondary-ul {
   position: absolute;
   top: 37px;
-  left: -6%;
+  left: -7%;
   z-index: 100;
   background: #fafafa;
   width: 111.2%;
@@ -1126,6 +1111,10 @@ TYRONE ADDS MEGA MENU STYLES
   font-size: 20px;
   padding: 0 25px;
 }
+.icon {
+  font-family: "icons", Cambria, Times New Roman, Times, serif;
+  font-size: 20px;
+}
 .generic-type {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1167,9 +1156,11 @@ TYRONE ADDS MEGA MENU STYLES
   vertical-align: top;
   background: #f8f8f8;
   color: #5482ab;
+  float: right;
 }
 .screen-reader-text {
   visibility: hidden!important;
+  display: none;
 }
 #searchsubmit {
   width: 50px;
@@ -1179,6 +1170,19 @@ TYRONE ADDS MEGA MENU STYLES
 }
 .borderright-0 a {
   border-right: 1px solid transparent!important;
+}
+/*============================================
+        SEARCH IN HEAD
+=============================================*/
+#the-search {
+  position: absolute;
+  right: 0;
+  z-index: 101;
+  height: 51px;
+  top: 50px;
+  border: 1px solid #5482ab;
+  opacity: 0;
+  display: none;
 }
 /*-------------------------------------------------------
                   GENERIC ENTRY "RESETS"
@@ -1820,6 +1824,9 @@ tweeners.
   #wp-calendar {
     width: 100%;
   }
+  /*============================================
+          RESONSIVE SLIDES CALL TO ACTION
+  =============================================*/
 }
 /*
 TABLET & SMALLER LAPTOPS
@@ -1939,7 +1946,7 @@ you can add resource intensive styles.
   LAYOUT & GRID STYLES
   *********************/
   .wrap {
-    max-width: 1140px;
+    max-width: 960px;
   }
   /*********************
   HEADER STYLES
@@ -2126,6 +2133,27 @@ you can add resource intensive styles.
     font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
   }
+  .flyout li {
+    border-bottom: 1px dotted #024594;
+  }
+  /*============================================
+          RESONSIVE SLIDES CALL TO ACTION
+  =============================================*/
+  /*.calltoaction{
+      outline: 1px dashed red;
+      position: absolute;
+      z-index: 100;
+      top: 110px;
+  
+  }
+  .quote{
+      display: block;
+      font-size: 20px;
+      color: @white;
+      font-family: @sans-serif-light;
+      padding: 0 0 20px 0;
+      font-style: italic;
+  }*/
 }
 /*
 DESKTOP
@@ -2144,13 +2172,6 @@ you can add resource intensive styles.
   be seen on the Desktop. 
   
   ******************************************************************/
-  .calltoaction {
-    width: 1140px;
-    position: absolute;
-    top: 110px;
-    margin-left: -570px;
-    left: 50%;
-  }
 }
 /*
 LARGE VIEWING SIZE

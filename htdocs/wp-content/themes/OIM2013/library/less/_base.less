@@ -224,6 +224,7 @@ h5, .h5 {
 #mega-holder{
     background: @oim_grey_light;
     position: relative;
+    z-index: 102;
 }
 /*--------- responsiveslides -------*/
     .rslides {
@@ -345,22 +346,7 @@ and more scalable.
 /*============================================
         RESONSIVE SLIDES CALL TO ACTION
 =============================================*/
-.calltoaction{
-    width: 96%;
-    position: absolute;
-    z-index: 100;
-    top: 110px;
-    margin-left: -48%;
-    left: 50%;
-}
-.quote{
-    display: block;
-    font-size: 20px;
-    color: @white;
-    font-family: @sans-serif-light;
-    padding: 0 0 20px 0;
-    font-style: italic;
-}
+
 
 /*=======================================
 TYRONE ADDS MEGA MENU STYLES
@@ -369,10 +355,10 @@ TYRONE ADDS MEGA MENU STYLES
     width: 60px;
     padding: 10px 0;
 }
-#border-left{
+.border-left{
     border-left: 1px dotted #ccc;
 }
-#border-right{
+.border-right{
     border-right: 1px dotted #ccc;
 }
 .sf-menu{
@@ -382,7 +368,7 @@ TYRONE ADDS MEGA MENU STYLES
 .secondary-ul{
     position: absolute;
     top: 37px;
-    left: -6%;
+    left: -7%;
     z-index: 100;
     background: rgba(250, 250, 250, 1);
     width: 111.2%;
@@ -427,6 +413,10 @@ TYRONE ADDS MEGA MENU STYLES
     font-family: @icons;
     font-size: 20px;
     padding: 0 25px;
+}
+.icon{
+    font-family: @icons;
+    font-size: 20px;
 }
 .generic-type{
     font-family: @sans-serif-generic;
@@ -473,9 +463,11 @@ TYRONE ADDS MEGA MENU STYLES
     vertical-align: top;
     background: @oim_grey_light;
     color: @oim_blue_light;
+    float: right;
 }
 .screen-reader-text{
     visibility: hidden!important;
+    display: none;
 }
 #searchsubmit{
     width: 50px;
@@ -486,6 +478,21 @@ TYRONE ADDS MEGA MENU STYLES
 .borderright-0 a{
     border-right: 1px solid transparent!important;
 }
+
+/*============================================
+        SEARCH IN HEAD
+=============================================*/
+#the-search{
+    position: absolute;
+    right: 0;
+    z-index: 101;
+    height: 51px;
+    top: 50px;
+    border: 1px solid @oim_blue_light;
+    opacity: 0;
+    display: none;
+}
+
 
 /*-------------------------------------------------------
                   GENERIC ENTRY "RESETS"
