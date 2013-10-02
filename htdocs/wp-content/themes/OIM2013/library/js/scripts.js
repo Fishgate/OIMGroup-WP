@@ -79,8 +79,15 @@ $("#scroller").simplyScroll();
 
 
 //------------ TYRONE MENU-MOBILE INTERACTIONS
-//-- COLLAPSE MOBILE MENU
-//-- HOVERS
+
+//-- HOVERS INDIVIDUAL ITEM
+$('.mobile-item').live('mouseenter', function(){
+    $(this).find('a').css('color', '#ffffff');
+});
+$('.mobile-item').live('mouseleave', function(){
+    $(this).find('a').css('color', '');
+});
+//-- HOVERS MAIN MENU ICON
 $('#menu-mobile').live('mouseenter', function(){
     $(this).css('cursor', 'pointer');
     $('#menu-mobile span').css('color', '#A22B38');
@@ -91,6 +98,13 @@ $('#menu-mobile').live('mouseleave', function(){
 //-- CLICKS
 $('#menu-mobile').live('click', function(){
     $('#mobile-menu-holder').slideToggle('fast');
+});
+//-------- HIDE MOBILE MENU WHEN RESIZING TO 768 UP
+$(window).resize(function(){
+    if($(window).width() >= 768){
+        //--- HIDE MOBILE MENU
+        $('#mobile-menu-holder').css('display', 'none');
+    }
 });
 
 

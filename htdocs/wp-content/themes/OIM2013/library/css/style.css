@@ -1763,6 +1763,11 @@ h4.widgettitle {
 }
 .mobile-item:hover {
   background: #a22b38;
+}
+.mobile-item a {
+  display: block;
+}
+.mobile-item a:hover {
   color: #ffffff;
 }
 #content {
@@ -2212,7 +2217,7 @@ you can add resource intensive styles.
     display: block;
   }
   #menu-mobile {
-    display: none;
+    display: none!important;
   }
   #mobile-menu-holder {
     position: absolute;

@@ -682,7 +682,7 @@ TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
   display: block;
 }
 #menu-mobile {
-  display: none;
+  display: none!important;
 }
 #mobile-menu-holder {
   position: absolute;
