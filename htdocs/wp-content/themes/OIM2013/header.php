@@ -54,6 +54,25 @@
                                         <div id="tagline">
 					<?php  bloginfo('description'); ?>
                                         </div>
+                                        
+                                        <div id="menu-mobile" class="right">
+                                            MENU <span class="icon">&#xe00f;</span>
+                                        </div>
+                                        
+                                        <div id="mobile-menu-holder">
+                                            <nav>
+                                                <div class="mobile-item">Home</div>
+                                                <div class="mobile-item">Our Methodology</div>
+                                                <div class="mobile-item">Products &amp Services</div>
+                                                <div class="mobile-item">About OIM</div>
+                                                <div class="mobile-item">Clients</div>
+                                                <div class="mobile-item">Team</div>
+                                                <div class="mobile-item">News</div>
+                                                <div class="mobile-item">Careers</div>
+                                                <div class="mobile-item">Partnerships</div>
+                                                <div class="mobile-item">Contact</div>
+                                            </nav>
+                                        </div>
 
                                    <!-- =============================
                                                MEGA MENU by Tyrone

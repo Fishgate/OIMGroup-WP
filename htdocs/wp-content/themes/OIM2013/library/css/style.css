@@ -946,6 +946,9 @@ h5,
 /*********************
 06. HEADER STYLES
 *********************/
+.header #logo {
+  display: inline-block;
+}
 /*------------------------------- ADDED BY TYRONE ---*/
 #tagline {
   position: absolute;
@@ -1327,7 +1330,6 @@ Class name automatically added to element */
 #content {
   position: relative;
   z-index: 100;
-  margin: -118px 0 0 0;
 }
 /* end .hentry */
 /* want to style individual post classes? Booya! */
@@ -1700,8 +1702,8 @@ h4.widgettitle {
   color: #ccc;
 }
 #footer-nav-holder {
-  max-width: 94%;
-  width: 1100px;
+  max-width: 940px;
+  padding: 0 10px;
   margin: 50px auto;
 }
 #footer-nav {
@@ -1728,6 +1730,49 @@ h4.widgettitle {
 }
 .red {
   color: #a22b38;
+}
+/*============================================
+               HIDE TAGLINE
+=============================================*/
+#tagline {
+  display: none;
+}
+/*============================================
+               MENU-MOBILE
+=============================================*/
+#menu-menu_oim {
+  display: none;
+}
+#menu-mobile {
+  display: inline-block;
+  color: #5482ab;
+  margin: 25px 10px 0 0;
+}
+#mobile-menu-holder {
+  position: absolute;
+  z-index: 102;
+  display: none;
+  width: 100%;
+  height: 450px;
+}
+.mobile-item {
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid #ffffff;
+  background: #f8f8f8;
+  padding: 10px;
+}
+.mobile-item:hover {
+  background: #a22b38;
+  color: #ffffff;
+}
+#content {
+  margin-top: 0;
+}
+/*============================================
+               HIDE MEGA-HOLDER
+=============================================*/
+#mega-holder {
+  display: none;
 }
 /*
 LARGER MOBILE DEVICES
@@ -2154,6 +2199,35 @@ you can add resource intensive styles.
       padding: 0 0 20px 0;
       font-style: italic;
   }*/
+  /*============================================
+                 SHOW TAGLINE
+  =============================================*/
+  #tagline {
+    display: block;
+  }
+  /*============================================
+                 HIDE MENU-MOBILE
+  =============================================*/
+  #menu-menu_oim {
+    display: block;
+  }
+  #menu-mobile {
+    display: none;
+  }
+  #mobile-menu-holder {
+    position: absolute;
+    z-index: 100;
+    display: none;
+  }
+  #content {
+    margin: -118px 0 0 0;
+  }
+  /*============================================
+                 SHOW MEGA-HOLDER
+  =============================================*/
+  #mega-holder {
+    display: block;
+  }
 }
 /*
 DESKTOP

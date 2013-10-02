@@ -67,12 +67,32 @@ $('ul.sf-menu').superfish();
 //------------ TYRONE EXPANDABLE 3RD LEVEL DROPDOWNS
 $('.secondary-link').each(function(){
     $(this).live('mouseenter', function(){
-        $('.flyout').removeClass('expand');
+        //$('.flyout').removeClass('expand');
         $(this).find('.flyout').addClass('expand');
+    });
+    $(this).live('mouseleave', function(){
+        $(this).find('.flyout').removeClass('expand');
     });
 });
 //------------ TYRONE simply scroll init
 $("#scroller").simplyScroll();
+
+
+//------------ TYRONE MENU-MOBILE INTERACTIONS
+//-- COLLAPSE MOBILE MENU
+//-- HOVERS
+$('#menu-mobile').live('mouseenter', function(){
+    $(this).css('cursor', 'pointer');
+    $('#menu-mobile span').css('color', '#A22B38');
+});
+$('#menu-mobile').live('mouseleave', function(){
+    $('#menu-mobile span').css('color', '');
+});
+//-- CLICKS
+$('#menu-mobile').live('click', function(){
+    $('#mobile-menu-holder').slideToggle('fast');
+});
+
 
     /*
     Responsive jQuery is a tricky thing.
