@@ -880,7 +880,7 @@ h5,
 .h5 {
   font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: optimizelegibility;
-  font-weight: 400;
+  font-weight: normal;
   /*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -904,8 +904,8 @@ h5 a,
 h1,
 .h1 {
   font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.333em;
+  font-size: 24px;
+  line-height: 1.1em;
 }
 .h1-nostyle {
   background: none!important;
@@ -1229,16 +1229,16 @@ a.service-link {
   text-align: center;
 }
 .dynamic-service {
-  /*outline: 1px solid yellow;*/
-
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 .dynamic-service img {
   float: left;
-  width: 30%;
+  width: 40%;
 }
 .service-copy {
   float: left;
-  width: 70%;
+  width: 60%;
   padding: 0 0 0 20px;
 }
 .service-copy h2 {
@@ -1677,6 +1677,19 @@ h4.widgettitle {
   /* deep nesting */
 
 }
+.widget_search {
+  position: relative;
+}
+.widget_search #s {
+  width: 100%;
+  margin-bottom: 0!important;
+  float: none;
+  padding-left: 65px;
+}
+.widget_search #searchsubmit {
+  position: absolute;
+  top: 0;
+}
 /*********************
 13. FOOTER STYLES
 *********************/
@@ -2099,7 +2112,7 @@ you can add resource intensive styles.
     width: 31%;
   }
   .dynamic-service-mid {
-    margin: 0 3.5%;
+    margin: 10px 3.5% 0 3.5%;
   }
   /*********************
   SIDEBARS & ASIDES

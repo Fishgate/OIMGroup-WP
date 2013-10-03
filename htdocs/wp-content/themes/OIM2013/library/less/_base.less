@@ -133,7 +133,7 @@ a, a:visited {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: @sans-serif-light;
 	text-rendering: optimizelegibility;
-	font-weight: 400;
+	font-weight: normal;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -147,8 +147,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 h1, .h1 {
         font-family: @sans-serif-light;
-	font-size: 18px;
-	line-height: 1.333em;
+	font-size: 24px;
+	line-height: 1.1em;
 }
 .h1-nostyle{
     background: none!important;
@@ -537,16 +537,17 @@ a.service-link{
     text-align: center;
 }
 .dynamic-service{
-    /*outline: 1px solid yellow;*/
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .dynamic-service img{
 float: left;
-width: 30%;
+width: 40%;
 
 }
 .service-copy{
 float: left;
-width: 70%;
+width: 60%;
 padding: 0 0 0 20px;
 }
 .service-copy h2{
@@ -1228,6 +1229,20 @@ Class name automatically added to element */
 		}
 
 	}
+
+.widget_search{
+    position: relative;
+}
+.widget_search #s{
+    width: 100%;
+    margin-bottom: 0!important;
+    float: none;
+    padding-left: 65px;
+}
+.widget_search #searchsubmit{
+    position: absolute;
+    top: 0;
+}
 
 /*********************
 13. FOOTER STYLES

@@ -45,6 +45,11 @@ $('.searchicon').click(function(){
         opacity = 0;
     }
 });
+//-- HIDE SEARCH IF HOVER ON MENU ITEMS
+$('.sf-menu li').live('mouseenter', function(){
+    $('#the-search').css('display', 'none');
+    opacity = 0;
+});
     
 //------------ TYRONE ADDS RESPONSIVE SLIDES
 $(".rslides").responsiveSlides({

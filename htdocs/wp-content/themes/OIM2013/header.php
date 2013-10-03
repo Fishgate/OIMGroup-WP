@@ -86,7 +86,7 @@
                                                 </div>
                                                 <ul class="left sf-menu">
                                                     <li id="border-left">
-                                                        Our Methodology <span class="icons">&#xe0ab;</span>
+                                                        Our Methodology
                                                     </li>
                                                     <li>
                                                         Product &amp; Services <span class="icons">&#xe0ab;</span>
@@ -203,7 +203,7 @@
                                                         </ul>
                                                     </li>
                                                     <li id="border-right">
-                                                        Contact<span class="icons">&#xe0ab;</span>
+                                                        Contact
                                                     </li>
                                                 </ul>
                                                 <div class="right search-holder">
