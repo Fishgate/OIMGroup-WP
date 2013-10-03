@@ -69,7 +69,10 @@ Template Name: About
 							<?php endif; ?>
 
 						</div> <!-- end #main -->
-                                                <?php get_sidebar(); ?>
+                                                <?php// get_sidebar(); ?><!-- ////////////// RE-INSTATE THIS SIDEBAR WIDGET STUFF -Kyle
+                                                <!-- WIDGET START -->
+                                                <!-- WIDGET START -->
+                                                
 				</div> <!-- end #inner-content -->
 
 			</div> <!-- end #content -->

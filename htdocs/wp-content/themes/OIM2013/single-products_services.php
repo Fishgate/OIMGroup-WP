@@ -1,7 +1,8 @@
 <?php get_header(); ?>
                         
                         <!-- feature image -->
-                        <img class="response-img" src="<?php echo get_feature_src('feature-small'); ?>" />
+                        <!--<img class="response-img" src="<?php// echo get_feature_src('feature-small'); ?>" />-->
+                        <?php echo $post->ID; ?>
 
 			<div id="content">
 
