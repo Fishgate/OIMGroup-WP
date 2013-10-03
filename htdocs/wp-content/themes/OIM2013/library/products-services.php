@@ -1,20 +1,4 @@
 <?php
-/* Bones Custom Post Type Example
-This page walks you through creating 
-a custom post type and taxonomies. You
-can edit this one or copy the following code 
-to create another one. 
-
-I put this in a separate file so as to 
-keep it organized. I find it easier to edit
-and change things if they are concentrated
-in their own file.
-
-Developed by: Eddie Machado
-URL: http://themble.com/bones/
-*/
-
-
 // let's create the function for the custom type
 function custom_post_products_services() { 
 	// creating (registering) the custom type 
@@ -44,7 +28,7 @@ function custom_post_products_services() {
 			'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */ 
 			'menu_icon' => get_stylesheet_directory_uri() . '/library/images/custom-post-icon.png', /* the icon for the custom post type menu */
 			'rewrite'	=> array( 'slug' => 'products-services', 'with_front' => false ), /* you can specify its url slug */
-			'has_archive' => 'custom_type', /* you can rename the slug here */
+			'has_archive' => 'products-services', /* you can rename the slug here */
 			'capability_type' => 'post',
 			'hierarchical' => false,
 			/* the next one is important, it tells what's enabled in the post editor */
@@ -63,55 +47,55 @@ function custom_post_products_services() {
 	*/
 	
 	// now let's add custom categories (these act like categories)
-    register_taxonomy( 'custom_cat', 
-    	array('products_services'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
-    	array('hierarchical' => true,     /* if this is true, it acts like categories */             
-    		'labels' => array(
-    			'name' => __( 'Products & Services Categories', 'bonestheme' ), /* name of the custom taxonomy */
-    			'singular_name' => __( 'Products & Services Category', 'bonestheme' ), /* single taxonomy name */
-    			'search_items' =>  __( 'Search Products & Services Categories', 'bonestheme' ), /* search title for taxomony */
-    			'all_items' => __( 'All Products & Services Categories', 'bonestheme' ), /* all title for taxonomies */
-    			'parent_item' => __( 'Parent Products & Services Category', 'bonestheme' ), /* parent title for taxonomy */
-    			'parent_item_colon' => __( 'Parent Products & Services Category:', 'bonestheme' ), /* parent taxonomy title */
-    			'edit_item' => __( 'Edit Products & Services Category', 'bonestheme' ), /* edit custom taxonomy title */
-    			'update_item' => __( 'Update Products & Services Category', 'bonestheme' ), /* update title for taxonomy */
-    			'add_new_item' => __( 'Add New Products & Services Category', 'bonestheme' ), /* add new title for taxonomy */
-    			'new_item_name' => __( 'New Products & Services Category Name', 'bonestheme' ) /* name title for taxonomy */
-    		),
-    		'show_admin_column' => true, 
-    		'show_ui' => true,
-    		'query_var' => true,
-    		'rewrite' => array( 'slug' => 'custom-slug' ),
-    	)
-    );   
-    
-	// now let's add custom tags (these act like categories)
-    register_taxonomy( 'custom_tag', 
-    	array('products_services'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
-    	array('hierarchical' => false,    /* if this is false, it acts like tags */                
-    		'labels' => array(
-    			'name' => __( 'Products & Services Tags', 'bonestheme' ), /* name of the custom taxonomy */
-    			'singular_name' => __( 'Products & Services Tag', 'bonestheme' ), /* single taxonomy name */
-    			'search_items' =>  __( 'Search Products & Services Tags', 'bonestheme' ), /* search title for taxomony */
-    			'all_items' => __( 'All Products & Services Tags', 'bonestheme' ), /* all title for taxonomies */
-    			'parent_item' => __( 'Parent Products & Services Tag', 'bonestheme' ), /* parent title for taxonomy */
-    			'parent_item_colon' => __( 'Parent Products & Services Tag:', 'bonestheme' ), /* parent taxonomy title */
-    			'edit_item' => __( 'Edit Products & Services Tag', 'bonestheme' ), /* edit custom taxonomy title */
-    			'update_item' => __( 'Update Products & Services Tag', 'bonestheme' ), /* update title for taxonomy */
-    			'add_new_item' => __( 'Add New Products & Services Tag', 'bonestheme' ), /* add new title for taxonomy */
-    			'new_item_name' => __( 'New Products & Services Tag Name', 'bonestheme' ) /* name title for taxonomy */
-    		),
-    		'show_admin_column' => true,
-    		'show_ui' => true,
-    		'query_var' => true,
-    	)
-    ); 
-    
-    /*
-    	looking for custom meta boxes?
-    	check out this fantastic tool:
-    	https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
-    */
+        register_taxonomy( 'custom_cat', 
+            array('products_services'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
+            array('hierarchical' => true,     /* if this is true, it acts like categories */             
+                    'labels' => array(
+                            'name' => __( 'Products & Services Categories', 'bonestheme' ), /* name of the custom taxonomy */
+                            'singular_name' => __( 'Products & Services Category', 'bonestheme' ), /* single taxonomy name */
+                            'search_items' =>  __( 'Search Products & Services Categories', 'bonestheme' ), /* search title for taxomony */
+                            'all_items' => __( 'All Products & Services Categories', 'bonestheme' ), /* all title for taxonomies */
+                            'parent_item' => __( 'Parent Products & Services Category', 'bonestheme' ), /* parent title for taxonomy */
+                            'parent_item_colon' => __( 'Parent Products & Services Category:', 'bonestheme' ), /* parent taxonomy title */
+                            'edit_item' => __( 'Edit Products & Services Category', 'bonestheme' ), /* edit custom taxonomy title */
+                            'update_item' => __( 'Update Products & Services Category', 'bonestheme' ), /* update title for taxonomy */
+                            'add_new_item' => __( 'Add New Products & Services Category', 'bonestheme' ), /* add new title for taxonomy */
+                            'new_item_name' => __( 'New Products & Services Category Name', 'bonestheme' ) /* name title for taxonomy */
+                    ),
+                    'show_admin_column' => true, 
+                    'show_ui' => true,
+                    'query_var' => true,
+                    'rewrite' => array( 'slug' => 'categories' ),
+            )
+        );   
+
+            // now let's add custom tags (these act like categories)
+        register_taxonomy( 'custom_tag', 
+            array('products_services'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
+            array('hierarchical' => false,    /* if this is false, it acts like tags */                
+                    'labels' => array(
+                            'name' => __( 'Products & Services Tags', 'bonestheme' ), /* name of the custom taxonomy */
+                            'singular_name' => __( 'Products & Services Tag', 'bonestheme' ), /* single taxonomy name */
+                            'search_items' =>  __( 'Search Products & Services Tags', 'bonestheme' ), /* search title for taxomony */
+                            'all_items' => __( 'All Products & Services Tags', 'bonestheme' ), /* all title for taxonomies */
+                            'parent_item' => __( 'Parent Products & Services Tag', 'bonestheme' ), /* parent title for taxonomy */
+                            'parent_item_colon' => __( 'Parent Products & Services Tag:', 'bonestheme' ), /* parent taxonomy title */
+                            'edit_item' => __( 'Edit Products & Services Tag', 'bonestheme' ), /* edit custom taxonomy title */
+                            'update_item' => __( 'Update Products & Services Tag', 'bonestheme' ), /* update title for taxonomy */
+                            'add_new_item' => __( 'Add New Products & Services Tag', 'bonestheme' ), /* add new title for taxonomy */
+                            'new_item_name' => __( 'New Products & Services Tag Name', 'bonestheme' ) /* name title for taxonomy */
+                    ),
+                    'show_admin_column' => true,
+                    'show_ui' => true,
+                    'query_var' => true,
+            )
+        ); 
+
+        /*
+            looking for custom meta boxes?
+            check out this fantastic tool:
+            https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
+        */
 	
 
 ?>
