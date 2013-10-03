@@ -61,16 +61,16 @@
                                         
                                         <div id="mobile-menu-holder">
                                             <nav>
-                                                <div class="mobile-item">Home</div>
-                                                <div class="mobile-item">Our Methodology</div>
-                                                <div class="mobile-item">Products &amp Services</div>
-                                                <div class="mobile-item">About OIM</div>
-                                                <div class="mobile-item">Clients</div>
-                                                <div class="mobile-item">Team</div>
-                                                <div class="mobile-item">News</div>
-                                                <div class="mobile-item">Careers</div>
-                                                <div class="mobile-item">Partnerships</div>
-                                                <div class="mobile-item">Contact</div>
+                                                <div class="mobile-item"><a href="">Home</a></div>
+                                                <div class="mobile-item"><a href="">Our Methodology</a></div>
+                                                <div class="mobile-item"><a href="">Products &amp Services</a></div>
+                                                <div class="mobile-item"><a href="">About OIM</a></div>
+                                                <div class="mobile-item"><a href="">Clients</a></div>
+                                                <div class="mobile-item"><a href="">Team</a></div>
+                                                <div class="mobile-item"><a href="">News</a></div>
+                                                <div class="mobile-item"><a href="">Careers</a></div>
+                                                <div class="mobile-item"><a href="">Partnerships</a></div>
+                                                <div class="mobile-item"><a href="">Contact</a></div>
                                             </nav>
                                         </div>
 
@@ -86,7 +86,7 @@
                                                 </div>
                                                 <ul class="left sf-menu">
                                                     <li id="border-left">
-                                                        Our Methodology <span class="icons">&#xe0ab;</span>
+                                                        Our Methodology
                                                     </li>
                                                     <li>
                                                         Product &amp; Services <span class="icons">&#xe0ab;</span>
@@ -203,7 +203,7 @@
                                                         </ul>
                                                     </li>
                                                     <li id="border-right">
-                                                        Contact<span class="icons">&#xe0ab;</span>
+                                                        Contact
                                                     </li>
                                                 </ul>
                                                 <div class="right search-holder">

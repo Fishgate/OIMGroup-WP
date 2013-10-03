@@ -13,7 +13,7 @@
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
-  width: 100%;
+/*  width: 100%;*/
   min-width: 900px!important;
   left: 0;
   top: 0;
@@ -33,6 +33,6 @@
   border: 0;
   
   position: relative;
-  margin-left: -960px;
+  margin-left: -960px;/*--- HALF IMAGE WIDTH -- */
   left: 50%;
   }
