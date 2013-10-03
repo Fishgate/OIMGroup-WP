@@ -9,24 +9,7 @@ Template Name: Home
 
 
 <!-- Header Slideshow  -->
-<div style="height: 420px; overflow: hidden;">
-    <ul class="rslides" id="slider1">
-      <li>
-<!--        <div class="calltoaction">
-            <span class="quote">In an ever-changing world,<br />constant improvement is an integral part<br />of continued success</span>
-            <div class="button">Read More &nbsp;<span class="icon">&#xe0eb;</span></div>
-        </div>-->
-          <img src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/home1.jpg" alt="">
-      </li>
-      <li>
-<!--          <div class="calltoaction">
-              <span class="quote">Adventure Time!<br />with Jake the dog<br />and Fin the human</span>
-              <div class="button">Read More &nbsp;<span class="icon">&#xe0eb;</span></div>
-          </div>-->
-          <img src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/home2.jpg" alt="">
-      </li>
-    </ul>
-</div>
+<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 <!-- END Header Slideshow  -->
 
 			<div id="content">

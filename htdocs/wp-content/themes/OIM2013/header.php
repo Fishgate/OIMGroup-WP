@@ -96,34 +96,31 @@
                                                                     <div class="secondary-holder left clearfix">
                                                                           <h2 class="head-secondary icon-people">People</h2>
                                                                           <div class="secondary-link">
-                                                                              One
+                                                                              Employee engagement (INVOCOMS)
+                                                                          </div>
+                                                                          <div class="secondary-link">
+                                                                              Leadership &amp; team interventions
                                                                               <div class="flyout">
                                                                                   <ul>
-                                                                                      <li>Two</li>
+                                                                                      <li>Competency profiling</li>
+                                                                                      <li>Leadership assessments</li>
+                                                                                      <li>Leadership development</li>
+                                                                                      <li>Coaching</li>
+                                                                                      <li>Team dynamics</li>
+                                                                                      <li>Diversity awareness</li>
                                                                                   </ul>
                                                                               </div>
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              One
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li>Two</li>
-                                                                                  </ul>
-                                                                              </div>
+                                                                              Supervisory skills
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              One
+                                                                              Performance &amp; talent management
                                                                               <div class="flyout">
                                                                                   <ul>
-                                                                                      <li>Two</li>
-                                                                                  </ul>
-                                                                              </div>
-                                                                          </div>
-                                                                          <div class="secondary-link">
-                                                                              One
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li>Two</li>
+                                                                                      <li>Talent management model</li>
+                                                                                      <li>Individual performance management</li>
+                                                                                      <li>Reward consultation</li>
                                                                                   </ul>
                                                                               </div>
                                                                           </div>
@@ -131,71 +128,38 @@
                                                                     <div class="secondary-holder secondary-holder-mid left clearfix">
                                                                           <h2 class="head-secondary icon-organisation">Organisation</h2>
                                                                           <div class="secondary-link">
-                                                                              One
+                                                                               Business strategy
                                                                               <div class="flyout">
                                                                                   <ul>
-                                                                                      <li>Two</li>
+                                                                                      <li>Strategic planning</li>
+                                                                                      <li>Strategic &amp; change communication</li>
+                                                                                      <li>Value chain strategy</li>
                                                                                   </ul>
                                                                               </div>
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              One
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li>Two</li>
-                                                                                  </ul>
-                                                                              </div>
+                                                                              Business architecture
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              One
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li>Two</li>
-                                                                                  </ul>
-                                                                              </div>
+                                                                              Employee relations
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              One
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li>Two</li>
-                                                                                  </ul>
-                                                                              </div>
+                                                                              Stakeholder perception surveys
                                                                           </div>
                                                                     </div>
                                                                     <div class="secondary-holder left clearfix">
                                                                           <h2 class="head-secondary icon-operation">Operations</h2>
                                                                           <div class="secondary-link">
-                                                                              One
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li>Two</li>
-                                                                                  </ul>
-                                                                              </div>
+                                                                              Business/operations review
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              One
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li>Two</li>
-                                                                                  </ul>
-                                                                              </div>
+                                                                              Operations management interventions
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              One
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li>Two</li>
-                                                                                  </ul>
-                                                                              </div>
+                                                                              Continuous improvement
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              One
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li>Two</li>
-                                                                                  </ul>
-                                                                              </div>
+                                                                              IT systems management &amp; project resourcing
                                                                           </div>
                                                                     </div>
                                                                 </div>

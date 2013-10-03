@@ -569,19 +569,22 @@ padding: 0 0 0 20px;
                   CONTENT HEADING CAPTIONS
 ---------------------------------------------------------*/
 .caption{
-    border: 1px solid #999999;
+    border: 1px solid #999;
+    position: relative;
+    display: block;
     height: 50px;
 }
 .caption span{
-    position: relative;
+    position: absolute;
     background: #ffffff;
-    padding: 17px;
+    padding: 17px 0;
     text-align: center;
     display: block;
     width: 95%;
-    margin: 0 auto;
-    top: -5px;
+    top: -2px;
+    left: 2.5%;
 }
+
 
 /*========================================================================
  SIMPLY SCROLL CSS ADDED 
@@ -1339,7 +1342,7 @@ Class name automatically added to element */
 /*============================================
                MENU-MOBILE
 =============================================*/
-#menu-menu_oim{
+nav[role=navigation]{
     display: none;
 }
 #menu-mobile{
@@ -1371,9 +1374,6 @@ Class name automatically added to element */
     color: @white
 }
 
-#content{
-    margin-top: 0;
-}
 
 
 /*============================================
@@ -1382,3 +1382,15 @@ Class name automatically added to element */
 #mega-holder{
     display: none;
 }
+
+
+/*============================================
+               RESPONSIVE IMG
+=============================================*/
+.response-img{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+
+

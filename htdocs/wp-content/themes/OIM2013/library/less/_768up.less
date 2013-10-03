@@ -386,7 +386,7 @@ border-bottom: 1px dotted @oim_blue_lighter;
 /*============================================
                HIDE MENU-MOBILE
 =============================================*/
-#menu-menu_oim{
+nav[role=navigation]{
     display: block;
 }
 #menu-mobile{
@@ -401,9 +401,14 @@ border-bottom: 1px dotted @oim_blue_lighter;
 
 
 #content{
-    margin: -118px 0 0 0;
+    position: relative;
+    top: -68px;
 }
-
+/*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
+#content-generic{
+    position: relative;
+    top: -74px!important;
+}
 /*============================================
                SHOW MEGA-HOLDER
 =============================================*/

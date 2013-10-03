@@ -1258,18 +1258,20 @@ a.service-link {
                   CONTENT HEADING CAPTIONS
 ---------------------------------------------------------*/
 .caption {
-  border: 1px solid #999999;
+  border: 1px solid #999;
+  position: relative;
+  display: block;
   height: 50px;
 }
 .caption span {
-  position: relative;
+  position: absolute;
   background: #ffffff;
-  padding: 17px;
+  padding: 17px 0;
   text-align: center;
   display: block;
   width: 95%;
-  margin: 0 auto;
-  top: -5px;
+  top: -2px;
+  left: 2.5%;
 }
 /*========================================================================
  SIMPLY SCROLL CSS ADDED 
@@ -1753,7 +1755,7 @@ h4.widgettitle {
 /*============================================
                MENU-MOBILE
 =============================================*/
-#menu-menu_oim {
+nav[role=navigation] {
   display: none;
 }
 #menu-mobile {
@@ -1783,14 +1785,18 @@ h4.widgettitle {
 .mobile-item a:hover {
   color: #ffffff;
 }
-#content {
-  margin-top: 0;
-}
 /*============================================
                HIDE MEGA-HOLDER
 =============================================*/
 #mega-holder {
   display: none;
+}
+/*============================================
+               RESPONSIVE IMG
+=============================================*/
+.response-img {
+  max-width: 100%;
+  min-width: 100%;
 }
 /*
 LARGER MOBILE DEVICES
@@ -2226,7 +2232,7 @@ you can add resource intensive styles.
   /*============================================
                  HIDE MENU-MOBILE
   =============================================*/
-  #menu-menu_oim {
+  nav[role=navigation] {
     display: block;
   }
   #menu-mobile {
@@ -2238,7 +2244,13 @@ you can add resource intensive styles.
     display: none;
   }
   #content {
-    margin: -118px 0 0 0;
+    position: relative;
+    top: -68px;
+  }
+  /*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
+  #content-generic {
+    position: relative;
+    top: -74px !important;
   }
   /*============================================
                  SHOW MEGA-HOLDER

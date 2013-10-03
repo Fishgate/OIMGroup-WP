@@ -9,20 +9,12 @@ Template Name: About
 
 
 <!-- Header Slideshow  -->
-<div style="height: 420px; overflow: hidden;">
-    <ul class="rslides" id="slider1">
-      <li>
-<!--        <div class="calltoaction">
-            <span class="quote">In an ever-changing world,<br />constant improvement is an integral part<br />of continued success</span>
-            <div class="button">Read More &nbsp;<span class="icon">&#xe0eb;</span></div>
-        </div>-->
-          <img src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/about.jpg" alt="">
-      </li>
-    </ul>
-</div>
+
+          <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/about.jpg" alt="">
+
 <!-- END Header Slideshow  -->
 
-			<div id="content">
+			<div id="content-generic">
 
 				<div id="inner-content" class="wrap clearfix">
 

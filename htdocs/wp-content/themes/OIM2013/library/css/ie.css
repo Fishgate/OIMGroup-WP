@@ -678,7 +678,7 @@ TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
 /*============================================
                HIDE MENU-MOBILE
 =============================================*/
-#menu-menu_oim {
+nav[role=navigation] {
   display: block;
 }
 #menu-mobile {
@@ -690,7 +690,13 @@ TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
   display: none;
 }
 #content {
-  margin: -118px 0 0 0;
+  position: relative;
+  top: -68px;
+}
+/*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
+#content-generic {
+  position: relative;
+  top: -74px !important;
 }
 /*============================================
                SHOW MEGA-HOLDER
