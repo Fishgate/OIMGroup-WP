@@ -49,28 +49,12 @@ require_once('library/products-services.php');
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
-// Thumbnail sizes
-add_image_size( 'bones-thumb-600', 600, 150, true );
-add_image_size( 'bones-thumb-300', 300, 100, true );
-/*
-to add more sizes, simply copy a line from above
-and change the dimensions & name. As long as you
-upload a "featured image" as large as the biggest
-set width or height, all the other sizes will be
-auto-cropped.
-
-To call a different size, simply change the text
-inside the thumbnail function.
-
-For example, to call the 300 x 300 sized image,
-we would use the function:
-<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
-for the 600 x 100 image:
-<?php the_post_thumbnail( 'bones-thumb-600' ); ?>
-
-You can change the names and dimensions to whatever
-you like. Enjoy!
-*/
+add_image_size( 'large-feature', 1920, 370, true );
+add_image_size( 'small-feature', 1920, 250, true );
+add_image_size( 'client-logo', 200, 120, true );
+add_image_size( 'team-small', 135, 120, true );
+add_image_size( 'team-large', 615, 220, true );
+add_image_size( 'pdf-thumb', 137, 194, true);
 
 /************* ACTIVE SIDEBARS ********************/
 
@@ -163,5 +147,70 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+/************* KYLES FUNCTIONS *****************/
+
+/**
+ * Get the src of a featured image, needs to be used within the loop
+ * so $post->ID variable is set. Returns false if no feature image is set.
+ * 
+ * @param string $size
+ * @param int $post_id
+ * @return boolean
+ */
+function get_feature_src ($post_id, $size) {
+    if (has_post_thumbnail( $post_id ) ) {
+        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), $size );
+        return $image[0];
+    }else{
+        return false;
+    }
+}
+
+/**
+ * Returns the breadcrum on success and false if not.
+ * 
+ * @return boolean
+ */
+function get_breadcrum () {
+    if(function_exists('bcn_display')) { ?>
+                                                                
+    <div class="breadcrumbs">
+        <span class="icon">&#xe060;</span>YOU ARE HERE: <?php bcn_display(); ?>
+    </div>
+        
+    <?php }else{
+        return false;
+    }
+}
+
+/**
+ * Returns the short description custom field for product
+ * pages on success. Returns false if does not exist.
+ * 
+ * @return boolean
+ */
+function get_tagline () {
+    if(get_field('description')) { ?>
+        <section>
+            <span class="caption">
+                <span><?php echo get_field('description'); ?></span>
+            </span>
+        </section>
+    <?php }else{
+        return false;
+    }
+}
+
+
+/**
+ * A few notes on how to handle the PDF attachment of product pages
+ * 
+$download = get_field('pdf_download');
+$img = wp_get_attachment_image_src(get_field('pdf_thumbnail'), 'pdf-thumb');
+
+
+<a href="<?php echo $download; ?>"><img src="<?php echo $img[0]; ?>" /></a>
+*
+*/
 
 ?>
