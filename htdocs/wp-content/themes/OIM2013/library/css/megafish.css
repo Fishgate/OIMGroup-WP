@@ -105,9 +105,3 @@
 .sf-arrows > .sfHover > .sf-with-ul:after {
 /*  border-top-color: white;  IE8 fallback colour */
 }
-
-
-
-.sf-menu > li:hover{
-    color: #fff!important;
-}

@@ -45,6 +45,19 @@ $('.searchicon').click(function(){
         opacity = 0;
     }
 });
+
+
+//------------ TYRONE MEGA PARENTS HOVER BEHAVIOURS
+$('.mega-parent').each(function(){
+    $(this).mouseenter(function(){
+        $(this).find('.parent-a').css('color', '#ffffff');
+    });
+    $(this).mouseleave(function(){
+        $(this).find('.parent-a').css('color', '');
+    });
+});
+
+
 //-- HIDE SEARCH IF HOVER ON MENU ITEMS
 $('.sf-menu li').live('mouseenter', function(){
     $('#the-search').css('display', 'none');

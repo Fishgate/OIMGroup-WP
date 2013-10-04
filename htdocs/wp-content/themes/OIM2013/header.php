@@ -85,11 +85,11 @@
                                                     <!--<span class="left generic-type-mega">in</span>-->
                                                 </div>
                                                 <ul class="left sf-menu">
-                                                    <li id="border-left">
-                                                        <a href="#">Our Methodology</a>
+                                                    <li id="border-left" class="mega-parent">
+                                                        <a class="parent-a"href="#">Our Methodology</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#">Products &amp; Services <span class="icons">&#xe0ab;</span></a>
+                                                    <li class="mega-parent">
+                                                        <a class="parent-a" href="#">Products &amp; Services <span class="icons">&#xe0ab;</span></a>
                                                         <ul class="secondary-ul">
                                                             <li>
                                                                 <div class="clearfix">
@@ -166,8 +166,8 @@
                                                             </li>
                                                         </ul>
                                                     </li>
-                                                    <li id="border-right">
-                                                        <a href="#">Contact</a>
+                                                    <li class="mega-parent" id="border-right">
+                                                        <a class="parent-a" href="#">Contact</a>
                                                     </li>
                                                 </ul>
                                                 <div class="right search-holder">
