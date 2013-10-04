@@ -32,6 +32,7 @@ require_once('library/bones.php'); // if you remove this, bones will break
 */
 //require_once('library/custom-post-type.php'); // you can disable this if you like
 require_once('library/products-services.php');
+require_once('library/team-members.php');
 
 /*
 3. library/admin.php
