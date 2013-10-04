@@ -26,17 +26,15 @@ Template Name: About
                                                     </nav>
                                                     <!-- nav end -->
                                                     
-                                                    <!-- BREDCRUMBS -->
-                                                    <div id="breadcrumb-holder">
-                                                        <span class="icon red">&#xe060;</span><strong>YOU ARE HERE:</strong> <span class="red">About OIM</span> <!--<span class="slash">/</span> Talent Management <span class="slash">/</span> Individual Performance Management-->
-                                                    </div>
-                                                    <!-- END BREADCRUMBS -->
+                                                    <!-- breadcrum -->
+                                                    <?php if(get_breadcrum()) get_breadcrum(); ?>
+                                                    
                                                     <div id="main" class="eightcol first clearfix" role="main">
                                                     
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
+                                                                
 								<section class="entry-content clearfix" itemprop="articleBody">
                                                                     
                                                                     <?php the_content(); ?>
@@ -69,9 +67,21 @@ Template Name: About
 							<?php endif; ?>
 
 						</div> <!-- end #main -->
-                                                <?php// get_sidebar(); ?><!-- ////////////// RE-INSTATE THIS SIDEBAR WIDGET STUFF -Kyle
+                                                <!--<?php// get_sidebar(); ?>--><!-- ////////////// RE-INSTATE THIS SIDEBAR WIDGET STUFF -Kyle
                                                 <!-- WIDGET START -->
-                                                <!-- WIDGET START -->
+                                                <div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
+                                                    <div class="widget">
+                                                        <h4 class="widgettitle" id="side-widget-about">More about OIM</h4>
+                                                        <ul>
+                                                            <li>Overview</li>
+                                                            <li>BEE</li>
+                                                            <li>Business Ethos</li>
+                                                            <li>CSI</li>
+                                                            <li>Methodology</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- WIDGET END -->
                                                 
 				</div> <!-- end #inner-content -->
 

@@ -154,11 +154,12 @@ function bones_wpsearch($form) {
  * so $post->ID variable is set. Returns false if no feature image is set.
  * 
  * @param string $size
+ * @param int $post_id
  * @return boolean
  */
-function get_feature_src ($size) {
-    if (has_post_thumbnail( $post->ID ) ) {
-        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), $size );
+function get_feature_src ($post_id, $size) {
+    if (has_post_thumbnail( $post_id ) ) {
+        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), $size );
         return $image[0];
     }else{
         return false;
@@ -200,7 +201,6 @@ function get_tagline () {
     }
 }
 
-
 /**
  * A few notes on how to handle the PDF attachment of product pages
  * 
@@ -211,5 +211,6 @@ $img = wp_get_attachment_image_src(get_field('pdf_thumbnail'), 'pdf-thumb');
 <a href="<?php echo $download; ?>"><img src="<?php echo $img[0]; ?>" /></a>
 *
 */
+
 
 ?>

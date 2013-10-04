@@ -63,7 +63,7 @@
                                             <nav>
                                                 <div class="mobile-item"><a href="">Home</a></div>
                                                 <div class="mobile-item"><a href="">Our Methodology</a></div>
-                                                <div class="mobile-item"><a href="">Products &amp Services</a></div>
+                                                <div class="mobile-item"><a href="">Products &amp; Services</a></div>
                                                 <div class="mobile-item"><a href="">About OIM</a></div>
                                                 <div class="mobile-item"><a href="">Clients</a></div>
                                                 <div class="mobile-item"><a href="">Team</a></div>
@@ -86,41 +86,41 @@
                                                 </div>
                                                 <ul class="left sf-menu">
                                                     <li id="border-left">
-                                                        Our Methodology
+                                                        <a href="#">Our Methodology</a>
                                                     </li>
                                                     <li>
-                                                        Product &amp; Services <span class="icons">&#xe0ab;</span>
+                                                        <a href="#">Products &amp; Services <span class="icons">&#xe0ab;</span></a>
                                                         <ul class="secondary-ul">
                                                             <li>
                                                                 <div class="clearfix">
                                                                     <div class="secondary-holder left clearfix">
                                                                           <h2 class="head-secondary icon-people">People</h2>
                                                                           <div class="secondary-link">
-                                                                              Employee engagement (INVOCOMS)
+                                                                              <a href="#">Employee engagement (INVOCOMS)</a>
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              Leadership &amp; team interventions
+                                                                              <a href="#">Leadership &amp; team interventions</a>
                                                                               <div class="flyout">
                                                                                   <ul>
-                                                                                      <li>Competency profiling</li>
-                                                                                      <li>Leadership assessments</li>
-                                                                                      <li>Leadership development</li>
-                                                                                      <li>Coaching</li>
-                                                                                      <li>Team dynamics</li>
-                                                                                      <li>Diversity awareness</li>
+                                                                                      <li><a href="#">Competency profiling</a></li>
+                                                                                      <li><a href="#">Leadership assessments</a></li>
+                                                                                      <li><a href="#">Leadership development</a></li>
+                                                                                      <li><a href="#">Coaching</a></li>
+                                                                                      <li><a href="#">Team dynamics</a></li>
+                                                                                      <li><a href="#">Diversity awareness</a></li>
                                                                                   </ul>
                                                                               </div>
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              Supervisory skills
+                                                                              <a href="#">Supervisory skills</a>
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              Performance &amp; talent management
+                                                                              <a href="#">Performance &amp; talent management</a>
                                                                               <div class="flyout">
                                                                                   <ul>
-                                                                                      <li>Talent management model</li>
-                                                                                      <li>Individual performance management</li>
-                                                                                      <li>Reward consultation</li>
+                                                                                      <li><a href="#">Talent management model</a></li>
+                                                                                      <li><a href="#">Individual performance management</a></li>
+                                                                                      <li><a href="#">Reward consultation</a></li>
                                                                                   </ul>
                                                                               </div>
                                                                           </div>
@@ -128,38 +128,38 @@
                                                                     <div class="secondary-holder secondary-holder-mid left clearfix">
                                                                           <h2 class="head-secondary icon-organisation">Organisation</h2>
                                                                           <div class="secondary-link">
-                                                                               Business strategy
+                                                                               <a href="#">Business strategy</a>
                                                                               <div class="flyout">
                                                                                   <ul>
-                                                                                      <li>Strategic planning</li>
-                                                                                      <li>Strategic &amp; change communication</li>
-                                                                                      <li>Value chain strategy</li>
+                                                                                      <li><a href="#">trategic planning</a></li>
+                                                                                      <li><a href="#">Strategic &amp; change communication</a></li>
+                                                                                      <li><a href="#">Value chain strategy</a></li>
                                                                                   </ul>
                                                                               </div>
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              Business architecture
+                                                                              <a href="#">Business architecture</a>
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              Employee relations
+                                                                              <a href="#">Employee relations</a>
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              Stakeholder perception surveys
+                                                                              <a href="#">Stakeholder perception surveys</a>
                                                                           </div>
                                                                     </div>
                                                                     <div class="secondary-holder left clearfix">
                                                                           <h2 class="head-secondary icon-operation">Operations</h2>
                                                                           <div class="secondary-link">
-                                                                              Business/operations review
+                                                                              <a href="#">Business/operations review</a>
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              Operations management interventions
+                                                                              <a href="#">Operations management interventions</a>
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              Continuous improvement
+                                                                              <a href="#">Continuous improvement</a>
                                                                           </div>
                                                                           <div class="secondary-link">
-                                                                              IT systems management &amp; project resourcing
+                                                                              <a href="#">IT systems management &amp; project resourcing</a>
                                                                           </div>
                                                                     </div>
                                                                 </div>
@@ -167,7 +167,7 @@
                                                         </ul>
                                                     </li>
                                                     <li id="border-right">
-                                                        Contact
+                                                        <a href="#">Contact</a>
                                                     </li>
                                                 </ul>
                                                 <div class="right search-holder">

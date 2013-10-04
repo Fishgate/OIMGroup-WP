@@ -52,9 +52,9 @@ $('.sf-menu li').live('mouseenter', function(){
 });
     
 //------------ TYRONE ADDS RESPONSIVE SLIDES
-$(".rslides").responsiveSlides({
-    "timeout": 10000
-});
+//$(".rslides").responsiveSlides({
+//    "timeout": 10000
+//});
 
 //--check window.resize width of calltoaction
 //$(window).resize(function(){

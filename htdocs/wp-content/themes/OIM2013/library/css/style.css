@@ -904,7 +904,7 @@ h5 a,
 h1,
 .h1 {
   font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1.1em;
 }
 .h1-nostyle {
@@ -1132,13 +1132,16 @@ TYRONE ADDS MEGA MENU STYLES
   border-bottom: 1px dotted #666666;
   color: #5482ab;
   background: url('../images/arrow.png') no-repeat 5px 5px;
-  padding: 0 0 0 35px;
+  padding: 5px 0 5px 35px;
 }
 .flyout {
   padding: 0 0 0 15px;
   height: 0;
   overflow: hidden;
   border-style: none;
+}
+.flyout li {
+  padding: 0 0 5px 5px;
 }
 .expand {
   border-top: 1px dotted #666666;
@@ -1669,11 +1672,12 @@ h4.widgettitle {
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 0;
-  font-weight: 300;
+  font-weight: normal;
   padding: 13px 13px 13px 63px;
   margin: 0 0 30px 0;
   background-repeat: no-repeat;
   font-weight: lighter;
+  line-height: 1.7em;
 }
 .widget ul li {
   /* deep nesting */
@@ -1701,7 +1705,8 @@ h4.widgettitle {
 }
 .footer #inner-footer {
   padding: 25px 0;
-  margin-top: 80px;
+  /*margin-top: 80px;*/
+
 }
 /*
 	if you checked out the link above:
@@ -1745,6 +1750,9 @@ h4.widgettitle {
 }
 .red {
   color: #a22b38;
+}
+.breadcrumbs {
+  padding-right: 0;
 }
 /*============================================
                HIDE TAGLINE
@@ -1797,6 +1805,21 @@ nav[role=navigation] {
 .response-img {
   max-width: 100%;
   min-width: 100%;
+}
+/*============================================
+            SIDEBAR HEADING ICON BG's
+=============================================*/
+#side-widget-about {
+  background-image: url(../images/sidebars/icon-list.jpg);
+}
+/*============================================
+            SIDEBAR <li>'s
+=============================================*/
+.widget ul li {
+  font-size: 12px;
+  color: #666666;
+  border-bottom: 1px dotted #5482ab;
+  padding: 0 0 5px 0;
 }
 /*
 LARGER MOBILE DEVICES
@@ -2250,13 +2273,23 @@ you can add resource intensive styles.
   /*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
   #content-generic {
     position: relative;
-    top: -74px !important;
+    top: -73px !important;
   }
   /*============================================
                  SHOW MEGA-HOLDER
   =============================================*/
   #mega-holder {
     display: block;
+  }
+  /*============================================
+                 BREADCRUMBS
+  =============================================*/
+  .breadcrumbs {
+    padding-right: 34%;
+  }
+  /*=========================== CUSTOM STYLES FOR CUSTOM BUILT SIDEBAR WIDGETS ======*/
+  .side-widget-oim {
+    padding-left: 20px;
   }
 }
 /*

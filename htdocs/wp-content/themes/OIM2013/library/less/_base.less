@@ -147,7 +147,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 h1, .h1 {
         font-family: @sans-serif-light;
-	font-size: 24px;
+	font-size: 21px;
 	line-height: 1.1em;
 }
 .h1-nostyle{
@@ -434,7 +434,7 @@ TYRONE ADDS MEGA MENU STYLES
     border-bottom: 1px dotted @oim_grey;
     color: @oim_blue_light;
     background: url('../images/arrow.png') no-repeat 5px 5px;
-    padding: 0 0 0 35px;
+    padding: 5px 0 5px 35px;
 }
 
 .flyout{
@@ -442,6 +442,9 @@ TYRONE ADDS MEGA MENU STYLES
     height: 0;
     overflow: hidden;
     border-style: none;
+}
+.flyout li{
+    padding: 0 0 5px 5px;
 }
 .expand{
     border-top: 1px dotted @oim_grey;
@@ -1205,11 +1208,12 @@ Class name automatically added to element */
             font-size: 14px;
             margin-top: 0;
 
-            font-weight: 300;
+            font-weight: normal;
             padding: 13px 13px 13px 63px;
             margin: 0 0 30px 0;
             background-repeat: no-repeat;
             font-weight: lighter;
+            line-height: 1.7em;
         }
 
 	.widget {
@@ -1256,7 +1260,7 @@ Class name automatically added to element */
 	clear: both;
 	#inner-footer {
             padding: 25px 0;
-            margin-top: 80px;
+            /*margin-top: 80px;*/
 	}
 	nav {
 		ul.nav {
@@ -1327,6 +1331,9 @@ Class name automatically added to element */
 .red{
     color: @oim_red;
 }
+.breadcrumbs{
+    padding-right: 0;
+}
 
 
 
@@ -1393,4 +1400,20 @@ nav[role=navigation]{
 }
 
 
+/*============================================
+            SIDEBAR HEADING ICON BG's
+=============================================*/
+#side-widget-about{
+    background-image: url(../images/sidebars/icon-list.jpg);
+}
 
+
+/*============================================
+            SIDEBAR <li>'s
+=============================================*/
+.widget ul li{
+    font-size: 12px;
+    color: @oim_grey;
+    border-bottom: 1px dotted @oim_blue_light;
+    padding: 0 0 5px 0;
+}

@@ -15,16 +15,16 @@ Template Name: Home
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
-
+                                    
+                                    <!--==============================================
+                                          TYRONE INSERTS NAV HERE FROM HEADER
+                                    ================================================-->
+                                    <nav role="navigation">
+                                        <?php bones_main_nav(); ?>
+                                    </nav>
+                                    <!-- nav end -->
+                                    
 						<div id="main" class="twelvecol first clearfix" role="main">
-                                                    
-                                                    <!--==============================================
-                                                          TYRONE INSERTS NAV HERE FROM HEADER
-                                                    ================================================-->
-                                                    <nav role="navigation">
-                                                        <?php bones_main_nav(); ?>
-                                                    </nav>
-                                                    <!-- nav end -->
                                                     
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

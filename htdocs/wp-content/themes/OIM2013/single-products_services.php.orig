@@ -1,30 +1,24 @@
 <?php get_header(); ?>
                         
                         <!-- feature image -->
+<<<<<<< HEAD
                         <img class="response-img" src="<?php echo get_feature_src($post->ID, 'feature-small'); ?>" />
+=======
+                        <img class="response-img" src="<?php echo get_feature_src('feature-small'); ?>" />
+>>>>>>> 92d5fba1b40e2265d6b5bd2ecd8fca22421f466d
 
-			<div id="content-generic">
+			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
 
-                                    <!--==============================================
-                                          TYRONE INSERTS NAV HERE FROM HEADER
-                                    ================================================-->
-                                    <nav role="navigation">
-                                        <?php bones_main_nav(); ?>
-                                    </nav>
-                                    <!-- nav end -->
-                                    
-                                    
 						<div id="main" class="eightcol first clearfix" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-                                   
-                                                            <!-- breadcrum -->
-                                                            <?php if(get_breadcrum()) get_breadcrum(); ?>
-                                                            
+                                                                <!-- breadcrum -->
+                                                                <?php if(get_breadcrum()) get_breadcrum(); ?>
+                                    
 								<header class="article-header">
 									<h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
 								</header> <!-- end article header -->
