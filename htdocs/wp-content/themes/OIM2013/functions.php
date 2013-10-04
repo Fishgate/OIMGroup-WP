@@ -32,6 +32,7 @@ require_once('library/bones.php'); // if you remove this, bones will break
 */
 //require_once('library/custom-post-type.php'); // you can disable this if you like
 require_once('library/products-services.php');
+require_once('library/team-members.php');
 
 /*
 3. library/admin.php
@@ -211,6 +212,6 @@ $img = wp_get_attachment_image_src(get_field('pdf_thumbnail'), 'pdf-thumb');
 <a href="<?php echo $download; ?>"><img src="<?php echo $img[0]; ?>" /></a>
 *
 */
-*/
+
 
 ?>

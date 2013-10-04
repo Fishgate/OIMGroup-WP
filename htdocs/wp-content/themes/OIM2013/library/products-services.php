@@ -11,7 +11,7 @@ function custom_post_products_services() {
 			'add_new' => __('Add New', 'bonestheme'), /* The add new menu item */
 			'add_new_item' => __('Add New Product & Service', 'bonestheme'), /* Add New Display Title */
 			'edit' => __( 'Edit', 'bonestheme' ), /* Edit Dialog */
-			'edit_item' => __('Edit Products & Servicess', 'bonestheme'), /* Edit Display Title */
+			'edit_item' => __('Edit Products & Services', 'bonestheme'), /* Edit Display Title */
 			'new_item' => __('New Product & Service', 'bonestheme'), /* New Display Title */
 			'view_item' => __('View', 'bonestheme'), /* View Display Title */
 			'search_items' => __('Search Products & Services', 'bonestheme'), /* Search Custom Type Title */ 
@@ -19,7 +19,7 @@ function custom_post_products_services() {
 			'not_found_in_trash' => __('Nothing found in Trash', 'bonestheme'), /* This displays if there is nothing in the trash */
 			'parent_item_colon' => ''
 			), /* end of arrays */
-			'description' => __( 'This is the example custom post type', 'bonestheme' ), /* Custom Type Description */
+			'description' => __( 'Products and services offered by OIM Group.', 'bonestheme' ), /* Custom Type Description */
 			'public' => true,
 			'publicly_queryable' => true,
 			'exclude_from_search' => false,
@@ -47,7 +47,7 @@ function custom_post_products_services() {
 	*/
 	
 	// now let's add custom categories (these act like categories)
-        register_taxonomy( 'custom_cat', 
+        register_taxonomy( 'products_services_cat', 
             array('products_services'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
             array('hierarchical' => true,     /* if this is true, it acts like categories */             
                     'labels' => array(
@@ -70,7 +70,7 @@ function custom_post_products_services() {
         );   
 
             // now let's add custom tags (these act like categories)
-        register_taxonomy( 'custom_tag', 
+        register_taxonomy( 'products_services_tag', 
             array('products_services'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
             array('hierarchical' => false,    /* if this is false, it acts like tags */                
                     'labels' => array(
