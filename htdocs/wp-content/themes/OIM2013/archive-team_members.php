@@ -6,33 +6,33 @@
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
+                                                    <!--==============================================
+                                                          TYRONE INSERTS NAV HERE FROM HEADER
+                                                    ================================================-->
+                                                    <nav role="navigation">
+                                                        <?php bones_main_nav(); ?>
+                                                    </nav>
+                                                    <!-- nav end -->
+                                    
 
 						<div id="main" class="twelvecol first clearfix" role="main">
 
-						<h1 class="archive-title h2"><?php post_type_archive_title(); ?>123</h1>
-
+                                                    <h1>Our Leadership Team</h1>
+                                                    
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 
-								<header class="article-header">
-
-									<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<p class="byline vcard"><?php
-										printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link());
-									?></p>
-
-								</header> <!-- end article header -->
-
 								<section class="entry-content clearfix">
 
-									<?php the_excerpt(); ?>
+                                                                    <!-- all info for a team member, you can wrap change this however you need to -->
+                                                                    <a href="<?php echo get_permalink($post->ID); ?>">
+                                                                        <img src="<?php echo get_feature_src($post->ID, 'team-small'); ?>" alt="<?php echo get_the_title(); ?>" />
+                                                                        <?php echo get_the_title(); ?>
+                                                                        <?php get_job_descrip(); ?>
+                                                                    </a>
 
 								</section> <!-- end article section -->
-
-								<footer class="article-footer">
-
-								</footer> <!-- end article footer -->
 
 							</article> <!-- end article -->
 

@@ -35,6 +35,10 @@ Template Name: About
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
                                                                 
+                                                                <header class="article-header">
+									<h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
+								</header> <!-- end article header -->
+                                                            
 								<section class="entry-content clearfix" itemprop="articleBody">
                                                                     
                                                                     <?php the_content(); ?>
