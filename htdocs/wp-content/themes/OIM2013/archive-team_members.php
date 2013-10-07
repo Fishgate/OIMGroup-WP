@@ -1,18 +1,18 @@
 <?php get_header(); ?>
                         
                         <!-- feature image -->
-                        <img class="response-img" src="<?php echo get_template_directory_uri() ?>/library/images/team-banner.jpg" />
+                        <img class="response-img" src="<?php echo get_template_directory_uri() ?>/library/images/team-banner.jpg" alt="Team" />
 
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
-                                                    <!--==============================================
-                                                          TYRONE INSERTS NAV HERE FROM HEADER
-                                                    ================================================-->
-                                                    <nav role="navigation">
-                                                        <?php bones_main_nav(); ?>
-                                                    </nav>
-                                                    <!-- nav end -->
+                                                <!--==============================================
+                                                      TYRONE INSERTS NAV HERE FROM HEADER
+                                                ================================================-->
+                                                <nav role="navigation">
+                                                    <?php bones_main_nav(); ?>
+                                                </nav>
+                                                <!-- nav end -->
                                     
 
 						<div id="main" class="twelvecol first clearfix" role="main">
@@ -25,7 +25,7 @@
 
 								<section class="entry-content clearfix">
 
-                                                                    <!-- all info for a team member, you can wrap change this however you need to -->
+                                                                    <!-- all info for a team member, you put whatever markup you need to around this -->
                                                                     <a href="<?php echo get_permalink($post->ID); ?>">
                                                                         <img src="<?php echo get_feature_src($post->ID, 'team-small'); ?>" alt="<?php echo get_the_title(); ?>" />
                                                                         <?php echo get_the_title(); ?>

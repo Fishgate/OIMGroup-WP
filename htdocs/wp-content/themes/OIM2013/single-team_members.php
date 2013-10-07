@@ -1,7 +1,7 @@
 <?php get_header(); ?>
                         
                         <!-- feature image -->
-                        <img class="response-img" src="<?php echo get_template_directory_uri() ?>/library/images/team-banner.jpg" />
+                        <img class="response-img" src="<?php echo get_template_directory_uri() ?>/library/images/team-banner.jpg" alt="Team" />
 
 			<div id="content-generic">
 
@@ -29,7 +29,7 @@
                                                                     <h1>Our Leadership Team</h1>
                                                                         
                                                                     <!-- feature image of team member-->
-                                                                    <img src="<?php echo get_feature_src($post->ID, 'team-large'); ?>" alt="<?php echo get_the_title(); ?>" />
+                                                                    <img class="response-img" src="<?php echo get_feature_src($post->ID, 'team-large'); ?>" alt="<?php echo get_the_title(); ?>" />
                                                                     
                                                                     <h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
 								</header> <!-- end article header -->
