@@ -54,7 +54,7 @@ add_image_size( 'large-feature', 1920, 370, true );
 add_image_size( 'small-feature', 1920, 250, true );
 add_image_size( 'client-logo', 200, 120, true );
 add_image_size( 'team-small', 135, 120, true );
-add_image_size( 'team-large', 615, 220, true );
+add_image_size( 'team-large', 631, 0, true );
 add_image_size( 'pdf-thumb', 137, 194, true);
 
 /************* ACTIVE SIDEBARS ********************/
@@ -213,5 +213,22 @@ $img = wp_get_attachment_image_src(get_field('pdf_thumbnail'), 'pdf-thumb');
 *
 */
 
+/**
+ * Returns the job title custom field for team page
+ * on success. Returns false if does not exist.
+ * 
+ * @return boolean
+ */
+function get_job_descrip () {
+    if(get_field('job_title')) { ?>
+        <section>
+            <span class="">
+                <span><?php echo get_field('job_title'); ?></span>
+            </span>
+        </section>
+    <?php }else{
+        return false;
+    }
+}
 
 ?>
