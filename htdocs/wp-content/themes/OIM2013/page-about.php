@@ -46,8 +46,6 @@ Template Name: About
 
 								</footer> <!-- end article footer -->
 
-								
-
 							</article> <!-- end article -->
 
 							<?php endwhile; else : ?>

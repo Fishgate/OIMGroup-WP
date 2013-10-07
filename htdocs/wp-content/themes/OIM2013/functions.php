@@ -213,5 +213,22 @@ $img = wp_get_attachment_image_src(get_field('pdf_thumbnail'), 'pdf-thumb');
 *
 */
 
+/**
+ * Returns the job title custom field for team page
+ * on success. Returns false if does not exist.
+ * 
+ * @return boolean
+ */
+function get_job_descrip () {
+    if(get_field('job_title')) { ?>
+        <section>
+            <span class="">
+                <span><?php echo get_field('job_title'); ?></span>
+            </span>
+        </section>
+    <?php }else{
+        return false;
+    }
+}
 
 ?>
