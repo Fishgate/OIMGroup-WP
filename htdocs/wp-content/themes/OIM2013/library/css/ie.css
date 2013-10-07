@@ -714,6 +714,17 @@ nav[role=navigation] {
 .side-widget-oim {
   padding-left: 20px;
 }
+/*============================================
+               SIDEBAR TEAM
+=============================================*/
+.widget-team-holder {
+  width: 48%;
+  margin-right: 4%;
+  height: 210px;
+}
+.no-margin-right {
+  margin-right: 0;
+}
 /******************************************************************
 Site Name: OIM
 Author: Tyrone @ Fishgate Advertsing
