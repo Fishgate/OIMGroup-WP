@@ -68,15 +68,118 @@ Template Name: About
                                                 <!--<?php// get_sidebar(); ?>--><!-- ////////////// RE-INSTATE THIS SIDEBAR WIDGET STUFF -Kyle
                                                 <!-- WIDGET START -->
                                                 <div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
+                                                    <!--/// ABOUT \\\-->
                                                     <div class="widget">
                                                         <h4 class="widgettitle" id="side-widget-about">More about OIM</h4>
                                                         <ul>
-                                                            <li>Overview</li>
-                                                            <li>BEE</li>
-                                                            <li>Business Ethos</li>
-                                                            <li>CSI</li>
-                                                            <li>Methodology</li>
+                                                            <li><a href="#">Overview</a></li>
+                                                            <li><a href="#">BEE</a></li>
+                                                            <li><a href="#">Business Ethos</a></li>
+                                                            <li><a href="#">CSI</a></li>
+                                                            <li><a href="#">Methodology</a></li>
                                                         </ul>
+                                                    </div>
+                                                    <!--/// CLIENTS \\\-->
+                                                    <div class="widget">
+                                                        <h4 class="widgettitle" id="side-widget-client">Client case studies</h4>
+                                                        <ul>
+                                                            <li><a href="#">Glacier by Sanlam</a></li>
+                                                            <li><a href="#">Khumani</a></li>
+                                                            <li><a href="#">Iliad</a></li>
+                                                            <li><a href="#">Premier Foods</a></li>
+                                                            <li><a href="#">Tiger Brands</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--/// TEAM \\\-->
+                                                    <div class="widget clearfix">
+                                                        <h4 class="widgettitle" id="side-widget-team">Client case studies</h4>
+                                                        <!-- TEAM MEMBER -->
+                                                        <div class="left widget-team-holder">
+                                                            <a href="#">
+                                                                <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/team/tjaart.jpg" />
+                                                            </a>
+                                                            <center>
+                                                            <p>
+                                                                <a href="#">Tjaart Minaar</a>
+                                                                <br />
+                                                                CEO
+                                                            </p>
+                                                            </center>
+                                                        </div>
+                                                        <!-- TEAM MEMBER -->
+                                                        <div class="left widget-team-holder no-margin-right"><!-- the class "no-margin-right" helps to display the members correctly  -->
+                                                            <a href="#">
+                                                                <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/team/arjen.jpg" />
+                                                            </a>
+                                                            <center>
+                                                            <p>
+                                                                <a href="#">Arjen de Bruin</a>
+                                                                <br />
+                                                                MD: Operations Solutions
+                                                            </p>
+                                                            </center>
+                                                        </div>
+                                                        <!-- TEAM MEMBER -->
+                                                        <div class="left widget-team-holder">
+                                                            <a href="#">
+                                                                <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/team/frank.jpg" />
+                                                            </a>
+                                                            <center>
+                                                            <p>
+                                                                <a href="#">Frank Hickman</a>
+                                                                <br />
+                                                                MD: Performance Improvement
+                                                            </p>
+                                                            </center>
+                                                        </div>
+                                                        <!-- TEAM MEMBER -->
+                                                        <div class="left widget-team-holder no-margin-right"><!-- the class "no-margin-right" helps to display the members correctly  -->
+                                                            <a href="#">
+                                                                <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/team/leezelle.jpg" />
+                                                            </a>
+                                                            <center>
+                                                            <p>
+                                                                <a href="#">Leez&eacute;lle  Kotz&eacute;</a>
+                                                                <br />
+                                                                MD: Leadership Talent
+                                                            </p>
+                                                            </center>
+                                                        </div>
+                                                        <!-- TEAM MEMBER -->
+                                                        <div class="left widget-team-holder">
+                                                            <a href="#">
+                                                                <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/team/marie.jpg" />
+                                                            </a>
+                                                            <center>
+                                                            <p>
+                                                                <a href="#">Mari&eacute; Burger</a>
+                                                                <br />
+                                                                Financial Director
+                                                            </p>
+                                                            </center>
+                                                        </div>
+                                                        <!-- TEAM MEMBER -->
+                                                        <div class="left widget-team-holder no-margin-right"><!-- the class "no-margin-right" helps to display the members correctly  -->
+                                                            <a href="#">
+                                                                <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/team/ben.jpg" />
+                                                            </a>
+                                                            <center>
+                                                            <p>
+                                                                <a href="#">Ben Nel</a>
+                                                                <br />
+                                                                Director
+                                                            </p>
+                                                            </center>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget">
+                                                        <h4>Contact Us</h4>
+                                                        <div class="sidebar-form-holder">
+                                                            <p>Contact OIM for more information</p>
+                                                            <?php include "contact-form-full.php"; ?>
+                                                        </div>
+
+                                                        <a class="sidebar-large-link" href="<?php echo $relpath; ?>contact-us"><img src="<?php echo $relpath; ?>img/sidebars/icon-large-link.jpg" alt=">" />Visit the Contact Us page</a>
                                                     </div>
                                                 </div>
                                                 <!-- WIDGET END -->
