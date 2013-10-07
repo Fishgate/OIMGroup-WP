@@ -1812,6 +1812,12 @@ nav[role=navigation] {
 #side-widget-about {
   background-image: url(../images/sidebars/icon-list.jpg);
 }
+#side-widget-client {
+  background-image: url(../images/sidebars/icon-methodology.jpg);
+}
+#side-widget-team {
+  background-image: url(../images/sidebars/icon-team.jpg);
+}
 /*============================================
             SIDEBAR <li>'s
 =============================================*/
@@ -1820,6 +1826,17 @@ nav[role=navigation] {
   color: #666666;
   border-bottom: 1px dotted #5482ab;
   padding: 0 0 5px 0;
+}
+/*============================================
+               SIDEBAR TEAM
+=============================================*/
+.widget-team-holder {
+  width: 21%;
+  margin-right: 4%;
+  height: 210px;
+}
+.no-margin-right {
+  margin-right: 4%;
 }
 /*
 LARGER MOBILE DEVICES
@@ -2290,6 +2307,17 @@ you can add resource intensive styles.
   /*=========================== CUSTOM STYLES FOR CUSTOM BUILT SIDEBAR WIDGETS ======*/
   .side-widget-oim {
     padding-left: 20px;
+  }
+  /*============================================
+                 SIDEBAR TEAM
+  =============================================*/
+  .widget-team-holder {
+    width: 48%;
+    margin-right: 4%;
+    height: 210px;
+  }
+  .no-margin-right {
+    margin-right: 0;
   }
 }
 /*
