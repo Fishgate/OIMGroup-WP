@@ -1,22 +1,44 @@
 <?php get_header(); ?>
 
+                        <!-- feature image -->
+                        <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/news-banner.jpg" />
+
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
-
+                                    
+                                    <nav role="navigation">
+                                        <?php bones_main_nav(); ?>
+                                    </nav>
+                                                                         
 					<div id="main" class="eightcol first clearfix" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                                                        <!-- breadcrum -->
+                                                        <?php if(get_breadcrum()) get_breadcrum(); ?>
+
+                                                        <!-- The category heading -->
+                                                        <h1><?php $catgory = get_the_category($post->ID); echo $catgory[0]->name; ?></h1>
+
+                                                        <!-- Date block, do whatever you want with this -->
+                                                        <div>
+                                                            <?php echo get_the_time('d'); ?><br />
+                                                            <?php echo get_the_time('M'); ?>
+                                                        </div>
+
+                                                        <!-- The mail button -->
+                                                        <a href="mailto:?body=<?php echo get_permalink($post->ID); ?>"><span class="icon">E</span></a>
+
+                                                        <!-- The print buton -->
+                                                        <a onclick="PrintElem('#main');" href="#"><span class="icon">I</span></a>
+                                            
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
-
+                                                                        <!-- The post heading, these are styled differently to every other H1, maybe this one should be an H2 -->
 									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&amp;</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
-									?></p>
-
+									
 								</header> <!-- end article header -->
 
 								<section class="entry-content clearfix" itemprop="articleBody">
@@ -24,11 +46,8 @@
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
-									<?php the_tags('<p class="tags"><span class="tags-title">' . __('Tags:', 'bonestheme') . '</span> ', ', ', '</p>'); ?>
-
+                                                                        <p class="byline vcard"><?php printf(__('Posted in %1$s', 'bonestheme'), get_the_category_list(', ')); ?></p>
 								</footer> <!-- end article footer -->
-
-								<?php comments_template(); ?>
 
 							</article> <!-- end article -->
 
