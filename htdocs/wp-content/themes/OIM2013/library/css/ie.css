@@ -868,6 +868,33 @@ nav[role=navigation] {
   padding: 0px 15px;
   text-align: center;
 }
+/*============================================
+          SINGLE NEWS DATE AND ARTICLE
+=============================================*/
+.single-news-date-holder {
+  background: #f1f1f1;
+  color: #999;
+  padding: 10px;
+}
+.single-news-left {
+  width: 10%;
+  text-align: center;
+}
+.single-news-article-holder {
+  width: 85%;
+}
+.day p,
+.month p {
+  line-height: 1em;
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+.day p {
+  font-size: 25px;
+}
+.month p {
+  font-size: 20px;
+}
 /******************************************************************
 Site Name: OIM
 Author: Tyrone @ Fishgate Advertsing

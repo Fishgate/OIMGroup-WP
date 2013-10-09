@@ -56,35 +56,37 @@
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-                                                                Article start------------------
                                                                 
-                                                                <!-- Date block -->
-                                                                <div>
-                                                                    <?php echo get_the_time('d'); ?><br />
-                                                                    <?php echo get_the_time('M'); ?>
+                                                                <div class="left single-news-left">
+                                                                    <!-- Date block -->
+                                                                    <div class="single-news-date-holder">
+                                                                        <div class="day"><p><?php echo get_the_time('d'); ?></p></div>
+                                                                        <div class="month"><p><?php echo get_the_time('M'); ?></p></div>
+                                                                    </div>
                                                                 </div>
                                                             
-								<header class="article-header">
+                                                                <div class="right single-news-article-holder">
+                                                                    <header class="article-header">
 
-									<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									
-								</header> <!-- end article header -->
+                                                                            <h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
-								<section class="entry-content clearfix">
+                                                                    </header> <!-- end article header -->
 
-									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
+                                                                    <section class="entry-content clearfix">
 
-									<?php the_excerpt(); ?>
+                                                                            <?php the_post_thumbnail( 'bones-thumb-300' ); ?>
 
-								</section> <!-- end article section -->
+                                                                            <?php the_excerpt(); ?>
 
-								<footer class="article-footer">
-                                                                    
-                                                                    <p class="byline vcard"><?php printf(__('Posted in %1$s', 'bonestheme'), get_csv_cats($post->ID, 'news_cat')); ?></p>
-                                                                    
-								</footer> <!-- end article footer -->
+                                                                    </section> <!-- end article section -->
+                                                                
+                                                            
+                                                                    <footer class="right article-footer">
 
-							------------------Article end
+                                                                        <p class="byline vcard" style="margin: 0;"><?php printf(__('Posted in %1$s', 'bonestheme'), get_csv_cats($post->ID, 'news_cat')); ?></p>
+
+                                                                    </footer> <!-- end article footer -->
+                                                                </div>  
                                                         </article> <!-- end article -->
 
 							<?php endwhile; ?>

@@ -398,7 +398,7 @@ function bones_filter_ptags_on_images($content){
 function bones_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-        return '<div><span class="icon">&#xe0eb;</span>  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'bonestheme') . get_the_title($post->ID).'">'. __('Read More', 'bonestheme') .'</a></div>';
+        return '<div class="left" style="display: inline-block;"><span class="icon readmore-icon">&#xe0eb;</span>  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'bonestheme') . get_the_title($post->ID).'">'. __('Read More', 'bonestheme') .'</a></div>';
 }
 
 /*
