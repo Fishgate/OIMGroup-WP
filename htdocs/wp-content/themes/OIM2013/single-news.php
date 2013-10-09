@@ -10,7 +10,7 @@
                                     <nav role="navigation">
                                         <?php bones_main_nav(); ?>
                                     </nav>
-                                                                         
+                                        
 					<div id="main" class="eightcol first clearfix" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -18,9 +18,9 @@
                                                         <?php if(get_breadcrum()) get_breadcrum(); ?>
 
                                                         <!-- The category heading -->
-                                                        <h1><?php $catgory = get_the_category($post->ID); echo $catgory[0]->name; ?></h1>
+                                                        <h1><?php printf(__('%1$s', 'bonestheme'), get_csv_cats($post->ID, 'news_cat')); ?></h1>
 
-                                                        <!-- Date block, do whatever you want with this -->
+                                                        <!-- Date block -->
                                                         <div>
                                                             <?php echo get_the_time('d'); ?><br />
                                                             <?php echo get_the_time('M'); ?>
@@ -30,8 +30,8 @@
                                                         <a href="mailto:?body=<?php echo get_permalink($post->ID); ?>"><span class="icon">E</span></a>
 
                                                         <!-- The print buton -->
-                                                        <a onclick="PrintElem('#main');" href="#"><span class="icon">I</span></a>
-                                            
+                                                        <a onclick="window.print(); return null;" href=""><span class="icon">I</span></a>
+                                                
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -46,7 +46,7 @@
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
-                                                                        <p class="byline vcard"><?php printf(__('Posted in %1$s', 'bonestheme'), get_the_category_list(', ')); ?></p>
+                                                                        <p class="byline vcard"><?php printf(__('Posted in %1$s', 'bonestheme'), get_csv_cats($post->ID, 'news_cat')); ?></p>
 								</footer> <!-- end article footer -->
 
 							</article> <!-- end article -->

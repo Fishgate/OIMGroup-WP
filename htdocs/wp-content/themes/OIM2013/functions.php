@@ -34,8 +34,9 @@ require_once('library/bones.php'); // if you remove this, bones will break
 require_once('library/products-services.php');
 require_once('library/team-members.php');
 require_once('library/clients.php');
+require_once('library/news.php');
 
-/*
+/*  
 3. library/admin.php
 	- removing some default WordPress dashboard widgets
 	- an example custom dashboard widget
@@ -152,6 +153,15 @@ function bones_wpsearch($form) {
 /************* KYLES FUNCTIONS *****************/
 
 /**
+ * Kill the default posts page, custom posts for life
+ */
+
+function remove_menu_pages() {
+    remove_menu_page('edit.php');  
+}
+add_action( 'admin_menu', 'remove_menu_pages' );
+
+/**
  * Get the src of a featured image, needs to be used within the loop
  * so $post->ID variable is set. Returns false if no feature image is set.
  * 
@@ -228,6 +238,28 @@ function get_job_descrip () {
             </span>
         </section>
     <?php }else{
+        return false;
+    }
+}
+
+/**
+ * Returns comma seperated list of custom taxonomies for custom
+ * post type.
+ * 
+ * @param int $post_id
+ * @param string $taxonomy
+ * @return boolean
+ */
+function get_csv_cats ( $post_id, $taxonomy ) {
+    $category = get_the_terms( $post_id, $taxonomy ); 
+    
+    if($category && !is_wp_error($category)) {
+        foreach($category as $cat) {
+            $cats[] = '<a href="'.get_term_link($cat->slug, $taxonomy).'">'.$cat->name.'</a>';
+        }
+        
+        return implode(', ', $cats);
+    }else{
         return false;
     }
 }
