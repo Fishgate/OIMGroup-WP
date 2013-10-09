@@ -919,10 +919,10 @@ h1,
   font-size: 28px;
 }
 h1 a {
-  color: #ffffff;
+  color: #fff!important;
 }
 h1 a:hover {
-  color: inherit;
+  color: #fff!important;
 }
 h2,
 .h2 {
@@ -2000,6 +2000,9 @@ nav[role=navigation] {
 .month p {
   font-size: 15px;
 }
+.article-header h3 {
+  margin-top: 0;
+}
 /*============================================
                     READMORE
 =============================================*/
@@ -2013,6 +2016,12 @@ nav[role=navigation] {
   display: inline-block;
   position: relative;
   top: -20px;
+}
+/*============================================
+                BORDERING
+=============================================*/
+.bordered-bottom {
+  border-bottom: 1px dotted #666666;
 }
 /*
 LARGER MOBILE DEVICES

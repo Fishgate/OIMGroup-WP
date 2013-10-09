@@ -55,7 +55,7 @@
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+							<article class="bordered-bottom clearfix" id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
                                                                 
                                                                 <div class="left single-news-left">
                                                                     <!-- Date block -->
@@ -120,7 +120,7 @@
 
 						</div> <!-- end #main -->
 
-						<?php get_sidebar(); ?>
+						<?php get_sidebar('news'); ?>
 
 								</div> <!-- end #inner-content -->
 
