@@ -906,6 +906,10 @@ h1,
   font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 21px;
   line-height: 1.1em;
+  color: #ffffff;
+  background: #5482ab;
+  padding: 13px 30px;
+  margin-top: 0px;
 }
 .h1-nostyle {
   background: none!important;
@@ -1740,19 +1744,25 @@ h4.widgettitle {
 /*********************
      BREADCRUMBS
 *********************/
-#breadcrumb-holder {
-  font-size: 12px;
-  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 35px 0 15px 0;
-}
-#breadcrumb-holder .icon {
-  font-size: 14px;
-}
 .red {
   color: #a22b38;
 }
 .breadcrumbs {
   padding-right: 0;
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  padding: 15px 0 30px 0;
+}
+.breadcrumbs span {
+  font-size: 18px;
+  padding: 10px 3px 0 0;
+  position: relative;
+  top: 5px;
+  color: #a22b38;
+}
+.breadcrumbs font {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 /*============================================
                HIDE TAGLINE
@@ -1840,6 +1850,113 @@ nav[role=navigation] {
 }
 .no-margin-right {
   margin-right: 4%;
+}
+/*============================================
+               SIDEBAR STYLES
+=============================================*/
+.widget {
+  /*margin: 0 0 50px 0;*/
+}
+.widget .sidebar-select {
+  background: url('../images/sidebars/icon-dropdown.jpg') #f8f8f8 no-repeat right;
+  padding: 14px 14px 14px 29px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 0 30px 0;
+}
+#contact-form p {
+  text-align: center;
+}
+.widget .sidebar-content-holder {
+  background: #F8F8F8;
+  padding: 13px 30px;
+  /*text-align: center;*/
+
+  margin: 0 0 30px 0;
+}
+.widget .sidebar-form-holder {
+  background: #F8F8F8;
+  padding: 30px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.widget .sidebar-large-link {
+  border-top: thin dotted #999;
+  border-bottom: thin dotted #999;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+.widget .sidebar-form-holder p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.widget input,
+.widget textarea {
+  margin: 0 0 5px 0;
+  border: none;
+  color: #666;
+}
+.widget input {
+  width: 100%;
+  height: 35px;
+  padding: 0 13px 0 13px;
+}
+.widget textarea {
+  width: 100%;
+  height: 150px;
+  padding: 11px 13px;
+  resize: vertical;
+}
+.base-hide {
+  display: none;
+}
+.widget form {
+  margin: 30px 0 0 0;
+}
+.widget form #contact-submit {
+  color: white;
+  background: url('../images/sidebars/icon-submit.jpg') no-repeat #b32c32 right;
+  text-align: left;
+  width: 120px;
+  height: 39px;
+  padding: 2px 0 0 20px;
+  margin: 30px 0 0 0;
+}
+.widget ul {
+  padding: 0;
+  margin: 0;
+}
+.widget ul li {
+  padding: 8px 0px 8px 30px;
+  margin: 0;
+  list-style-type: none;
+  background: url('../images/sidebars/icon-list-item.jpg') no-repeat left;
+}
+.widget .team-row > div:first-child {
+  margin: 0 30px 30px 0;
+}
+.widget .team-member {
+  float: left;
+  width: 135px;
+  margin: 0 0 30px 0;
+}
+.widget .team-member img {
+  margin: 0 0 30px 0;
+}
+.widget .team-member p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/*============================================
+               TEAM MEMBER STYLING
+=============================================*/
+.member-name {
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /*
 LARGER MOBILE DEVICES
@@ -2329,7 +2446,7 @@ you can add resource intensive styles.
     /*margin: 0 0 50px 0;*/
   }
   .widget .sidebar-select {
-    background: url('../img/sidebars/icon-dropdown.jpg') #f8f8f8 no-repeat right;
+    background: url('../images/sidebars/icon-dropdown.jpg') #f8f8f8 no-repeat right;
     padding: 14px 14px 14px 29px;
     font-size: 14px;
     cursor: pointer;
@@ -2366,21 +2483,25 @@ you can add resource intensive styles.
     color: #666;
   }
   .widget input {
-    width: 214px;
+    width: 100%;
     height: 35px;
     padding: 0 13px 0 13px;
   }
   .widget textarea {
-    width: 214px;
+    width: 100%;
     height: 53px;
     padding: 11px 13px;
+    resize: vertical;
+  }
+  .base-hide {
+    display: block;
   }
   .widget form {
     margin: 30px 0 0 0;
   }
   .widget form #contact-submit {
     color: white;
-    background: url('../img/sidebars/icon-submit.jpg') no-repeat #b32c32 right;
+    background: url('../images/sidebars/icon-submit.jpg') no-repeat #b32c32 right;
     text-align: left;
     width: 120px;
     height: 39px;
@@ -2392,14 +2513,10 @@ you can add resource intensive styles.
     margin: 0;
   }
   .widget ul li {
-    border-top: thin dotted #999;
     padding: 8px 0px 8px 30px;
     margin: 0;
     list-style-type: none;
-    background: url('../img/sidebars/icon-list-item.jpg') no-repeat left;
-  }
-  .widget ul .last-li {
-    border-bottom: thin dotted #999;
+    background: url('../images/sidebars/icon-list-item.jpg') no-repeat left;
   }
   .widget .team-row > div:first-child {
     margin: 0 30px 30px 0;
@@ -2415,6 +2532,54 @@ you can add resource intensive styles.
   .widget .team-member p {
     margin: 0;
     padding: 0;
+    text-align: center;
+  }
+  /*============================================
+                 TEAM ARCHIVE
+  =============================================*/
+  /*.team-individual{
+      width: 15%;
+      display: inline-block;
+  }*/
+  .team-job-title {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: #666;
+  }
+  /*============================================
+           DYNAMICALLY SPACED TEAM ARCHIVE
+  =============================================*/
+  #stretch-container {
+    /*border: 2px dashed #444;
+      height: 125px;*/
+  
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+  }
+  .box1 {
+    width: 15%;
+    /*height: 125px;*/
+  
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+  }
+  .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+  }
+  .bordered-top-bottom {
+    border-top: 1px dotted #666666;
+    border-bottom: 1px dotted #666666;
+  }
+  .team-linkdin {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 0px 15px;
     text-align: center;
   }
 }

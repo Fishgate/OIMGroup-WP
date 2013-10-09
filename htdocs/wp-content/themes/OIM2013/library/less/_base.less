@@ -149,6 +149,11 @@ h1, .h1 {
         font-family: @sans-serif-light;
 	font-size: 21px;
 	line-height: 1.1em;
+
+        color: @white;
+        background: @oim_blue_light;
+        padding: 13px 30px;
+        margin-top: 0px;
 }
 .h1-nostyle{
     background: none!important;
@@ -1320,20 +1325,28 @@ Class name automatically added to element */
 /*********************
      BREADCRUMBS
 *********************/
-#breadcrumb-holder{
-    font-size: 12px;
-    font-family: @sans-serif-light;
-    margin: 35px 0 15px 0;
-}
-#breadcrumb-holder .icon{
-    font-size: 14px;
-}
 .red{
     color: @oim_red;
 }
 .breadcrumbs{
     padding-right: 0;
+    font-family: @sans-serif-light;
+    font-size: 12px;
+    padding: 15px 0 30px 0;
+
+    span{
+        font-size: 18px;
+        padding: 10px 3px 0 0;
+        position: relative;
+        top: 5px;
+        color: @oim_red;
+    }
+    font{
+        font-family: @sans-serif-generic;
+        font-weight: 400;
+    }
 }
+
 
 
 
@@ -1437,4 +1450,133 @@ nav[role=navigation]{
 }
 .no-margin-right{
     margin-right: 4%;
+}
+
+
+
+/*============================================
+               SIDEBAR STYLES
+=============================================*/
+.widget {
+    /*margin: 0 0 50px 0;*/    
+}
+
+.widget .sidebar-select {
+    background: url('../images/sidebars/icon-dropdown.jpg') #F8F8F8 no-repeat right;
+    padding: 14px 14px 14px 29px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 0 30px 0;
+}
+#contact-form p{
+    text-align: center;
+}
+.widget .sidebar-content-holder {
+    background: #F8F8F8;
+    padding: 13px 30px;
+    /*text-align: center;*/
+    margin: 0 0 30px 0;
+}
+
+.widget .sidebar-form-holder {
+    background: #F8F8F8;
+    padding: 30px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.widget .sidebar-large-link {
+    border-top: thin dotted #999;
+    border-bottom: thin dotted #999;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.widget .sidebar-form-holder p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.widget input, 
+.widget textarea {
+    margin: 0 0 5px 0;
+    border: none;
+    color: #666;
+}
+
+.widget input {
+    width: 100%;
+    height: 35px;
+    padding: 0 13px 0 13px;
+}
+
+.widget textarea {
+    width: 100%;
+    height: 150px;
+    padding: 11px 13px;
+    resize: vertical;
+}
+.base-hide{
+    display: none;
+}
+.widget form {
+    margin: 30px 0 0 0;
+}
+
+.widget form #contact-submit {
+    color: white;
+    background: url('../images/sidebars/icon-submit.jpg') no-repeat #B32C32 right;
+    text-align: left;
+    width: 120px;
+    height: 39px;
+    padding: 2px 0 0 20px;
+    margin: 30px 0 0 0;
+}
+
+.widget ul {
+    padding: 0;
+    margin: 0;
+}
+
+.widget ul li {
+    padding: 8px 0px 8px 30px;
+    margin: 0;
+    list-style-type: none;
+    background: url('../images/sidebars/icon-list-item.jpg') no-repeat left;
+}
+
+
+.widget .team-row > div:first-child {
+    margin: 0 30px 30px 0;
+}
+
+.widget .team-member {
+    float: left;
+    width: 135px;
+    margin: 0 0 30px 0;
+}
+
+.widget .team-member img {
+    margin: 0 0 30px 0;
+}
+
+.widget .team-member p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+
+/*============================================
+               TEAM MEMBER STYLING
+=============================================*/
+.member-name{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: @sans-serif-light;
+    
 }

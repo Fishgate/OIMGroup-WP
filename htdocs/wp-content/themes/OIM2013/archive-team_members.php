@@ -3,7 +3,7 @@
                         <!-- feature image -->
                         <img class="response-img" src="<?php echo get_template_directory_uri() ?>/library/images/team-banner.jpg" alt="Team" />
 
-			<div id="content">
+			<div id="content-generic">
 
 				<div id="inner-content" class="wrap clearfix">
                                                 <!--==============================================
@@ -14,28 +14,41 @@
                                                 </nav>
                                                 <!-- nav end -->
                                     
+                                                <!-- breadcrum -->
+                                                <?php if(get_breadcrum()) get_breadcrum(); ?>
 
-						<div id="main" class="twelvecol first clearfix" role="main">
-
-                                                    <h1>Our Leadership Team</h1>
+						<div id="main" class="team-archive twelvecol first clearfix" role="main">
                                                     
+                                                    <!--<div id="stretch-container">
+                                                        <div class="box1"></div>
+                                                        <div class="box2"></div>
+                                                        <div class="box3"></div>
+                                                        <div class="box4"></div>
+                                                        <span class="stretch"></span>
+                                                    </div>-->
+                                                    
+                                                    <h1>Our Leadership Team</h1>
+                                                    <div id="stretch-container" class="clearfix">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                                                    <div class="box1">
+							<!--<article class="team-individual clearfix" id="post-<?php// the_ID(); ?>" <?php// post_class('clearfix'); ?> role="article">-->
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-
-								<section class="entry-content clearfix">
+								<!--<section class="entry-content clearfix">-->
 
                                                                     <!-- all info for a team member, you put whatever markup you need to around this -->
-                                                                    <a href="<?php echo get_permalink($post->ID); ?>">
-                                                                        <img src="<?php echo get_feature_src($post->ID, 'team-small'); ?>" alt="<?php echo get_the_title(); ?>" />
-                                                                        <?php echo get_the_title(); ?>
-                                                                        <?php get_job_descrip(); ?>
-                                                                    </a>
+                                                                        <a href="<?php echo get_permalink($post->ID); ?>">
+                                                                            <img class="response-img" src="<?php echo get_feature_src($post->ID, 'team-small'); ?>" alt="<?php echo get_the_title(); ?>" />
+                                                                            <center>
+                                                                                <P style="margin-top: 0;"><span style="font-weight: bold!important; font-size: 13px;"><?php echo get_the_title(); ?></span><br />
+                                                                                <?php get_job_descrip(); ?></p>
+                                                                            </center>
+                                                                        </a>
+                                                                    
+								<!--</section>--> <!-- end article section -->
 
-								</section> <!-- end article section -->
-
-							</article> <!-- end article -->
-
+							<!--</article>--> <!-- end article -->
+                                                    </div>
+                                                    
 							<?php endwhile; ?>
 
 									<?php if (function_exists('bones_page_navi')) { ?>
@@ -64,7 +77,15 @@
 									</article>
 
 							<?php endif; ?>
-
+                                                        <span class="stretch"></span>
+                                                    </div><!-- END STRETCH CONTAINER -->
+                                                    
+                                                    <center>
+                                                        <div class="bordered-top-bottom team-linkdin">
+                                                            <a href="#"><p>Meet the rest of the team</p></a>
+                                                        </div>
+                                                    </center>
+                                                    
 						</div> <!-- end #main -->
 
 								</div> <!-- end #inner-content -->

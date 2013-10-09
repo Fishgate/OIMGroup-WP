@@ -441,6 +441,7 @@ nav[role=navigation]{
     margin-right: 0;
 }
 
+
 /*============================================
                SIDEBAR STYLES
 =============================================*/
@@ -448,10 +449,8 @@ nav[role=navigation]{
     /*margin: 0 0 50px 0;*/    
 }
 
-
-
 .widget .sidebar-select {
-    background: url('../img/sidebars/icon-dropdown.jpg') #F8F8F8 no-repeat right;
+    background: url('../images/sidebars/icon-dropdown.jpg') #F8F8F8 no-repeat right;
     padding: 14px 14px 14px 29px;
     font-size: 14px;
     cursor: pointer;
@@ -494,24 +493,27 @@ nav[role=navigation]{
 }
 
 .widget input {
-    width: 214px;
+    width: 100%;
     height: 35px;
     padding: 0 13px 0 13px;
 }
 
 .widget textarea {
-    width: 214px;
+    width: 100%;
     height: 53px;
     padding: 11px 13px;
+    resize: vertical;
 }
-
+.base-hide{
+    display: block;
+}
 .widget form {
     margin: 30px 0 0 0;
 }
 
 .widget form #contact-submit {
     color: white;
-    background: url('../img/sidebars/icon-submit.jpg') no-repeat #B32C32 right;
+    background: url('../images/sidebars/icon-submit.jpg') no-repeat #B32C32 right;
     text-align: left;
     width: 120px;
     height: 39px;
@@ -525,16 +527,12 @@ nav[role=navigation]{
 }
 
 .widget ul li {
-    border-top: thin dotted #999;
     padding: 8px 0px 8px 30px;
     margin: 0;
     list-style-type: none;
-    background: url('../img/sidebars/icon-list-item.jpg') no-repeat left;
+    background: url('../images/sidebars/icon-list-item.jpg') no-repeat left;
 }
 
-.widget ul .last-li {
-    border-bottom: thin dotted #999;
-}
 
 .widget .team-row > div:first-child {
     margin: 0 30px 30px 0;
@@ -553,5 +551,61 @@ nav[role=navigation]{
 .widget .team-member p {
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+
+/*============================================
+               TEAM ARCHIVE
+=============================================*/
+/*.team-individual{
+    width: 15%;
+    display: inline-block;
+}*/
+.team-job-title{
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: #666;
+}
+
+
+
+
+
+/*============================================
+         DYNAMICALLY SPACED TEAM ARCHIVE
+=============================================*/
+#stretch-container {
+    /*border: 2px dashed #444;
+    height: 125px;*/
+    
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+
+}
+
+.box1{
+    width: 15%;
+    /*height: 125px;*/
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+.bordered-top-bottom{
+    border-top: 1px dotted @oim_grey;
+    border-bottom: 1px dotted @oim_grey;
+}
+.team-linkdin{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 0px 15px;
     text-align: center;
 }
