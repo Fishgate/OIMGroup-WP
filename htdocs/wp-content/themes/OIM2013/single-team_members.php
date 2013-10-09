@@ -15,14 +15,16 @@
                                     </nav>
                                     <!-- nav end -->
                                     
+                                    <!-- breadcrum -->
+                                    <?php if(get_breadcrum()) get_breadcrum(); ?>
+                                    
 						<div id="main" class="eightcol first clearfix" role="main">
-
+                                                    
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
                                    
-                                                            <!-- breadcrum -->
-                                                            <?php if(get_breadcrum()) get_breadcrum(); ?>
+                                                            
                                                             
 								<header class="article-header">
                                                                     <!-- static heading, this is here on every team member page -->
@@ -31,7 +33,7 @@
                                                                     <!-- feature image of team member-->
                                                                     <img class="response-img" src="<?php echo get_feature_src($post->ID, 'team-large'); ?>" alt="<?php echo get_the_title(); ?>" />
                                                                     
-                                                                    <h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
+                                                                    <span class="member-name single-title custom-post-type-title"><?php the_title(); ?></span>
 								</header> <!-- end article header -->
                                                                 
                                                                 <!-- job description/title custom field -->
@@ -65,7 +67,7 @@
 
 						</div> <!-- end #main -->
 
-						<?php get_sidebar(); ?>
+						<?php get_sidebar('team'); ?>
 
 				</div> <!-- end #inner-content -->
 

@@ -90,7 +90,7 @@ function bones_register_sidebars() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
-
+        
 	To call the sidebar in your template, you can just copy
 	the sidebar.php file and rename it to your sidebar's name.
 	So using the above example, it would be:
@@ -187,7 +187,7 @@ function get_breadcrum () {
     if(function_exists('bcn_display')) { ?>
                                                                 
     <div class="breadcrumbs">
-        <span class="icon">&#xe060;</span>YOU ARE HERE: <?php bcn_display(); ?>
+        <span class="icon">&#xe060;</span><font>YOU ARE HERE:</font> <?php bcn_display(); ?>
     </div>
         
     <?php }else{
@@ -232,11 +232,9 @@ $img = wp_get_attachment_image_src(get_field('pdf_thumbnail'), 'pdf-thumb');
  */
 function get_job_descrip () {
     if(get_field('job_title')) { ?>
-        <section>
-            <span class="">
+            <span class="team-job-title">
                 <span><?php echo get_field('job_title'); ?></span>
             </span>
-        </section>
     <?php }else{
         return false;
     }
