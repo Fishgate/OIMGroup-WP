@@ -1,6 +1,6 @@
 				<div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
                                     <div class="widget clearfix">
-                                        <h4 class="widgettitle" id="side-widget-team">Client case studies</h4>
+                                        <h4 class="widgettitle" id="side-widget-team">Other Team Members</h4>
                                         <!-- TEAM MEMBER -->
                                         <div class="left widget-team-holder">
                                             <a href="#">
