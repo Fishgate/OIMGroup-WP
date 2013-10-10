@@ -35,6 +35,7 @@ require_once('library/products-services.php');
 require_once('library/team-members.php');
 require_once('library/clients.php');
 require_once('library/news.php');
+require_once('library/client-case-studies.php');
 
 /*  
 3. library/admin.php
