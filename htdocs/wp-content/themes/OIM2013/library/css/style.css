@@ -2023,6 +2023,48 @@ nav[role=navigation] {
 .bordered-bottom {
   border-bottom: 1px dotted #666666;
 }
+.bordered-top-bottom {
+  border-top: 1px dotted #666666;
+  border-bottom: 1px dotted #666666;
+}
+/*============================================
+                COLOR
+=============================================*/
+.white {
+  color: #fff;
+}
+/*============================================
+         DYNAMICALLY SPACED TEAM ARCHIVE
+=============================================*/
+#stretch-container {
+  /*border: 2px dashed #444;
+    height: 125px;*/
+
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+.box1 {
+  width: 48%;
+  /*height: 125px;*/
+
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+.team-linkdin {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 0px 15px;
+  text-align: center;
+}
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -2119,8 +2161,37 @@ tweeners.
     width: 100%;
   }
   /*============================================
-          RESONSIVE SLIDES CALL TO ACTION
+           DYNAMICALLY SPACED TEAM ARCHIVE
   =============================================*/
+  #stretch-container {
+    /*border: 2px dashed #444;
+      height: 125px;*/
+  
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+  }
+  .box1 {
+    width: 30%;
+    /*height: 125px;*/
+  
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+  }
+  .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+  }
+  .team-linkdin {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 0px 15px;
+    text-align: center;
+  }
 }
 /*
 TABLET & SMALLER LAPTOPS
@@ -2636,10 +2707,6 @@ you can add resource intensive styles.
     display: inline-block;
     font-size: 0;
     line-height: 0;
-  }
-  .bordered-top-bottom {
-    border-top: 1px dotted #666666;
-    border-bottom: 1px dotted #666666;
   }
   .team-linkdin {
     display: inline-block;

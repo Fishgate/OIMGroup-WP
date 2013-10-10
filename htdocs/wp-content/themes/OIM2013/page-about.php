@@ -176,6 +176,7 @@ Template Name: About
                                                             </center>
                                                         </div>
                                                     </div>
+                                                    <!--/// CONTACT \\\-->
                                                     <div class="widget">
                                                         <h4 class="widgettitle" id="side-widget-contact">Contact Us</h4>
                                                         <div class="sidebar-form-holder">
