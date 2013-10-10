@@ -56,7 +56,7 @@
                                         </div>
                                         
                                         <div id="menu-mobile" class="right">
-                                            <a href="tel:+27219138814"><span class="icon">@</span></a> <a href="#"><span class="icon">&#xe00f;</span></a>
+                                            <a href="tel:+27219138814"><span class="icon" style="display: inline-block; margin-right: 25px;">@</span></a> <a href="#"><span style="display: inline-block;" class="icon">&#xe00f;</span></a>
                                         </div>
                                         
                                         <div id="mobile-menu-holder">

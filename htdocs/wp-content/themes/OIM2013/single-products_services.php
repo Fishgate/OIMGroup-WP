@@ -15,17 +15,16 @@
                                     </nav>
                                     <!-- nav end -->
                                     
+                                    <!-- breadcrum -->
+                                    <?php if(get_breadcrum()) get_breadcrum(); ?>
 						<div id="main" class="eightcol first clearfix" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
                                    
-                                                            <!-- breadcrum -->
-                                                            <?php if(get_breadcrum()) get_breadcrum(); ?>
-                                                            
 								<header class="article-header">
-									<h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
+									<h1 class="white single-title custom-post-type-title"><?php the_title(); ?></h1>
 								</header> <!-- end article header -->
                                                                 
                                                                 <!-- tag line custom field start -->
