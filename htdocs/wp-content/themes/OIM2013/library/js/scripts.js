@@ -108,11 +108,8 @@ $('.mobile-item').live('mouseleave', function(){
 //-- HOVERS MAIN MENU ICON
 $('#menu-mobile').live('mouseenter', function(){
     $(this).css('cursor', 'pointer');
-    $('#menu-mobile span').css('color', '#A22B38');
 });
-$('#menu-mobile').live('mouseleave', function(){
-    $('#menu-mobile span').css('color', '');
-});
+
 //-- CLICKS
 $('#menu-mobile').live('click', function(){
     $('#mobile-menu-holder').slideToggle('fast');

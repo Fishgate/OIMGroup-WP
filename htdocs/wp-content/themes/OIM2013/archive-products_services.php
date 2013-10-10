@@ -6,11 +6,11 @@
 
 						<div id="main" class="eightcol first clearfix" role="main">
 
-						<h1 class="archive-title h2"><?php post_type_archive_title(); ?></h1>
+						<h1 class="archive-title"><?php post_type_archive_title(); ?></h1>
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+							<article class="bordered-bottom" id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 
 								<header class="article-header">
 
@@ -32,7 +32,7 @@
 								</footer> <!-- end article footer -->
 
 							</article> <!-- end article -->
-
+                                                        <br />
 							<?php endwhile; ?>
 
 									<?php if (function_exists('bones_page_navi')) { ?>

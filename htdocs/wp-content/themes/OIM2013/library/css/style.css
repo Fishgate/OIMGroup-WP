@@ -1018,7 +1018,6 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 .nav {
-  border: 1px solid red;
   border-bottom: 0;
   /* end .menu li */
 
@@ -1057,6 +1056,19 @@ and more scalable.
   padding-left: 30px;
 }
 /* end .nav */
+/*---------------------------------------------------------
+            MOBILE MENU STYLES
+----------------------------------------------------------*/
+#mobile-menu-holder .top-nav {
+  background: #f8f8f8;
+}
+#mobile-menu-holder .top-nav ul {
+  margin: 0;
+}
+#mobile-menu-holder .top-nav a:hover {
+  color: #ffffff;
+  background: #a22b38;
+}
 /*============================================
         RESONSIVE SLIDES CALL TO ACTION
 =============================================*/

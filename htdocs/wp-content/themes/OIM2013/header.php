@@ -56,12 +56,13 @@
                                         </div>
                                         
                                         <div id="menu-mobile" class="right">
-                                            MENU <span class="icon">&#xe00f;</span>
+                                            <a href="tel:+27219138814"><span class="icon">@</span></a> <a href="#"><span class="icon">&#xe00f;</span></a>
                                         </div>
                                         
                                         <div id="mobile-menu-holder">
                                             <nav>
-                                                <div class="mobile-item"><a href="">Home</a></div>
+                                                <?php bones_main_nav_fallback('mobile_menu'); ?>
+                                                <!--<div class="mobile-item"><a href="">Home</a></div>
                                                 <div class="mobile-item"><a href="">Our Methodology</a></div>
                                                 <div class="mobile-item"><a href="">Products &amp; Services</a></div>
                                                 <div class="mobile-item"><a href="">About OIM</a></div>
@@ -70,7 +71,7 @@
                                                 <div class="mobile-item"><a href="">News</a></div>
                                                 <div class="mobile-item"><a href="">Careers</a></div>
                                                 <div class="mobile-item"><a href="">Partnerships</a></div>
-                                                <div class="mobile-item"><a href="">Contact</a></div>
+                                                <div class="mobile-item"><a href="">Contact</a></div>-->
                                             </nav>
                                         </div>
 
@@ -167,7 +168,7 @@
                                                         </ul>
                                                     </li>
                                                     <li class="mega-parent" id="border-right">
-                                                        <a class="parent-a" href="#">Contact</a>
+                                                        <a class="parent-a" href="<?php echo site_url('contact'); ?>">Contact</a>
                                                     </li>
                                                 </ul>
                                                 <div class="right search-holder">

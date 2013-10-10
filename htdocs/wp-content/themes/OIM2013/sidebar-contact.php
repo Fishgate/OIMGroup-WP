@@ -16,6 +16,6 @@
                                             </form>
                                         </div>
 
-                                        <a class="sidebar-large-link" href="#"><img src="<?php echo get_template_directory_uri(); ?>/library/images/sidebars/icon-large-link.jpg" alt=">" />Visit the Contact Us page</a>
+                                        <a class="sidebar-large-link" href="#"><img src="<?php echo get_template_directory_uri(); ?>/library/images/sidebars/icon-large-link.jpg" alt=">" /><p>Visit the Contact Us page</p></a>
                                     </div>
 				</div>
