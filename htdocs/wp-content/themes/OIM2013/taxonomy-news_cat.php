@@ -1,36 +1,58 @@
 <?php get_header(); ?>
 
+                        <!-- header image -->
+                        <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/news-banner.jpg" />
+
 			<div id="content">
-                                
+                            
 				<div id="inner-content" class="wrap clearfix">
+                                    
+                                        <nav role="navigation">
+                                            <?php bones_main_nav(); ?>
+                                        </nav>
+                                    
+                                        <!-- breadcrum -->
+                                        <?php if(get_breadcrum()) get_breadcrum(); ?>
 
 						<div id="main" class="eightcol first clearfix" role="main">
 
-							<h1 class="archive-title h2"><span><?php _e("Posts Categorized:", "bonestheme"); ?></span> <?php single_cat_title(); ?></h1>
+							<h1><?php single_cat_title(); ?></h1>
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+							<article class="bordered-bottom clearfix" id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+                                                                
+                                                                <div class="left single-news-left">
+                                                                    <!-- Date block -->
+                                                                    <div class="single-news-date-holder">
+                                                                        <div class="day"><p><?php echo get_the_time('d'); ?></p></div>
+                                                                        <div class="month"><p><?php echo get_the_time('M'); ?></p></div>
+                                                                    </div>
+                                                                </div>
+                                                            
+                                                                <div class="right single-news-article-holder">
+                                                                    <header class="article-header">
 
-								<header class="article-header">
+                                                                            <h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
-									<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<p class="byline vcard"><?php
-										printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link(), get_the_term_list( get_the_ID(), 'custom_cat', "" ));
-									?></p>
+                                                                    </header> <!-- end article header -->
 
-								</header> <!-- end article header -->
+                                                                    <section class="entry-content clearfix">
 
-								<section class="entry-content">
-									<?php the_excerpt('<span class="read-more">' . __('Read More &raquo;', 'bonestheme') . '</span>'); ?>
+                                                                            <?php the_post_thumbnail( 'bones-thumb-300' ); ?>
 
-								</section> <!-- end article section -->
+                                                                            <?php the_excerpt(); ?>
 
-								<footer class="article-footer">
+                                                                    </section> <!-- end article section -->
+                                                                
+                                                            
+                                                                    <footer class="right article-footer">
 
-								</footer> <!-- end article footer -->
+                                                                        <p class="byline vcard" style="margin: 0;"><?php printf(__('Posted in %1$s', 'bonestheme'), get_csv_cats($post->ID, 'news_cat')); ?></p>
 
-							</article> <!-- end article -->
+                                                                    </footer> <!-- end article footer -->
+                                                                </div>  
+                                                        </article> <!-- end article -->
 
 							<?php endwhile; ?>
 
