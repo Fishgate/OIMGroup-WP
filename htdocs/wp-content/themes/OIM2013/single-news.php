@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-                        <!-- feature image -->
+                        <!-- header image -->
                         <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/news-banner.jpg" />
 
 			<div id="content-generic">

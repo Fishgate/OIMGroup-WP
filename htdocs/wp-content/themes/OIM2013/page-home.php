@@ -8,9 +8,9 @@ Template Name: Home
 
 
 
-<!-- Header Slideshow  -->
-<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
-<!-- END Header Slideshow  -->
+                        <!-- Header Slideshow  -->
+                        <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+                        <!-- END Header Slideshow  -->
 
 			<div id="content">
 
@@ -67,13 +67,7 @@ Template Name: Home
                                                                             </div>
                                                                         </div>
                                                                     
-                                                                    <!-- TYRONE ADDS CLIENTS ROTATING SLIDER-->
-                                                                    <h2>Clients</h2>
-                                                                    <ul id="scroller">
-                                                                        <li><img src="<?php echo get_template_directory_uri(); ?>/library/images/1.jpg" width="290" height="50"></li>
-                                                                        <li><img src="<?php echo get_template_directory_uri(); ?>/library/images/2.jpg" width="290" height="50"></li>
-                                                                        <li><img src="<?php echo get_template_directory_uri(); ?>/library/images/3.jpg" width="290" height="50"></li>
-                                                                    </ul>
+                                                                        <?php if ( function_exists(get_client_scroller()) && get_client_scroller() ) get_client_scroller(); ?>
                                                                     
 								</section> <!-- end article section -->
 

@@ -3,7 +3,7 @@
                         <!-- feature image -->
                         <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/news-banner.jpg" />
 
-			<div id="content-generic">
+			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
                                     
@@ -16,7 +16,7 @@
 
 						<div id="main" class="eightcol first clearfix" role="main">
                                                         
-                                                        <h1>News</h1>
+                                                        <h1>Client Case Studies</h1>
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -47,8 +47,6 @@
                                                                 
                                                             
                                                                     <footer class="right article-footer">
-
-                                                                        <p class="byline vcard" style="margin: 0;"><?php printf(__('Posted in %1$s', 'bonestheme'), get_csv_cats($post->ID, 'news_cat')); ?></p>
 
                                                                     </footer> <!-- end article footer -->
                                                                 </div>  

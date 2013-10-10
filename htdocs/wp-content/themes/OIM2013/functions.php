@@ -35,6 +35,7 @@ require_once('library/products-services.php');
 require_once('library/team-members.php');
 require_once('library/clients.php');
 require_once('library/news.php');
+require_once('library/client-case-studies.php');
 
 /*  
 3. library/admin.php
@@ -260,6 +261,30 @@ function get_csv_cats ( $post_id, $taxonomy ) {
     }else{
         return false;
     }
+}
+
+/**
+ * Outputs a client scroller populated by the Clients custom post type
+ * Returns false if there are no clients entries added in the backend
+ * 
+ * @return boolean
+ */
+function get_client_scroller () {
+    $client_logos = new WP_Query( 'post_type=clients' );
+
+    if ( $client_logos->have_posts() ) : ?>
+        <h2>Clients</h2>
+        <ul id="scroller">
+            <?php while ( $client_logos->have_posts() ) :
+                $client_logos->the_post(); ?>
+                <li><img src="<?php echo get_feature_src(get_the_ID(), 'client-logo') ?>" alt="<?php echo get_the_title(); ?>" /></li>
+            <?php endwhile;
+            
+            wp_reset_postdata(); ?>
+        </ul>
+    <?php else :
+        return false;
+    endif;
 }
 
 ?>
