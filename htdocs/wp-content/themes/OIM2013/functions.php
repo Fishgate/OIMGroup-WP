@@ -263,8 +263,8 @@ function get_csv_cats ( $post_id, $taxonomy ) {
 }
 
 /**
- * Outputs a client slider populated by the Clients custom post type
- * Returns false if there are no client entries added in the backend
+ * Outputs a client scroller populated by the Clients custom post type
+ * Returns false if there are no clients entries added in the backend
  * 
  * @return boolean
  */
@@ -275,12 +275,10 @@ function get_client_scroller () {
         <h2>Clients</h2>
         <ul id="scroller">
             <?php while ( $client_logos->have_posts() ) :
-                $client_logos->the_post();
-
-                ?><li><img src="<?php echo get_feature_src(get_the_ID(), 'client-logo') ?>" alt="<?php echo get_the_title(); ?>" /></li><?php
-
-            endwhile;
-
+                $client_logos->the_post(); ?>
+                <li><img src="<?php echo get_feature_src(get_the_ID(), 'client-logo') ?>" alt="<?php echo get_the_title(); ?>" /></li>
+            <?php endwhile;
+            
             wp_reset_postdata(); ?>
         </ul>
     <?php else :
