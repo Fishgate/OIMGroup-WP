@@ -920,6 +920,15 @@ nav[role=navigation] {
 .month p {
   font-size: 20px;
 }
+/*============================================
+          CONTACT PAGE TINYMCE AREA
+=============================================*/
+.contact-thirds {
+  width: 32%;
+}
+.contact-divider {
+  width: 2%;
+}
 /******************************************************************
 Site Name: OIM
 Author: Tyrone @ Fishgate Advertsing

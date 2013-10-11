@@ -10,7 +10,7 @@ Template Name: Careers
 
 <!-- Header Slideshow  -->
 
-          <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/about.jpg" alt="">
+          <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/careers.jpg" alt="">
 
 <!-- END Header Slideshow  -->
 

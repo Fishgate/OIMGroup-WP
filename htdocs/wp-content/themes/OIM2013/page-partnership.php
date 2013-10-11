@@ -10,7 +10,7 @@ Template Name: Partnership
 
 <!-- Header Slideshow  -->
 
-          <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/about.jpg" alt="">
+          <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/partnerships.jpg" alt="">
 
 <!-- END Header Slideshow  -->
 
