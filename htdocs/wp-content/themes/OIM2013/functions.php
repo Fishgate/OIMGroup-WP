@@ -286,4 +286,29 @@ function get_client_scroller () {
     endif;
 }
 
+/**
+ * A small function to determine if a menu item object has any children elements
+ * within the entire menu by matching its menu ID with the "menu_item_parent" 
+ * property of each menu item. If they match then the object does indeed have children.
+ * 
+ * @param Array $nav_items_array
+ * @param Int $nav_item_id
+ * @return boolean
+ */
+function has_children ($nav_items_array, $nav_item_id) {
+    $depth = 0;
+
+    foreach($nav_items_array as $item){
+        if($item->menu_item_parent == $nav_item_id){
+            $depth++;
+        }
+    }
+
+    if($depth > 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 ?>
