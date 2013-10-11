@@ -6,8 +6,6 @@ Template Name: Home
 
 <?php get_header(); ?>
 
-
-
                         <!-- Header Slideshow  -->
                         <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
                         <!-- END Header Slideshow  -->
@@ -67,7 +65,7 @@ Template Name: Home
                                                                             </div>
                                                                         </div>
                                                                     
-                                                                        <?php if ( function_exists(get_client_scroller()) && get_client_scroller() ) get_client_scroller(); ?>
+                                                                        <?php if ( function_exists('get_client_scroller') && get_client_scroller() ) get_client_scroller(); ?>
                                                                     
 								</section> <!-- end article section -->
 
@@ -76,7 +74,6 @@ Template Name: Home
 
 								</footer> <!-- end article footer -->
 
-								
 
 							</article> <!-- end article -->
 
@@ -85,19 +82,18 @@ Template Name: Home
 									<article id="post-not-found" class="hentry clearfix">
 											<header class="article-header">
 												<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
-										</header>
+                                                                                        </header>
 											<section class="entry-content">
 												<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
-										</section>
-										<footer class="article-footer">
+                                                                                        </section>
+                                                                                        <footer class="article-footer">
 												<p><?php _e("This is the error message in the page-custom.php template.", "bonestheme"); ?></p>
-										</footer>
+                                                                                        </footer>
 									</article>
 
 							<?php endif; ?>
 
 						</div> <!-- end #main -->
-
 
 				</div> <!-- end #inner-content -->
 
