@@ -929,6 +929,55 @@ nav[role=navigation] {
 .contact-divider {
   width: 2%;
 }
+/*============================================
+          METHODOLOGY CHART
+=============================================*/
+.methodology-chart {
+  outline: 1px dashed red;
+}
+/*---   COLOR GROUPS   ---*/
+.bg-blue-dark {
+  background: #00204e;
+}
+.bg-blue-light {
+  background: #5482ab;
+}
+.bg-blue-medium {
+  background: #1c4e7f;
+}
+.bg-red {
+  background: #a22b38;
+}
+.bg-green {
+  background: #528e8e;
+}
+.bg-purple {
+  background: #702238;
+}
+/*--- END COLOR GROUPS ---*/
+.chart-block {
+  width: 32%;
+  padding: 1%;
+  outline: 1px solid navy;
+  position: relative;
+  height: 200px;
+  margin-bottom: 2%;
+}
+.chart-divider {
+  width: 2%;
+  height: 20px;
+  outline: 1px solid yellow;
+}
+.chart-arrow {
+  position: absolute;
+  z-index: 50;
+  right: -8%;
+  top: 80px;
+  width: 10%;
+  text-align: center;
+  outline: 1px solid red;
+  background: #ffffff;
+}
 /******************************************************************
 Site Name: OIM
 Author: Tyrone @ Fishgate Advertsing
