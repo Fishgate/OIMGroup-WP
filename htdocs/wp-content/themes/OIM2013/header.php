@@ -79,26 +79,130 @@
                                                MEGA MENU by Tyrone
                                         =============================== -->
                                         <nav id="mega-holder">
-                                            <?php 
-                                            
-                                            $menus = wp_get_nav_menus();
-                                            $locations = get_nav_menu_locations();
-                                            $location_id = 'main-nav';
-                                            
-                                            if (isset($locations[$location_id])) {
-                                                foreach ($menus as $menu) {
-                                                    if ($menu->term_id == $locations[$location_id]) {
-                                                        $menu_items = wp_get_nav_menu_items($menu);
-                                                        
-                                                        print_r($menu_items);
-                                                        
-                                                        break;
+                                            <div class="clearfix">
+                                                <div class="left home-holder">
+                                                    <a href='<?php echo home_url(); ?>'><span class="left home-icon">F</span></a>                                                    
+                                                </div>
+                                                
+                                                <?php 
+
+                                                $menus = wp_get_nav_menus(); // get all active menus
+                                                $locations = get_nav_menu_locations(); // get all menu location info
+                                                $location_id = 'main-nav'; // the menu location slug we are looking for
+
+                                                // first check if the menu location we want exists
+                                                if (isset($locations[$location_id])) {
+
+                                                    // we loop through all active menus to find a mached ID for the one we are looking for
+                                                    foreach ($menus as $menu) {
+
+                                                        // if menu ID match is found
+                                                        if ($menu->term_id == $locations[$location_id]) { ?>
+                                                            <ul class="left sf-menu">
+                                                                
+                                                                <?php // get all the nav items for this menu
+                                                                $menu_items = wp_get_nav_menu_items($menu);
+
+                                                                // LEVEL 1 =====================================================================
+                                                                $level1_parent_id = 0;
+
+                                                                foreach ($menu_items as $level1) {
+                                                                    if ($level1->menu_item_parent == $level1_parent_id) { ?>
+                                                                        <li class="mega-parent">
+                                                                            <a class="parent-a <?php echo implode(' ', $level1->classes); ?>" href="<?php echo $level1->url; ?>" target="<?php echo $level1->target; ?>">
+                                                                                <?php echo $level1->title; if (has_children($menu_items, $level1->ID)) { ?> <span class="icons">&#xe0ab;</span> <?php } ?>
+                                                                            </a>
+                                                                            
+                                                                            <?php 
+                                                                            // LEVEL 2 =====================================================================
+                                                                            $level2_parent_id = $level1->ID;
+                                                                            
+                                                                            if (has_children($menu_items, $level2_parent_id)) { ?>
+                                                                                    <ul class="secondary-ul">
+                                                                                        <li>
+                                                                                            <div class="clearfix">
+                                                                                                <?php
+                                                                                                foreach ($menu_items as $level2){
+                                                                                                    if ($level2->menu_item_parent == $level2_parent_id) { ?>
+                                                                                                        <div class="secondary-holder left clearfix">
+                                                                                                            <a class="" href="<?php echo $level2->url; ?>" target="<?php echo $level2->target; ?>">
+                                                                                                                <h2 class="head-secondary <?php echo implode(' ', $level2->classes); ?>"><?php echo $level2->title; ?></h2>
+                                                                                                            </a>
+                                                                                                            
+                                                                                                            <?php 
+                                                                                                            // LEVEL 3 =====================================================================
+                                                                                                            $level3_parent_id = $level2->ID;
+                                                                                                            
+                                                                                                            if (has_children($menu_items, $level3_parent_id)) {
+                                                                                                                foreach ($menu_items as $level3) {
+                                                                                                                    if($level3->menu_item_parent == $level3_parent_id) { ?>
+                                                                                                                        <div class="secondary-link">
+                                                                                                                            <a href="<?php echo $level3->url; ?>" target="<?php echo $level3->target; ?>"><?php echo $level3->title; ?></a>
+                                                                                                                            
+                                                                                                                            <?php
+                                                                                                                            // LEVEL 4 =====================================================================
+                                                                                                                            $level4_parent_id = $level3->ID;
+                                                                                                                            
+                                                                                                                            if (has_children($menu_items, $level3_parent_id)) { ?>
+                                                                                                                                <div class="flyout">
+                                                                                                                                    <ul>
+                                                                                                                                        <?php
+                                                                                                                                        foreach ($menu_items as $level4) {
+                                                                                                                                            if($level4->menu_item_parent == $level3_parent_id) { ?>
+                                                                                                                                                <li><a href="<?php echo $level4->url; ?>" target="<?php echo $level4->target; ?>"><?php echo $level4->title; ?></a></li>
+                                                                                                                                            <?php }
+                                                                                                                                        }
+                                                                                                                                        ?>
+                                                                                                                                    </ul>
+                                                                                                                                </div>
+                                                                                                                            <?php }
+                                                                                                                            
+                                                                                                                            ?>
+                                                                                                                        </div>
+                                                                                                                    <?php }
+                                                                                                                }
+                                                                                                            }
+                                                                                                            
+                                                                                                            ?>
+                                                                                                        </div>
+                                                                                                    <?php }
+                                                                                                }
+                                                                                                ?>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                <?php } 
+                                                                            ?>
+                                                                        </li>
+                                                                    <?php }
+                                                                } ?>
+                                                            
+                                                            </ul>
+                                                            
+                                                            <?php // kill the loop once we have used the correct nav
+                                                            break;
+                                                        }
                                                     }
                                                 }
-                                            }
+
+                                                ?>
                                                 
-                                            ?>
-                                                                                        
+                                                <div class="right search-holder">
+                                                    <div class="right clearfix">
+                                                        <div class="right details border-left searchicon"><a><span class="icon">&#xe01a;</span></a></div>
+                                                        <div class="right details border-left"><a href="http://za.linkedin.com/company/oim-international-pty-ltd?trk=ppro_cprof" target="_blank"><span class="icon">&#xe021;</span></a></div>
+                                                        <div class="right details"><span class="icon" style="padding-right: 20px; color: #5482AB;">@</span>+27 21 913 8814/5</div>
+                                                    </div>
+                                                    <div id="the-search">
+                                                        <?php echo get_search_form(); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </nav>
+                                        <!-- end mega menu -->
+                                        
+                                        
                                             <!--
                                             <div class="clearfix">
                                                 <div class="left home-holder">
@@ -184,7 +288,7 @@
                                                                     </div>
                                                                 </div>
                                                             </li>
-                                                        </ul>
+                                                            </ul>
                                                     </li>
                                                     <li class="mega-parent" id="border-right">
                                                         <a class="parent-a" href="<?php echo site_url('contact'); ?>">Contact</a>
@@ -202,8 +306,7 @@
                                                 </div>
                                             </div>
                                             -->
-                                        </nav>
-                                        <!-- end mega menu -->
+                                        
                                         
 				</div> <!-- end #inner-header -->
 
