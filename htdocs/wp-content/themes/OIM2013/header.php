@@ -75,15 +75,34 @@
                                             </nav>
                                         </div>
 
-                                   <!-- =============================
+                                        <!-- =============================
                                                MEGA MENU by Tyrone
                                         =============================== -->
                                         <nav id="mega-holder">
+                                            <?php 
                                             
+                                            $menus = wp_get_nav_menus();
+                                            $locations = get_nav_menu_locations();
+                                            $location_id = 'main-nav';
+                                            
+                                            if (isset($locations[$location_id])) {
+                                                foreach ($menus as $menu) {
+                                                    if ($menu->term_id == $locations[$location_id]) {
+                                                        $menu_items = wp_get_nav_menu_items($menu);
+                                                        
+                                                        print_r($menu_items);
+                                                        
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                                
+                                            ?>
+                                                                                        
+                                            <!--
                                             <div class="clearfix">
                                                 <div class="left home-holder">
-                                                    <a href='<?php echo home_url(); ?>'><span class="left home-icon">F</span></a>
-                                                    <!--<span class="left generic-type-mega">in</span>-->
+                                                    <a href='<?php echo home_url(); ?>'><span class="left home-icon">F</span></a>                                                    
                                                 </div>
                                                 <ul class="left sf-menu">
                                                     <li id="border-left" class="mega-parent">
@@ -172,7 +191,7 @@
                                                     </li>
                                                 </ul>
                                                 <div class="right search-holder">
-                                                    <div class="right clearfix"><!-- CONTACT DETAILS -->
+                                                    <div class="right clearfix">
                                                         <div class="right details border-left searchicon"><a><span class="icon">&#xe01a;</span></a></div>
                                                         <div class="right details border-left"><a href="http://za.linkedin.com/company/oim-international-pty-ltd?trk=ppro_cprof" target="_blank"><span class="icon">&#xe021;</span></a></div>
                                                         <div class="right details"><span class="icon" style="padding-right: 20px; color: #5482AB;">@</span>+27 21 913 8814/5</div>
@@ -182,11 +201,10 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            -->
                                         </nav>
-                                         <!-- end mega menu -->
+                                        <!-- end mega menu -->
                                         
-					<!--==== Tyrone removes <nav role="navigation"><'?'php bones_main_nav(); '?'> </nav> from here and placed it on index for now ====-->
-
 				</div> <!-- end #inner-header -->
 
 			</header> <!-- end header -->

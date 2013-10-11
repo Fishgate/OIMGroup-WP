@@ -71,6 +71,7 @@ Template Name: Contact
 							<?php endif; ?>
 
 						</div> <!-- end #main -->
+                                                
                                                 <?php get_sidebar('contact'); ?>
                                                 
 				</div> <!-- end #inner-content -->
