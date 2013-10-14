@@ -1097,7 +1097,7 @@ TYRONE ADDS MEGA MENU STYLES
   z-index: 100;
   background: #fafafa;
   width: 111.2%;
-  padding: 1.666% 0.833%;
+  padding: 1.666% 0;
 }
 .head-secondary {
   font-family: "opensans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1905,7 +1905,7 @@ nav[role=navigation] {
 .widget .sidebar-large-link {
   border-top: thin dotted #999;
   border-bottom: thin dotted #999;
-  padding: 15px;
+  padding: 0px;
   display: block;
   text-align: center;
 }
@@ -2113,6 +2113,17 @@ nav[role=navigation] {
   background: #702238;
 }
 /*--- END COLOR GROUPS ---*/
+.meth-title {
+  display: none;
+}
+.chart-block h2 {
+  display: block;
+  color: #ffffff;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  margin: 0;
+}
 .chart-block {
   width: 100%;
   padding: 1% 1.5%;
@@ -2580,10 +2591,11 @@ you can add resource intensive styles.
   }
   .secondary-holder {
     width: 32%;
+    margin: 0 0.65%!important;
   }
-  .secondary-holder-mid {
-    margin: 0 2%;
-  }
+  /*.secondary-holder-mid{
+      margin: 0 2%;
+  }*/
   .details {
     padding: 8px 20px;
     font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2591,6 +2603,9 @@ you can add resource intensive styles.
   }
   .flyout li {
     border-bottom: 1px dotted #024594;
+  }
+  .parent-a .icons {
+    line-height: 0.9em;
   }
   /*============================================
           RESONSIVE SLIDES CALL TO ACTION
@@ -2690,13 +2705,6 @@ you can add resource intensive styles.
     padding: 30px 30px;
     text-align: center;
     margin: 0 0 30px 0;
-  }
-  .widget .sidebar-large-link {
-    border-top: thin dotted #999;
-    border-bottom: thin dotted #999;
-    padding: 15px;
-    display: block;
-    text-align: center;
   }
   .widget .sidebar-form-holder p {
     text-align: left;
@@ -2844,6 +2852,14 @@ you can add resource intensive styles.
   /*============================================
             METHODOLOGY CHART
   =============================================*/
+  .chart-block h2 {
+    display: none;
+  }
+  .meth-title {
+    width: 33.333%;
+    text-align: center;
+    display: block;
+  }
   .chart-block {
     width: 32%;
     padding: 1% 1.5%;

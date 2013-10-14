@@ -83,17 +83,24 @@ Template Name: Methodology
 				</div> <!-- end #inner-content -->
                                 <div class="methodology-chart wrap clearfix">
                                     <!--/// ROW \\\-->
+                                    <div class="left meth-title"><h2>Elements</h2></div>
+                                    <div class="left meth-title"><h2>Outcomes of Elements</h2></div>
+                                    <div class="left meth-title"><h2>Services and Products</h2></div>
+                                    <!--/// ROW \\\-->
                                     <div class="left chart-block bg-blue-dark">
+                                        <h2>Elements</h2>
                                         <p>Clarity of purpose and direction</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-blue-dark">
+                                        <h2>Outcome of Elements</h2>
                                         <p>Everyone knows where we are heading as a company</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-blue-dark">
+                                        <h2>Services and Products</h2>
                                         <ul>
                                             <li><a href="#">Strategic planning</a></li>
                                             <li><a href="#">Communication strategy</a></li>
@@ -102,16 +109,19 @@ Template Name: Methodology
                                     </div>
                                     <!--/// ROW \\\-->
                                     <div class="left chart-block bg-blue-light">
+                                        <h2>Elements</h2>
                                         <p>Structure, alignment and focus</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-blue-light">
+                                        <h2>Outcome of Elements</h2>
                                         <p>Everyone knows exactly what to focus their energy on daily</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-blue-light">
+                                        <h2>Services and Products</h2>
                                         <ul>
                                             <li><a href="#">Business architecture</a></li>
                                             <li><a href="#">Competency profiling</a></li>
@@ -121,16 +131,19 @@ Template Name: Methodology
                                     </div>
                                     <!--/// ROW \\\-->
                                     <div class="left chart-block bg-red">
+                                        <h2>Elements</h2>
                                         <p>Effective leadership culture</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-red">
+                                        <h2>Outcome of Elements</h2>
                                         <p>Leaders lead their teams with credibility</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-red">
+                                        <h2>Services and Products</h2>
                                         <ul>
                                             <li><a href="#">Leadership standards definition</a></li>
                                             <li><a href="#">Assessments: leadership &amp; critical talent</a></li>
@@ -143,16 +156,19 @@ Template Name: Methodology
                                     </div>
                                     <!--/// ROW \\\-->
                                     <div class="left chart-block bg-green">
+                                        <h2>Elements</h2>
                                         <p>Stakeholder engagement</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-green">
+                                        <h2>Outcome of Elements</h2>
                                         <p>Everyone is involved, daily, in goal setting, problem solving and planning</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-green">
+                                        <h2>Services and Products</h2>
                                         <ul>
                                             <li><a href="#">Employee engagement (INVOCOMS)</a></li>
                                             <li><a href="#">Other stakeholder engagement</a></li>
@@ -162,16 +178,19 @@ Template Name: Methodology
                                     </div>
                                     <!--/// ROW \\\-->
                                     <div class="left chart-block bg-blue-medium">
+                                        <h2>Elements</h2>
                                         <p>Optimisation of business processes, systems, resources and competencies</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-blue-medium">
+                                        <h2>Outcome of Elements</h2>
                                         <p>Everyone contributes to quality, cost and service improvements</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-blue-medium">
+                                        <h2>Services and Products</h2>
                                         <ul>
                                             <li><a href="#">Operations management interventions</a></li>
                                             <li><a href="#">Continuous improvement</a></li>
@@ -180,16 +199,19 @@ Template Name: Methodology
                                     </div>
                                     <!--/// ROW \\\-->
                                     <div class="left chart-block bg-purple">
+                                        <h2>Elements</h2>
                                         <p>Measurement, feedback, improvement, recognition and reward</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-purple">
+                                        <h2>Outcome of Elements</h2>
                                         <p>Teams regularly review their performance, focus on accountability, recognition and reward</p>
                                         <span class="chart-arrow icon">&#xe0eb;</span>
                                     </div>
                                     <div class="left chart-divider"></div>
                                     <div class="left chart-block bg-purple">
+                                        <h2>Services and Products</h2>
                                         <ul>
                                             <li><a href="#">Stakeholder perception surveys</a></li>
                                             <li><a href="#">Business/Operations review</a></li>

@@ -176,7 +176,6 @@
                                                                         </li>
                                                                     <?php }
                                                                 } ?>
-                                                            
                                                             </ul>
                                                             
                                                             <?php // kill the loop once we have used the correct nav
