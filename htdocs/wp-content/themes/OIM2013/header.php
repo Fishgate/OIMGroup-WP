@@ -102,8 +102,7 @@
                                                 </div>
                                             </div>
                                             
-                                        </nav>
-                                        <!-- end mega menu -->
+                                        </nav><!-- end mega menu -->
                                         
 				</div> <!-- end #inner-header -->
 
