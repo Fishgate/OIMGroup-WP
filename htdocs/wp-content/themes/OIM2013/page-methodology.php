@@ -74,14 +74,8 @@ Template Name: Methodology
                                                 <div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
                                                     <!--/// ABOUT \\\-->
                                                     <div class="widget">
-                                                        <h4 class="widgettitle" id="side-widget-about">More about OIM</h4>
-                                                        <ul>
-                                                            <li><a href="#">Overview</a></li>
-                                                            <li><a href="#">BEE</a></li>
-                                                            <li><a href="#">Business Ethos</a></li>
-                                                            <li><a href="#">CSI</a></li>
-                                                            <li><a href="#">Methodology</a></li>
-                                                        </ul>
+                                                        <h4 class="widgettitle" id="side-widget-client">Prosperity Partnership</h4>
+                                                        <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/sidebars/oim_methodology.gif" alt="Prosperity Partnership Graphic" />
                                                     </div>
                                                 </div>
                                                 <!-- WIDGET END -->
@@ -89,17 +83,119 @@ Template Name: Methodology
 				</div> <!-- end #inner-content -->
                                 <div class="methodology-chart wrap clearfix">
                                     <!--/// ROW \\\-->
-                                    <div class="left chart-block bg-blue-dark">BLOCK<span class="chart-arrow icon">&#xe0eb;</span></div>
+                                    <div class="left chart-block bg-blue-dark">
+                                        <p>Clarity of purpose and direction</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
                                     <div class="left chart-divider"></div>
-                                    <div class="left chart-block bg-blue-dark">BLOCK<span class="chart-arrow icon">&#xe0eb;</span></div>
+                                    <div class="left chart-block bg-blue-dark">
+                                        <p>Everyone knows where we are heading as a company</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
                                     <div class="left chart-divider"></div>
-                                    <div class="left chart-block bg-blue-dark">BLOCK</div>
+                                    <div class="left chart-block bg-blue-dark">
+                                        <ul>
+                                            <li><a href="#">Strategic planning</a></li>
+                                            <li><a href="#">Communication strategy</a></li>
+                                            <li><a href="#">Value chain strategy</a></li>
+                                        </ul>
+                                    </div>
                                     <!--/// ROW \\\-->
-                                    <div class="left chart-block bg-blue-light">BLOCK<span class="chart-arrow icon">&#xe0eb;</span></div>
+                                    <div class="left chart-block bg-blue-light">
+                                        <p>Structure, alignment and focus</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
                                     <div class="left chart-divider"></div>
-                                    <div class="left chart-block bg-blue-light">BLOCK<span class="chart-arrow icon">&#xe0eb;</span></div>
+                                    <div class="left chart-block bg-blue-light">
+                                        <p>Everyone knows exactly what to focus their energy on daily</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
                                     <div class="left chart-divider"></div>
-                                    <div class="left chart-block bg-blue-light">BLOCK</div>
+                                    <div class="left chart-block bg-blue-light">
+                                        <ul>
+                                            <li><a href="#">Business architecture</a></li>
+                                            <li><a href="#">Competency profiling</a></li>
+                                            <li><a href="#">Reward strategy</a></li>
+                                            <li><a href="#">Change &amp; operational communication strategies</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--/// ROW \\\-->
+                                    <div class="left chart-block bg-red">
+                                        <p>Effective leadership culture</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
+                                    <div class="left chart-divider"></div>
+                                    <div class="left chart-block bg-red">
+                                        <p>Leaders lead their teams with credibility</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
+                                    <div class="left chart-divider"></div>
+                                    <div class="left chart-block bg-red">
+                                        <ul>
+                                            <li><a href="#">Leadership standards definition</a></li>
+                                            <li><a href="#">Assessments: leadership &amp; critical talent</a></li>
+                                            <li><a href="#">Leadership development interventions</a></li>
+                                            <li><a href="#">Coaching</a></li>
+                                            <li><a href="#">Supervisory skills</a></li>
+                                            <li><a href="#">Team dynamics</a></li>
+                                            <li><a href="#">Talent management</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--/// ROW \\\-->
+                                    <div class="left chart-block bg-green">
+                                        <p>Stakeholder engagement</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
+                                    <div class="left chart-divider"></div>
+                                    <div class="left chart-block bg-green">
+                                        <p>Everyone is involved, daily, in goal setting, problem solving and planning</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
+                                    <div class="left chart-divider"></div>
+                                    <div class="left chart-block bg-green">
+                                        <ul>
+                                            <li><a href="#">Employee engagement (INVOCOMS)</a></li>
+                                            <li><a href="#">Other stakeholder engagement</a></li>
+                                            <li><a href="#">Employee relations</a></li>
+                                            <li><a href="#">Diversity awareness</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--/// ROW \\\-->
+                                    <div class="left chart-block bg-blue-medium">
+                                        <p>Optimisation of business processes, systems, resources and competencies</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
+                                    <div class="left chart-divider"></div>
+                                    <div class="left chart-block bg-blue-medium">
+                                        <p>Everyone contributes to quality, cost and service improvements</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
+                                    <div class="left chart-divider"></div>
+                                    <div class="left chart-block bg-blue-medium">
+                                        <ul>
+                                            <li><a href="#">Operations management interventions</a></li>
+                                            <li><a href="#">Continuous improvement</a></li>
+                                            <li><a href="#">On-the-job operational mentoring &amp; coaching</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--/// ROW \\\-->
+                                    <div class="left chart-block bg-purple">
+                                        <p>Measurement, feedback, improvement, recognition and reward</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
+                                    <div class="left chart-divider"></div>
+                                    <div class="left chart-block bg-purple">
+                                        <p>Teams regularly review their performance, focus on accountability, recognition and reward</p>
+                                        <span class="chart-arrow icon">&#xe0eb;</span>
+                                    </div>
+                                    <div class="left chart-divider"></div>
+                                    <div class="left chart-block bg-purple">
+                                        <ul>
+                                            <li><a href="#">Stakeholder perception surveys</a></li>
+                                            <li><a href="#">Business/Operations review</a></li>
+                                            <li><a href="#">Individual performance management</a></li>
+                                        </ul>
+                                    </div>
                                 </div><!-- METHODOLOGY CHART -->
 			</div> <!-- end #content -->
                         

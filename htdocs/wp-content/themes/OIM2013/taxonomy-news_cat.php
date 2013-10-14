@@ -3,7 +3,7 @@
                         <!-- header image -->
                         <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/news-banner.jpg" />
 
-			<div id="content">
+			<div id="content-generic">
                             
 				<div id="inner-content" class="wrap clearfix">
                                     
@@ -53,7 +53,7 @@
                                                                     </footer> <!-- end article footer -->
                                                                 </div>  
                                                         </article> <!-- end article -->
-
+                                                        <br />
 							<?php endwhile; ?>
 
 									<?php if (function_exists('bones_page_navi')) { ?>

@@ -2090,6 +2090,72 @@ nav[role=navigation] {
 .contact-divider {
   width: 0;
 }
+/*============================================
+          METHODOLOGY CHART
+=============================================*/
+/*---   COLOR GROUPS   ---*/
+.bg-blue-dark {
+  background: #00204e;
+}
+.bg-blue-light {
+  background: #5482ab;
+}
+.bg-blue-medium {
+  background: #1c4e7f;
+}
+.bg-red {
+  background: #a22b38;
+}
+.bg-green {
+  background: #528e8e;
+}
+.bg-purple {
+  background: #702238;
+}
+/*--- END COLOR GROUPS ---*/
+.chart-block {
+  width: 100%;
+  padding: 1% 1.5%;
+  position: relative;
+  height: 200px;
+  margin-bottom: 2%;
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.chart-block p {
+  color: #ffffff;
+}
+.chart-block ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  color: #ffffff;
+}
+.chart-block li {
+  font-size: 12px;
+}
+.chart-block li a {
+  color: #ffffff;
+}
+.chart-divider {
+  width: 2%;
+  height: 20px;
+}
+.chart-arrow {
+  position: absolute;
+  z-index: 50;
+  right: 45%;
+  top: 199px;
+  width: 9%;
+  text-align: center;
+  background: #ffffff;
+  -webkit-transform: rotate(90deg);
+}
+/*============================================
+          TAXONOMY <ARTICLE> STYLES
+=============================================*/
+article.bordered-bottom {
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -2778,41 +2844,31 @@ you can add resource intensive styles.
   /*============================================
             METHODOLOGY CHART
   =============================================*/
-  .methodology-chart {
-    outline: 1px dashed red;
-  }
-  /*---   COLOR GROUPS   ---*/
-  .bg-blue-dark {
-    background: #00204e;
-  }
-  .bg-blue-light {
-    background: #5482ab;
-  }
-  .bg-blue-medium {
-    background: #1c4e7f;
-  }
-  .bg-red {
-    background: #a22b38;
-  }
-  .bg-green {
-    background: #528e8e;
-  }
-  .bg-purple {
-    background: #702238;
-  }
-  /*--- END COLOR GROUPS ---*/
   .chart-block {
     width: 32%;
-    padding: 1%;
-    outline: 1px solid navy;
+    padding: 1% 1.5%;
     position: relative;
     height: 200px;
     margin-bottom: 2%;
+    font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .chart-block p {
+    color: #ffffff;
+  }
+  .chart-block ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    color: #ffffff;
+  }
+  .chart-block li {
+    font-size: 12px;
+  }
+  .chart-block li a {
+    color: #ffffff;
   }
   .chart-divider {
     width: 2%;
     height: 20px;
-    outline: 1px solid yellow;
   }
   .chart-arrow {
     position: absolute;
@@ -2821,8 +2877,8 @@ you can add resource intensive styles.
     top: 80px;
     width: 10%;
     text-align: center;
-    outline: 1px solid red;
     background: #ffffff;
+    -webkit-transform: rotate(0deg);
   }
 }
 /*
