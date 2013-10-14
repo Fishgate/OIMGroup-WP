@@ -18,7 +18,7 @@ Template Name: Home
                                           TYRONE INSERTS NAV HERE FROM HEADER
                                     ================================================-->
                                     <nav role="navigation">
-                                        <?php bones_main_nav(); ?>
+                                        <?php get_secondary_nav(); ?>
                                     </nav>
                                     <!-- nav end -->
                                     
@@ -32,11 +32,11 @@ Template Name: Home
                                                                     <center>
                                                                         <h1 class="h1-nostyle">Business Performance Specialist in core areas of</h1>
                                                                      
-                                                                            <a class="service-link" href="#">People Management</a>
+                                                                        <a class="service-link" href="#">People Management</a>
 
-                                                                            <a class="service-link" href="#">Organisation Performance</a>
+                                                                        <a class="service-link" href="#">Organisation Performance</a>
 
-                                                                            <a class="service-link" href="#">Operational Optimisation</a>
+                                                                        <a class="service-link" href="#">Operational Optimisation</a>
                                                                     </center>
                                                                     <?php the_content(); ?>
                                                                     <!-- TYRONE ADDS 3 DIVS FOR DYNAMIC SERVICES-->
@@ -73,8 +73,7 @@ Template Name: Home
 									<p class="clearfix"><?php the_tags('<span class="tags">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?></p>
 
 								</footer> <!-- end article footer -->
-
-
+                                                                
 							</article> <!-- end article -->
 
 							<?php endwhile; else : ?>

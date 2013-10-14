@@ -161,6 +161,21 @@ function remove_menu_pages() {
 }
 add_action( 'admin_menu', 'remove_menu_pages' );
 
+
+/**
+ * Custom settings page for the theme
+ */
+
+function setup_theme_admin_menus() {  
+    add_menu_page('OIM Settings', 'OIM Settings', 'manage_options', 'oim-settings', 'theme_settings_page', null, 81 );
+}
+
+function theme_settings_page() {  
+    include('theme-settings.php');    
+}
+
+add_action("admin_menu", "setup_theme_admin_menus");  
+
 /**
  * Get the src of a featured image, needs to be used within the loop
  * so $post->ID variable is set. Returns false if no feature image is set.
@@ -312,8 +327,8 @@ function has_children ($nav_items_array, $nav_item_id) {
 }
 
 /**
- * Gets the 'main-nav' custom menu and outputs it into the page. If the menu location
- * 'main-nav' is not set return false.
+ * Gets the 'main-nav' custom menu and outputs it into the page. 
+ * If the menu location 'main-nav' is not set return false.
  * 
  * @return boolean
  */
@@ -419,5 +434,55 @@ function get_main_nav () {
         return false;
     }
 }
+
+/**
+ * Outputs the secondary navigation, this is only 1 level deep.
+ * Returns false if menu location does not exist.
+ * 
+ * @return boolean
+ */
+function get_secondary_nav () {
+    $menus = wp_get_nav_menus(); // get all active menus
+    $locations = get_nav_menu_locations(); // get all menu location info
+    $location_id = 'secondary-nav'; // the menu location slug we are looking for
+    
+    // first check if the menu location we want exists
+    if (isset($locations[$location_id])) {
+        
+        // we loop through all active menus to find a mached ID for the one we are looking for
+        foreach ($menus as $menu) {
+            
+            // if menu ID match is found
+            if ($menu->term_id == $locations[$location_id]) { ?>
+                <nav role="navigation">
+                    <ul class="nav top-nav clearfix" id="menu-main">
+
+                        <?php // get all the nav items for this menu
+                        $menu_items = wp_get_nav_menu_items($menu);
+                        
+                        // LEVEL 1 =====================================================================
+                        $level1_parent_id = 0;
+
+                        foreach ($menu_items as $level1) {
+                            if ($level1->menu_item_parent == $level1_parent_id) { ?>
+                                <li class="menu-item menu-item-type-post_type <?php echo implode(' ', $level1->classes); ?>">
+                                    <a href="<?php echo $level1->url; ?>" target="<?php echo $level3->target; ?>"><?php echo $level1->title; ?></a>
+                                </li>
+                            <?php }
+                        } ?>
+                        
+                    </ul>
+                </nav>
+
+                <?php // kill the loop once we have used the correct nav
+                break;
+            }
+        }
+    }else{
+        return false;
+    }
+}
+
+
 
 ?>

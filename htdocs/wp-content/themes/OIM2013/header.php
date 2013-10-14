@@ -89,7 +89,11 @@
                                                 <div class="right search-holder">
                                                     <div class="right clearfix">
                                                         <div class="right details border-left searchicon"><a><span class="icon">&#xe01a;</span></a></div>
-                                                        <div class="right details border-left"><a href="http://za.linkedin.com/company/oim-international-pty-ltd?trk=ppro_cprof" target="_blank"><span class="icon">&#xe021;</span></a></div>
+                                                        <?php if( trim(get_option('linkedin_url')) != '' ) { ?>
+                                                            <div class="right details border-left">
+                                                                <a href="<?php echo get_option('linkedin_url'); ?>" target="_blank"><span class="icon">&#xe021;</span></a>
+                                                            </div>
+                                                        <?php } ?>
                                                         <div class="right details"><span class="icon" style="padding-right: 20px; color: #5482AB;">@</span>+27 21 913 8814/5</div>
                                                     </div>
                                                     <div id="the-search">
@@ -100,112 +104,6 @@
                                             
                                         </nav>
                                         <!-- end mega menu -->
-                                        
-                                        
-                                            <!--
-                                            <div class="clearfix">
-                                                <div class="left home-holder">
-                                                    <a href='<?php echo home_url(); ?>'><span class="left home-icon">F</span></a>                                                    
-                                                </div>
-                                                <ul class="left sf-menu">
-                                                    <li id="border-left" class="mega-parent">
-                                                        <a class="parent-a"href="#">Our Methodology</a>
-                                                    </li>
-                                                    <li class="mega-parent">
-                                                        <a class="parent-a" href="#">Products &amp; Services <span class="icons">&#xe0ab;</span></a>
-                                                        <ul class="secondary-ul">
-                                                            <li>
-                                                                <div class="clearfix">
-                                                                    <div class="secondary-holder left clearfix">
-                                                                          <h2 class="head-secondary icon-people">People</h2>
-                                                                          <div class="secondary-link">
-                                                                              <a href="#">Employee engagement (INVOCOMS)</a>
-                                                                          </div>
-                                                                          <div class="secondary-link">
-                                                                              <a href="#">Leadership &amp; team interventions</a>
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li><a href="#">Competency profiling</a></li>
-                                                                                      <li><a href="#">Leadership assessments</a></li>
-                                                                                      <li><a href="#">Leadership development</a></li>
-                                                                                      <li><a href="#">Coaching</a></li>
-                                                                                      <li><a href="#">Team dynamics</a></li>
-                                                                                      <li><a href="#">Diversity awareness</a></li>
-                                                                                  </ul>
-                                                                              </div>
-                                                                          </div>
-                                                                          <div class="secondary-link">
-                                                                              <a href="#">Supervisory skills</a>
-                                                                          </div>
-                                                                          <div class="secondary-link">
-                                                                              <a href="#">Performance &amp; talent management</a>
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li><a href="#">Talent management model</a></li>
-                                                                                      <li><a href="#">Individual performance management</a></li>
-                                                                                      <li><a href="#">Reward consultation</a></li>
-                                                                                  </ul>
-                                                                              </div>
-                                                                          </div>
-                                                                    </div>
-                                                                    <div class="secondary-holder secondary-holder-mid left clearfix">
-                                                                          <h2 class="head-secondary icon-organisation">Organisation</h2>
-                                                                          <div class="secondary-link">
-                                                                               <a href="#">Business strategy</a>
-                                                                              <div class="flyout">
-                                                                                  <ul>
-                                                                                      <li><a href="#">trategic planning</a></li>
-                                                                                      <li><a href="#">Strategic &amp; change communication</a></li>
-                                                                                      <li><a href="#">Value chain strategy</a></li>
-                                                                                  </ul>
-                                                                              </div>
-                                                                          </div>
-                                                                          <div class="secondary-link">
-                                                                              <a href="#">Business architecture</a>
-                                                                          </div>
-                                                                          <div class="secondary-link">
-                                                                              <a href="#">Employee relations</a>
-                                                                          </div>
-                                                                          <div class="secondary-link">
-                                                                              <a href="#">Stakeholder perception surveys</a>
-                                                                          </div>
-                                                                    </div>
-                                                                    <div class="secondary-holder left clearfix">
-                                                                          <h2 class="head-secondary icon-operation">Operations</h2>
-                                                                          <div class="secondary-link">
-                                                                              <a href="#">Business/operations review</a>
-                                                                          </div>
-                                                                          <div class="secondary-link">
-                                                                              <a href="#">Operations management interventions</a>
-                                                                          </div>
-                                                                          <div class="secondary-link">
-                                                                              <a href="#">Continuous improvement</a>
-                                                                          </div>
-                                                                          <div class="secondary-link">
-                                                                              <a href="#">IT systems management &amp; project resourcing</a>
-                                                                          </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            </ul>
-                                                    </li>
-                                                    <li class="mega-parent" id="border-right">
-                                                        <a class="parent-a" href="<?php echo site_url('contact'); ?>">Contact</a>
-                                                    </li>
-                                                </ul>
-                                                <div class="right search-holder">
-                                                    <div class="right clearfix">
-                                                        <div class="right details border-left searchicon"><a><span class="icon">&#xe01a;</span></a></div>
-                                                        <div class="right details border-left"><a href="http://za.linkedin.com/company/oim-international-pty-ltd?trk=ppro_cprof" target="_blank"><span class="icon">&#xe021;</span></a></div>
-                                                        <div class="right details"><span class="icon" style="padding-right: 20px; color: #5482AB;">@</span>+27 21 913 8814/5</div>
-                                                    </div>
-                                                    <div id="the-search">
-                                                        <?php echo get_search_form(); ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            -->
-                                        
                                         
 				</div> <!-- end #inner-header -->
 
