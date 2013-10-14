@@ -3,7 +3,7 @@
                         <!-- header image -->
                         <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/news-banner.jpg" />
 
-			<div id="content">
+			<div id="content-generic">
                             
 				<div id="inner-content" class="wrap clearfix">
                                     
@@ -42,18 +42,9 @@
                                                                             <?php the_post_thumbnail( 'bones-thumb-300' ); ?>
 
                                                                             <?php the_excerpt(); ?>
-
                                                                     </section> <!-- end article section -->
-                                                                
-                                                            
-                                                                    <footer class="right article-footer">
-
-                                                                        <p class="byline vcard" style="margin: 0;"><?php printf(__('Posted in %1$s', 'bonestheme'), get_csv_cats($post->ID, 'news_cat')); ?></p>
-
-                                                                    </footer> <!-- end article footer -->
-                                                                </div>  
+                                                                </div>
                                                         </article> <!-- end article -->
-
 							<?php endwhile; ?>
 
 									<?php if (function_exists('bones_page_navi')) { ?>

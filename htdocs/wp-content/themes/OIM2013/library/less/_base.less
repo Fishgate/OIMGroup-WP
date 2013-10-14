@@ -396,7 +396,7 @@ TYRONE ADDS MEGA MENU STYLES
     z-index: 100;
     background: rgba(250, 250, 250, 1);
     width: 111.2%;
-    padding: 1.666% 0.833%;
+    padding: 1.666% 0;
 }
 .head-secondary{
     font-family: @sans-serif;
@@ -1508,7 +1508,7 @@ nav[role=navigation]{
 .widget .sidebar-large-link {
     border-top: thin dotted #999;
     border-bottom: thin dotted #999;
-    padding: 15px;
+    padding: 0px;
     display: block;
     text-align: center;
 }
@@ -1722,4 +1722,81 @@ nav[role=navigation]{
 }
 .contact-divider{
     width: 0;
+}
+
+
+/*============================================
+          METHODOLOGY CHART
+=============================================*/
+.methodology-chart{}
+
+/*---   COLOR GROUPS   ---*/
+
+.bg-blue-dark{background: @oim_blue_dark;}
+.bg-blue-light{background: @oim_blue_light;}
+.bg-blue-medium{background: @oim_blue_medium;}
+.bg-red{background: @oim_red;}
+.bg-green{background: @oim_green;}
+.bg-purple{background: @oim_purple;}
+
+/*--- END COLOR GROUPS ---*/
+
+.meth-title{
+    display: none;
+}
+
+.chart-block h2{
+    display: block;
+    color: @white;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    position: relative;
+    margin: 0;
+}
+
+.chart-block{
+    width: 100%;
+    padding: 1% 1.5%;
+    position: relative;
+    height: 200px;
+    margin-bottom: 2%;
+    font-family: @sans-serif-light;
+}
+.chart-block p{
+    color: @white;
+}
+.chart-block ul{
+    list-style-type: disc;
+    margin-left: 25px;
+    color: @white;
+}
+.chart-block li{
+    font-size: 12px;
+}
+.chart-block li a{
+    color: @white;
+}
+.chart-divider{
+    width: 2%;
+    height: 20px;
+}
+.chart-arrow{
+    position: absolute;
+    z-index: 50;
+    right: 45%;
+    top: 199px;
+    width: 9%;
+    text-align: center;
+    background: @white;
+
+    -webkit-transform: rotate(90deg);
+}
+
+
+/*============================================
+          TAXONOMY <ARTICLE> STYLES
+=============================================*/
+article.bordered-bottom{
+    padding-bottom: 15px;
+    margin-bottom: 25px;
 }

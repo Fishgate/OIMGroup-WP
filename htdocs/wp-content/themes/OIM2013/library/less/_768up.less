@@ -342,10 +342,11 @@ TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
 
 .secondary-holder{
     width: 32%;
+    margin: 0 0.65%!important;
 }
-.secondary-holder-mid{
+/*.secondary-holder-mid{
     margin: 0 2%;
-}
+}*/
 .details{
     padding: 8px 20px;
     font-family: @sans-serif-light;
@@ -354,7 +355,9 @@ TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
 .flyout li{
 border-bottom: 1px dotted @oim_blue_lighter;
 }
-
+.parent-a .icons{
+    line-height: 0.9em;
+}
 
 /*============================================
         RESONSIVE SLIDES CALL TO ACTION
@@ -469,14 +472,6 @@ nav[role=navigation]{
     padding: 30px 30px;
     text-align: center;
     margin: 0 0 30px 0;
-}
-
-.widget .sidebar-large-link {
-    border-top: thin dotted #999;
-    border-bottom: thin dotted #999;
-    padding: 15px;
-    display: block;
-    text-align: center;
 }
 
 .widget .sidebar-form-holder p {
@@ -645,4 +640,55 @@ nav[role=navigation]{
 }
 .contact-divider{
     width: 2%;
+}
+
+
+/*============================================
+          METHODOLOGY CHART
+=============================================*/
+.methodology-chart{}
+.chart-block h2{
+    display: none;
+}
+.meth-title{
+    width: 33.333%;
+    text-align: center;
+    display: block;
+}
+.chart-block{
+    width: 32%;
+    padding: 1% 1.5%;
+    position: relative;
+    height: 200px;
+    margin-bottom: 2%;
+    font-family: @sans-serif-light;
+}
+.chart-block p{
+    color: @white;
+}
+.chart-block ul{
+    list-style-type: disc;
+    margin-left: 25px;
+    color: @white;
+}
+.chart-block li{
+    font-size: 12px;
+}
+.chart-block li a{
+    color: @white;
+}
+.chart-divider{
+    width: 2%;
+    height: 20px;
+}
+.chart-arrow{
+    position: absolute;
+    z-index: 50;
+    right: -8%;
+    top: 80px;
+    width: 10%;
+    text-align: center;
+    background: @white;
+
+    -webkit-transform: rotate(0deg);
 }
