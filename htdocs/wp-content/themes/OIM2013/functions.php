@@ -32,7 +32,7 @@ require_once('library/bones.php'); // if you remove this, bones will break
 */
 require_once('library/products-services.php');
 require_once('library/team-members.php');
-require_once('library/clients.php');
+require_once('library/clients-list.php');
 require_once('library/news.php');
 require_once('library/client-case-studies.php');
 
@@ -167,7 +167,7 @@ add_action( 'admin_menu', 'remove_menu_pages' );
  */
 
 function setup_theme_admin_menus() {  
-    add_menu_page('OIM Settings', 'OIM Settings', 'manage_options', 'oim-settings', 'theme_settings_page', null, 81 );
+    add_menu_page('OIM Settings', 'OIM Settings', 'manage_options', 'oim-settings', 'theme_settings_page', null, 82 );
 }
 
 function theme_settings_page() {  
@@ -284,7 +284,7 @@ function get_csv_cats ( $post_id, $taxonomy ) {
  * @return boolean
  */
 function get_client_scroller () {
-    $client_logos = new WP_Query( 'post_type=clients' );
+    $client_logos = new WP_Query( 'post_type=clients_list' );
 
     if ( $client_logos->have_posts() ) : ?>
         <h2>Clients</h2>

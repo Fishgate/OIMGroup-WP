@@ -5,26 +5,18 @@ Template Name: Methodology
 ?>
 
 <?php get_header(); ?>
-
-
-
-<!-- Header Slideshow  -->
-
-          <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/about.jpg" alt="">
-
-<!-- END Header Slideshow  -->
+                        
+                        <?php if(get_field('feature_url')) ?><a href="<?php echo get_field('feature_url'); ?>">
+                            <img class="response-img" src="<?php echo get_feature_src($post->ID, 'large-feature'); ?>" alt="<?php echo get_the_title(); ?>" />
+                        <?php if(get_field('feature_url')) ?></a>
 
 			<div id="content-generic">
 
 				<div id="inner-content" class="wrap clearfix">
-
-                                                    <!--==============================================
-                                                          TYRONE INSERTS NAV HERE FROM HEADER
-                                                    ================================================-->
+                                    
                                                     <nav role="navigation">
                                                         <?php get_secondary_nav(); ?>
                                                     </nav>
-                                                    <!-- nav end -->
                                                     
                                                     <!-- breadcrum -->
                                                     <?php if(get_breadcrum()) get_breadcrum(); ?>

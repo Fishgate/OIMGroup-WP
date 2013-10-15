@@ -14,13 +14,23 @@ if (isset($_POST["update_settings"])) {
     save_setting($POST["tw_url"], "twitter_url");
     save_setting($POST["yt_url"], "youtube_url");
     save_setting($POST["li_url"], "linkedin_url");
+    save_setting($POST["tel_num"], "tel_number");
     save_setting($POST["footer_col1"], "footer_col1");
     save_setting($POST["footer_col2"], "footer_col2");
     save_setting($POST["footer_col3"], "footer_col3");
+    save_setting($POST["home_feature1"], "home_feature1");
+    save_setting($POST["home_feature2"], "home_feature2");
+    save_setting($POST["home_feature3"], "home_feature3");
    
     echo '<div id="message" class="updated">Settings saved</div>';
 } 
     
+
+//prepare menu
+$menus = wp_get_nav_menus(); // get all active menus
+$locations = get_nav_menu_locations(); // get all menu location info
+$location_id = 'main-nav'; // the menu location slug we are looking for
+
 ?>
 
 <div class="wrap">  
@@ -49,7 +59,47 @@ if (isset($_POST["update_settings"])) {
             </tr>
             
             <tr valign="top">  
-                <th scope="row"><label>Footer Feeds:</label></th>
+                <th scope="row"><label for="tel_num">Tel Number:</label></th>
+                <td><input type="text" name="tel_num" value="<?php echo get_option("tel_number"); ?>" size="40" /></td>
+            </tr>
+            
+            <tr valign="top">  
+                <th scope="row"><label>Home Page Features:</label></th>
+                <td>
+                    <?php                                       
+                        function list_options($select_name, $menu_items_array){
+                            echo '<select style="width: 188px" name="'.$select_name.'">';
+                                foreach($menu_items_array as $item){
+                                    if(trim(get_option($select_name)) == trim($item->title)){
+                                        echo '<option selected="selected">'.$item->title.'</option>';
+                                    }else{
+                                        echo '<option>'.$item->title.'</option>';
+                                    }
+                                }
+                            echo '</select>'; 
+                        }
+                        
+                        
+                        if (isset($locations[$location_id])) {
+                            foreach ($menus as $menu) {
+                                if ($menu->term_id == $locations[$location_id]) {
+
+                                    $menu_items = wp_get_nav_menu_items($menu);
+                                    
+                                    list_options('home_feature1', $menu_items);
+                                    list_options('home_feature2', $menu_items);
+                                    list_options('home_feature3', $menu_items);
+                                    
+                                    break;
+                                }
+                            }
+                        }
+                    ?>
+                </td>
+            </tr>
+            
+            <tr valign="top">  
+                <th scope="row"><label>Footer Menu Feeds:</label></th>
                 <td>
                     <?php                                       
                         function list_parent_options($select_name, $menu_items_array){
@@ -65,10 +115,6 @@ if (isset($_POST["update_settings"])) {
                                 }
                             echo '</select>'; 
                         }
-                        
-                        $menus = wp_get_nav_menus(); // get all active menus
-                        $locations = get_nav_menu_locations(); // get all menu location info
-                        $location_id = 'main-nav'; // the menu location slug we are looking for
                         
                         if (isset($locations[$location_id])) {
                             foreach ($menus as $menu) {

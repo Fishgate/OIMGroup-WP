@@ -8,11 +8,9 @@ Template Name: Careers
 
 
 
-<!-- Header Slideshow  -->
-
-          <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/careers.jpg" alt="">
-
-<!-- END Header Slideshow  -->
+						<?php if(get_field('feature_url')) ?><a href="<?php echo get_field('feature_url'); ?>">
+                            <img class="response-img" src="<?php echo get_feature_src($post->ID, 'large-feature'); ?>" alt="<?php echo get_the_title(); ?>" />
+                        <?php if(get_field('feature_url')) ?></a>
 
 			<div id="content-generic">
 

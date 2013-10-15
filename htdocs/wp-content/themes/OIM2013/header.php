@@ -61,7 +61,7 @@
                                         
                                         <div id="mobile-menu-holder">
                                             <nav>
-                                                <?php bones_main_nav_fallback('mobile_menu');  ?>
+                                                <?php bones_main_nav_fallback();  ?>
                                                 <!--<div class="mobile-item"><a href="">Home</a></div>
                                                 <div class="mobile-item"><a href="">Our Methodology</a></div>
                                                 <div class="mobile-item"><a href="">Products &amp; Services</a></div>
@@ -94,7 +94,9 @@
                                                                 <a href="<?php echo get_option('linkedin_url'); ?>" target="_blank"><span class="icon">&#xe021;</span></a>
                                                             </div>
                                                         <?php } ?>
-                                                        <div class="right details"><span class="icon" style="padding-right: 20px; color: #5482AB;">@</span>+27 21 913 8814/5</div>
+                                                        <?php if( trim(get_option('tel_number')) != '' ) { ?>
+                                                            <div class="right details"><span class="icon" style="padding-right: 20px; color: #5482AB;">@</span><?php echo get_option('tel_number'); ?></div>
+                                                        <?php } ?>
                                                     </div>
                                                     <div id="the-search">
                                                         <?php echo get_search_form(); ?>
