@@ -7,7 +7,7 @@
 				<div id="inner-content" class="wrap clearfix">
                                     
                                     <nav role="navigation">
-                                        <?php bones_main_nav(); ?>
+                                        <?php get_secondary_nav(); ?>
                                     </nav>
 
                                     <!-- breadcrum -->

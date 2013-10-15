@@ -483,6 +483,64 @@ function get_secondary_nav () {
     }
 }
 
+/**
+ * Outputs the footer feeds as selected in the theme option menu
+ * 
+ * @param String $option
+ */
+function get_footer_feed($option) {
+    if (trim(get_option($option)) != '') {
+        $menus = wp_get_nav_menus(); // get all active menus
+        $locations = get_nav_menu_locations(); // get all menu location info
+        $location_id = 'main-nav'; // the menu location slug we are looking for
 
+        if (isset($locations[$location_id])) {
+            foreach ($menus as $menu) {
+                if ($menu->term_id == $locations[$location_id]) {
+                    $menu_items = wp_get_nav_menu_items($menu);
+
+                    //we get the menu item ID of the parent element
+                    foreach ($menu_items as $parent) {
+                        if (trim($parent->title) == trim(get_option($option))) {
+                            $parentID = $parent->ID; 
+                            ?>
+                            <h2 class="<?php echo implode(' ', $parent->classes); ?>"><?php echo $parent->title; ?></h2>
+                            <?php
+                            break;
+                        }
+                    }
+
+                    //use the parent ID we just got to output our menu
+                    foreach ($menu_items as $sub) {
+                        if ($sub->menu_item_parent == $parentID) {
+                            $subID = $sub->ID; 
+                            ?>
+                            <div class="secondary-link">
+                                <a class="<?php echo implode(' ', $sub->classes); ?>" target="<?php echo $sub->target; ?>"><?php echo trim($sub->title); ?></a>
+                                <?php if (has_children($menu_items, $subID)) { ?>
+                                    <div class="flyout">
+                                        <?php
+                                        foreach ($menu_items as $sub2) {
+                                            if ($sub2->menu_item_parent == $subID) {
+                                                ?>
+                                                <a href="<?php echo $sub2->url; ?>" target="<?php echo $sub2->target; ?>"><?php echo $sub2->title; ?></a><br />
+                                                <?php
+                                            }
+                                        }
+                                        ?>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                            <?php
+                         }
+                    }
+
+                    break;
+                }   
+            }
+
+        } 
+    } 
+}
 
 ?>

@@ -30,7 +30,7 @@ Template Name: Products
                                                           TYRONE INSERTS NAV HERE FROM HEADER
                                                     ================================================-->
                                                     <nav role="navigation">
-                                                        <?php bones_main_nav(); ?>
+                                                        <?php get_secondary_nav(); ?>
                                                     </nav>
                                                     <!-- nav end -->
                                                     
