@@ -29,99 +29,6 @@ if (!window.getComputedStyle) {
 
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
-    
-//------------ TYRONE SEARCHER REVEAL
-var opacity = 0;
-
-$('.searchicon').click(function(){
-    if(opacity === 0){
-        $('#the-search').css('display', 'block');
-        $('#the-search').animate({opacity: '1'}, 'fast');
-        opacity = 1;
-    }else{
-        $('#the-search').animate({opacity: '0'}, 'fast', function(){
-            $('#the-search').css('display', 'none');
-        });
-        opacity = 0;
-    }
-});
-
-
-//------------ TYRONE MEGA PARENTS HOVER BEHAVIOURS
-$('.mega-parent').each(function(){
-    $(this).mouseenter(function(){
-        $(this).find('.parent-a').css('color', '#ffffff');
-    });
-    $(this).mouseleave(function(){
-        $(this).find('.parent-a').css('color', '');
-    });
-});
-
-
-//-- HIDE SEARCH IF HOVER ON MENU ITEMS
-$('.sf-menu li').live('mouseenter', function(){
-    $('#the-search').css('display', 'none');
-    opacity = 0;
-});
-    
-//------------ TYRONE ADDS RESPONSIVE SLIDES
-//$(".rslides").responsiveSlides({
-//    "timeout": 10000
-//});
-
-//--check window.resize width of calltoaction
-//$(window).resize(function(){
-//    var menuwidth = $('#menu-menu_oim').width();
-//    var menuwidthoffset = -menuwidth/2;
-//
-//    $('.calltoaction').css('width', menuwidth);
-//    $('.calltoaction').css('margin-left', menuwidthoffset);
-//    $('.calltoaction').css('left', '50%');
-//});
-
-//------------ TYRONE INIT SUPERFISH MENUS
-$('ul.sf-menu').superfish();
-
-//------------ TYRONE EXPANDABLE 3RD LEVEL DROPDOWNS
-$('.secondary-link').each(function(){
-    $(this).live('mouseenter', function(){
-        //$('.flyout').removeClass('expand');
-        $(this).find('.flyout').addClass('expand');
-    });
-    $(this).live('mouseleave', function(){
-        $(this).find('.flyout').removeClass('expand');
-    });
-});
-//------------ TYRONE simply scroll init
-$("#scroller").simplyScroll();
-
-
-//------------ TYRONE MENU-MOBILE INTERACTIONS
-
-//-- HOVERS INDIVIDUAL ITEM
-$('.mobile-item').live('mouseenter', function(){
-    $(this).find('a').css('color', '#ffffff');
-});
-$('.mobile-item').live('mouseleave', function(){
-    $(this).find('a').css('color', '');
-});
-//-- HOVERS MAIN MENU ICON
-$('#menu-mobile').live('mouseenter', function(){
-    $(this).css('cursor', 'pointer');
-});
-
-//-- CLICKS
-$('#menu-mobile').live('click', function(){
-    $('#mobile-menu-holder').slideToggle('fast');
-});
-//-------- HIDE MOBILE MENU WHEN RESIZING TO 768 UP
-$(window).resize(function(){
-    if($(window).width() >= 768){
-        //--- HIDE MOBILE MENU
-        $('#mobile-menu-holder').css('display', 'none');
-    }
-});
-
 
     /*
     Responsive jQuery is a tricky thing.
@@ -156,9 +63,83 @@ $(window).resize(function(){
     if (responsive_viewport > 1030) {
         
     }
+   
+       
+    //------------ TYRONE SEARCHER REVEAL
+    var opacity = 0;
+
+    $('.searchicon').click(function(){
+        if(opacity === 0){
+            $('#the-search').css('display', 'block');
+            $('#the-search').animate({opacity: '1'}, 'fast');
+            opacity = 1;
+        }else{
+            $('#the-search').animate({opacity: '0'}, 'fast', function(){
+                $('#the-search').css('display', 'none');
+            });
+            opacity = 0;
+        }
+    });
+
+    //------------ TYRONE MEGA PARENTS HOVER BEHAVIOURS
+    $('.mega-parent').each(function(){
+        $(this).mouseenter(function(){
+            $(this).find('.parent-a').css('color', '#ffffff');
+        });
+        $(this).mouseleave(function(){
+            $(this).find('.parent-a').css('color', '');
+        });
+    });
+
+    //-- HIDE SEARCH IF HOVER ON MENU ITEMS
+    $('.sf-menu li').live('mouseenter', function(){
+        $('#the-search').css('display', 'none');
+        opacity = 0;
+    });
+
+    //------------ TYRONE INIT SUPERFISH MENUS
+    $('ul.sf-menu').superfish();
+
+    //------------ TYRONE EXPANDABLE 3RD LEVEL DROPDOWNS
+    $('.secondary-link').each(function(){
+        $(this).live('mouseenter', function(){
+            $(this).find('.flyout').addClass('expand');
+        });
+        $(this).live('mouseleave', function(){
+            $(this).find('.flyout').removeClass('expand');
+        });
+    });
+    //------------ TYRONE simply scroll init
+    $("#scroller").simplyScroll();
+
+
+    //------------ TYRONE MENU-MOBILE INTERACTIONS
+    //-- HOVERS INDIVIDUAL ITEM
+    $('.mobile-item').live('mouseenter', function(){
+        $(this).find('a').css('color', '#ffffff');
+    });
     
-	
-	// add all your scripts here
+    $('.mobile-item').live('mouseleave', function(){
+        $(this).find('a').css('color', '');
+    });
+    
+    //-- HOVERS MAIN MENU ICON
+    $('#menu-mobile').live('mouseenter', function(){
+        $(this).css('cursor', 'pointer');
+    });
+
+    //-- CLICKS
+    $('#menu-mobile').live('click', function(){
+        $('#mobile-menu-holder').slideToggle('fast');
+    });
+    
+    //-------- HIDE MOBILE MENU WHEN RESIZING TO 768 UP
+    $(window).resize(function(){
+        if($(window).width() >= 768){
+            //--- HIDE MOBILE MENU
+            $('#mobile-menu-holder').css('display', 'none');
+        }
+    });
 	
  
 }); /* end of as page load scripts */
