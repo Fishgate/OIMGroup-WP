@@ -146,22 +146,17 @@ function bones_scripts_and_styles() {
     }
 
     //adding scripts file in the footer
-    wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
-    
-    //adding scripts file for responsiveSlides
-    wp_register_script( 'responsive-slides-js', get_stylesheet_directory_uri() . '/library/js/responsiveslides.js', array( 'jquery' ), '', true );
+    wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery', 'jq-form-plugin', 'simplyscroll-js', 'superfish-js', 'hoverintent-js' ), '', true );
     wp_register_script( 'hoverintent-js', get_stylesheet_directory_uri() . '/library/js/hoverIntent.js', array( 'jquery' ), '', true );
-    wp_register_script( 'superfish-js', get_stylesheet_directory_uri() . '/library/js/superfish.js', array( 'jquery' ), '', true );
-    
-    //adding scripts file for simply scroll
+    wp_register_script( 'superfish-js', get_stylesheet_directory_uri() . '/library/js/superfish.js', array( 'jquery' ), '', true );    
     wp_register_script( 'simplyscroll-js', get_stylesheet_directory_uri() . '/library/js/simplyscroll.js', array( 'jquery' ), '', true );
+    wp_register_script( 'jq-form-plugin', get_stylesheet_directory_uri() . '/library/js/libs/jquery.form.min.js', array( 'jquery' ), '', true );
 
     // enqueue styles and scripts
     wp_enqueue_script( 'bones-modernizr' );
     wp_enqueue_style( 'bones-stylesheet' );
-    wp_enqueue_style( 'responsive-slides' );
     wp_enqueue_style( 'megafish' );
-    wp_enqueue_style('bones-ie-only');
+    wp_enqueue_style( 'bones-ie-only' );
 
     $wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
@@ -171,13 +166,12 @@ function bones_scripts_and_styles() {
     and your site will load faster.
     */
     wp_enqueue_script( 'jquery' );
-    wp_enqueue_script( 'responsive-slides-js' );
     wp_enqueue_script( 'hoverintent-js' );
     wp_enqueue_script( 'superfish-js' );
     wp_enqueue_script( 'simplyscroll-js' );
     wp_enqueue_script( 'bones-js' );
+    wp_enqueue_script( 'jq-form-plugin' );
     
-
   }
 }
 
