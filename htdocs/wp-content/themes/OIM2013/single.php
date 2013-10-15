@@ -19,7 +19,7 @@
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                                                         
                                                         <!-- The category heading -->
-                                                        <h1><?php printf(__('%1$s', 'bonestheme'), get_csv_cats($post->ID, 'news_cat')); ?></h1>
+                                                        <h1><?php printf(__('%1$s', 'bonestheme'), get_the_category_list(', ')); ?></h1>
                                                         
                                                         <div class="left single-news-left">
                                                             <!-- Date block -->
@@ -50,7 +50,7 @@
                                                                     </section> <!-- end article section -->
 
                                                                     <footer class="right article-footer" style="top: 0;">
-                                                                            <p class="byline vcard"><?php printf(__('Posted in %1$s', 'bonestheme'), get_csv_cats($post->ID, 'news_cat')); ?></p>
+                                                                            <p class="byline vcard"><?php printf(__('Posted in %1$s', 'bonestheme'), get_the_category_list(', ')); ?></p>
                                                                     </footer> <!-- end article footer -->
 
                                                             </article> <!-- end article -->

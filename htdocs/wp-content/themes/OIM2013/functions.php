@@ -33,7 +33,7 @@ require_once('library/bones.php'); // if you remove this, bones will break
 require_once('library/products-services.php');
 require_once('library/team-members.php');
 require_once('library/clients-list.php');
-require_once('library/news.php');
+//require_once('library/news.php');
 require_once('library/client-case-studies.php');
 
 /*  
@@ -156,11 +156,12 @@ function bones_wpsearch($form) {
  * Kill the default posts page, custom posts for life
  */
 
+/*
 function remove_menu_pages() {
     remove_menu_page('edit.php');  
 }
 add_action( 'admin_menu', 'remove_menu_pages' );
-
+*/
 
 /**
  * Custom settings page for the theme
