@@ -2,7 +2,7 @@
 // Local server settings
  
 // Local Database
-define('DB_NAME', 'OIM');
+define('DB_NAME', 'stagidazas_oim');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');

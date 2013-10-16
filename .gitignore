@@ -1,7 +1,5 @@
 /htdocs/.htaccess
 
-/htdocs/wp-content/uploads/*
-
 # Don't add the Local settings file to the repository #
 /htdocs/wp-config-local.php
  
