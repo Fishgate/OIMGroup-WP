@@ -1,9 +1,25 @@
 <?php get_header(); ?>
 
-			<div id="content">
+<!-- Header Slideshow  -->
+          <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/home2.jpg" alt="">
+<!-- END Header Slideshow  -->
+
+			<div id="content-generic">
 
 				<div id="inner-content" class="wrap clearfix">
 
+                                    <!--==============================================
+                                          TYRONE INSERTS NAV HERE FROM HEADER
+                                    ================================================-->
+                                    <nav role="navigation">
+                                        <?php get_secondary_nav(); ?>
+                                    </nav>
+                                    <!-- nav end -->
+
+                                    <!-- breadcrum -->
+                                        <?php if(get_breadcrum()) get_breadcrum(); ?>
+                                    <!-- END BREADCRUMBS -->
+                                    
 						<div id="main" class="eightcol first clearfix" role="main">
 
 						<h1 class="archive-title"><?php post_type_archive_title(); ?></h1>

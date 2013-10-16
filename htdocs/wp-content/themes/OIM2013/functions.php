@@ -505,7 +505,7 @@ function get_footer_feed($option) {
                         if (trim($parent->title) == trim(get_option($option))) {
                             $parentID = $parent->ID; 
                             ?>
-                            <h2 class="<?php echo implode(' ', $parent->classes); ?>"><?php echo $parent->title; ?></h2>
+                            <h2 class="<?php echo implode(' ', $parent->classes); ?> head-secondary"><?php echo $parent->title; ?></h2>
                             <?php
                             break;
                         }
@@ -520,15 +520,17 @@ function get_footer_feed($option) {
                                 <a class="<?php echo implode(' ', $sub->classes); ?>" target="<?php echo $sub->target; ?>"><?php echo trim($sub->title); ?></a>
                                 <?php if (has_children($menu_items, $subID)) { ?>
                                     <div class="flyout">
+                                        <ul>
                                         <?php
                                         foreach ($menu_items as $sub2) {
                                             if ($sub2->menu_item_parent == $subID) {
                                                 ?>
-                                                <a href="<?php echo $sub2->url; ?>" target="<?php echo $sub2->target; ?>"><?php echo $sub2->title; ?></a><br />
+                                                <a href="<?php echo $sub2->url; ?>" target="<?php echo $sub2->target; ?>"><li><?php echo $sub2->title; ?></li></a>
                                                 <?php
                                             }
                                         }
                                         ?>
+                                        </ul>
                                     </div>
                                 <?php } ?>
                             </div>
