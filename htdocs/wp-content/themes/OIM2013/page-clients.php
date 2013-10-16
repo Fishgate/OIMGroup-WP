@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Clients
+*/
+?>
+
 <?php get_header(); ?>
                         
                         <?php if(get_field('feature_url')) { ?><a href="<?php echo get_field('feature_url'); ?>"><?php } ?>
@@ -57,7 +63,7 @@
 
 						</div> <!-- end #main -->
                                                 
-                                                <?php get_sidebar('general'); ?>
+                                                <?php get_sidebar('clients'); ?>
      
                                                 
 				</div> <!-- end #inner-content -->

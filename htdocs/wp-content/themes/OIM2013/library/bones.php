@@ -227,7 +227,8 @@ function bones_theme_support() {
 		array(
 			'main-nav' => __( 'Main Menu', 'bonestheme' ),   // main nav above the banner
                         'secondary-nav' => __( 'Secondary Menu', 'bonestheme' ), //secondary nav inside the banner
-			'footer-links' => __( 'Footer Menu', 'bonestheme' ) // 3rd nav in the footer
+			'footer-links' => __( 'Footer Menu', 'bonestheme' ), // 3rd nav in the footer
+                        'more-about-oim' => __( 'More About OIM', 'bonestheme' ) // more about OIM, this is better suited as a widget but this will do for now
 		)
 	);
 } /* end bones theme support */
