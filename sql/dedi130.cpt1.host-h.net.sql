@@ -18,8 +18,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 -- Database: `stagidazas_OIM`
 --
-CREATE DATABASE `stagidazas_OIM` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `stagidazas_OIM`;
+
 
 -- --------------------------------------------------------
 
@@ -148,7 +147,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(1, 'siteurl', 'http://staging.fishgate.co.za/OIM', 'yes'),
+(1, 'siteurl', 'http://192.168.1.11/OIM/htdocs', 'yes'),
 (2, 'blogname', 'OIM Business Performance Specialists', 'yes'),
 (3, 'blogdescription', 'Business Performance Specialist', 'yes'),
 (4, 'users_can_register', '0', 'yes'),

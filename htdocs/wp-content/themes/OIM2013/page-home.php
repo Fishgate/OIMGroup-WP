@@ -38,7 +38,9 @@ Template Name: Home
 
                                                                         <a class="service-link" href="#">Operational Optimisation</a>
                                                                     </center>
+                                                                    <div style="padding: 20px 0; margin: 30px 0;" class="bordered-top-bottom">
                                                                     <?php the_content(); ?>
+                                                                    </div>
                                                                     <!-- TYRONE ADDS 3 DIVS FOR DYNAMIC SERVICES-->
                                                                         <div class="left dynamic-service clearfix">
                                                                             <img src="<?php echo get_template_directory_uri(); ?>/library/images/methodology_mini.jpg" alt="Our Methodology" />
