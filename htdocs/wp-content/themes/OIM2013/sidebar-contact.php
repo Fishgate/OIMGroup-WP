@@ -12,7 +12,7 @@
                                                 <textarea id="message" data-placeholder="Message" name="message">Message</textarea>
                                                 <input type="submit" value="Submit" id="contact-submit" />
                                                 <br/><br/>
-                                                    <p><em class="red">* Required fields</em></p>
+                                                    <p>* Required fields</p>
                                             </form>
                                         </div>
 

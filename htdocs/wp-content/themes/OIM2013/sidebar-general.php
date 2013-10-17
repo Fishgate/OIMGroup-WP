@@ -11,7 +11,7 @@
                                         
                                         if (isset($locations[$location_id])) { 
                                             ?>
-                                            <ul>
+                                            <ul class="bordered-top">
                                             <?php
                                             foreach ($menus as $menu) {
                                                 if ($menu->term_id == $locations[$location_id]) {

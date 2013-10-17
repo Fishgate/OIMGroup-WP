@@ -8,7 +8,7 @@
                                     
                                             <div class="widget">
                                                 <h4 class="widgettitle" id="side-widget-client">Client case studies</h4>
-                                                <ul>
+                                                <ul class="bordered-top">
                                                     <?php
                                                     while($ccs->have_posts()) : $ccs->the_post();
                                                         ?>

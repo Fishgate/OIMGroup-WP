@@ -81,6 +81,13 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 @font-face {
+  font-family: 'opensansBold';
+  src: url('../fonts/OpenSans-Bold-webfont.eot');
+  src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Bold-webfont.svg#OpenSans-Bold-webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'opensans';
   src: url('../fonts/OpenSans-Regular-webfont.eot');
   src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Regular-webfont.svg#OpenSans-Regular-webfont') format('svg');
@@ -372,11 +379,8 @@ do they need tweaking?
   font-size: 0;
   line-height: 0;
 }
-.team-linkdin {
-  display: inline-block;
-  margin-top: 50px;
-  padding: 0px 15px;
-  text-align: center;
+.team-job-title {
+  color: #666;
 }
 /* import grid */
 /******************************************************************
@@ -854,8 +858,6 @@ nav[role=navigation] {
     display: inline-block;
 }*/
 .team-job-title {
-  font-size: 13px;
-  letter-spacing: 0.1em;
   color: #666;
 }
 /*============================================
@@ -883,12 +885,6 @@ nav[role=navigation] {
   display: inline-block;
   font-size: 0;
   line-height: 0;
-}
-.team-linkdin {
-  display: inline-block;
-  margin-top: 50px;
-  padding: 0px 15px;
-  text-align: center;
 }
 /*============================================
           SINGLE NEWS DATE AND ARTICLE
@@ -972,6 +968,9 @@ nav[role=navigation] {
   text-align: center;
   background: #ffffff;
   -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 /******************************************************************
 Site Name: OIM

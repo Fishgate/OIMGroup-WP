@@ -44,7 +44,7 @@ body {
 	color: @oim_grey;;
 }
 p{
-font-size: 12px;
+font-size: 12px!important;
 }
 /********************
 02. WORDPRESS BODY CLASSES
@@ -146,13 +146,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-        font-family: @sans-serif-light;
-	font-size: 21px;
+	font-size: 24px;
+        font-weight: 100!important;
 	line-height: 1.1em;
 
         color: @white;
         background: @oim_blue_light;
-        padding: 13px 30px;
+        padding: 12px 30px;
         margin-top: 0px;
 }
 .h1-nostyle{
@@ -170,7 +170,7 @@ h1 a:hover{
 }
 
 h2, .h2 {
-    font-family: @sans-serif;
+    font-family: @sans-serif-bold;
 	font-size: 14px;
 	line-height: 1em;
 	margin-bottom: 0.375em;
@@ -237,39 +237,10 @@ h5, .h5 {
     position: relative;
     z-index: 102;
 }
-/*--------- responsiveslides -------*/
-    .rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
 
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
+.hidden{
+    display: none;
 }
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-}
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  /*width: 100%;*/
-  border: 0;
-}
-
 
 /*********************
 07. NAVIGATION STYLES
@@ -367,9 +338,6 @@ and more scalable.
     background: @oim_red;
 }
 
-/*============================================
-        RESONSIVE SLIDES CALL TO ACTION
-=============================================*/
 
 
 /*=======================================
@@ -469,6 +437,7 @@ TYRONE ADDS MEGA MENU STYLES
 }
 .flyout li{
     padding: 0 0 5px 5px;
+    list-style-type: circle;
 }
 .expand{
     border-top: 1px dotted @oim_grey;
@@ -537,18 +506,27 @@ TYRONE ADDS MEGA MENU STYLES
     color: @white;
     margin: 0 0 0.67em;
 }
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px dotted #999;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+}
 
 /*-------------------------------------------------------
                   HOME BODY STYLES
 ---------------------------------------------------------*/
 a.service-link{
     color: @oim_blue_dark;
-    font-family: @sans-serif;
-    font-weight: bold;
+    font-family: @sans-serif-bold;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
     padding: 15px;
+    margin: 25px 0 0 0;
     display: inline-block;
 }
 #home-service{
@@ -608,8 +586,9 @@ padding: 0 0 0 20px;
     text-align: center;
     display: block;
     width: 95%;
-    top: -2px;
+    top: -1px;
     left: 2.5%;
+    line-height: 1em;
 }
 
 
@@ -1608,9 +1587,9 @@ nav[role=navigation]{
 =============================================*/
 .single-title{
     margin: 0 0 10px 0;
-    font-family: @sans-serif-light;
+    /*font-family: @sans-serif-light;*/
     color: @white;
-    font-size: 18px;
+    /*font-size: 18px;*/
 }
 
 
@@ -1664,6 +1643,9 @@ nav[role=navigation]{
 /*============================================
                 BORDERING
 =============================================*/
+.bordered-top, .widget ul{
+    border-top: 1px dotted @oim_blue_light;
+}
 .bordered-bottom{
     border-bottom: 1px dotted @oim_grey;
 }
@@ -1709,9 +1691,13 @@ nav[role=navigation]{
 
 .team-linkdin{
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 0px;
+    margin-bottom: 30px;
     padding: 0px 15px;
     text-align: center;
+}
+.team-job-title{
+    color: #666;
 }
 
 /*============================================
@@ -1723,7 +1709,12 @@ nav[role=navigation]{
 .contact-divider{
     width: 0;
 }
-
+/*============================================
+      CLIENT CASE STUDIES FEATURE IMG STYLE
+=============================================*/
+ccs-logo{
+    margin: 25px 0;
+}
 
 /*============================================
           METHODOLOGY CHART
@@ -1790,6 +1781,9 @@ nav[role=navigation]{
     background: @white;
 
     -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 

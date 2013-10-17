@@ -562,6 +562,13 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 @font-face {
+  font-family: 'opensansBold';
+  src: url('../fonts/OpenSans-Bold-webfont.eot');
+  src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Bold-webfont.svg#OpenSans-Bold-webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'opensans';
   src: url('../fonts/OpenSans-Regular-webfont.eot');
   src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Regular-webfont.svg#OpenSans-Regular-webfont') format('svg');
@@ -788,7 +795,7 @@ body {
   color: #666666;
 }
 p {
-  font-size: 12px;
+  font-size: 12px!important;
 }
 /********************
 02. WORDPRESS BODY CLASSES
@@ -904,12 +911,12 @@ h5 a,
 }
 h1,
 .h1 {
-  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 21px;
+  font-size: 24px;
+  font-weight: 100!important;
   line-height: 1.1em;
   color: #ffffff;
   background: #5482ab;
-  padding: 13px 30px;
+  padding: 12px 30px;
   margin-top: 0px;
 }
 .h1-nostyle {
@@ -927,7 +934,7 @@ h1 a:hover {
 }
 h2,
 .h2 {
-  font-family: "opensans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "opensansBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1em;
   margin-bottom: 0.375em;
@@ -978,35 +985,8 @@ h5,
   position: relative;
   z-index: 102;
 }
-/*--------- responsiveslides -------*/
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
+.hidden {
   display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-}
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  /*width: 100%;*/
-
-  border: 0;
 }
 /*********************
 07. NAVIGATION STYLES
@@ -1070,9 +1050,6 @@ and more scalable.
   color: #ffffff;
   background: #a22b38;
 }
-/*============================================
-        RESONSIVE SLIDES CALL TO ACTION
-=============================================*/
 /*=======================================
 TYRONE ADDS MEGA MENU STYLES
 ========================================*/
@@ -1165,6 +1142,7 @@ TYRONE ADDS MEGA MENU STYLES
 }
 .flyout li {
   padding: 0 0 5px 5px;
+  list-style-type: circle;
 }
 .expand {
   border-top: 1px dotted #666666;
@@ -1229,17 +1207,26 @@ TYRONE ADDS MEGA MENU STYLES
   color: #ffffff;
   margin: 0 0 0.67em;
 }
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px dotted #999;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+}
 /*-------------------------------------------------------
                   HOME BODY STYLES
 ---------------------------------------------------------*/
 a.service-link {
   color: #00204e;
-  font-family: "opensans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: "opensansBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
   padding: 15px;
+  margin: 25px 0 0 0;
   display: inline-block;
 }
 #home-service {
@@ -1296,8 +1283,9 @@ a.service-link {
   text-align: center;
   display: block;
   width: 95%;
-  top: -2px;
+  top: -1px;
   left: 2.5%;
+  line-height: 1em;
 }
 /*========================================================================
  SIMPLY SCROLL CSS ADDED 
@@ -1985,9 +1973,11 @@ nav[role=navigation] {
 =============================================*/
 .single-title {
   margin: 0 0 10px 0;
-  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: @sans-serif-light;*/
+
   color: #ffffff;
-  font-size: 18px;
+  /*font-size: 18px;*/
+
 }
 /*============================================
           SINGLE NEWS DATE AND ARTICLE
@@ -2036,6 +2026,10 @@ nav[role=navigation] {
 /*============================================
                 BORDERING
 =============================================*/
+.bordered-top,
+.widget ul {
+  border-top: 1px dotted #5482ab;
+}
 .bordered-bottom {
   border-bottom: 1px dotted #666666;
 }
@@ -2077,9 +2071,13 @@ nav[role=navigation] {
 }
 .team-linkdin {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 0px;
+  margin-bottom: 30px;
   padding: 0px 15px;
   text-align: center;
+}
+.team-job-title {
+  color: #666;
 }
 /*============================================
           CONTACT PAGE TINYMCE AREA
@@ -2089,6 +2087,12 @@ nav[role=navigation] {
 }
 .contact-divider {
   width: 0;
+}
+/*============================================
+      CLIENT CASE STUDIES FEATURE IMG STYLE
+=============================================*/
+ccs-logo {
+  margin: 25px 0;
 }
 /*============================================
           METHODOLOGY CHART
@@ -2159,6 +2163,9 @@ nav[role=navigation] {
   text-align: center;
   background: #ffffff;
   -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 /*============================================
           TAXONOMY <ARTICLE> STYLES
@@ -2288,11 +2295,8 @@ tweeners.
     font-size: 0;
     line-height: 0;
   }
-  .team-linkdin {
-    display: inline-block;
-    margin-top: 50px;
-    padding: 0px 15px;
-    text-align: center;
+  .team-job-title {
+    color: #666;
   }
 }
 /*
@@ -2777,8 +2781,6 @@ you can add resource intensive styles.
       display: inline-block;
   }*/
   .team-job-title {
-    font-size: 13px;
-    letter-spacing: 0.1em;
     color: #666;
   }
   /*============================================
@@ -2806,12 +2808,6 @@ you can add resource intensive styles.
     display: inline-block;
     font-size: 0;
     line-height: 0;
-  }
-  .team-linkdin {
-    display: inline-block;
-    margin-top: 50px;
-    padding: 0px 15px;
-    text-align: center;
   }
   /*============================================
             SINGLE NEWS DATE AND ARTICLE
@@ -2895,6 +2891,9 @@ you can add resource intensive styles.
     text-align: center;
     background: #ffffff;
     -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 /*
