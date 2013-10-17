@@ -1,6 +1,6 @@
 				<div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
                                     <div class="widget">
-                                        <h4 class="widgettitle" id="side-widget-contact">Contact Us</h4>
+                                        <h4 class="widgettitle" id="side-widget-contact"><?php if (!is_page('contact')) { echo 'Contact Us'; } else { echo 'Enquiries'; } ?></h4>
                                         <div class="sidebar-form-holder">
                                             <p>Contact OIM for more information</p>
                                             <form id='contact-form'>
@@ -15,7 +15,8 @@
                                                     <p><em class="red">* Required fields</em></p>
                                             </form>
                                         </div>
-
-                                        <a class="sidebar-large-link" href="#"><p><span class="icon" style="position: relative; top: 3px;">&#xe0eb;</span>Visit the Contact Us page</p></a>
+                                        <?php if (!is_page('contact')) { ?>
+                                            <a class="sidebar-large-link" href="<?php echo site_url('/contact/'); ?>"><p><span class="icon" style="position: relative; top: 3px;">&#xe0eb;</span>Visit the Contact Us page</p></a>
+                                        <?php } ?>
                                     </div>
 				</div>

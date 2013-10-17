@@ -19,7 +19,7 @@
                                                         <p>
                                                             <a href="<?php echo get_permalink(get_the_ID()); ?>"><?php echo get_the_title(); ?></a>
                                                             <br />
-                                                            CEO
+                                                            <?php get_job_descrip(); ?>
                                                         </p>
                                                         </center>
                                                     </div>

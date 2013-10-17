@@ -18,15 +18,12 @@
                                 
                                 <div style="background: #fff; padding: 0!important; margin: 0!important;">
                                     <div id="footer-nav-holder">
-                                    <nav id="footer-nav" role="navigation" class="clearfix">
-                                        <?php bones_footer_links(); ?>
-                                        <a class="right" href="#">Contact</a>
-                                        <a class="right" href="#">About</a>
-                                        <a class="right" href="#">Home</a>
-                                    </nav>
-                                    <p class="source-org copyright">
-                                        &copy; Copyright<?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
-                                    </p>
+                                        <nav id="footer-nav" role="navigation" class="clearfix">
+                                            <?php if(function_exists('get_footer_menu') && get_footer_menu()) get_footer_menu(); ?>
+                                        </nav>
+                                        <p class="source-org copyright">
+                                            &copy; Copyright<?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
+                                        </p>
                                     </div>
                                 </div>
 			</footer> <!-- end footer -->

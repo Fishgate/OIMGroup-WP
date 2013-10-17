@@ -45,7 +45,7 @@ Template Name: Home
                                                                             <div class="service-copy">
                                                                                 <h2>Our Methodology</h2>
                                                                                 <p>Various methodologies are used to ensure the successful implementation of projects, including SDLC and Agile. We also have extensive experience in business process management technologies such as workflow and electronic content management(ECM).</p>
-                                                                                <a href="#">Methodology &amp; Services</a>
+                                                                                <a href="<?php echo site_url('/our-methodology/'); ?>">Methodology &amp; Services</a>
                                                                             </div>
                                                                         </div>
                                                                         <div class="left dynamic-service dynamic-service-mid clearfix">
@@ -53,7 +53,7 @@ Template Name: Home
                                                                             <div class="service-copy">
                                                                                 <h2>About OIM</h2>
                                                                                 <p>With over 25 years' experience in business improvement, Operational Improvement Management (OIM) advises several South African Blue-Chip companies and manages performance improvement assignments in Europe, Australia and USA and other African countries.</p>
-                                                                                <a href="#">Read more about OIM</a>
+                                                                                <a href="<?php echo site_url('/about-oim/'); ?>">Read more about OIM</a>
                                                                             </div>
                                                                         </div>
                                                                         <div class="left dynamic-service clearfix">
@@ -61,10 +61,11 @@ Template Name: Home
                                                                             <div class="service-copy">
                                                                                 <h2>Client Testimonials</h2>
                                                                                 <p>"The OIM team has shown the ability to understand our requirements in this regard and delivered an effective framework for our ongoing future use. They are a valued 'member' of our strategy review team - their role is highly respected and much appreciated."</p>
-                                                                                <a href="#">View OIM's Clients</a>
+                                                                                <a href="<?php echo site_url('/clients/'); ?>">View OIM's Clients</a>
                                                                             </div>
                                                                         </div>
                                                                     
+                                                                        <h2>Clients</h2>
                                                                         <?php if ( function_exists('get_client_scroller') && get_client_scroller() ) get_client_scroller(); ?>
                                                                     
 								</section> <!-- end article section -->

@@ -37,13 +37,13 @@ Template Name: Clients
                                                                     <?php the_content(); ?>
                                                                     
 								</section> <!-- end article section -->
-
-								<footer class="article-footer">
-									<p class="clearfix"><?php the_tags('<span class="tags">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?></p>
-
-								</footer> <!-- end article footer -->
-
+                                                                
+                                                                <h2>Our Client list includes:</h2>
+                                                                <?php if ( function_exists('get_client_scroller') && get_client_scroller() ) get_client_scroller(); ?>
+                                                                
 							</article> <!-- end article -->
+                                                        
+                                                        
 
 							<?php endwhile; else : ?>
 

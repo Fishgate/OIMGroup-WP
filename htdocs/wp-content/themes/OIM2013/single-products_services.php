@@ -58,7 +58,7 @@
 
 						</div> <!-- end #main -->
 
-						<?php get_sidebar(); ?>
+						<?php get_sidebar('products-services'); ?>
 
 				</div> <!-- end #inner-content -->
 

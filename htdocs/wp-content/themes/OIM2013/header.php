@@ -59,21 +59,7 @@
                                             <a href="tel:+27219138814"><span class="icon" style="display: inline-block; margin-right: 25px;">@</span></a> <a href="#"><span style="display: inline-block;" class="icon">&#xe00f;</span></a>
                                         </div>
                                         
-                                        <div id="mobile-menu-holder">
-                                            <nav>
-                                                <?php bones_main_nav_fallback();  ?>
-                                                <!--<div class="mobile-item"><a href="">Home</a></div>
-                                                <div class="mobile-item"><a href="">Our Methodology</a></div>
-                                                <div class="mobile-item"><a href="">Products &amp; Services</a></div>
-                                                <div class="mobile-item"><a href="">About OIM</a></div>
-                                                <div class="mobile-item"><a href="">Clients</a></div>
-                                                <div class="mobile-item"><a href="">Team</a></div>
-                                                <div class="mobile-item"><a href="">News</a></div>
-                                                <div class="mobile-item"><a href="">Careers</a></div>
-                                                <div class="mobile-item"><a href="">Partnerships</a></div>
-                                                <div class="mobile-item"><a href="">Contact</a></div>-->
-                                            </nav>
-                                        </div>
+                                        <?php if( function_exists('get_mobile_menu') && get_mobile_menu() ) get_mobile_menu(); ?>
 
                                         <!-- =============================
                                                MEGA MENU by Tyrone

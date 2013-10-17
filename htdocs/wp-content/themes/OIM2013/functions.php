@@ -230,17 +230,6 @@ function get_tagline () {
 }
 
 /**
- * A few notes on how to handle the PDF attachment of product pages
- * 
-$download = get_field('pdf_download');
-$img = wp_get_attachment_image_src(get_field('pdf_thumbnail'), 'pdf-thumb');
-
-
-<a href="<?php echo $download; ?>"><img src="<?php echo $img[0]; ?>" /></a>
-*
-*/
-
-/**
  * Returns the job title custom field for team page
  * on success. Returns false if does not exist.
  * 
@@ -288,7 +277,7 @@ function get_client_scroller () {
     $client_logos = new WP_Query( 'post_type=clients_list' );
 
     if ( $client_logos->have_posts() ) : ?>
-        <h2>Clients</h2>
+        
         <ul id="scroller">
             <?php while ( $client_logos->have_posts() ) :
                 $client_logos->the_post(); ?>
@@ -357,9 +346,9 @@ function get_main_nav () {
                     foreach ($menu_items as $level1) {
                         if ($level1->menu_item_parent == $level1_parent_id) { ?>
                             <li class="mega-parent">
-                                <a class="parent-a <?php echo implode(' ', $level1->classes); ?>" href="<?php echo $level1->url; ?>" target="<?php echo $level1->target; ?>">
+                                <?php if ($level1->url != '') { ?><a class="parent-a <?php echo implode(' ', $level1->classes); ?>" href="<?php echo $level1->url; ?>" target="<?php echo $level1->target; ?>"><?php } ?>
                                     <?php echo $level1->title; if (has_children($menu_items, $level1->ID)) { ?> <span class="icons">&#xe0ab;</span> <?php } ?>
-                                </a>
+                                <?php if ($level1->url != '') { ?></a><?php } ?>
 
                                 <?php 
                                 // LEVEL 2 =====================================================================
@@ -373,9 +362,9 @@ function get_main_nav () {
                                                     foreach ($menu_items as $level2){
                                                         if ($level2->menu_item_parent == $level2_parent_id) { ?>
                                                             <div class="secondary-holder left clearfix">
-                                                                <a class="" href="<?php echo $level2->url; ?>" target="<?php echo $level2->target; ?>">
+                                                                <?php if ($level2->url != '') { ?><a class="" href="<?php echo $level2->url; ?>" target="<?php echo $level2->target; ?>"><?php } ?>
                                                                     <h2 class="head-secondary <?php echo implode(' ', $level2->classes); ?>"><?php echo $level2->title; ?></h2>
-                                                                </a>
+                                                                <?php if ($level2->url != '') { ?></a><?php } ?>
 
                                                                 <?php 
                                                                 // LEVEL 3 =====================================================================
@@ -385,7 +374,7 @@ function get_main_nav () {
                                                                     foreach ($menu_items as $level3) {
                                                                         if($level3->menu_item_parent == $level3_parent_id) { ?>
                                                                             <div class="secondary-link">
-                                                                                <a href="<?php echo $level3->url; ?>" target="<?php echo $level3->target; ?>"><?php echo $level3->title; ?></a>
+                                                                                <?php if ($level3->url != '') { ?><a href="<?php echo $level3->url; ?>" target="<?php echo $level3->target; ?>"><?php } ?><?php echo $level3->title; ?><?php if ($level3->url != '') { ?></a><?php } ?>
 
                                                                                 <?php
                                                                                 // LEVEL 4 =====================================================================
@@ -397,7 +386,7 @@ function get_main_nav () {
                                                                                             <?php
                                                                                             foreach ($menu_items as $level4) {
                                                                                                 if($level4->menu_item_parent == $level4_parent_id) { ?>
-                                                                                                    <li><a href="<?php echo $level4->url; ?>" target="<?php echo $level4->target; ?>"><?php echo $level4->title; ?></a></li>
+                                                                                                    <li><?php if ($level4->url != '') { ?><a href="<?php echo $level4->url; ?>" target="<?php echo $level4->target; ?>"><?php } ?><?php echo $level4->title; ?><?php if ($level3->url != '') { ?></a><?php } ?></li>
                                                                                                 <?php }
                                                                                             }
                                                                                             ?>
@@ -467,7 +456,7 @@ function get_secondary_nav () {
                         foreach ($menu_items as $level1) {
                             if ($level1->menu_item_parent == $level1_parent_id) { ?>
                                 <li class="menu-item menu-item-type-post_type <?php echo implode(' ', $level1->classes); ?>">
-                                    <a href="<?php echo $level1->url; ?>" target="<?php echo $level3->target; ?>"><?php echo $level1->title; ?></a>
+                                    <?php if ($level1->url != '') { ?><a href="<?php echo $level1->url; ?>" target="<?php echo $level3->target; ?>"><?php } ?><?php echo $level1->title; ?><?php if ($level1->url != '') { ?></a><?php } ?>
                                 </li>
                             <?php }
                         } ?>
@@ -517,7 +506,7 @@ function get_footer_feed($option) {
                             $subID = $sub->ID; 
                             ?>
                             <div class="secondary-link">
-                                <a class="<?php echo implode(' ', $sub->classes); ?>" target="<?php echo $sub->target; ?>"><?php echo trim($sub->title); ?></a>
+                                <?php if ($sub->url != '') { ?><a class="<?php echo implode(' ', $sub->classes); ?>" target="<?php echo $sub->target; ?>"><?php } ?><?php echo trim($sub->title); ?><?php if ($sub->url != '') { ?></a><?php } ?>
                                 <?php if (has_children($menu_items, $subID)) { ?>
                                     <div class="flyout">
                                         <ul>
@@ -525,7 +514,7 @@ function get_footer_feed($option) {
                                         foreach ($menu_items as $sub2) {
                                             if ($sub2->menu_item_parent == $subID) {
                                                 ?>
-                                                <a href="<?php echo $sub2->url; ?>" target="<?php echo $sub2->target; ?>"><li><?php echo $sub2->title; ?></li></a>
+                                                 <?php if ($sub2->url != '') { ?><a href="<?php echo $sub2->url; ?>" target="<?php echo $sub2->target; ?>"><?php } ?><li><?php echo $sub2->title; ?></li> <?php if ($sub2->url != '') { ?></a><?php } ?>
                                                 <?php
                                             }
                                         }
@@ -544,6 +533,104 @@ function get_footer_feed($option) {
 
         } 
     } 
+}
+
+/**
+ * Outputs the mobile navigation, this is only 1 level deep.
+ * Returns false if menu location does not exist.
+ * 
+ * @return boolean
+ */
+function get_mobile_menu () {
+    $menus = wp_get_nav_menus(); // get all active menus
+    $locations = get_nav_menu_locations(); // get all menu location info
+    $location_id = 'mobile-nav'; // the menu location slug we are looking for
+    
+    // first check if the menu location we want exists
+    if (isset($locations[$location_id])) {
+        
+        // we loop through all active menus to find a mached ID for the one we are looking for
+        foreach ($menus as $menu) {
+            
+            // if menu ID match is found
+            if ($menu->term_id == $locations[$location_id]) { ?>
+                <div id="mobile-menu-holder">
+                    <nav>
+
+                        <?php // get all the nav items for this menu
+                        $menu_items = wp_get_nav_menu_items($menu);
+                        
+                        // LEVEL 1 =====================================================================
+                        $level1_parent_id = 0;
+
+                        foreach ($menu_items as $level1) {
+                            if ($level1->menu_item_parent == $level1_parent_id) { ?>
+                                    <div class="mobile-item <?php echo implode(' ', $level1->classes); ?>">
+                                        <?php if ($level1->url != '') { ?><a href="<?php echo $level1->url; ?>" target="<?php echo $level3->target; ?>"><?php } ?><?php echo $level1->title; ?><?php if ($level1->url != '') { ?></a><?php } ?>
+                                    </div>
+                                
+                            <?php }
+                        } ?>
+                        
+                    </nav>
+                </div>
+
+                <?php // kill the loop once we have used the correct nav
+                break;
+            }
+        }
+    }else{
+        return false;
+    }
+}
+
+
+/**
+ * Outputs the mobile navigation, this is only 1 level deep.
+ * Returns false if menu location does not exist.
+ * 
+ * @return boolean
+ */
+function get_footer_menu () {
+    $menus = wp_get_nav_menus(); // get all active menus
+    $locations = get_nav_menu_locations(); // get all menu location info
+    $location_id = 'footer-links'; // the menu location slug we are looking for
+    
+    // first check if the menu location we want exists
+    if (isset($locations[$location_id])) {
+        
+        // we loop through all active menus to find a mached ID for the one we are looking for
+        foreach ($menus as $menu) {
+            
+            // if menu ID match is found
+            if ($menu->term_id == $locations[$location_id]) { ?>
+                            
+                <?php // get all the nav items for this menu
+                $menu_items = wp_get_nav_menu_items($menu);
+
+                $total_menu_items = count($menu_items);
+                $i = 1;
+
+                // LEVEL 1 =====================================================================
+                $level1_parent_id = 0;
+
+                foreach ($menu_items as $level1) {
+
+                    if ($level1->menu_item_parent == $level1_parent_id) { ?>
+                        <?php if ($level1->url != '') { ?><a class="right <?php echo implode(' ', $level1->classes); ?>" href="<?php echo $level1->url; ?>" target="<?php echo $level3->target; ?>"><?php } ?>
+                            <?php echo $level1->title; if($i!=$total_menu_items) echo ' |'; ?><?php if ($level1->url != '') { ?></a>
+                        <?php $i++; } ?>
+                    <?php }
+                } ?>
+                        
+                
+                <?php // kill the loop once we have used the correct nav
+                break;
+            }
+        }
+    }else{
+        return false;
+    }
 }
 
 ?>

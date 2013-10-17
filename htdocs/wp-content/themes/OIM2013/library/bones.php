@@ -172,6 +172,9 @@ function bones_scripts_and_styles() {
     wp_enqueue_script( 'bones-js' );
     wp_enqueue_script( 'jq-form-plugin' );
     
+    //make some php data available in scripts.js
+    $data = array( 'directory' => __(get_template_directory_uri()), 'thankyou_page' => site_url('/contact/thank-you/') );
+    wp_localize_script( 'bones-js', 'template_data', $data );
   }
 }
 
@@ -226,8 +229,9 @@ function bones_theme_support() {
 	register_nav_menus(
 		array(
 			'main-nav' => __( 'Main Menu', 'bonestheme' ),   // main nav above the banner
-                        'secondary-nav' => __( 'Secondary Menu', 'bonestheme' ), //secondary nav inside the banner
+                        'secondary-nav' => __( 'Secondary Menu', 'bonestheme' ), //secondary nav insie the banner
 			'footer-links' => __( 'Footer Menu', 'bonestheme' ), // 3rd nav in the footer
+                        'mobile-nav' => __('Mobile Menu', 'bonestheme'), // the main and secondary navigations collapse into this single nav for mobile devices
                         'more-about-oim' => __( 'More About OIM', 'bonestheme' ) // more about OIM, this is better suited as a widget but this will do for now
 		)
 	);
