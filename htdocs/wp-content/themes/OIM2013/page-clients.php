@@ -38,8 +38,7 @@ Template Name: Clients
                                                                     
 								</section> <!-- end article section -->
                                                                 
-                                                                <h2>Our Client list includes:</h2>
-                                                                <?php if ( function_exists('get_client_scroller') && get_client_scroller() ) get_client_scroller(); ?>
+                                                                
                                                                 
 							</article> <!-- end article -->
                                                         
@@ -70,4 +69,9 @@ Template Name: Clients
 
 			</div> <!-- end #content -->
 
+                        <div class="wrap">
+                            <h2>Our Client list includes:</h2>
+                            <?php if ( function_exists('get_client_scroller') && get_client_scroller() ) get_client_scroller(); ?>
+                        </div>
+                        
 <?php get_footer(); ?>

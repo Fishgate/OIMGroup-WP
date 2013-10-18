@@ -16,7 +16,7 @@
                                             </form>
                                         </div>
                                         <?php if (!is_page('contact')) { ?>
-                                            <a class="sidebar-large-link" href="<?php echo site_url('/contact/'); ?>"><p><span class="icon" style="position: relative; top: 3px;">&#xe0eb;</span>Visit the Contact Us page</p></a>
+                                            <a class="sidebar-large-link" href="<?php echo site_url('/contact/'); ?>"><p><span class="icon red" style="position: relative; top: 3px;">&#xe0eb;</span>Visit the Contact Us page</p></a>
                                         <?php } ?>
                                     </div>
 				</div>

@@ -61,7 +61,7 @@
 
 									<article id="post-not-found" class="hentry clearfix">
 										<header class="article-header">
-											<h1><?php _e("Sorry, No Results.", "bonestheme"); ?></h1>
+											<h2><?php _e("Sorry, No Results.", "bonestheme"); ?></h2>
 										</header>
 										<section class="entry-content">
 											<p><?php _e("Try your search again.", "bonestheme"); ?></p>

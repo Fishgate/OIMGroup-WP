@@ -17,8 +17,8 @@
 				</div> <!-- end #inner-footer -->
                                 
                                 <div style="background: #fff; padding: 0!important; margin: 0!important;">
-                                    <div id="footer-nav-holder">
-                                        <nav id="footer-nav" role="navigation" class="clearfix">
+                                    <div id="footer-nav-holder" class="clearfix">
+                                        <nav id="footer-nav" role="navigation" class="right clearfix">
                                             <?php if(function_exists('get_footer_menu') && get_footer_menu()) get_footer_menu(); ?>
                                         </nav>
                                         <p class="source-org copyright">

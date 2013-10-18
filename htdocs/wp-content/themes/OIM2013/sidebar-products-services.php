@@ -37,12 +37,11 @@
                                                 ?>
                                                 
                                                 <div class="sidebar-content-holder">
-                                                    <a target="_blank" href="<?php echo $download; ?>" class="sidebar-large-link"><img src="<?php echo $img[0]; ?>"></a>
+                                                    <a target="_blank" href="<?php echo $download; ?>" class=""><img src="<?php echo $img[0]; ?>"></a>
                                                 </div>
 
                                                 <a target="_blank" href="<?php echo $download; ?>" class="sidebar-large-link">
-                                                    <img alt="&gt;" src="../../img/sidebars/icon-large-link.jpg">
-                                                    Download Now
+                                                    <p><span class="icon red" style="position: relative; top: 3px;">&#xe0eb;</span>Download Now</p>
                                                 </a>
                                             </div>
                                         <?php } ?>
@@ -65,7 +64,7 @@
                                                 </form>
                                             </div>
                                             <?php if (!is_page('contact')) { ?>
-                                                <a class="sidebar-large-link" href="<?php echo site_url('/contact/'); ?>"><p><span class="icon" style="position: relative; top: 3px;">&#xe0eb;</span>Visit the Contact Us page</p></a>
+                                                <a class="sidebar-large-link" href="<?php echo site_url('/contact/'); ?>"><p><span class="icon red" style="position: relative; top: 3px;">&#xe0eb;</span>Visit the Contact Us page</p></a>
                                             <?php } ?>
                                         </div>
 				</div>
