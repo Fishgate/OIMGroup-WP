@@ -21,6 +21,7 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
   include( dirname( __FILE__ ) . '/wp-config-local.php' );
   
 // Otherwise use the below settings (on live server)
+//Tyrone added this comment
 } else {
     define('DB_NAME', 'stagidazas_OIM');
     define('DB_USER', 'stagidazas_24');
