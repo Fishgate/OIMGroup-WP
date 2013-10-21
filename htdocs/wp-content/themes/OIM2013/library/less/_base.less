@@ -41,7 +41,7 @@ body {
 	font-family: @sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
-	color: @oim_grey;;
+	color: @oim_grey;
 }
 p{
 font-size: 12px!important;
@@ -203,7 +203,9 @@ h5, .h5 {
 *********************/
 
 .header {
-	#inner-header {}
+	#inner-header {
+            
+        }
 
 	#logo {display: inline-block;}
 
@@ -434,6 +436,13 @@ TYRONE ADDS MEGA MENU STYLES
     height: 0;
     overflow: hidden;
     border-style: none;
+}
+.flyout-down-arrow{
+    position: absolute;
+    z-index: 100;
+    top: -20px;
+    right: 0;
+    font-size: 12px;
 }
 .flyout li{
     padding: 0 0 5px 5px;
@@ -1312,8 +1321,8 @@ Class name automatically added to element */
             margin: 50px auto;
         }
         #footer-nav{
+            display: none;
             position: relative;
-            right: 0;
             top: 13px;
         }
         #footer-nav a{
@@ -1591,9 +1600,9 @@ nav[role=navigation]{
 =============================================*/
 .single-title{
     margin: 0 0 10px 0;
-    /*font-family: @sans-serif-light;*/
-    color: @white;
-    /*font-size: 18px;*/
+    font-family: @sans-serif-light;
+    color: #999;
+    font-size: 25px;
 }
 
 
@@ -1612,16 +1621,17 @@ nav[role=navigation]{
 .single-news-article-holder{
     width: 88%;
 }
-.day p, .month p{
+.day, .month{
     line-height: 1em;
     font-family: @sans-serif-light;
     margin: 0;
+    display: block;
 }
-.day p{
-    font-size: 20px;
+.day{
+    font-size: 25px;
 }
 
-.month p{
+.month{
     font-size: 15px;
 }
 .article-header h3{

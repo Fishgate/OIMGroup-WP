@@ -32,11 +32,11 @@ Template Name: Home
                                                                     <center>
                                                                         <h1 class="h1-nostyle">Business Performance Specialist in core areas of</h1>
                                                                      
-                                                                        <a class="service-link" href="#">People Management</a>
+                                                                        <a class="service-link">People Management</a>
 
-                                                                        <a class="service-link" href="#">Organisation Performance</a>
+                                                                        <a class="service-link">Organisation Performance</a>
 
-                                                                        <a class="service-link" href="#">Operational Optimisation</a>
+                                                                        <a class="service-link">Operational Optimisation</a>
                                                                     </center>
                                                                     <div style="padding: 20px 0; margin: 30px 0;" class="bordered-top-bottom">
                                                                     <?php the_content(); ?>

@@ -51,9 +51,9 @@
 					<p id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" alt="OIM Logo" /></a></p>
 
 					<!-- if you'd like to use the site description you can un-comment it below -->
-                                        <div id="tagline">
+                                        <h2 id="tagline">
 					<?php  bloginfo('description'); ?>
-                                        </div>
+                                        </h2>
                                         
                                         <div id="menu-mobile" class="right">
                                             <a href="tel:+27219138814"><span class="icon" style="display: inline-block; margin-right: 25px;">@</span></a> <a href="#"><span style="display: inline-block;" class="icon">&#xe00f;</span></a>

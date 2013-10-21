@@ -1140,6 +1140,13 @@ TYRONE ADDS MEGA MENU STYLES
   overflow: hidden;
   border-style: none;
 }
+.flyout-down-arrow {
+  position: absolute;
+  z-index: 100;
+  top: -20px;
+  right: 0;
+  font-size: 12px;
+}
 .flyout li {
   padding: 0 0 5px 5px;
   list-style-type: circle;
@@ -1745,8 +1752,8 @@ h4.widgettitle {
   margin: 50px auto;
 }
 #footer-nav {
+  display: none;
   position: relative;
-  right: 0;
   top: 13px;
 }
 #footer-nav a {
@@ -1977,11 +1984,9 @@ nav[role=navigation] {
 =============================================*/
 .single-title {
   margin: 0 0 10px 0;
-  /*font-family: @sans-serif-light;*/
-
-  color: #ffffff;
-  /*font-size: 18px;*/
-
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #999;
+  font-size: 25px;
 }
 /*============================================
           SINGLE NEWS DATE AND ARTICLE
@@ -1998,16 +2003,17 @@ nav[role=navigation] {
 .single-news-article-holder {
   width: 88%;
 }
-.day p,
-.month p {
+.day,
+.month {
   line-height: 1em;
   font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  display: block;
 }
-.day p {
-  font-size: 20px;
+.day {
+  font-size: 25px;
 }
-.month p {
+.month {
   font-size: 15px;
 }
 .article-header h3 {
@@ -2638,6 +2644,7 @@ you can add resource intensive styles.
   =============================================*/
   #tagline {
     display: block;
+    margin-top: 12px;
   }
   /*============================================
                  HIDE MENU-MOBILE
@@ -2828,18 +2835,6 @@ you can add resource intensive styles.
   .single-news-article-holder {
     width: 85%;
   }
-  .day p,
-  .month p {
-    line-height: 1em;
-    font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0;
-  }
-  .day p {
-    font-size: 25px;
-  }
-  .month p {
-    font-size: 20px;
-  }
   /*============================================
             CONTACT PAGE TINYMCE AREA
   =============================================*/
@@ -2898,6 +2893,12 @@ you can add resource intensive styles.
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
+  }
+  #footer-nav {
+    display: inline-block;
+    position: relative;
+    right: 0;
+    top: 13px;
   }
 }
 /*

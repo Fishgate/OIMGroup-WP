@@ -103,11 +103,19 @@ jQuery(document).ready(function($) {
     //------------ TYRONE EXPANDABLE 3RD LEVEL DROPDOWNS
     $('.secondary-link').each(function(){
         $(this).live('mouseenter', function(){
+            $(this).css('cursor', 'pointer');
+            $(this).css('color', '#B22C33');
             $(this).find('.flyout').addClass('expand');
         });
         $(this).live('mouseleave', function(){
-            $(this).find('.flyout').removeClass('expand');
+            $(this).css('cursor', 'pointer');
+            $(this).css('color', '');
+            $('.flyout').removeClass('expand');
         });
+//        $(this).live('click', function(){
+//            $('.flyout').removeClass('expand');
+//            $(this).find('.flyout').addClass('expand');
+//        });
     });
     //------------ TYRONE simply scroll init
     $("#scroller").simplyScroll();

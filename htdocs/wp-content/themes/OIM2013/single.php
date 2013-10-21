@@ -24,8 +24,8 @@
                                                         <div class="left single-news-left">
                                                             <!-- Date block -->
                                                             <div class="single-news-date-holder">
-                                                                <div class="day"><p><?php echo get_the_time('d'); ?></p></div>
-                                                                <div class="month"><p><?php echo get_the_time('M'); ?></p></div>
+                                                                <div class="day"><?php echo get_the_time('d'); ?></div>
+                                                                <div class="month"><?php echo get_the_time('M'); ?></div>
                                                             </div>
 
                                                             <!-- The mail button -->
