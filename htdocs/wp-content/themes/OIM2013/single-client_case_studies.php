@@ -29,7 +29,7 @@
                                                                     <h1>Client Case Studies</h1>
                                                                         
                                                                     <!-- feature image of team member-->
-                                                                    <img class="ccs-logo" src="<?php echo get_feature_src($post->ID, 'client-logo'); ?>" alt="<?php echo get_the_title(); ?>" />
+                                                                    <p><img class="ccs-logo" src="<?php echo get_feature_src($post->ID, 'client-logo'); ?>" alt="<?php echo get_the_title(); ?>" /></p>
                                                                     
 								</header> <!-- end article header -->
                                                                 

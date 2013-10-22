@@ -39,7 +39,7 @@
                                                                         <a href="<?php echo get_permalink($post->ID); ?>">
                                                                             <img class="response-img" src="<?php echo get_feature_src($post->ID, 'team-small'); ?>" alt="<?php echo get_the_title(); ?>" />
                                                                             <center>
-                                                                                <P style="margin-top: 0;"><span style="font-weight: bold!important; font-size: 13px;"><?php echo get_the_title(); ?></span><br />
+                                                                                <P style="margin-top: 0;"><span style="font-weight: bold!important; font-size: 12px;"><?php echo get_the_title(); ?></span><br />
                                                                                 <?php get_job_descrip(); ?></p>
                                                                             </center>
                                                                         </a>
