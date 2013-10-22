@@ -22,7 +22,7 @@
                                             <?php if(function_exists('get_footer_menu') && get_footer_menu()) get_footer_menu(); ?>
                                         </nav>
                                         <p class="source-org copyright">
-                                            &copy; Copyright<?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
+                                            &copy; Copyright <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
                                         </p>
                                     </div>
                                 </div>
