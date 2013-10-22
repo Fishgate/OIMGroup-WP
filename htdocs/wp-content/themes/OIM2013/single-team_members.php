@@ -24,8 +24,6 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
                                    
-                                                            
-                                                            
 								<header class="article-header">
                                                                     <!-- static heading, this is here on every team member page -->
                                                                     <h1>Our Leadership Team</h1>

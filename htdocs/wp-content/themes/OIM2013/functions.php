@@ -56,7 +56,7 @@ add_image_size( 'large-feature', 1920, 370, true );
 add_image_size( 'small-feature', 1920, 250, true );
 add_image_size( 'client-logo', 200, 120, true );
 add_image_size( 'team-small', 135, 120, true );
-add_image_size( 'team-large', 631, 0, true );
+add_image_size( 'team-large', 631, 226, true );
 add_image_size( 'pdf-thumb', 137, 194, true);
 
 /************* ACTIVE SIDEBARS ********************/

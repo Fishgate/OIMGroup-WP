@@ -75,7 +75,7 @@
 
 						</div> <!-- end #main -->
 
-							<?php get_sidebar(); ?>
+							<?php get_sidebar('news'); ?>
 
 					</div> <!-- end #inner-content -->
 
