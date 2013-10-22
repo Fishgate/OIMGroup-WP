@@ -232,7 +232,8 @@ function bones_theme_support() {
                         'secondary-nav' => __( 'Secondary Menu', 'bonestheme' ), //secondary nav insie the banner
 			'footer-links' => __( 'Footer Menu', 'bonestheme' ), // 3rd nav in the footer
                         'mobile-nav' => __('Mobile Menu', 'bonestheme'), // the main and secondary navigations collapse into this single nav for mobile devices
-                        'more-about-oim' => __( 'More About OIM', 'bonestheme' ) // more about OIM, this is better suited as a widget but this will do for now
+                        'more-about-oim' => __( 'More About OIM', 'bonestheme' ), // more about OIM, this is better suited as a widget but this will do for now
+                        'a-z-product-listing' => __( 'A-Z Product Listing', 'bonestheme' ) // A-Z Product Listing, this is better suited as a widget but this will do for now
 		)
 	);
 } /* end bones theme support */
