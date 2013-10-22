@@ -38,7 +38,7 @@ html, body {
 	/* height: 100%; */
 }
 body {
-	font-family: @sans-serif;
+	font-family: @sans-serif-generic;
 	font-size: 100%;
 	line-height: 1.5;
 	color: @oim_grey;
@@ -158,7 +158,7 @@ h1, .h1 {
 .h1-nostyle{
     background: none!important;
     padding: 0!important;
-    color: @oim_grey!important;
+    color: @oim_grey_darker!important;
     margin: 0.67em 0 0 0!important;
     font-size: 28px;
 }
@@ -356,8 +356,11 @@ TYRONE ADDS MEGA MENU STYLES
     border-right: 1px dotted #ccc;
 }
 .sf-menu{
-    font-family: @sans-serif-light;
-    font-size: 13px;
+    font-family: @sans-serif-generic;
+    font-size: 14px;
+}
+.sf-menu .parent-a, .sf-menu .parent-a {
+    color: @oim_grey_darker;
 }
 .secondary-ul{
     position: absolute;
@@ -369,13 +372,15 @@ TYRONE ADDS MEGA MENU STYLES
     padding: 1.666% 0;
 }
 .head-secondary{
-    font-family: @sans-serif;
+    font-family: @sans-serif-generic;
     text-transform: uppercase;
     margin: 0;
     color: @oim_grey;
-    background: @oim_grey_medium;
+    background: @oim_grey;
     padding: 15px;
+    margin-bottom: 20px;
     font-size: 14px;
+    font-weight: normal;
 }
 .secondary-holder{
     width: 100%;
@@ -383,15 +388,15 @@ TYRONE ADDS MEGA MENU STYLES
 
 .icon-people{
     padding-left: 50px;
-    background: url('../images/icon-people.jpg') @oim_grey_medium no-repeat 20px 15px;
+    background: url('../images/icon-people.jpg') @oim_grey_medium no-repeat 20px 10px;
 }
 .icon-organisation{
     padding-left: 50px;
-    background: url('../images/icon-organisation.jpg') @oim_grey_medium no-repeat 20px 15px;
+    background: url('../images/icon-organisation.jpg') @oim_grey_medium no-repeat 20px 10px;
 }
 .icon-operation{
     padding-left: 50px;
-    background: url('../images/icon-operation.jpg') @oim_grey_medium no-repeat 20px 15px;
+    background: url('../images/icon-operation.jpg') @oim_grey_medium no-repeat 20px 10px;
 }
 
 .icon{
@@ -423,12 +428,12 @@ TYRONE ADDS MEGA MENU STYLES
 }
 
 .secondary-link{
-    font-family: @sans-serif-light;
+    font-family: @sans-serif-generic;
     font-size: 12px;
-    border-bottom: 1px dotted @oim_grey;
+    border-bottom: 1px dotted @oim_grey_regular;
     color: @oim_blue_light;
-    background: url('../images/arrow.png') no-repeat 5px 5px;
-    padding: 5px 0 5px 35px;
+    background: url('../images/arrow.png') no-repeat 5px 10px;
+    padding: 7px 0 7px 35px;
 }
 
 .flyout{
@@ -445,11 +450,11 @@ TYRONE ADDS MEGA MENU STYLES
     font-size: 12px;
 }
 .flyout li{
-    padding: 0 0 5px 5px;
+    padding: 7px 0 7px 5px;
     list-style-type: circle;
 }
 .expand{
-    border-top: 1px dotted @oim_grey;
+    border-top: 0px dotted @oim_grey_regular;
     height: auto;
 }
 /*-------------------------------------------------------
@@ -519,7 +524,7 @@ hr{
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px dotted #999;
+    border-top: 1px dotted #ccc;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 0;
@@ -539,8 +544,8 @@ a.service-link{
     display: inline-block;
 }
 #home-service{
-    border-top: 1px dotted #999;
-    border-bottom: 1px dotted #999;
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
     margin: 40px 0;
 }
 #home-service p{
@@ -570,9 +575,9 @@ padding: 0 0 0 20px;
 .service-copy a{
     display: block;
     text-align: center;
-    padding: 5px;
-    border-top: 1px dotted @oim_grey;
-    border-bottom: 1px dotted @oim_grey;
+    padding: 10px;
+    border-top: 1px dotted @oim_grey_regular;
+    border-bottom: 1px dotted @oim_grey_regular;
     text-decoration: none;
     color: @oim_blue_light;
     font-size: 12px;
@@ -583,15 +588,18 @@ padding: 0 0 0 20px;
                   CONTENT HEADING CAPTIONS
 ---------------------------------------------------------*/
 .caption{
-    border: 1px solid #999;
+    border: 1px solid #ccc;
     position: relative;
     display: block;
     height: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .caption span{
     position: absolute;
     background: #ffffff;
     padding: 17px 0;
+font-family: @sans-serif-light;
     text-align: center;
     display: block;
     width: 95%;
@@ -1215,6 +1223,7 @@ Class name automatically added to element */
 
 	h4.widgettitle {
             background: @oim_blue_light;
+            font-family: @sans-serif;
             color: @white;
             text-transform: uppercase;
             font-size: 14px;
@@ -1312,7 +1321,7 @@ Class name automatically added to element */
             color: #ccc;
             display: inline-block;
             float: left;
-            font-family: @sans-serif-light;
+            font-family: @sans-serif-generic;
             font-size: 11px;
         }
         #footer-nav-holder{
@@ -1342,7 +1351,7 @@ Class name automatically added to element */
 }
 .breadcrumbs{
     padding-right: 0;
-    font-family: @sans-serif-light;
+    font-family: @sans-serif-generic;
     font-size: 12px;
     padding: 15px 0 30px 0;
 
@@ -1448,7 +1457,7 @@ nav[role=navigation]{
 .widget ul li{
     font-size: 12px;
     color: @oim_grey;
-    border-bottom: 1px dotted @oim_blue_light;
+    border-bottom: 1px dotted @oim_grey_regular;
     padding: 0 0 5px 0;
 }
 
@@ -1602,7 +1611,7 @@ nav[role=navigation]{
     margin: 0 0 10px 0;
     font-family: @sans-serif-light;
     color: #999;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 
@@ -1658,14 +1667,14 @@ nav[role=navigation]{
                 BORDERING
 =============================================*/
 .bordered-top, .widget ul{
-    border-top: 1px dotted @oim_blue_light;
+    border-top: 1px dotted @oim_grey_regular;
 }
 .bordered-bottom{
-    border-bottom: 1px dotted @oim_grey;
+    border-bottom: 1px dotted @oim_grey_regular;
 }
 .bordered-top-bottom{
-    border-top: 1px dotted @oim_grey;
-    border-bottom: 1px dotted @oim_grey;
+    border-top: 1px dotted @oim_grey_regular;
+    border-bottom: 1px dotted @oim_grey_regular;
 }
 
 /*============================================
@@ -1726,8 +1735,8 @@ nav[role=navigation]{
 /*============================================
       CLIENT CASE STUDIES FEATURE IMG STYLE
 =============================================*/
-ccs-logo{
-    margin: 25px 0;
+.ccs-logo{
+    margin-top: 20px;
 }
 
 /*============================================
@@ -1765,7 +1774,7 @@ ccs-logo{
     position: relative;
     height: 200px;
     margin-bottom: 2%;
-    font-family: @sans-serif-light;
+    font-family: @sans-serif-generic;
 }
 .chart-block p{
     color: @white;
@@ -1776,7 +1785,7 @@ ccs-logo{
     color: @white;
 }
 .chart-block li{
-    font-size: 12px;
+    font-size: 13px;
 }
 .chart-block li a{
     color: @white;

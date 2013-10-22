@@ -7,7 +7,7 @@
                                             ?>
                                     
                                             <div class="widget">
-                                                <h4 class="widgettitle" id="side-widget-about">A-Z Product </h4>
+                                                <h4 class="widgettitle" id="side-widget-about">A-Z Product Listing</h4>
                                                 
                                                 <div class="sidebar-select">Select a Product</div>
                                                 

@@ -66,12 +66,14 @@ Template Name: Clients
      
                                                 
 				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
-
-                        <div class="wrap">
+                                
+                                <div class="wrap">
                             <h2>Our Client list includes:</h2>
                             <?php if ( function_exists('get_client_scroller') && get_client_scroller() ) get_client_scroller(); ?>
                         </div>
+
+			</div> <!-- end #content -->
+
+                        
                         
 <?php get_footer(); ?>
