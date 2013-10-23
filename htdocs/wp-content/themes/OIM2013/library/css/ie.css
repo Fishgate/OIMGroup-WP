@@ -536,7 +536,7 @@ NAVIGATION STYLES
   text-align: center;
   color: #ffffff;
   font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   padding: 18px 0;
   /*border-left: 1px solid @oim_blue_darker;
                         border-right: 1px solid @oim_blue_lighter;*/
@@ -674,8 +674,8 @@ TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
   margin-top: 25px;
 }
 .secondary-holder {
-  width: 32%;
-  margin: 0 0.65%!important;
+  width: 31.2%;
+  margin: 0 10px!important;
 }
 /*.secondary-holder-mid{
     margin: 0 2%;
@@ -686,7 +686,7 @@ TYRONE ADDS HOME PAGE STUFF - QUERIES FOR SERVICE BLOCKS
   font-size: 14px;
 }
 .flyout li {
-  border-bottom: 1px dotted #024594;
+  border-bottom: 1px dotted #cccccc;
 }
 .parent-a .icons {
   line-height: 0.9em;
@@ -729,6 +729,15 @@ nav[role=navigation] {
   position: absolute;
   z-index: 100;
   display: none;
+}
+#content {
+  position: relative;
+  top: -68px;
+}
+/*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
+#content-generic {
+  position: relative;
+  top: -75px !important;
 }
 /*============================================
                SHOW MEGA-HOLDER
@@ -1048,7 +1057,7 @@ nav[role=navigation] {
 #content-generic {
   position: relative;
   z-index: 100;
-  top: 302px!important;
+  top: 300px!important;
 }
 #content-news {
   position: relative;
@@ -1063,7 +1072,7 @@ nav[role=navigation] {
 #content {
   position: relative;
   z-index: 100;
-  top: 302px;
+  top: 300px;
 }
 /******************************************************************
 Site Name: OIM

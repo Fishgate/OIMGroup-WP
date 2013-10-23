@@ -73,7 +73,7 @@ Template Name: Home
                                                                      
                                                                         <a class="service-link">People Management</a>
 
-                                                                        <a class="service-link">Organisation Performance</a>
+                                                                        <a class="service-link">Organisational Performance</a>
 
                                                                         <a class="service-link">Operational Optimisation</a>
                                                                     </center>
@@ -85,7 +85,7 @@ Template Name: Home
                                                                             <img src="<?php echo get_template_directory_uri(); ?>/library/images/methodology_mini.jpg" alt="Our Methodology" />
                                                                             <div class="service-copy">
                                                                                 <h2>Our Methodology</h2>
-                                                                                <p>Various methodologies are used to ensure the successful implementation of projects, including SDLC and Agile. We also have extensive experience in business process management technologies such as workflow and electronic content management(ECM).</p>
+                                                                                <p>In the same way Apple understands technology, OIM understands how to translate strategy into action and sustainable results in key business areas. This is our field of expertise and why we call ourselves performance specialists.</p>
                                                                                 <a href="<?php echo site_url('/our-methodology/'); ?>">Methodology &amp; Services</a>
                                                                             </div>
                                                                         </div>
@@ -93,7 +93,7 @@ Template Name: Home
                                                                             <img src="<?php echo get_template_directory_uri(); ?>/library/images/about_mini.jpg" alt="About OIM" />
                                                                             <div class="service-copy">
                                                                                 <h2>About OIM</h2>
-                                                                                <p>With over 25 years' experience in business improvement, Operational Improvement Management (OIM) advises several South African Blue-Chip companies and manages performance improvement assignments in Europe, Australia and USA and other African countries.</p>
+                                                                                <p>With over 25 years' experience, Operational Improvement Management (OIM) advises several South African blue-chip companies and manages performance improvement assignments in Europe, Australia, America as well as other African countries.</p>
                                                                                 <a href="<?php echo site_url('/about-oim/'); ?>">Read more about OIM</a>
                                                                             </div>
                                                                         </div>
@@ -101,7 +101,7 @@ Template Name: Home
                                                                             <img src="<?php echo get_template_directory_uri(); ?>/library/images/testimonials_mini.jpg" alt="Testimonials" />
                                                                             <div class="service-copy">
                                                                                 <h2>Client Testimonials</h2>
-                                                                                <p>"The OIM team has shown the ability to understand our requirements in this regard and delivered an effective framework for our ongoing future use. They are a valued 'member' of our strategy review team - their role is highly respected and much appreciated."</p>
+                                                                                <p>We have built long-term partnerships with many of our clients who trust us without reservation to help create sustainable solutions. "The OIM team has shown the ability to understand our requirements and delivered an effective framework for our on-going success. They are a valued 'member' of our strategy review team and their role is highly respected."</p>
                                                                                 <a href="<?php echo site_url('/clients/'); ?>">View OIM's Clients</a>
                                                                             </div>
                                                                         </div>

@@ -1,30 +1,41 @@
 				<div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
-                                    <!-- ===============A-Z PRODUCT LISTING=================== -->
-                                    <?php
-                                        $prod_serv = new WP_Query( array('post_type' => 'products_services', 'orderby' => 'title', 'order' => 'ASC', 'posts_per_page' => '-1') );
-
-                                        if($prod_serv->have_posts()) :
+                                    <!-- ===============A-Z PRODUCT LISTING=================== -->                                
+                                        <?php
+                                        
+                                        //prepare menu
+                                        $menus = wp_get_nav_menus(); // get all active menus
+                                        $locations = get_nav_menu_locations(); // get all menu location info
+                                        $location_id = 'a-z-product-listing'; // the menu location slug we are looking for
+                                        
+                                        if (isset($locations[$location_id])) { 
                                             ?>
-                                    
                                             <div class="widget">
-                                                <h4 class="widgettitle" id="side-widget-about">A-Z Product </h4>
+                                                <h4 class="widgettitle" id="side-widget-about">A-Z Product Listing</h4>
                                                 
                                                 <div class="sidebar-select">Select a Product</div>
                                                 
                                                 <ul class="sidebar-select-list hidden">
                                                     <?php
-                                                    while($prod_serv->have_posts()) : $prod_serv->the_post();
-                                                        ?>
-                                                        <li><a href="<?php echo get_permalink(get_the_ID()); ?>"><?php echo get_the_title(); ?></a></li>
-                                                        <?php
-                                                    endwhile;
+                                                    foreach ($menus as $menu) {
+                                                        if ($menu->term_id == $locations[$location_id]) {
+
+                                                            $menu_items = wp_get_nav_menu_items($menu);
+
+                                                            foreach($menu_items as $item) {
+                                                                ?>
+                                                                <li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+                                                                <?php
+                                                            }
+
+                                                            break;
+                                                        }
+                                                    }
                                                     ?>
                                                 </ul>
-                                            </div>        
+                                            </div> 
                                             <?php
-                                            wp_reset_postdata();
-                                        endif;
-
+                                        }
+                                        
                                         ?>
                                         
                                         <!-- ===============PDF DOWNLOAD=================== -->

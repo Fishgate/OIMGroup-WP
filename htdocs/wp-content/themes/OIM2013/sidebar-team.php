@@ -13,7 +13,7 @@
                                                 <?php if ( get_the_ID() != $this_person_ID ) { ?>
                                                     <div class="left widget-team-holder <?php if($i % 2 != 0) echo 'no-margin-right'; ?>">
                                                         <a href="<?php echo get_permalink(get_the_ID()); ?>">
-                                                            <img src="<?php echo get_feature_src(get_the_ID(), 'team-small') ?>" alt="<?php echo get_the_title(); ?>" />
+                                                            <img class="response-img" src="<?php echo get_feature_src(get_the_ID(), 'team-small') ?>" alt="<?php echo get_the_title(); ?>" />
                                                         </a>
                                                         <center>
                                                         <p>

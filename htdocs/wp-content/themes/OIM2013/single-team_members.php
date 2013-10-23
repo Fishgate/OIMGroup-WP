@@ -43,8 +43,6 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
                                    
-                                                            
-                                                            
 								<header class="article-header">
                                                                     <!-- static heading, this is here on every team member page -->
                                                                     <h1>Our Leadership Team</h1>
@@ -52,11 +50,12 @@
                                                                     <!-- feature image of team member-->
                                                                     <img class="response-img" src="<?php echo get_feature_src($post->ID, 'team-large'); ?>" alt="<?php echo get_the_title(); ?>" />
                                                                     
-                                                                    <span class="member-name single-title custom-post-type-title"><?php the_title(); ?></span>
-								</header> <!-- end article header -->
+                                                                    <p><span class="member-name single-title custom-post-type-title"><?php the_title(); ?></span></p>
                                                                 
-                                                                <!-- job description/title custom field -->
-                                                                <?php get_job_descrip(); ?>
+                                                                    <!-- job description/title custom field -->
+                                                                    <p><?php get_job_descrip(); ?></p>
+                                                                    
+								</header> <!-- end article header -->
                                                                 
 								<section class="entry-content clearfix">
 

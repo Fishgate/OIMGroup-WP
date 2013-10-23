@@ -789,7 +789,7 @@ body {
 
 }
 body {
-  font-family: "opensans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #666666;
@@ -849,7 +849,7 @@ p {
 *********************/
 a,
 a:visited {
-  color: #5482ab;
+  color: #4e8abe;
   text-decoration: none;
   /* on hover */
 
@@ -916,14 +916,14 @@ h1,
   font-weight: 100!important;
   line-height: 1.1em;
   color: #ffffff;
-  background: #5482ab;
+  background: #4e8abe;
   padding: 12px 30px;
   margin-top: 0px;
 }
 .h1-nostyle {
   background: none!important;
   padding: 0!important;
-  color: #666666 !important;
+  color: #999999 !important;
   margin: 0.67em 0 0 0!important;
   font-size: 28px;
 }
@@ -1065,8 +1065,12 @@ TYRONE ADDS MEGA MENU STYLES
   border-right: 1px dotted #ccc;
 }
 .sf-menu {
-  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.sf-menu .parent-a,
+.sf-menu .parent-a {
+  color: #999999;
 }
 .secondary-ul {
   position: absolute;
@@ -1078,34 +1082,36 @@ TYRONE ADDS MEGA MENU STYLES
   padding: 1.666% 0;
 }
 .head-secondary {
-  font-family: "opensans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   margin: 0;
   color: #666666;
-  background: #f1f1f1;
+  background: #666666;
   padding: 15px;
+  margin-bottom: 20px;
   font-size: 14px;
+  font-weight: normal;
 }
 .secondary-holder {
   width: 100%;
 }
 .icon-people {
   padding-left: 50px;
-  background: url('../images/icon-people.jpg') #f1f1f1 no-repeat 20px 15px;
+  background: url('../images/icon-people.jpg') #f1f1f1 no-repeat 20px 10px;
 }
 .icon-organisation {
   padding-left: 50px;
-  background: url('../images/icon-organisation.jpg') #f1f1f1 no-repeat 20px 15px;
+  background: url('../images/icon-organisation.jpg') #f1f1f1 no-repeat 20px 10px;
 }
 .icon-operation {
   padding-left: 50px;
-  background: url('../images/icon-operation.jpg') #f1f1f1 no-repeat 20px 15px;
+  background: url('../images/icon-operation.jpg') #f1f1f1 no-repeat 20px 10px;
 }
 .icon {
   font-family: "icons", Cambria, Times New Roman, Times, serif;
 }
 .icons {
-  color: #5482ab;
+  color: #4e8abe;
   font-family: "icons", Cambria, Times New Roman, Times, serif;
   vertical-align: middle;
   padding: 0 0 0 10px;
@@ -1128,12 +1134,12 @@ TYRONE ADDS MEGA MENU STYLES
   font-size: 20px;
 }
 .secondary-link {
-  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
-  border-bottom: 1px dotted #666666;
-  color: #5482ab;
-  background: url('../images/arrow.png') no-repeat 5px 5px;
-  padding: 5px 0 5px 35px;
+  border-bottom: 1px dotted #cccccc;
+  color: #4e8abe;
+  background: url('../images/arrow.png') no-repeat 5px 10px;
+  padding: 7px 0 7px 35px;
 }
 .flyout {
   padding: 0 0 0 15px;
@@ -1149,11 +1155,11 @@ TYRONE ADDS MEGA MENU STYLES
   font-size: 12px;
 }
 .flyout li {
-  padding: 0 0 5px 5px;
+  padding: 7px 0 7px 5px;
   list-style-type: circle;
 }
 .expand {
-  border-top: 1px dotted #666666;
+  border-top: 0px dotted #cccccc;
   height: auto;
 }
 /*-------------------------------------------------------
@@ -1170,7 +1176,7 @@ TYRONE ADDS MEGA MENU STYLES
   padding: 17px 10px;
   vertical-align: top;
   background: #f8f8f8;
-  color: #5482ab;
+  color: #4e8abe;
   float: right;
 }
 .screen-reader-text {
@@ -1195,7 +1201,7 @@ TYRONE ADDS MEGA MENU STYLES
   z-index: 101;
   height: 51px;
   top: 50px;
-  border: 1px solid #5482ab;
+  border: 1px solid #4e8abe;
   opacity: 0;
   display: none;
 }
@@ -1210,7 +1216,7 @@ TYRONE ADDS MEGA MENU STYLES
   list-style-type: disc;
 }
 .entry-content h1 {
-  background: #5482ab;
+  background: #4e8abe;
   padding: 13px;
   color: #ffffff;
   margin: 0 0 0.67em;
@@ -1219,7 +1225,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px dotted #999;
+  border-top: 1px dotted #ccc;
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 0;
@@ -1238,8 +1244,8 @@ a.service-link {
   display: inline-block;
 }
 #home-service {
-  border-top: 1px dotted #999;
-  border-bottom: 1px dotted #999;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
   margin: 40px 0;
 }
 #home-service p {
@@ -1268,26 +1274,29 @@ a.service-link {
 .service-copy a {
   display: block;
   text-align: center;
-  padding: 5px;
-  border-top: 1px dotted #666666;
-  border-bottom: 1px dotted #666666;
+  padding: 10px;
+  border-top: 1px dotted #cccccc;
+  border-bottom: 1px dotted #cccccc;
   text-decoration: none;
-  color: #5482ab;
+  color: #4e8abe;
   font-size: 12px;
 }
 /*-------------------------------------------------------
                   CONTENT HEADING CAPTIONS
 ---------------------------------------------------------*/
 .caption {
-  border: 1px solid #999;
+  border: 1px solid #ccc;
   position: relative;
   display: block;
   height: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .caption span {
   position: absolute;
   background: #ffffff;
   padding: 17px 0;
+  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   display: block;
   width: 95%;
@@ -1467,7 +1476,7 @@ Class name automatically added to element */
   display: block;
   text-decoration: none;
   position: relative;
-  color: #5482ab;
+  color: #4e8abe;
 }
 .bones_page_navi li a:hover,
 .bones_page_navi li a:focus {
@@ -1699,7 +1708,8 @@ Class name automatically added to element */
 12. SIDEBARS & ASIDES
 *********************/
 h4.widgettitle {
-  background: #5482ab;
+  background: #4e8abe;
+  font-family: "opensans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
@@ -1758,7 +1768,7 @@ h4.widgettitle {
   color: #ccc;
   display: inline-block;
   float: left;
-  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 11px;
 }
 #footer-nav-holder {
@@ -1785,7 +1795,7 @@ h4.widgettitle {
 }
 .breadcrumbs {
   padding-right: 0;
-  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   padding: 15px 0 30px 0;
 }
@@ -1814,7 +1824,7 @@ nav[role=navigation] {
 }
 #menu-mobile {
   display: block;
-  color: #5482ab;
+  color: #4e8abe;
   margin: 25px 10px 0 0;
 }
 #mobile-menu-holder {
@@ -1873,7 +1883,7 @@ nav[role=navigation] {
 .widget ul li {
   font-size: 12px;
   color: #666666;
-  border-bottom: 1px dotted #5482ab;
+  border-bottom: 1px dotted #cccccc;
   padding: 0 0 5px 0;
 }
 /*============================================
@@ -2004,7 +2014,7 @@ h1.single-title {
   margin: 0 0 10px 0;
   font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #999;
-  font-size: 25px;
+  font-size: 24px;
 }
 .single-news-left .icon {
   font-size: 25px;
@@ -2064,14 +2074,14 @@ h1.single-title {
 =============================================*/
 .bordered-top,
 .widget ul {
-  border-top: 1px dotted #5482ab;
+  border-top: 1px dotted #cccccc;
 }
 .bordered-bottom {
-  border-bottom: 1px dotted #666666;
+  border-bottom: 1px dotted #cccccc;
 }
 .bordered-top-bottom {
-  border-top: 1px dotted #666666;
-  border-bottom: 1px dotted #666666;
+  border-top: 1px dotted #cccccc;
+  border-bottom: 1px dotted #cccccc;
 }
 /*============================================
                 COLOR
@@ -2127,8 +2137,8 @@ h1.single-title {
 /*============================================
       CLIENT CASE STUDIES FEATURE IMG STYLE
 =============================================*/
-ccs-logo {
-  margin: 25px 0;
+.ccs-logo {
+  margin-top: 20px;
 }
 /*============================================
           METHODOLOGY CHART
@@ -2138,7 +2148,7 @@ ccs-logo {
   background: #00204e;
 }
 .bg-blue-light {
-  background: #5482ab;
+  background: #4e8abe;
 }
 .bg-blue-medium {
   background: #1c4e7f;
@@ -2170,7 +2180,7 @@ ccs-logo {
   position: relative;
   height: 200px;
   margin-bottom: 2%;
-  font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .chart-block p {
   color: #ffffff;
@@ -2181,7 +2191,7 @@ ccs-logo {
   color: #ffffff;
 }
 .chart-block li {
-  font-size: 12px;
+  font-size: 13px;
 }
 .chart-block li a {
   color: #ffffff;
@@ -2509,7 +2519,7 @@ you can add resource intensive styles.
     text-align: center;
     color: #ffffff;
     font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     padding: 18px 0;
     /*border-left: 1px solid @oim_blue_darker;
                           border-right: 1px solid @oim_blue_lighter;*/
@@ -2647,8 +2657,8 @@ you can add resource intensive styles.
     margin-top: 25px;
   }
   .secondary-holder {
-    width: 32%;
-    margin: 0 0.65%!important;
+    width: 31.2%;
+    margin: 0 10px!important;
   }
   /*.secondary-holder-mid{
       margin: 0 2%;
@@ -2659,7 +2669,7 @@ you can add resource intensive styles.
     font-size: 14px;
   }
   .flyout li {
-    border-bottom: 1px dotted #024594;
+    border-bottom: 1px dotted #cccccc;
   }
   .parent-a .icons {
     line-height: 0.9em;
@@ -2702,6 +2712,15 @@ you can add resource intensive styles.
     position: absolute;
     z-index: 100;
     display: none;
+  }
+  #content {
+    position: relative;
+    top: -68px;
+  }
+  /*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
+  #content-generic {
+    position: relative;
+    top: -75px !important;
   }
   /*============================================
                  SHOW MEGA-HOLDER
@@ -3021,7 +3040,7 @@ you can add resource intensive styles.
   #content-generic {
     position: relative;
     z-index: 100;
-    top: 302px!important;
+    top: 300px!important;
   }
   #content-news {
     position: relative;
@@ -3036,7 +3055,7 @@ you can add resource intensive styles.
   #content {
     position: relative;
     z-index: 100;
-    top: 302px;
+    top: 300px;
   }
 }
 /*
