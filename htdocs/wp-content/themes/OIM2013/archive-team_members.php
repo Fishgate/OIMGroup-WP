@@ -1,7 +1,28 @@
 <?php get_header(); ?>
                         
                         <!-- feature image -->
-                        <img class="response-img" src="<?php echo get_template_directory_uri() ?>/library/images/team-banner.jpg" alt="Team" />
+                        <!--<img class="response-img" src="<?php// echo get_template_directory_uri() ?>/library/images/team-banner.jpg" alt="Team" />-->
+                        <!-- Header Slideshow  --> <!--<?php// if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>-->
+                        
+                            <div class="cycle-slideshow" 
+                            data-cycle-fx="fade" 
+                            data-cycle-timeout="8000"
+                            data-cycle-slides="> div"
+                            data-cycle-loader="wait"
+                            >
+                                
+                                <div class="cycle-slide">
+                                    <div class="cycle-caption clearfix">
+                                        <p class="txt-left">Without an experienced team to<br />facilitate improvement,<br />markey leaders become followers</p>
+                                        <span class="left cycle-caption-btn">
+                                            <a href="#">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                        </span>
+                                        <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
+                                    </div>
+                                    <img class="slide-large" src="<?php echo get_template_directory_uri(); ?>/library/images/team-banner.jpg" alt="team"/>
+                                </div>
+                            </div>
+                        <!-- END Header Slideshow  -->
 
 			<div id="content-generic">
 

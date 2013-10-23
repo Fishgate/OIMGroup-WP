@@ -1,9 +1,24 @@
 <?php get_header(); ?>
                         
-                        <!-- feature image -->
-                        <img class="response-img" src="<?php echo get_feature_src($post->ID, 'feature-small'); ?>" />
-
-			<div id="content-generic">
+                        
+                        <!-- Header Slideshow  -->
+                            <div class="cycle-slideshow" 
+                            data-cycle-fx="fade" 
+                            data-cycle-timeout="8000"
+                            data-cycle-slides="> div"
+                            data-cycle-loader="wait"
+                            >
+                                
+                                <div class="cycle-slide">
+                                    <div class="cycle-caption clearfix">
+                                        <div class="right slogan-product txt-right">Analyse. Improve. Sustain</div>
+                                    </div>
+                                    <img class="response-img" src="<?php echo get_feature_src($post->ID, 'feature-small'); ?>" />
+                                </div>
+                            </div>
+                        <!-- END Header Slideshow  -->
+                        
+			<div id="content-products">
 
 				<div id="inner-content" class="wrap clearfix">
 

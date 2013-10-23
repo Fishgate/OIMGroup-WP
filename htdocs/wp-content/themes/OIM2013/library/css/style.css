@@ -793,6 +793,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   color: #666666;
+  overflow-x: hidden;
 }
 p {
   font-size: 12px!important;
@@ -1350,9 +1351,17 @@ Class name automatically added to element */
 /*********************
 08. POSTS & CONTENT STYLES
 *********************/
+/*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
+#content-generic {
+  position: relative;
+  z-index: 100;
+  /*top: -100px!important;*/
+
+}
 #content {
   position: relative;
   z-index: 100;
+  top: 0;
 }
 /* end .hentry */
 /* want to style individual post classes? Booya! */
@@ -1430,6 +1439,7 @@ Class name automatically added to element */
   margin: 1.1em 0 2.2em;
 }
 .bones_page_navi {
+  display: inline-block;
   /* current page link */
 
   /* end .bones_page_navi .bpn-current */
@@ -1450,21 +1460,24 @@ Class name automatically added to element */
 .bones_page_navi li {
   float: left;
   margin-left: 10px;
+  font-size: 13px;
 }
 .bones_page_navi li a {
   padding: 3px 6px;
   display: block;
   text-decoration: none;
   position: relative;
+  color: #5482ab;
 }
 .bones_page_navi li a:hover,
 .bones_page_navi li a:focus {
-  color: #f01d4f;
+  color: #a22b38;
   text-decoration: underline;
 }
 .bones_page_navi li.bpn-current {
   padding: 3px 6px;
-  border-bottom: 2px solid #f01d4f;
+  /*border-bottom: 2px solid #f01d4f;*/
+
   position: relative;
 }
 .bones_page_navi li.bpn-current a {
@@ -1474,6 +1487,7 @@ Class name automatically added to element */
 .bones_page_navi li.bpn-prev-link,
 .bones_page_navi li.bpn-next-link {
   font-weight: 700;
+  display: none;
 }
 .bones_page_navi li.bpn-prev-link a,
 .bones_page_navi li.bpn-next-link a {
@@ -1721,8 +1735,9 @@ h4.widgettitle {
 13. FOOTER STYLES
 *********************/
 .footer {
+  position: relative;
+  top: 0;
   background: #f8f8f8;
-  clear: both;
 }
 .footer #inner-footer {
   padding: 25px 0;
@@ -1798,7 +1813,7 @@ nav[role=navigation] {
   display: none;
 }
 #menu-mobile {
-  display: inline-block;
+  display: block;
   color: #5482ab;
   margin: 25px 10px 0 0;
 }
@@ -1982,11 +1997,22 @@ nav[role=navigation] {
 /*============================================
                SINGLE NEWS H2's
 =============================================*/
+h1.single-title {
+  color: #ffffff !important;
+}
 .single-title {
   margin: 0 0 10px 0;
   font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #999;
   font-size: 25px;
+}
+.single-news-left .icon {
+  font-size: 25px;
+  line-height: 1em;
+}
+.article-icon-holder {
+  margin: 20px 0;
+  display: block;
 }
 /*============================================
           SINGLE NEWS DATE AND ARTICLE
@@ -2014,7 +2040,7 @@ nav[role=navigation] {
   font-size: 25px;
 }
 .month {
-  font-size: 15px;
+  font-size: 20px;
 }
 .article-header h3 {
   margin-top: 0;
@@ -2183,6 +2209,20 @@ ccs-logo {
 article.bordered-bottom {
   padding-bottom: 15px;
   margin-bottom: 25px;
+}
+/*============================================
+             CYCLE SLIDESHOW
+=============================================*/
+.cycle-slideshow {
+  display: block!important;
+  position: relative;
+  top: 0;
+}
+.cycle-slide img {
+  display: block!important;
+}
+.cycle-caption {
+  display: none;
 }
 /*
 LARGER MOBILE DEVICES
@@ -2409,7 +2449,7 @@ you can add resource intensive styles.
   }
   /******************************************************************
   Site Name:  OIM
-  Author:
+  Author: Tyrone @ Fishgate
   
   Stylesheet: Tablet & Small Desktop Stylesheet
   
@@ -2569,6 +2609,9 @@ you can add resource intensive styles.
   /*********************
   FOOTER STYLES
   *********************/
+  .footer {
+    top: 320px;
+  }
   /*
   you'll probably need to do quite a bit
   of overriding here if you styled them for
@@ -2659,15 +2702,6 @@ you can add resource intensive styles.
     position: absolute;
     z-index: 100;
     display: none;
-  }
-  #content {
-    position: relative;
-    top: -68px;
-  }
-  /*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
-  #content-generic {
-    position: relative;
-    top: -73px !important;
   }
   /*============================================
                  SHOW MEGA-HOLDER
@@ -2899,6 +2933,110 @@ you can add resource intensive styles.
     position: relative;
     right: 0;
     top: 13px;
+  }
+  /*============================================
+               CYCLE SLIDESHOW
+  =============================================*/
+  .cycle-slideshow {
+    display: block!important;
+    position: relative;
+  }
+  .cycle-slide img {
+    display: block!important;
+  }
+  .cycle-slide {
+    position: relative!important;
+  }
+  .slide-large {
+    position: absolute;
+    margin-left: -960px;
+    left: 50%;
+  }
+  .cycle-caption {
+    display: block;
+    z-index: 100;
+    /*outline: 1px solid red;*/
+  
+    color: #ffffff;
+    padding: 90px 0 0 0;
+  }
+  .cycle-caption p {
+    font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 20px!important;
+    line-height: 1.3em;
+  }
+  .cycle-caption-btn .icon {
+    font-size: 14px;
+    position: relative;
+    bottom: -1px;
+  }
+  .cycle-caption-btn a {
+    font-family: "opensansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background: #a22b38;
+    color: #ffffff;
+    padding: 10px;
+    display: inline-block;
+  }
+  .slogan {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 50px 0 0 0;
+    display: block;
+    width: 100%;
+    /*outline: 1px solid yellow;*/
+  
+  }
+  .slogan-alt {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 165px 0 0 0;
+    display: block;
+    width: 100%;
+    /*outline: 1px solid yellow;*/
+  
+  }
+  .slogan-product {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 55px 0 0 0;
+    display: block;
+    width: 100%;
+    /*outline: 1px solid yellow;*/
+  
+  }
+  .txt-left {
+    text-align: left;
+  }
+  .txt-right {
+    text-align: right;
+  }
+  /*============================================
+               CONTENT STYLES
+  =============================================*/
+  /*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
+  #content-generic {
+    position: relative;
+    z-index: 100;
+    top: 302px!important;
+  }
+  #content-news {
+    position: relative;
+    z-index: 100;
+    top: -302px !important;
+  }
+  #content-products {
+    position: relative;
+    z-index: 100;
+    top: 182px!important;
+  }
+  #content {
+    position: relative;
+    z-index: 100;
+    top: 302px;
   }
 }
 /*

@@ -42,6 +42,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: @oim_grey;
+        overflow-x: hidden;
 }
 p{
 font-size: 12px!important;
@@ -669,9 +670,20 @@ Class name automatically added to element */
 08. POSTS & CONTENT STYLES
 *********************/
 
+
+/*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
+#content-generic{
+    position: relative;
+    z-index: 100;
+    /*top: -100px!important;*/
+}
+
+
+
 #content {
         position: relative;
         z-index: 100;
+        top: 0;
 
 	#inner-content {}
 }
@@ -836,20 +848,23 @@ Class name automatically added to element */
 	margin: 1.1em 0 2.2em;
 }
 	.bones_page_navi {
+                display: inline-block;
 
 		li {
 			float: left;
 			margin-left: 10px;
+                        font-size: 13px;
 
 			a {
 				padding: 3px 6px;
 				display: block;
 				text-decoration: none;
 				position: relative;
+                                color: @oim_blue_light;
 
 				&:hover,
 				&:focus {
-					color: #f01d4f;
+					color: @oim_red;
 					text-decoration: underline;
 				}
 			}
@@ -859,7 +874,7 @@ Class name automatically added to element */
 		/* current page link */
 		li.bpn-current {
 			padding: 3px 6px;
-			border-bottom: 2px solid #f01d4f;
+			/*border-bottom: 2px solid #f01d4f;*/
 			position: relative;
 
 			a {
@@ -875,6 +890,7 @@ Class name automatically added to element */
 		li.bpn-prev-link,
 		li.bpn-next-link {
 			font-weight: 700;
+                        display: none;
 
 			a {
 				padding: 0;
@@ -1269,8 +1285,9 @@ Class name automatically added to element */
 *********************/
 
 .footer {
+    position: relative;
+    top: 0;
         background: @oim_grey_light;
-	clear: both;
 	#inner-footer {
             padding: 25px 0;
             /*margin-top: 80px;*/
@@ -1378,7 +1395,7 @@ nav[role=navigation]{
     display: none;
 }
 #menu-mobile{
-    display: inline-block;
+    display: block;
     color: @oim_blue_light;
     margin: 25px 10px 0 0;
 }
@@ -1598,11 +1615,22 @@ nav[role=navigation]{
 /*============================================
                SINGLE NEWS H2's
 =============================================*/
+h1.single-title{
+    color: @white!important;
+}
 .single-title{
     margin: 0 0 10px 0;
     font-family: @sans-serif-light;
     color: #999;
     font-size: 25px;
+}
+.single-news-left .icon{
+    font-size: 25px;
+    line-height: 1em;
+}
+.article-icon-holder{
+    margin: 20px 0;
+    display: block;
 }
 
 
@@ -1632,7 +1660,7 @@ nav[role=navigation]{
 }
 
 .month{
-    font-size: 15px;
+    font-size: 20px;
 }
 .article-header h3{
     margin-top: 0;
@@ -1807,4 +1835,21 @@ ccs-logo{
 article.bordered-bottom{
     padding-bottom: 15px;
     margin-bottom: 25px;
+}
+
+
+/*============================================
+             CYCLE SLIDESHOW
+=============================================*/
+.cycle-slideshow{
+    display: block!important;
+    position: relative;
+    top: 0;
+}
+.cycle-slide img{
+    display: block!important;
+}
+
+.cycle-caption{
+    display: none;
 }

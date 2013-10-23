@@ -1,6 +1,6 @@
 /******************************************************************
 Site Name:  OIM
-Author:
+Author: Tyrone @ Fishgate
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -291,7 +291,9 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-
+.footer{
+    top: 320px;
+}
 /*
 you'll probably need to do quite a bit
 of overriding here if you styled them for
@@ -404,15 +406,7 @@ nav[role=navigation]{
 }
 
 
-#content{
-    position: relative;
-    top: -68px;
-}
-/*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
-#content-generic{
-    position: relative;
-    top: -73px!important;
-}
+
 /*============================================
                SHOW MEGA-HOLDER
 =============================================*/
@@ -684,4 +678,113 @@ nav[role=navigation]{
     position: relative;
     right: 0;
     top: 13px;
+}
+
+
+/*============================================
+             CYCLE SLIDESHOW
+=============================================*/
+.cycle-slideshow{
+    display: block!important;
+    position: relative;
+}
+.cycle-slide img{
+    display: block!important;
+}
+.cycle-slide{
+    position: relative!important;
+}
+.slide-large{
+    position: absolute;
+    margin-left: -960px;
+    left: 50%;
+}
+.cycle-caption{
+    display: block;
+    z-index: 100;
+    /*outline: 1px solid red;*/
+    color: @white;
+    padding: 90px 0 0 0;
+}
+.cycle-caption p{
+    font-family: @sans-serif-light!important;
+    font-size: 20px!important;
+    line-height: 1.3em;
+}
+.cycle-caption-btn .icon{
+    font-size: 14px;
+    position: relative;
+    bottom: -1px;
+}
+
+.cycle-caption-btn a{
+    font-family: @sans-serif-light;
+    font-size: 12px;
+    background: @oim_red;
+    color: @white;
+    padding: 10px;
+    display: inline-block;
+}
+.slogan{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 50px 0 0 0;
+    display: block;
+    width: 100%;
+    /*outline: 1px solid yellow;*/
+}
+.slogan-alt{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 165px 0 0 0;
+    display: block;
+    width: 100%;
+    /*outline: 1px solid yellow;*/
+}
+.slogan-product{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 55px 0 0 0;
+    display: block;
+    width: 100%;
+    /*outline: 1px solid yellow;*/
+}
+.txt-left{
+    text-align: left;
+}
+.txt-right{
+    text-align: right;
+}
+
+
+
+
+
+/*============================================
+             CONTENT STYLES
+=============================================*/
+/*-- CONTENT HOLDER FOR GEN PAGES, shifts nav up into place --*/
+#content-generic{
+    position: relative;
+    z-index: 100;
+    top: 302px!important;
+}
+#content-news{
+    position: relative;
+    z-index: 100;
+    top: -302px!important;
+}
+#content-products{
+    position: relative;
+    z-index: 100;
+    top: 182px!important;
+}
+
+#content {
+        position: relative;
+        z-index: 100;
+        top: 302px;
 }

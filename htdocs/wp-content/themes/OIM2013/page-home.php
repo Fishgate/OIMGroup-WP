@@ -6,18 +6,57 @@ Template Name: Home
 
 <?php get_header(); ?>
 
+                        
                         <!-- Header Slideshow  -->
-                        <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+                            <div class="cycle-slideshow" 
+                            data-cycle-fx="fade" 
+                            data-cycle-timeout="8000"
+                            data-cycle-slides="> div"
+                            data-cycle-loader="wait"
+                            >
+                                
+                                <div class="cycle-slide">
+                                    <div class="cycle-caption clearfix">
+                                        <p class="txt-right">In an ever-changing world,<br />constant improvement is an<br />integral part of continued success</p>
+                                        <span class="right cycle-caption-btn">
+                                            <a href="#">Read More<span class="icon">&#xe0eb;</span></a>
+                                        </span>
+                                        <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
+                                    </div>
+                                    <img class="slide-large" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/home1.jpg"/>
+                                </div>
+                                
+                                <div class="cycle-slide">
+                                    <div class="cycle-caption clearfix">
+                                        <p class="txt-right">Progress comes as a result<br />of proven methodologies</p>
+                                        <span class="right cycle-caption-btn">
+                                            <a href="#">Read More<span class="icon">&#xe0eb;</span></a>
+                                        </span>
+                                        <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
+                                    </div>
+                                    <img class="slide-large" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/home2.jpg"/>
+                                </div>
+                                
+                                <div class="cycle-slide">
+                                    <div class="cycle-caption clearfix">
+                                        <p class="txt-left">Without an experienced team to<br />facilitate improvement,<br />market leaders become followers</p>
+                                        <span class="left cycle-caption-btn">
+                                            <a href="#">Read More<span class="icon">&#xe0eb;</span></a>
+                                        </span>
+                                        <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
+                                    </div>
+                                    <img class="slide-large" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/team.jpg"/>
+                                </div>
+                            </div>
                         <!-- END Header Slideshow  -->
 
 			<div id="content">
-
 				<div id="inner-content" class="wrap clearfix">
                                     
                                     <!--==============================================
                                           TYRONE INSERTS NAV HERE FROM HEADER
                                     ================================================-->
-                                    <nav role="navigation">
+                                    <nav role="navigation" class="clearfix">
                                         <?php get_secondary_nav(); ?>
                                     </nav>
                                     <!-- nav end -->

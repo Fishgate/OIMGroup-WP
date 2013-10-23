@@ -8,20 +8,28 @@ Template Name: Products
 
 
 
-<!-- Header Slideshow  -->
-<div style="height: 420px; overflow: hidden;">
-    <ul class="rslides" id="slider1">
-      <li>
-          <div class="calltoaction">
-              <span class="quote">In an ever-changing world,<br />constant improvement is an integral part<br />of continued success</span>
-              <div class="button">Read More &nbsp;<span class="icon">&#xe0eb;</span></div>
-          </div>
-          <img src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/home1.jpg" alt="">
-      </li>
-    </ul>
-</div>
-<!-- END Header Slideshow  -->
-
+                        <!-- Header Slideshow  -->
+                        
+                            <div class="cycle-slideshow" 
+                            data-cycle-fx="fade" 
+                            data-cycle-timeout="8000"
+                            data-cycle-slides="> div"
+                            data-cycle-loader="wait"
+                            >
+                                
+                                <div class="cycle-slide">
+                                    <div class="cycle-caption clearfix">
+                                        <p class="txt-left">The ones who keep on improving<br />are the ones who stay relevant</p>
+                                        <span class="left cycle-caption-btn">
+                                            <a href="#">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                        </span>
+                                        <div class="left slogan-alt txt-right">Analyse. Improve. Sustain</div>
+                                    </div>
+                                        <img class="slide-large" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_phptos/home1.jpg" alt="Products and Services" />
+                                </div>
+                            </div>
+                        <!-- END Header Slideshow  -->
+                        
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
