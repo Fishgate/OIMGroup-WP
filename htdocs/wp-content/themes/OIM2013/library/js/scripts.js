@@ -30,39 +30,104 @@ if (!window.getComputedStyle) {
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 
+
+var responsive_viewport = $(window).width();
+//-------------------------------------------------- THIS IS SCREEN RES CHECK ON DOC READY
+/* if is below 481px */
+if (responsive_viewport < 481) {
+
+} /* end smallest screen */
+
+/* if is larger than 481px */
+if (responsive_viewport > 481) {
+
+} /* end larger than 481px */
+
+/* if is less than 800px */
+if (responsive_viewport < 768) {
+    $('.cycle-slide img').removeClass('slide-large');
+    $('.cycle-slide img').addClass('response-img');
+}
+/* if is above or equal to 768px */
+if (responsive_viewport >= 768) {
+    $('.cycle-slide img').removeClass('response-img');
+    $('.cycle-slide img').addClass('slide-large');
+    /* load gravatars */
+    $('.comment img[data-gravatar]').each(function(){
+        $(this).attr('src',$(this).attr('data-gravatar'));
+    });
+}
+/* off the bat large screen actions */
+if (responsive_viewport > 1030) {}
+        
+        
     /*
     Responsive jQuery is a tricky thing.
     There's a bunch of different ways to handle
     it, so be sure to research and find the one
     that works for you best.
     */
-    
-    /* getting viewport width */
-    var responsive_viewport = $(window).width();
-    
-    /* if is below 481px */
-    if (responsive_viewport < 481) {
+    $(window).resize(function(){
+        //-------------------------------------------------- THIS IS SCREEN RES CHECK ON WINDOW RESIZE
+        /* getting viewport width */
+        var responsive_viewport = $(window).width();
         
-    } /* end smallest screen */
-    
-    /* if is larger than 481px */
-    if (responsive_viewport > 481) {
+
+        /* if is below 481px */
+        if (responsive_viewport < 481) {
+
+        } /* end smallest screen */
+
+        /* if is larger than 481px */
+        if (responsive_viewport > 481) {
+
+        } /* end larger than 481px */
+
+        /* if is less than 768px */
+        if (responsive_viewport < 768) {
+            $('.cycle-slide img').removeClass('slide-large');
+            $('.cycle-slide img').addClass('response-img');
+        }
+        /* if is above or equal to 768px */
+        if (responsive_viewport >= 768) {
+            $('.cycle-slide img').removeClass('response-img');
+            $('.cycle-slide img').addClass('slide-large');
+            /* load gravatars */
+            $('.comment img[data-gravatar]').each(function(){
+                $(this).attr('src',$(this).attr('data-gravatar'));
+            });
+        }
+        /* off the bat large screen actions */
+        if (responsive_viewport > 1030) {}
         
-    } /* end larger than 481px */
+    });
     
-    /* if is above or equal to 768px */
-    if (responsive_viewport >= 768) {
-    
-        /* load gravatars */
-        $('.comment img[data-gravatar]').each(function(){
-            $(this).attr('src',$(this).attr('data-gravatar'));
-        });
-    }
-    
-    /* off the bat large screen actions */
-    if (responsive_viewport > 1030) {
-        
-    }
+   
+   
+   //------------ TYRONE CYCLE JS
+   $('.cycle-slideshow').cycle();
+   
+   //------------ TYRONE CYCLE RESIZER
+   //------------------------------------------------ THIS centers the caption divs on doc ready
+   var sliderwidth = $('.wrap').width();
+   var slidermarginleft = sliderwidth / 2 * -1;
+
+   $('.cycle-caption').css('position', 'absolute');
+   $('.cycle-caption').css('width', sliderwidth);
+   $('.cycle-caption').css('margin-left', slidermarginleft);
+   $('.cycle-caption').css('left', '50%');
+   
+   //------------------------------------------------ THIS centers the caption divs on window resize
+   $(window).resize(function(){
+       var sliderwidth = $('.wrap').width();
+       var slidermarginleft = sliderwidth / 2 * -1;
+       
+       $('.cycle-caption').css('position', 'absolute');
+       $('.cycle-caption').css('width', sliderwidth);
+       $('.cycle-caption').css('margin-left', slidermarginleft);
+       $('.cycle-caption').css('left', '50%');
+   });
+  
    
        
     //------------ TYRONE SEARCHER REVEAL

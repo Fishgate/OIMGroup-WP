@@ -1,8 +1,22 @@
 <?php get_header(); ?>
 
-<!-- Header Slideshow  -->
-          <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/home2.jpg" alt="">
-<!-- END Header Slideshow  -->
+                        <!-- Header Slideshow  -->
+                        
+                            <div class="cycle-slideshow" 
+                            data-cycle-fx="fade" 
+                            data-cycle-timeout="8000"
+                            data-cycle-slides="> div"
+                            data-cycle-loader="wait"
+                            >
+                                
+                                <div class="cycle-slide">
+                                    <div class="cycle-caption clearfix">
+                                        <div class="left slogan-alt txt-right">Analyse. Improve. Sustain</div>
+                                    </div>
+                                        <img class="slide-large" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/home2.jpg" alt="Products and Services" />
+                                </div>
+                            </div>
+                        <!-- END Header Slideshow  -->
 
 			<div id="content-generic">
 

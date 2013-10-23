@@ -6,9 +6,25 @@ Template Name: Contact
 
 <?php get_header(); ?>
                         
-                        <?php if(get_field('feature_url')) ?><a href="<?php echo get_field('feature_url'); ?>">
-                            <img class="response-img" src="<?php echo get_feature_src($post->ID, 'large-feature'); ?>" alt="<?php echo get_the_title(); ?>" />
-                        <?php if(get_field('feature_url')) ?></a>
+                        <!-- Header Slideshow  -->
+                        
+                            <div class="cycle-slideshow" 
+                            data-cycle-fx="fade" 
+                            data-cycle-timeout="8000"
+                            data-cycle-slides="> div"
+                            data-cycle-loader="wait"
+                            >
+                                
+                                <div class="cycle-slide">
+                                    <div class="cycle-caption clearfix">
+                                        <div class="left slogan-alt txt-right">Analyse. Improve. Sustain</div>
+                                    </div>
+                                        <?php if(get_field('feature_url')) ?><a href="<?php echo get_field('feature_url'); ?>">
+                                            <img class="slide-large" src="<?php echo get_feature_src($post->ID, 'large-feature'); ?>" alt="<?php echo get_the_title(); ?>" />
+                                        <?php if(get_field('feature_url')) ?></a>
+                                </div>
+                            </div>
+                        <!-- END Header Slideshow  -->
 
 			<div id="content-generic">
 

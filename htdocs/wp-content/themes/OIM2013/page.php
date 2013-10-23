@@ -1,9 +1,31 @@
 <?php get_header(); ?>
                         
-                        <?php if(get_field('feature_url')) { ?><a href="<?php echo get_field('feature_url'); ?>"><?php } ?>
-                            <img class="response-img" src="<?php echo get_feature_src($post->ID, 'large-feature'); ?>" alt="<?php echo get_the_title(); ?>" />
-                        <?php if(get_field('feature_url')) { ?></a><?php } ?>
+                        
 
+                        <!-- Header Slideshow  -->
+                        
+                            <div class="cycle-slideshow" 
+                            data-cycle-fx="fade" 
+                            data-cycle-timeout="8000"
+                            data-cycle-slides="> div"
+                            data-cycle-loader="wait"
+                            >
+                                
+                                <div class="cycle-slide">
+                                    <div class="cycle-caption clearfix">
+                                        <p class="txt-left">The ones who keep on improving<br />are the ones who stay relevant</p>
+                                        <span class="left cycle-caption-btn">
+                                            <a href="#">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                        </span>
+                                        <div class="left slogan-alt txt-right">Analyse. Improve. Sustain</div>
+                                    </div>
+                                    <?php if(get_field('feature_url')) { ?><a href="<?php echo get_field('feature_url'); ?>"><?php } ?>
+                                        <img class="slide-large" src="<?php echo get_feature_src($post->ID, 'large-feature'); ?>" alt="<?php echo get_the_title(); ?>" />
+                                    <?php if(get_field('feature_url')) { ?></a><?php } ?>
+                                </div>
+                            </div>
+                        <!-- END Header Slideshow  -->
+                        
 			<div id="content-generic">
 
 				<div id="inner-content" class="wrap clearfix">

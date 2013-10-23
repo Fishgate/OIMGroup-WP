@@ -151,6 +151,7 @@ function bones_scripts_and_styles() {
     wp_register_script( 'superfish-js', get_stylesheet_directory_uri() . '/library/js/superfish.js', array( 'jquery' ), '', true );    
     wp_register_script( 'simplyscroll-js', get_stylesheet_directory_uri() . '/library/js/simplyscroll.js', array( 'jquery' ), '', true );
     wp_register_script( 'jq-form-plugin', get_stylesheet_directory_uri() . '/library/js/libs/jquery.form.min.js', array( 'jquery' ), '', true );
+    wp_register_script( 'cycle-js', get_stylesheet_directory_uri() . '/library/js/cycle.js', array( 'jquery' ), '', true );
 
     // enqueue styles and scripts
     wp_enqueue_script( 'bones-modernizr' );
@@ -171,6 +172,7 @@ function bones_scripts_and_styles() {
     wp_enqueue_script( 'simplyscroll-js' );
     wp_enqueue_script( 'bones-js' );
     wp_enqueue_script( 'jq-form-plugin' );
+    wp_enqueue_script( 'cycle-js' );
     
     //make some php data available in scripts.js
     $data = array( 'directory' => __(get_template_directory_uri()), 'thankyou_page' => site_url('/contact/thank-you/') );
@@ -361,13 +363,13 @@ function bones_page_navi($before = '', $after = '') {
 	if($start_page <= 0) {
 		$start_page = 1;
 	}
-	echo $before.'<nav class="page-navigation"><ol class="bones_page_navi clearfix">'."";
+	echo $before.'<nav class="page-navigation clearfix"><ol class="right bones_page_navi clearfix">'."";
 	if ($start_page >= 2 && $pages_to_show < $max_page) {
 		$first_page_text = __( "First", 'bonestheme' );
 		echo '<li class="bpn-first-page-link"><a href="'.get_pagenum_link().'" title="'.$first_page_text.'">'.$first_page_text.'</a></li>';
 	}
 	echo '<li class="bpn-prev-link">';
-	previous_posts_link('<<');
+	//previous_posts_link('<<');
 	echo '</li>';
 	for($i = $start_page; $i  <= $end_page; $i++) {
 		if($i == $paged) {
@@ -377,7 +379,7 @@ function bones_page_navi($before = '', $after = '') {
 		}
 	}
 	echo '<li class="bpn-next-link">';
-	next_posts_link('>>');
+	//next_posts_link('>>');
 	echo '</li>';
 	if ($end_page < $max_page) {
 		$last_page_text = __( "Last", 'bonestheme' );

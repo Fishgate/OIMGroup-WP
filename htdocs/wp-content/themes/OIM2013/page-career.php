@@ -6,12 +6,30 @@ Template Name: Careers
 
 <?php get_header(); ?>
 
-
-
-						<?php if(get_field('feature_url')) ?><a href="<?php echo get_field('feature_url'); ?>">
-                            <img class="response-img" src="<?php echo get_feature_src($post->ID, 'large-feature'); ?>" alt="<?php echo get_the_title(); ?>" />
-                        <?php if(get_field('feature_url')) ?></a>
-
+                        <!-- Header Slideshow  -->
+                        
+                            <div class="cycle-slideshow" 
+                            data-cycle-fx="fade" 
+                            data-cycle-timeout="8000"
+                            data-cycle-slides="> div"
+                            data-cycle-loader="wait"
+                            >
+                                
+                                <div class="cycle-slide">
+                                    <div class="cycle-caption clearfix">
+                                        <p class="txt-right">The ones who keep improving<br />are the ones who stay relevant</p>
+                                        <span class="right cycle-caption-btn">
+                                            <a href="#">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                        </span>
+                                        <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
+                                    </div>
+                                    <?php if(get_field('feature_url')) ?><a href="<?php echo get_field('feature_url'); ?>">
+                                        <img class="slide-large" src="<?php echo get_feature_src($post->ID, 'large-feature'); ?>" alt="<?php echo get_the_title(); ?>" />
+                                    <?php if(get_field('feature_url')) ?></a>
+                                </div>
+                            </div>
+                        <!-- END Header Slideshow  -->
+                        
 			<div id="content-generic">
 
 				<div id="inner-content" class="wrap clearfix">

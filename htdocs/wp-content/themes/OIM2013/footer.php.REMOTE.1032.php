@@ -1,4 +1,4 @@
-                <footer class="footer" role="contentinfo">
+			<footer class="footer" role="contentinfo">
                                 
 				<div id="inner-footer" class="wrap clearfix">
                                         <div class="clearfix">
@@ -26,25 +26,13 @@
                                         </p>
                                     </div>
                                 </div>
-                        </div> <!-- end #inner-footer -->
+			</footer> <!-- end footer -->
 
-                        <div style="background: #fff; padding: 0!important; margin: 0!important;">
-                            <div id="footer-nav-holder" class="clearfix">
-                                <nav id="footer-nav" role="navigation" class="right clearfix">
-                                    <?php if(function_exists('get_footer_menu') && get_footer_menu()) get_footer_menu(); ?>
-                                </nav>
-                                <p class="source-org copyright">
-                                    &copy; Copyright<?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
-                                </p>
-                            </div>
-                        </div>
-                </footer> <!-- end footer -->
+		</div> <!-- end #container -->
 
-        </div> <!-- end #container -->
+		<!-- all js scripts are loaded in library/bones.php -->
+		<?php wp_footer(); ?>
 
-        <!-- all js scripts are loaded in library/bones.php -->
-        <?php wp_footer(); ?>
-
-</body>
+	</body>
 
 </html> <!-- end page. what a ride! -->
