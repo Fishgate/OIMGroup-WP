@@ -2658,7 +2658,11 @@ you can add resource intensive styles.
   }
   .secondary-holder {
     width: 31.2%;
+<<<<<<< HEAD
+    margin: 0 10px!important;
+=======
     margin: 0 1%!important;
+>>>>>>> 953a34f49aaca56ae841119c4f342ff390302685
   }
   /*.secondary-holder-mid{
       margin: 0 2%;
