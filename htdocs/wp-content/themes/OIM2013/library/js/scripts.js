@@ -117,6 +117,25 @@ if (responsive_viewport > 1030) {}
    $('.cycle-caption').css('margin-left', slidermarginleft);
    $('.cycle-caption').css('left', '50%');
    
+   
+   var sliderwidth = $('.wrap').width();
+       var slidermarginleft = sliderwidth / 2 * -1;
+       
+   //------------------------------------------------ THIS centers the caption divs on window resize
+   if($(window).width() < 768){
+       //--- Make slides imgs responsive
+       $('.slide-large').addClass('response-img');
+       $('.response-img').removeClass('slide-large');
+   }else{
+       //--- Remove responsive class for slides imgs
+       $('.response-img').addClass('slide-large');
+       $('.slide-large').removeClass('response-img');
+       //-- center captions
+       $('.cycle-caption').css('position', 'absolute');
+       $('.cycle-caption').css('width', sliderwidth);
+       $('.cycle-caption').css('margin-left', slidermarginleft);
+       $('.cycle-caption').css('left', '50%');
+   }
    //------------------------------------------------ THIS centers the caption divs on window resize
    $(window).resize(function(){
        var sliderwidth = $('.wrap').width();
