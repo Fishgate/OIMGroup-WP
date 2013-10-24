@@ -12,7 +12,7 @@
                                     <div class="cycle-caption clearfix">
                                         <div class="right slogan-alt txt-right">Analyse. Improve. Sustain</div>
                                     </div>
-                                    <img class="response-img" src="<?php echo get_template_directory_uri() ?>/library/images/client-case-studies-banner.jpg" alt="Team" />
+                                    <img class="slide-large" src="<?php echo get_template_directory_uri() ?>/library/images/client-case-studies-banner.jpg" alt="Team" />
                                 </div>
                             </div>
                         <!-- END Header Slideshow  -->
