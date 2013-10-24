@@ -28,18 +28,8 @@
                                 </p>
                             </div>
                         </div>
-                        </div> <!-- end #inner-footer -->
+                        
 
-                        <div style="background: #fff; padding: 0!important; margin: 0!important;">
-                            <div id="footer-nav-holder" class="clearfix">
-                                <nav id="footer-nav" role="navigation" class="right clearfix">
-                                    <?php if(function_exists('get_footer_menu') && get_footer_menu()) get_footer_menu(); ?>
-                                </nav>
-                                <p class="source-org copyright">
-                                    &copy; Copyright<?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
-                                </p>
-                            </div>
-                        </div>
                 </footer> <!-- end footer -->
 
         </div> <!-- end #container -->
