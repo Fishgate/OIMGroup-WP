@@ -124,12 +124,12 @@ if (responsive_viewport > 1030) {}
    //------------------------------------------------ THIS centers the caption divs on window resize
    if($(window).width() < 768){
        //--- Make slides imgs responsive
-       $('.slide-large').addClass('response-img');
-       $('.response-img').removeClass('slide-large');
+       $('.cycle-slide img').addClass('response-img');
+       $('.cycle-slide img').removeClass('slide-large');
    }else{
        //--- Remove responsive class for slides imgs
-       $('.response-img').addClass('slide-large');
-       $('.slide-large').removeClass('response-img');
+       $('.cycle-slide img').addClass('slide-large');
+       $('.cycle-slide img').removeClass('response-img');
        //-- center captions
        $('.cycle-caption').css('position', 'absolute');
        $('.cycle-caption').css('width', sliderwidth);
@@ -144,12 +144,12 @@ if (responsive_viewport > 1030) {}
        
        if($(window).width() < 768){
            //--- Make slides imgs responsive
-           $('.slide-large').addClass('response-img');
-           $('.response-img').removeClass('slide-large');
+           $('.cycle-slide img').addClass('response-img');
+           $('.cycle-slide img').removeClass('slide-large');
        }else{
            //--- Remove responsive class for slides imgs
-           $('.response-img').addClass('slide-large');
-           $('.slide-large').removeClass('response-img');
+           $('.cycle-slide img').addClass('slide-large');
+           $('.cycle-slide img').removeClass('response-img');
            //-- center captions
            $('.cycle-caption').css('position', 'absolute');
            $('.cycle-caption').css('width', sliderwidth);
