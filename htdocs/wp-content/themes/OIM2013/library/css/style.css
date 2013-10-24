@@ -2223,17 +2223,21 @@ article.bordered-bottom {
 /*============================================
              CYCLE SLIDESHOW
 =============================================*/
+.cycle-slide {
+  width: 100%;
+}
 .cycle-slideshow {
   display: block!important;
   position: relative;
   top: 0;
 }
-.cycle-slide img {
+.slide-large {
   display: block!important;
 }
 .cycle-caption {
   display: none;
 }
+/*===================== MODIFY RESPONSIVE IMG SLIDES ======*/
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -2960,9 +2964,6 @@ you can add resource intensive styles.
     display: block!important;
     position: relative;
   }
-  .cycle-slide img {
-    display: block!important;
-  }
   .cycle-slide {
     position: relative!important;
   }
@@ -2970,6 +2971,7 @@ you can add resource intensive styles.
     position: absolute;
     margin-left: -960px;
     left: 50%;
+    display: block!important;
   }
   .cycle-caption {
     display: block;
