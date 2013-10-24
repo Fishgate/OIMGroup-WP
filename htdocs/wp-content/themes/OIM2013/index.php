@@ -55,7 +55,7 @@
                                                                 <div class="right single-news-article-holder">
                                                                     <header class="article-header">
 
-                                                                            <h2 class="single-title"><?php the_title(); ?></h2>
+                                                                            <h2 class="single-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
                                                                     </header> <!-- end article header -->
 

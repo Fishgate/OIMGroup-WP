@@ -7,7 +7,7 @@
                                     </div>
                                     
                                     <div class="widget">
-                                        <h4 class="widgettitle" id="side-widget-client">Arcives</h4>
+                                        <h4 class="widgettitle" id="side-widget-client">Archives</h4>
                                         <ul class="bordered-top">
                                             <?php wp_get_archives( array( 'type' => 'yearly', 'limit' => 10 ) ); ?>
                                         </ul>
