@@ -19,6 +19,10 @@ Template Name: Methodology
                                 
                                 <div class="cycle-slide">
                                     <div class="cycle-caption clearfix">
+                                        <p class="txt-right">Progress comes as a result<br/>of proven methodologies</p>
+                                        <span class="right cycle-caption-btn">
+                                            <a href="/contact/">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                        </span>
                                         <div class="left slogan-alt txt-right">Analyse. Improve. Sustain</div>
                                     </div>
                                         <?php if(get_field('feature_url')) ?><a href="<?php echo get_field('feature_url'); ?>">
@@ -112,9 +116,9 @@ Template Name: Methodology
                                     <div class="left chart-block bg-blue-dark">
                                         <h2>Services and Products</h2>
                                         <ul>
-                                            <li><a href="#">Strategic planning</a></li>
-                                            <li><a href="#">Communication strategy</a></li>
-                                            <li><a href="#">Value chain strategy</a></li>
+                                            <li><a href="../../products-services/organisational-development/business-development-strategy/strategic-planning/">Strategic planning</a></li>
+                                            <li><a href="../../products-services/organisational-development/business-development-strategy/strategic-and-change-communication/">Communication strategy</a></li>
+                                            <li><a href="../../products-services/organisational-development/business-development-strategy/value-chain-strategy/">Value chain strategy</a></li>
                                         </ul>
                                     </div>
                                     <!--/// ROW \\\-->
@@ -133,10 +137,10 @@ Template Name: Methodology
                                     <div class="left chart-block bg-blue-light">
                                         <h2>Services and Products</h2>
                                         <ul>
-                                            <li><a href="#">Business architecture</a></li>
-                                            <li><a href="#">Competency profiling</a></li>
-                                            <li><a href="#">Reward strategy</a></li>
-                                            <li><a href="#">Change &amp; operational communication strategies</a></li>
+                                            <li><a href="../../products-services/organisational-development/business-architecture/">Business architecture</a></li>
+                                            <li><a href="../../products-services/people-management/competency-profiling/">Competency profiling</a></li>
+                                            <li><a href="../../products-services/people-management/talent-management/reward-consultation/">Reward strategy</a></li>
+                                            <li><a href="../../products-services/organisational-development/business-development-strategy/strategic-and-change-communication/">Change &amp; operational communication strategies</a></li>
                                         </ul>
                                     </div>
                                     <!--/// ROW \\\-->
@@ -155,13 +159,13 @@ Template Name: Methodology
                                     <div class="left chart-block bg-red">
                                         <h2>Services and Products</h2>
                                         <ul>
-                                            <li><a href="#">Leadership standards definition</a></li>
-                                            <li><a href="#">Assessments: leadership &amp; critical talent</a></li>
-                                            <li><a href="#">Leadership development interventions</a></li>
-                                            <li><a href="#">Coaching</a></li>
-                                            <li><a href="#">Supervisory skills</a></li>
-                                            <li><a href="#">Team dynamics</a></li>
-                                            <li><a href="#">Talent management</a></li>
+                                            <li><a href="../../products-services/people-management/leadership-standards/">Leadership standards definition</a></li>
+                                            <li><a href="../../products-services/people-management/leadership-interventions/assessments-leadership-and-critical-talent/">Assessments: leadership &amp; critical talent</a></li>
+                                            <li><a href="../../products-services/people-management/leadership-interventions/leadership-development-interventions/">Leadership development interventions</a></li>
+                                            <li><a href="../../products-services/people-management/leadership-interventions/coaching/">Coaching</a></li>
+                                            <li><a href="../../products-services/people-management/supervisory-skills/">Supervisory skills</a></li>
+                                            <li><a href="../../products-services/people-management/leadership-interventions/team-dynamics/">Team dynamics</a></li>
+                                            <li><a href="../../products-services/people-management/talent-management/talent-management/">Talent management</a></li>
                                         </ul>
                                     </div>
                                     <!--/// ROW \\\-->
@@ -180,10 +184,10 @@ Template Name: Methodology
                                     <div class="left chart-block bg-green">
                                         <h2>Services and Products</h2>
                                         <ul>
-                                            <li><a href="#">Employee engagement (INVOCOMS)</a></li>
-                                            <li><a href="#">Other stakeholder engagement</a></li>
-                                            <li><a href="#">Employee relations</a></li>
-                                            <li><a href="#">Diversity awareness</a></li>
+                                            <li><a href="../../products-services/people-management/employee-engagement-invocoms/">Employee engagement (INVOCOMS)</a></li>
+                                            <li><a href="../../products-services/organisational-development/business-development-strategy/value-chain-strategy/">Other stakeholder engagement</a></li>
+                                            <li><a href="../../products-services/organisational-development/employee-relations/">Employee relations</a></li>
+                                            <li><a href="../../products-services/people-management/leadership-interventions/diversity-awareness/">Diversity awareness</a></li>
                                         </ul>
                                     </div>
                                     <!--/// ROW \\\-->
@@ -202,9 +206,9 @@ Template Name: Methodology
                                     <div class="left chart-block bg-blue-medium">
                                         <h2>Services and Products</h2>
                                         <ul>
-                                            <li><a href="#">Operations management interventions</a></li>
-                                            <li><a href="#">Continuous improvement</a></li>
-                                            <li><a href="#">On-the-job operational mentoring &amp; coaching</a></li>
+                                            <li><a href="../../products-services/operations-management/operations-management-interventions/">Operations management interventions</a></li>
+                                            <li><a href="../../products-services/operations-management/continuous-improvement/">Continuous improvement</a></li>
+                                            <li><a href="../../products-services/people-management/supervisory-skills/">On-the-job operational mentoring &amp; coaching</a></li>
                                         </ul>
                                     </div>
                                     <!--/// ROW \\\-->
@@ -223,9 +227,9 @@ Template Name: Methodology
                                     <div class="left chart-block bg-purple">
                                         <h2>Services and Products</h2>
                                         <ul>
-                                            <li><a href="#">Stakeholder perception surveys</a></li>
-                                            <li><a href="#">Business/Operations review</a></li>
-                                            <li><a href="#">Individual performance management</a></li>
+                                            <li><a href="../../products-services/organisational-development/stakeholder-perception-surveys/">Stakeholder perception surveys</a></li>
+                                            <li><a href="../../products-services/operations-management/operations-review/">Business/Operations review</a></li>
+                                            <li><a href="../../products-services/people-management/talent-management/individual-performance-management/">Individual performance management</a></li>
                                         </ul>
                                     </div>
                                 </div><!-- METHODOLOGY CHART -->

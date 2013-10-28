@@ -15,9 +15,9 @@
                                     <div class="cycle-caption clearfix">
                                         <p class="txt-left">The ones who keep on improving<br />are the ones who stay relevant</p>
                                         <span class="left cycle-caption-btn">
-                                            <a href="#">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                            <a href="/contact/">Contact Us<span class="icon">&#xe0eb;</span></a>
                                         </span>
-                                        <div class="left slogan-alt txt-right">Analyse. Improve. Sustain</div>
+                                        <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
                                     </div>
                                     <?php if(get_field('feature_url')) { ?><a href="<?php echo get_field('feature_url'); ?>"><?php } ?>
                                         <img class="slide-large" src="<?php echo get_feature_src($post->ID, 'large-feature'); ?>" alt="<?php echo get_the_title(); ?>" />
@@ -54,10 +54,10 @@
                                                                     
 								</section> <!-- end article section -->
 
-								<footer class="article-footer">
+								<!--<footer class="article-footer">
 									<p class="clearfix"><?php the_tags('<span class="tags">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?></p>
 
-								</footer> <!-- end article footer -->
+								</footer> --> <!-- end article footer -->
 
 							</article> <!-- end article -->
 

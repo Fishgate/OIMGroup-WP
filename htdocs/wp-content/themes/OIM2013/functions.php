@@ -509,7 +509,7 @@ function get_footer_feed($option) {
                             $subID = $sub->ID; 
                             ?>
                             <div class="secondary-link">
-                                <?php if ($sub->url != '') { ?><a class="<?php echo implode(' ', $sub->classes); ?>" target="<?php echo $sub->target; ?>"><?php } ?><?php echo trim($sub->title); ?><?php if ($sub->url != '') { ?></a><?php } ?>
+                                <?php if ($sub->url != '') { ?><a href="<?php echo $sub->url; ?>" class="<?php echo implode(' ', $sub->classes); ?>" target="<?php echo $sub->target; ?>"><?php } ?><?php echo trim($sub->title); ?><?php if ($sub->url != '') { ?></a><?php } ?>
                                 <?php if (has_children($menu_items, $subID)) { ?>
                                 <div style="position: relative;">
                                     <div class="flyout-down-arrow icon red">1</div>

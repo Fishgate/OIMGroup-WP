@@ -16,7 +16,7 @@
                                     <div class="cycle-caption clearfix">
                                         <p class="txt-right">Staying on top means<br />staying on top of what's happening.</p>
                                         <span class="right cycle-caption-btn">
-                                            <a href="#">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                            <a href="/contact/">Contact Us<span class="icon">&#xe0eb;</span></a>
                                         </span>
                                         <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
                                     </div>

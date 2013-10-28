@@ -4070,3 +4070,4 @@ function _canonical_charset( $charset ) {
 
 	return $charset;
 }
+

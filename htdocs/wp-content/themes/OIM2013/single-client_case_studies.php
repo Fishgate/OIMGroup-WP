@@ -10,7 +10,11 @@
                                 
                                 <div class="cycle-slide">
                                     <div class="cycle-caption clearfix">
-                                        <div class="right slogan-alt txt-right">Analyse. Improve. Sustain</div>
+                                        <p class="txt-right">The ones who keep on improving<br />are the ones who stay relevant</p>
+                                        <span class="right cycle-caption-btn">
+                                            <a href="/contact/">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                        </span>
+                                        <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
                                     </div>
                                     <img class="slide-large" src="<?php echo get_template_directory_uri() ?>/library/images/client-case-studies-banner.jpg" alt="Team" />
                                 </div>

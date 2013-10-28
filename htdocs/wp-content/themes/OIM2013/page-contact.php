@@ -17,7 +17,9 @@ Template Name: Contact
                                 
                                 <div class="cycle-slide">
                                     <div class="cycle-caption clearfix">
-                                        <div class="left slogan-alt txt-right">Analyse. Improve. Sustain</div>
+                                        <p class="txt-right">The ones who keep on improving<br />are the ones who stay relevant</p>
+                                        
+                                        <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
                                     </div>
                                         <?php if(get_field('feature_url')) ?><a href="<?php echo get_field('feature_url'); ?>">
                                             <img class="slide-large" src="<?php echo get_feature_src($post->ID, 'large-feature'); ?>" alt="<?php echo get_the_title(); ?>" />

@@ -19,7 +19,7 @@ Template Name: Careers
                                     <div class="cycle-caption clearfix">
                                         <p class="txt-right">The ones who keep improving<br />are the ones who stay relevant</p>
                                         <span class="right cycle-caption-btn">
-                                            <a href="#">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                            <a href="/contact/">Contact Us<span class="icon">&#xe0eb;</span></a>
                                         </span>
                                         <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
                                     </div>

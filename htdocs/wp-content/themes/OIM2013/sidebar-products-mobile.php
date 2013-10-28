@@ -37,25 +37,7 @@
                                         }
                                         
                                         ?>
-                                        
-                                        <!-- ===============PDF DOWNLOAD=================== -->
-                                        <?php if (get_field('pdf_download')) { ?>
-                                            <div class="widget">
-                                                <h4 class="widgettitle" id="side-widget-download">Download PDF</h4>
-                                                <?php
-                                                $download = get_field('pdf_download');
-                                                $img = wp_get_attachment_image_src(get_field('pdf_thumbnail'), 'pdf-thumb');
-                                                ?>
-                                                
-                                                <div class="sidebar-content-holder">
-                                                    <a target="_blank" href="<?php echo $download; ?>" class=""><img src="<?php echo $img[0]; ?>"></a>
-                                                </div>
-
-                                                <a target="_blank" href="<?php echo $download; ?>" class="sidebar-large-link">
-                                                    <p style="margin-top: 10px; margin-bottom: 10px;"><span class="icon red" style="position: relative; top: 0px;">&#xe0eb;</span><span style="position: relative; top: -4px;">Download Now</span></p>
-                                                </a>
-                                            </div>
-                                        <?php } ?>
+                                       
                                         
                                         <!-- ===============CONTACT US=================== -->
                                         <div class="widget">
@@ -75,7 +57,7 @@
                                                 </form>
                                             </div>
                                             <?php if (!is_page('contact')) { ?>
-                                                <a class="sidebar-large-link" href="<?php echo site_url('/contact/'); ?>"><p style="margin-top: 10px; margin-bottom: 10px;"><span class="icon red" style="position: relative; top: 0px;">&#xe0eb;</span><span style="position: relative; top: -4px;">Visit the Contact Us page</span></p></a>
+                                                <a class="sidebar-large-link" href="<?php echo site_url('/contact/'); ?>"><p><span class="icon red" style="position: relative; top: 3px;">&#xe0eb;</span>Visit the Contact Us page</p></a>
                                             <?php } ?>
                                         </div>
 				</div>

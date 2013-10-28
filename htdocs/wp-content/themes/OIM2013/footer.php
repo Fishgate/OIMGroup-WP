@@ -10,7 +10,7 @@
                                             <div class="secondary-holder secondary-holder-mid left clearfix">
                                                 <?php get_footer_feed('footer_col2'); ?>
                                             </div>
-                                            <div class="secondary-holder left clearfix">
+                                            <div class="secondary-holder left clearfix" style="margin-bottom: 0px;">
                                                 <?php get_footer_feed('footer_col3'); ?>
                                             </div>
                                         </div>
@@ -24,7 +24,7 @@
                                     <?php if(function_exists('get_footer_menu') && get_footer_menu()) get_footer_menu(); ?>
                                 </nav>
                                 <p class="source-org copyright">
-                                    &copy; Copyright<?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
+                                    &copy; Copyright <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
                                 </p>
                             </div>
                         </div>

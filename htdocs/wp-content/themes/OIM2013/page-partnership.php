@@ -20,9 +20,9 @@ Template Name: Partnership
                                     <div class="cycle-caption clearfix">
                                         <p class="txt-left">Without an experienced team to<br />facilitate improvement,<br />market leaders become followers</p>
                                         <span class="left cycle-caption-btn">
-                                            <a href="#">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                            <a href="/contact/">Contact Us<span class="icon">&#xe0eb;</span></a>
                                         </span>
-                                        <div class="left slogan txt-left">Analyse. Improve. Sustain</div>
+                                        <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
                                     </div>
                                     <?php if(get_field('feature_url')) ?><a href="<?php echo get_field('feature_url'); ?>">
                                         <img class="slide-large" src="<?php echo get_feature_src($post->ID, 'large-feature'); ?>" alt="<?php echo get_the_title(); ?>" />

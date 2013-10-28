@@ -21,7 +21,7 @@ Template Name: Products
                                     <div class="cycle-caption clearfix">
                                         <p class="txt-left">The ones who keep on improving<br />are the ones who stay relevant</p>
                                         <span class="left cycle-caption-btn">
-                                            <a href="#">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                            <a href="/contact/">Contact Us<span class="icon">&#xe0eb;</span></a>
                                         </span>
                                         <div class="left slogan-alt txt-right">Analyse. Improve. Sustain</div>
                                     </div>
@@ -85,7 +85,7 @@ Template Name: Products
 							<?php endif; ?>
 
 						</div> <!-- end #main -->
-                                                <?php get_sidebar(); ?>
+                                                <?php get_sidebar('products-services'); ?>
 				</div> <!-- end #inner-content -->
 
 			</div> <!-- end #content -->

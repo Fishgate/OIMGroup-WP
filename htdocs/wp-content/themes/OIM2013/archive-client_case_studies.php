@@ -10,9 +10,13 @@
                                 
                                 <div class="cycle-slide">
                                     <div class="cycle-caption clearfix">
-                                        <div class="right slogan-alt txt-right">Analyse. Improve. Sustain</div>
+                                        <p class="txt-right">The ones who keep on improving<br />are the ones who stay relevant</p>
+                                        <span class="right cycle-caption-btn">
+                                            <a href="/contact/">Contact Us<span class="icon">&#xe0eb;</span></a>
+                                        </span>
+                                        <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
                                     </div>
-                                    <img class="slide-large" src="<?php echo get_template_directory_uri(); ?>/library/images/news-banner.jpg" />
+                                    <img class="slide-large" src="<?php echo get_template_directory_uri(); ?>/library/images/client-case-studies-banner.jpg" />
                                 </div>
                             </div>
                         <!-- END Header Slideshow  -->
@@ -45,11 +49,7 @@
                                                                 </div>
                                                             
                                                                 <div class="right single-news-article-holder">
-                                                                    <header class="article-header">
-                                                                            HELLO
-                                                                            <h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-
-                                                                    </header> <!-- end article header -->
+      
 
                                                                     <section class="entry-content clearfix">
 
