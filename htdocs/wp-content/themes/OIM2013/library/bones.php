@@ -137,6 +137,9 @@ function bones_scripts_and_styles() {
     // register megafish stylesheet
     wp_register_style( 'megafish', get_stylesheet_directory_uri() . '/library/css/megafish.css', array(), '', 'all' );
     
+    // register fancybox stylesheet
+    wp_register_style( 'fancybox', get_stylesheet_directory_uri() . '/library/css/jquery.fancybox.css', array(), '', 'all' );
+    
     // ie-only style sheet
     wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
 
@@ -152,11 +155,13 @@ function bones_scripts_and_styles() {
     wp_register_script( 'simplyscroll-js', get_stylesheet_directory_uri() . '/library/js/simplyscroll.js', array( 'jquery' ), '', true );
     wp_register_script( 'jq-form-plugin', get_stylesheet_directory_uri() . '/library/js/libs/jquery.form.min.js', array( 'jquery' ), '', true );
     wp_register_script( 'cycle-js', get_stylesheet_directory_uri() . '/library/js/cycle.js', array( 'jquery' ), '', true );
+    wp_register_script( 'fancybox-js', get_stylesheet_directory_uri() . '/library/js/jquery.fancybox.js', array( 'jquery' ), '', true );
 
     // enqueue styles and scripts
     wp_enqueue_script( 'bones-modernizr' );
     wp_enqueue_style( 'bones-stylesheet' );
     wp_enqueue_style( 'megafish' );
+    wp_enqueue_style( 'fancybox' );
     wp_enqueue_style( 'bones-ie-only' );
 
     $wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
@@ -173,6 +178,7 @@ function bones_scripts_and_styles() {
     wp_enqueue_script( 'bones-js' );
     wp_enqueue_script( 'jq-form-plugin' );
     wp_enqueue_script( 'cycle-js' );
+    wp_enqueue_script( 'fancybox-js' );
     
     //make some php data available in scripts.js
     $data = array( 'directory' => __(get_template_directory_uri()), 'thankyou_page' => site_url('/contact/thank-you/') );

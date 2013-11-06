@@ -29,6 +29,11 @@ if (!window.getComputedStyle) {
 
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
+//====================================fancybox init
+$('.fancybox').fancybox();
+
+//------------ TYRONE simply scroll init
+    $("#scroller").simplyScroll();
 
 
 var responsive_viewport = $(window).width();
@@ -197,24 +202,21 @@ if (responsive_viewport > 1030) {}
 
     //------------ TYRONE EXPANDABLE 3RD LEVEL DROPDOWNS
     $('.secondary-link').each(function(){
-        $(this).live('mouseenter', function(){
+        $(this).mouseenter(function(){
             $(this).css('cursor', 'pointer');
             $(this).css('color', '#B22C33');
+        });
+        $(this).mouseleave(function(){
+            $(this).css('color', '');
+        });
+        $(this).live('click', function(){
+            //$(this).css('cursor', 'pointer');
+            //$(this).css('color', '#B22C33');
+            $('.flyout').removeClass('expand');
             $(this).find('.flyout').addClass('expand');
         });
-        $(this).live('mouseleave', function(){
-            $(this).css('cursor', 'pointer');
-            $(this).css('color', '');
-            $('.flyout').removeClass('expand');
-        });
-//        $(this).live('click', function(){
-//            $('.flyout').removeClass('expand');
-//            $(this).find('.flyout').addClass('expand');
-//        });
     });
-    //------------ TYRONE simply scroll init
-    $("#scroller").simplyScroll();
-
+    
 
     //------------ TYRONE MENU-MOBILE INTERACTIONS
     //-- HOVERS INDIVIDUAL ITEM

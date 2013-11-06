@@ -69,7 +69,7 @@ Template Name: Home
 
 								<section class="entry-content clearfix" itemprop="articleBody">
                                                                     <center>
-                                                                        <h1 class="h1-nostyle">Business Performance Specialists in core areas of</h1>
+                                                                        <h1 class="h1-nostyle">Business performance specialists in core areas of</h1>
                                                                      
                                                                         <a class="service-link">People Management</a>
 
@@ -86,14 +86,14 @@ Template Name: Home
                                                                             <div class="service-copy">
                                                                                 <h2>Our Methodology</h2>
                                                                                 <p>In the same way Apple understands technology, OIM understands how to translate strategy into action and sustainable results in key business areas. This is our field of expertise and why we call ourselves performance specialists.</p>
-                                                                                <a href="<?php echo site_url('/our-methodology/'); ?>">Methodology &amp; services</a>
+                                                                                <a href="<?php echo site_url('about-oim/our-methodology/'); ?>">Methodology &amp; services</a>
                                                                             </div>
                                                                         </div>
                                                                         <div class="left dynamic-service dynamic-service-mid clearfix">
                                                                             <img src="<?php echo get_template_directory_uri(); ?>/library/images/about_mini.jpg" alt="About OIM" />
                                                                             <div class="service-copy">
                                                                                 <h2>About OIM</h2>
-                                                                                <p>With over 25 years' experience, Operational Improvement Management (OIM) advises several South African blue-chip companies and manages performance improvement assignments in Europe, Australia, America as well as other African countries.</p>
+                                                                                <p>With over 25 years' experience, Operational Improvement Management (OIM) advises several South African blue-chip companies and has managed performance improvement assignments in Europe, Australia, America as well as other African countries.</p>
                                                                                 <a href="<?php echo site_url('/about-oim/'); ?>">Read more about OIM</a>
                                                                             </div>
                                                                         </div>
