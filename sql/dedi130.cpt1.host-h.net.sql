@@ -17,10 +17,10 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `stagidazas_OIM`
+-- Database: `oim`
 --
-CREATE DATABASE `stagidazas_OIM` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `stagidazas_OIM`;
+CREATE DATABASE `oim` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `oim`;
 
 -- --------------------------------------------------------
 

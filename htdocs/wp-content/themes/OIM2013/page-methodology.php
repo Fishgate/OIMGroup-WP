@@ -89,7 +89,10 @@ Template Name: Methodology
                                                     <!--/// ABOUT \\\-->
                                                     <div class="widget">
                                                         <h4 class="widgettitle" id="side-widget-client">Prosperity Partnership</h4>
-                                                        <img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/sidebars/oim_methodology.gif" alt="Prosperity Partnership Graphic" />
+                                                        <a class="fancybox" href="<?php echo get_template_directory_uri(); ?>/library/images/sidebars/oim_methodology.gif"><img class="response-img" src="<?php echo get_template_directory_uri(); ?>/library/images/sidebars/oim_methodology.gif" alt="Prosperity Partnership Graphic" /></a>
+                                                        <center>
+                                                            <a class="fancybox" href="<?php echo get_template_directory_uri(); ?>/library/images/sidebars/oim_methodology.gif"><p>Click to enlarge<p></a>
+                                                        </center>
                                                     </div>
                                                 </div>
                                                 <!-- WIDGET END -->
