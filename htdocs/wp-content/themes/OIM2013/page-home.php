@@ -69,7 +69,7 @@ Template Name: Home
 
 								<section class="entry-content clearfix" itemprop="articleBody">
                                                                     <center>
-                                                                        <h1 class="h1-nostyle">Business Performance Specialist in core areas of</h1>
+                                                                        <h1 class="h1-nostyle">Business Performance Specialists in core areas of</h1>
                                                                      
                                                                         <a class="service-link">People Management</a>
 
@@ -86,7 +86,7 @@ Template Name: Home
                                                                             <div class="service-copy">
                                                                                 <h2>Our Methodology</h2>
                                                                                 <p>In the same way Apple understands technology, OIM understands how to translate strategy into action and sustainable results in key business areas. This is our field of expertise and why we call ourselves performance specialists.</p>
-                                                                                <a href="<?php echo site_url('/our-methodology/'); ?>">Methodology &amp; Services</a>
+                                                                                <a href="<?php echo site_url('/our-methodology/'); ?>">Methodology &amp; services</a>
                                                                             </div>
                                                                         </div>
                                                                         <div class="left dynamic-service dynamic-service-mid clearfix">
@@ -102,7 +102,7 @@ Template Name: Home
                                                                             <div class="service-copy">
                                                                                 <h2>Client Testimonials</h2>
                                                                                 <p>We have built long-term partnerships with many of our clients who trust us without reservation to help create sustainable solutions. "The OIM team has shown the ability to understand our requirements and delivered an effective framework for our on-going success. They are a valued 'member' of our strategy review team and their role is highly respected."</p>
-                                                                                <a href="<?php echo site_url('/clients/'); ?>">View OIM's Clients</a>
+                                                                                <a href="<?php echo site_url('/clients/'); ?>">View OIM's clients</a>
                                                                             </div>
                                                                         </div>
                                                                     
