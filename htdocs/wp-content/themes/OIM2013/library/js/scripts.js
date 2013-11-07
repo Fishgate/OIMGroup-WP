@@ -234,7 +234,7 @@ if (responsive_viewport > 1030) {}
     });
 
     //-- CLICKS
-    $('#menu-mobile').live('click', function(){
+    $('#mob-menu').live('click', function(){
         $('#mobile-menu-holder').slideToggle('fast');
     });
     
@@ -243,6 +243,22 @@ if (responsive_viewport > 1030) {}
         if($(window).width() >= 768){
             //--- HIDE MOBILE MENU
             $('#mobile-menu-holder').css('display', 'none');
+        }
+    });
+    
+    
+    //-------- MOBILE SEARCH FUNSTIONALITY
+    var mobsearcher = 0;
+    $('#mob-search-icon').live('click', function(){
+        if(mobsearcher == 0){
+            $('#mob-search').css('display', 'block');
+            $('#mob-search').animate({opacity: '1'}, 'fast');
+            mobsearcher = 1;
+        }else{
+            $('#mob-search').animate({opacity: '0'}, 'fast', function(){
+                $('#mob-search').css('display', 'none');
+            });
+            mobsearcher = 0;
         }
     });
     
