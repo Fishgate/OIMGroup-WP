@@ -3020,8 +3020,6 @@ you can add resource intensive styles.
   .cycle-caption {
     display: block;
     z-index: 100;
-    /*outline: 1px solid red;*/
-  
     color: #ffffff;
     padding: 80px 0 0 0;
   }
