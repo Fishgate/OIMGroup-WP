@@ -163,7 +163,7 @@ function remove_menu_pages() {
 add_action( 'admin_menu', 'remove_menu_pages' );
 */
 
-/**
+/**         
  * Custom settings page for the theme
  */
 
@@ -636,6 +636,13 @@ function get_footer_menu () {
         }
     }else{
         return false;
+    }
+}
+
+
+function get_news_meta($post_id) {
+    if(get_field('featured_broadcast_on', $post_id)) {
+        echo get_field('featured_broadcast_on', $post_id);
     }
 }
 
