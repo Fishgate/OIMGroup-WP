@@ -56,7 +56,10 @@
                                         </h2>
                                         
                                         <div id="menu-mobile" class="right">
-                                            <a href="tel:+27219138814"><span class="icon" style="display: inline-block; margin-right: 25px;">@</span></a> <a href="#"><span style="display: inline-block;" class="icon">&#xe00f;</span></a>
+                                            <a><span id="mob-search-icon" class="icon">&#xe01a;</span></a>
+                                            <a href="tel:+27219138814"><span class="icon" style="display: inline-block; margin-right: 25px;">@</span></a>
+                                            <a id="mob-menu" href="#"><span style="display: inline-block;" class="icon">&#xe00f;</span></a>
+                                            <div id="mob-search"><?php echo get_search_form(); ?></div>
                                         </div>
                                         
                                         <?php if( function_exists('get_mobile_menu') && get_mobile_menu() ) get_mobile_menu(); ?>
