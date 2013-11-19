@@ -71,6 +71,7 @@
                                                                     </header> <!-- end article header -->
 
                                                                     <section class="entry-content clearfix" itemprop="articleBody">
+                                                                            <?php get_news_meta($post->ID); ?>
                                                                             <?php the_content(); ?>
                                                                     </section> <!-- end article section -->
 

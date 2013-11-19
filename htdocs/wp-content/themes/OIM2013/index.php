@@ -62,7 +62,7 @@
                                                                     <section class="entry-content clearfix">
 
                                                                             <?php the_post_thumbnail( 'bones-thumb-300' ); ?>
-
+                                                                            <?php echo get_news_meta($post->ID); ?>
                                                                             <?php the_excerpt(); ?>
 
                                                                     </section> <!-- end article section -->

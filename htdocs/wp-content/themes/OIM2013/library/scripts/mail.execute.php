@@ -1,6 +1,6 @@
 <?php
 require_once('../../../../../wp-load.php');
-require_once(get_template_directory() . '/library/classes/class.phpmailer.php');
+require_once(get_template_directory() . '/library/classes/PHPMailerAutoload.php');
 
 header("HTTP/1.0 200 OK");
 
@@ -16,7 +16,7 @@ function validateEmail ($email) {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
-function validate ($string) {
+function validate ($string) {   
     if(!empty($string)) {
         return true;
     }else{
@@ -50,16 +50,20 @@ if(
 
         if($log_form->execute()){
             $phpmailer = new PHPMailer();
-
-            $phpmailer->From = $_POST['email'];
-            $phpmailer->FromName = $_POST['name'];
-            $phpmailer->AddReplyTo($_POST['email'], $_POST['name']);
-            $phpmailer->IsHTML(true);
-
-            $phpmailer->AddAddress(get_bloginfo('admin_email'));
-
-            $phpmailer->Subject = "Enquiry from OIM Website";
-
+            
+            $phpmailer->isSMTP();
+            $phpmailer->SMTPDebug = 0;
+            $phpmailer->Debugoutput = 'html';
+            $phpmailer->Host = "smtp.fishgate.co.za";
+            $phpmailer->Port = 587;
+            $phpmailer->SMTPAuth = true;
+            $phpmailer->Username = "OIM@fishgate.co.za";
+            $phpmailer->Password = "FishOI0996";
+            $phpmailer->setFrom($_POST['email'], $_POST['name']);
+            $phpmailer->addReplyTo($_POST['email'], $_POST['name']);
+            $phpmailer->addAddress(get_bloginfo('admin_email'));
+            $phpmailer->Subject = 'Enquiry from OIM Website';
+            
             foreach($_POST as $key => $val) {
                 if(is_array($val)){
                     $val = implode(", ", $val);
@@ -69,11 +73,14 @@ if(
 
                 $body .= "$key: $val<br />";
             }
-
-            $phpmailer->Body = $body;
-
-            if($phpmailer->Send()){
-                echo 'success';
+            
+            $phpmailer->msgHTML($body);
+            $phpmailer->AltBody = $body;
+            
+            if (!$phpmailer->send()) {
+                    throw new Exception("Mailer Error: " . $phpmailer->ErrorInfo);
+            } else {
+                    echo 'success';
             }
         }
     } catch (PDOException $ex) {
