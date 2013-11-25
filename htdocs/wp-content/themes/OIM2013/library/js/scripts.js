@@ -117,20 +117,28 @@ if (responsive_viewport > 1030) {}
    var sliderwidth = $('.wrap').width();
    var slidermarginleft = sliderwidth / 2 * -1;
 
-   $('.cycle-caption').css('position', 'absolute');
-   $('.cycle-caption').css('width', sliderwidth);
-   $('.cycle-caption').css('margin-left', slidermarginleft);
-   $('.cycle-caption').css('left', '50%');
+//   $('.cycle-caption').css('position', 'absolute');
+//   $('.cycle-caption').css('width', sliderwidth);
+//   $('.cycle-caption').css('margin-left', slidermarginleft);
+//   $('.cycle-caption').css('left', '50%');
+
    
-   
-   var sliderwidth = $('.wrap').width();
-       var slidermarginleft = sliderwidth / 2 * -1;
        
-   //------------------------------------------------ THIS centers the caption divs on window resize
+   //------------------------------------------------ Check for small screen res and adjust caption copy
    if($(window).width() < 768){
        //--- Make slides imgs responsive
        $('.cycle-slide img').addClass('response-img');
        $('.cycle-slide img').removeClass('slide-large');
+       //-- left-align captions
+       $('.cycle-caption').css('position', 'absolute');
+       $('.cycle-caption').css('width', '');
+       $('.cycle-caption').css('margin-left', '');
+       $('.cycle-caption').css('left', '');
+       
+       $('.cycle-caption').css('display', 'inline-block');
+       $('.cycle-caption').css('background', 'rgba(0, 0, 0, 0.3)');
+       $('.cycle-caption').css('text-align', 'left');
+       $('.cycle-caption').css('padding', '0 10px');
    }else{
        //--- Remove responsive class for slides imgs
        $('.cycle-slide img').addClass('slide-large');
@@ -151,6 +159,16 @@ if (responsive_viewport > 1030) {}
            //--- Make slides imgs responsive
            $('.cycle-slide img').addClass('response-img');
            $('.cycle-slide img').removeClass('slide-large');
+           //-- left-align captions
+            $('.cycle-caption').css('position', 'absolute');
+            $('.cycle-caption').css('width', '');
+            $('.cycle-caption').css('margin-left', '');
+            $('.cycle-caption').css('left', '');
+
+            $('.cycle-caption').css('display', 'inline-block');
+            $('.cycle-caption').css('background', 'rgba(0, 0, 0, 0.3)');
+            $('.cycle-caption').css('text-align', 'left');
+            $('.cycle-caption').css('padding', '0 10px');
        }else{
            //--- Remove responsive class for slides imgs
            $('.cycle-slide img').addClass('slide-large');
@@ -160,6 +178,11 @@ if (responsive_viewport > 1030) {}
            $('.cycle-caption').css('width', sliderwidth);
            $('.cycle-caption').css('margin-left', slidermarginleft);
            $('.cycle-caption').css('left', '50%');
+           
+           $('.cycle-caption').css('display', '');
+            $('.cycle-caption').css('background', '');
+            $('.cycle-caption').css('text-align', '');
+            $('.cycle-caption').css('padding', '');
        }
    });
   
