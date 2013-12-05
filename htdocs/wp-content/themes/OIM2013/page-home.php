@@ -8,7 +8,7 @@ Template Name: Home
 
                         
                         <!-- Header Slideshow  -->
-                            <div class="cycle-slideshow" 
+                            <div class="cycle-slideshow desktop-slides" 
                             data-cycle-fx="fade" 
                             data-cycle-timeout="8000"
                             data-cycle-slides="> div"
@@ -48,6 +48,8 @@ Template Name: Home
                                     <img class="slide-large" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/team.jpg"/>
                                 </div>
                             </div>
+                        
+                        <!-- <?php// include (get_template_directory().'/library/includes/mobileSlides.php');  ?> -->
                         <!-- END Header Slideshow  -->
 
 			<div id="content">

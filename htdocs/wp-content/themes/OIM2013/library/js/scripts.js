@@ -129,16 +129,19 @@ if (responsive_viewport > 1030) {}
        //--- Make slides imgs responsive
        $('.cycle-slide img').addClass('response-img');
        $('.cycle-slide img').removeClass('slide-large');
-       //-- left-align captions
+       //-- center-align captions
        $('.cycle-caption').css('position', 'absolute');
-       $('.cycle-caption').css('width', '');
+       $('.cycle-caption').css('width', '100%');
        $('.cycle-caption').css('margin-left', '');
+       $('.cycle-caption').css('top', '93%');
        $('.cycle-caption').css('left', '');
        
        $('.cycle-caption').css('display', 'inline-block');
-       $('.cycle-caption').css('background', 'rgba(0, 0, 0, 0.3)');
-       $('.cycle-caption').css('text-align', 'left');
+       $('.cycle-caption').css('background', '#032C62');
+       $('.cycle-caption').css('text-align', 'center');
        $('.cycle-caption').css('padding', '0 10px');
+       
+       $('.h1-nostyle').css('margin', '68px 0 0 0');
    }else{
        //--- Remove responsive class for slides imgs
        $('.cycle-slide img').addClass('slide-large');
@@ -148,6 +151,8 @@ if (responsive_viewport > 1030) {}
        $('.cycle-caption').css('width', sliderwidth);
        $('.cycle-caption').css('margin-left', slidermarginleft);
        $('.cycle-caption').css('left', '50%');
+       $('.cycle-caption').css('top', '');
+       $('.h1-nostyle').css('margin', '0.67em 0 0 0;');
    }
    //------------------------------------------------ THIS centers the caption divs on window resize
    $(window).resize(function(){
@@ -161,14 +166,16 @@ if (responsive_viewport > 1030) {}
            $('.cycle-slide img').removeClass('slide-large');
            //-- left-align captions
             $('.cycle-caption').css('position', 'absolute');
-            $('.cycle-caption').css('width', '');
+            $('.cycle-caption').css('width', '100%');
             $('.cycle-caption').css('margin-left', '');
+            $('.cycle-caption').css('top', '93%');
             $('.cycle-caption').css('left', '');
 
             $('.cycle-caption').css('display', 'inline-block');
-            $('.cycle-caption').css('background', 'rgba(0, 0, 0, 0.3)');
-            $('.cycle-caption').css('text-align', 'left');
+            $('.cycle-caption').css('background', '#032C62');
+            $('.cycle-caption').css('text-align', 'center');
             $('.cycle-caption').css('padding', '0 10px');
+            $('.h1-nostyle').css('margin', '68px 0 0 0');
        }else{
            //--- Remove responsive class for slides imgs
            $('.cycle-slide img').addClass('slide-large');
@@ -180,9 +187,10 @@ if (responsive_viewport > 1030) {}
            $('.cycle-caption').css('left', '50%');
            
            $('.cycle-caption').css('display', '');
-            $('.cycle-caption').css('background', '');
-            $('.cycle-caption').css('text-align', '');
-            $('.cycle-caption').css('padding', '');
+           $('.cycle-caption').css('background', '');
+           $('.cycle-caption').css('text-align', '');
+           $('.cycle-caption').css('padding', '');
+           $('.h1-nostyle').css('margin', '0.67em 0 0 0;');
        }
    });
   
