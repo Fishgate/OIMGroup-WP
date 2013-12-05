@@ -1,0 +1,73 @@
+******************************************************************************** 
+PACKAGE-LOG: 11:49:30 
+NOTICE: Do not post to public sites or forums 
+******************************************************************************** 
+duplicator: 0.4.6 
+wordpress: 3.7.1 
+php: 5.4.7 
+php sapi: apache2handler 
+server: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.7 
+browser: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36 
+package name: 20131125_oimptyltd 
+php_max_time: set from=30 to=5000 
+php_max_memory: set from=128M to=5000M 
+mysql wait_timeout:5000 
+recorded table id: 1 
+******************************************************************************** 
+BUILD SQL SCRIPT: 
+******************************************************************************** 
+fg_contactlogs (7) 
+wp_commentmeta (0) 
+wp_comments (0) 
+wp_duplicator (1) 
+wp_links (0) 
+wp_options (186) 
+wp_postmeta (3172) 
+wp_posts (752) 
+wp_term_relationships (229) 
+wp_term_taxonomy (20) 
+wp_terms (17) 
+wp_usermeta (25) 
+wp_users (2) 
+SQL CREATED: C:/xampp/htdocs/OIM/website-wp/htdocs/wp-snapshots/5293394a0cff69719_20131125_oimptyltd_database.sql 
+SQL FILE SIZE: 2.58MB 
+SQL RUNTIME: 0.2414 sec. 
+******************************************************************************** 
+BUILD ZIP PACKAGE: 
+******************************************************************************** 
+PACKAGE DIR:  C:/xampp/htdocs/OIM/website-wp/htdocs 
+PACKAGE FILE: C:/xampp/htdocs/OIM/website-wp/htdocs/wp-snapshots/5293394a0cff69719_20131125_oimptyltd_package.zip 
+FILTER EXTENSIONS:  '' 
+FILTER DIRECTORIES: 'C:/xampp/htdocs/OIM/website-wp/htdocs/wp-config-local.php' 
+---------------------------------------- 
+STARTING PACKAGE BUILD 
+ADDED=>SQL: C:/xampp/htdocs/OIM/website-wp/htdocs/wp-snapshots/5293394a0cff69719_20131125_oimptyltd_database.sql 
+BUILDING FILE LIST 
+FILE LIST COMPLETE: 1.9605 sec. 
+FILE LIST STATS: Dirs 164 | Files 2512 | Links 0 |  
+
+PACKAGE INFO: ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 2677
+    [filename] => C:\xampp\htdocs\OIM\website-wp\htdocs\wp-snapshots\5293394a0cff69719_20131125_oimptyltd_package.zip
+    [comment] => 
+)
+ 
+CREATING PACKAGE 
+CLOSING PACKAGE RESULT: '1' 
+PACKAGE FILE SIZE: 32.07MB 
+PACKAGE RUNTIME: 24.3581 sec. 
+******************************************************************************** 
+BUILD INSTALLER FILE: 
+******************************************************************************** 
+INSTALLER FILE: Build Start 
+INSTALLER FILE: Build Finished 
+INSTALLER FILE: Preping for use 
+INSTALLER FILE: Complete [C:/xampp/htdocs/OIM/website-wp/htdocs/wp-snapshots/5293394a0cff69719_20131125_oimptyltd_installer.php] 
+******************************************************************************** 
+FILE SIZE: Zip:32.07MB | SQL:2.58MB | Installer:527.04KB 
+TOTAL PROCESS RUNTIME: 24.6800 sec. 
+DONE PROCESSING => 20131125_oimptyltd 11:49:54 
+******************************************************************************** 

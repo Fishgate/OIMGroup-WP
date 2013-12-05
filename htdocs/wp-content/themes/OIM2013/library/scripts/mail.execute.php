@@ -54,14 +54,14 @@ if(
             $phpmailer->isSMTP();
             $phpmailer->SMTPDebug = 0;
             $phpmailer->Debugoutput = 'html';
-            $phpmailer->Host = "smtp.fishgate.co.za";
+            $phpmailer->Host = "smtp.source-lab.co.za";
             $phpmailer->Port = 587;
             $phpmailer->SMTPAuth = true;
-            $phpmailer->Username = "OIM@fishgate.co.za";
-            $phpmailer->Password = "FishOI0996";
-            $phpmailer->setFrom($_POST['email'], $_POST['name']);
-            $phpmailer->addReplyTo($_POST['email'], $_POST['name']);
-            $phpmailer->addAddress(get_bloginfo('admin_email'));
+            $phpmailer->Username = "kyle@source-lab.co.za";
+            $phpmailer->Password = "sawto0th";
+            $phpmailer->setFrom(trim($_POST['email']), trim($_POST['name']));
+            $phpmailer->addReplyTo(trim($_POST['email']), trim($_POST['name']));
+            $phpmailer->addAddress(trim(get_bloginfo('admin_email')));
             $phpmailer->Subject = 'Enquiry from OIM Website';
             
             foreach($_POST as $key => $val) {
