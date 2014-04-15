@@ -1,0 +1,8 @@
+# robots.txt for http://www.oimgroup.com/
+
+User-agent: *
+Disallow: /contact/thank-you/
+
+
+Sitemap: http://www.oimgroup.com/sitemap.xml
+

@@ -13,7 +13,7 @@
                                 
                                 <div class="cycle-slide">
                                     <div class="cycle-caption clearfix">
-                                        <p class="txt-left">Without an experienced team to<br />facilitate improvement,<br />markey leaders become followers</p>
+                                        <p class="txt-left">Without an experienced team to<br />facilitate improvement,<br />market leaders become followers</p>
                                         <span class="left cycle-caption-btn">
                                             <a href="/contact/">Contact Us<span class="icon">&#xe0eb;</span></a>
                                         </span>
@@ -88,7 +88,7 @@
                                                     
                                                     <center>
                                                         <div class="bordered-top-bottom team-linkdin">
-                                                            <a href="http://staging.fishgate.co.za/OIM/wp-content/uploads/2013/10/team.pdf"><p>Meet the rest of the team</p></a>
+                                                            <a href="http://www.oimgroup.com/wp-content/uploads/2013/10/team.pdf" target="_blank"><p>Meet the rest of the team</p></a>
                                                         </div>
                                                     </center>
                                                     

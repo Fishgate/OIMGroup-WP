@@ -1,1 +1,0 @@
-!function(e){e.ui.dialog.prototype.options.closeOnEscape=!1,e.widget("wp.wpdialog",e.ui.dialog,{widgetEventPrefix:"wpdialog",open:function(){var e;tinyMCEPopup&&"undefined"!=typeof tinyMCE&&(e=tinyMCE.activeEditor)&&!e.isHidden()&&tinyMCEPopup.init(),this.isOpen()||!1===this._trigger("beforeOpen")||(this._super(),this.element.focus(),this._trigger("refresh"))}})}(jQuery);

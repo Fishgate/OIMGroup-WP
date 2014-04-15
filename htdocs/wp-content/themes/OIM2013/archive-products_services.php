@@ -37,7 +37,33 @@
 						<div id="main" class="eightcol first clearfix" role="main">
 
 						<h1 class="archive-title"><?php post_type_archive_title(); ?></h1>
-
+                                                
+                                                <p>Over the years OIM has developed a unique, integrated approach to business performance management and strategy execution in the core areas of People Management, Organisational Performance and Operational Optimisation. Our proven methodologies and way of working ensure that we can play an integral partin the continuous evolvement, progress and success of your business.Below is our offering of products / services categorised in these core areas: </p>
+                                                <br />
+                                                <br />
+                                                    <!-- START CUSTOM NAV -->
+                                                    <h2 class="head-secondary icon-people">People</h2>
+                                                    <ul>
+                                                        <li class="secondary-link"><a href="#">link</a></li>
+                                                        <li>
+                                                            <ul class="nested">
+                                                                <li><a href="#">link2</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                    <h2 class="head-secondary icon-people">Organisation</h2>
+                                                    <ul>
+                                                        <li class="secondary-link"><a href="#">link</a></li>
+                                                        <li class="secondary-link"><a href="#">link</a></li>
+                                                    </ul>
+                                                    
+                                                    <h2 class="head-secondary icon-people">Operations</h2>
+                                                    <ul>
+                                                        <li class="secondary-link"><a href="#">link</a></li>
+                                                        <li class="secondary-link"><a href="#">link</a></li>
+                                                    </ul>
+                                                    <!-- END CUSTOM NAV -->
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							

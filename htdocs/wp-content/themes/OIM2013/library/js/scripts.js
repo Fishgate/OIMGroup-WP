@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
 $('.fancybox').fancybox();
 
 //------------ TYRONE simply scroll init
-    $("#scroller").simplyScroll();
+    $("#scroller").simplyScroll({ speed:4 });
 
 
 var responsive_viewport = $(window).width();
@@ -422,7 +422,8 @@ if (responsive_viewport > 1030) {}
             
             if(res === 'success'){
                 //alert('Thank you! A confirmation of your request will be emailed to you shortly.');
-                window.location = php_data.thankyou_page;
+                //window.location = php_data.thankyou_page;
+                window.location = "/contact/thank-you/";
             }else{
                 alert(result);
             }

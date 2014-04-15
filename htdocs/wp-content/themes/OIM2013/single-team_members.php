@@ -11,7 +11,7 @@
                                 
                                 <div class="cycle-slide">
                                     <div class="cycle-caption clearfix">
-                                        <p class="txt-left">Without an experienced team to<br />facilitate improvement,<br />markey leaders become followers</p>
+                                        <p class="txt-left">Without an experienced team to<br />facilitate improvement,<br />market leaders become followers</p>
                                         <span class="left cycle-caption-btn">
                                             <a href="#">Contact Us<span class="icon">&#xe0eb;</span></a>
                                         </span>
@@ -50,10 +50,10 @@
                                                                     <!-- feature image of team member-->
                                                                     <img class="response-img" src="<?php echo get_feature_src($post->ID, 'team-large'); ?>" alt="<?php echo get_the_title(); ?>" />
                                                                     
-                                                                    <p><span class="member-name single-title custom-post-type-title"><?php the_title(); ?></span></p>
+                                                                    <p><span class="member-name single-title custom-post-type-title"><?php the_title(); ?></span>
                                                                 
                                                                     <!-- job description/title custom field -->
-                                                                    <p><?php get_job_descrip(); ?></p>
+                                                                    <br/><?php get_job_descrip(); ?><br/><?php echo '<a href="mailto:'.get_field('email').'" >'.get_field('email').'</a>'; ?></p>
                                                                     
 								</header> <!-- end article header -->
                                                                 

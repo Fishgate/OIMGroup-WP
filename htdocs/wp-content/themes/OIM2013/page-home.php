@@ -8,7 +8,7 @@ Template Name: Home
 
                         
                         <!-- Header Slideshow  -->
-                            <div class="cycle-slideshow desktop-slides" 
+                            <div class="cycle-slideshow" 
                             data-cycle-fx="fade" 
                             data-cycle-timeout="8000"
                             data-cycle-slides="> div"
@@ -19,7 +19,7 @@ Template Name: Home
                                     <div class="cycle-caption clearfix">
                                         <p class="txt-right">In an ever-changing world,<br />constant improvement is an<br />integral part of continued success</p>
                                         <span class="right cycle-caption-btn">
-                                            <a href="#">Read More<span class="icon">&#xe0eb;</span></a>
+                                            <a href="/about-oim/">Read More<span class="icon">&#xe0eb;</span></a>
                                         </span>
                                         <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
                                     </div>
@@ -30,7 +30,7 @@ Template Name: Home
                                     <div class="cycle-caption clearfix">
                                         <p class="txt-right">Progress comes as a result<br />of proven methodologies</p>
                                         <span class="right cycle-caption-btn">
-                                            <a href="#">Read More<span class="icon">&#xe0eb;</span></a>
+                                            <a href="/about-oim/our-methodology/">Read More<span class="icon">&#xe0eb;</span></a>
                                         </span>
                                         <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
                                     </div>
@@ -41,15 +41,13 @@ Template Name: Home
                                     <div class="cycle-caption clearfix">
                                         <p class="txt-left">Without an experienced team to<br />facilitate improvement,<br />market leaders become followers</p>
                                         <span class="left cycle-caption-btn">
-                                            <a href="#">Read More<span class="icon">&#xe0eb;</span></a>
+                                            <a href="/team/">Read More<span class="icon">&#xe0eb;</span></a>
                                         </span>
                                         <div class="left slogan txt-right">Analyse. Improve. Sustain</div>
                                     </div>
                                     <img class="slide-large" src="<?php echo get_template_directory_uri(); ?>/library/images/concept_photos/team.jpg"/>
                                 </div>
                             </div>
-                        
-                        <!-- <?php// include (get_template_directory().'/library/includes/mobileSlides.php');  ?> -->
                         <!-- END Header Slideshow  -->
 
 			<div id="content">
@@ -88,7 +86,7 @@ Template Name: Home
                                                                             <div class="service-copy">
                                                                                 <h2>Our Methodology</h2>
                                                                                 <p>In the same way Apple understands technology, OIM understands how to translate strategy into action and sustainable results in key business areas. This is our field of expertise and why we call ourselves performance specialists.</p>
-                                                                                <a href="<?php echo site_url('about-oim/our-methodology/'); ?>">Methodology &amp; services</a>
+                                                                                <a href="<?php echo site_url('about-oim/our-methodology/'); ?>">Methodology &amp; Services</a>
                                                                             </div>
                                                                         </div>
                                                                         <div class="left dynamic-service dynamic-service-mid clearfix">

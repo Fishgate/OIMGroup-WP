@@ -54,11 +54,11 @@ if(
             $phpmailer->isSMTP();
             $phpmailer->SMTPDebug = 0;
             $phpmailer->Debugoutput = 'html';
-            $phpmailer->Host = "smtp.source-lab.co.za";
+            $phpmailer->Host = "smtp.fishgate.co.za";
             $phpmailer->Port = 587;
             $phpmailer->SMTPAuth = true;
-            $phpmailer->Username = "kyle@source-lab.co.za";
-            $phpmailer->Password = "sawto0th";
+            $phpmailer->Username = "oim@fishgate.co.za";
+            $phpmailer->Password = "Fishim20492";
             $phpmailer->setFrom(trim($_POST['email']), trim($_POST['name']));
             $phpmailer->addReplyTo(trim($_POST['email']), trim($_POST['name']));
             $phpmailer->addAddress(trim(get_bloginfo('admin_email')));

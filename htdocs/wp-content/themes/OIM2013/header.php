@@ -11,7 +11,8 @@
 		<!-- Google Chrome Frame for IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title><?php wp_title(''); ?></title>
+		<title><?php echo get_field('title'); ?></title>
+		<meta name="description" content="<?php echo get_field('mdescription');?>">
 
 		<!-- mobile meta (hooray!) -->
 		<meta name="HandheldFriendly" content="True">

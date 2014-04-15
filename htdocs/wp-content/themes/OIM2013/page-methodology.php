@@ -98,7 +98,7 @@ Template Name: Methodology
                                                 <!-- WIDGET END -->
                                                 
 				</div> <!-- end #inner-content -->
-                                <div class="methodology-chart wrap clearfix">
+                                <div class="methodology-chart wrap clearfix"><hr />
                                     <!--/// ROW \\\-->
                                     <div class="left meth-title"><h2>Elements</h2></div>
                                     <div class="left meth-title"><h2>Outcomes of Elements</h2></div>

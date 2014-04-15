@@ -388,7 +388,7 @@ function get_main_nav () {
                                                                                             <?php
                                                                                             foreach ($menu_items as $level4) {
                                                                                                 if($level4->menu_item_parent == $level4_parent_id) { ?>
-                                                                                                    <li><?php if ($level4->url != '') { ?><a href="<?php echo $level4->url; ?>" target="<?php echo $level4->target; ?>"><?php } ?><?php echo $level4->title; ?><?php if ($level3->url != '') { ?></a><?php } ?></li>
+                                                                                                    <li><?php if ($level4->url != '') { ?><a href="<?php echo $level4->url; ?>" target="<?php echo $level4->target; ?>"><?php } ?><?php echo $level4->title; ?></a></li>
                                                                                                 <?php }
                                                                                             }
                                                                                             ?>
@@ -624,7 +624,7 @@ function get_footer_menu () {
 
                     if ($level1->menu_item_parent == $level1_parent_id) { ?>
                         <?php if ($level1->url != '') { ?><a class="left <?php echo implode(' ', $level1->classes); ?>" href="<?php echo $level1->url; ?>" target="<?php echo $level3->target; ?>"><?php } ?>
-                            <?php echo $level1->title; if($i!=$total_menu_items) echo ' |'; ?><?php if ($level1->url != '') { ?></a>
+                            <?php echo $level1->title; if($i!=$total_menu_items) echo ' | '; ?><?php if ($level1->url != '') { ?></a>
                         <?php $i++; } ?>
                     <?php }
                 } ?>

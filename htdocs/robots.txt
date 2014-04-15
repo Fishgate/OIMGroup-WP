@@ -1,0 +1,11 @@
+# robots.txt for http://www.oimgroup.com/
+
+User-agent: *
+Disallow: /contact/thank-you/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/
+
+
+Sitemap: http://www.oimgroup.com/sitemap.xml
+

@@ -23,14 +23,14 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
 // Otherwise use the below settings (on live server)
 //Tyrone added this comment
 } else {
-    define('DB_NAME', 'stagidazas_OIM');
-    define('DB_USER', 'stagidazas_24');
-    define('DB_PASSWORD', 'PSC33VH8');
-    define('DB_HOST', 'dedi130.cpt1.host-h.net');
+    define('DB_NAME', 'oim2014');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', 'root');
+    define('DB_HOST', 'localhost');
     
     // Overwrites the database to save keep edeting the DB
-    define('WP_HOME','http://staging.fishgate.co.za/OIM/');
-    define('WP_SITEURL','http://staging.fishgate.co.za/OIM/');
+    //define('WP_HOME', 'http://localhost/~tyronestafford/OIM_2014');
+    //define('WP_SITEURL', 'http://localhost/~tyronestafford/OIM_2014');
   
     /**
     * For developers: WordPress debugging mode.
