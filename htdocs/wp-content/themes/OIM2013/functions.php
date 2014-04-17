@@ -316,6 +316,75 @@ function has_children ($nav_items_array, $nav_item_id) {
     }
 }
 
+
+/**
+ *  gets navigation menu items from a given menu location id set in the theme.
+ * 
+ * @param String $location_id
+ * @return boolean
+ */
+function get_nav_menu_from_location($location_id) {
+    $menus = wp_get_nav_menus();
+    $menu_locations = get_nav_menu_locations();
+
+    if(isset($menu_locations[$location_id])) {
+        foreach($menus as $menu) {
+            if($menu->term_id == $menu_locations[$location_id]) {
+                return wp_get_nav_menu_items($menu);
+            }
+        }
+    }else{
+        return false;
+    }
+}
+
+
+function get_children_navs ($post_name) {
+    if($menu_items = get_nav_menu_from_location('main-nav'))  {
+        foreach($menu_items as $level1) {
+            // level1 ==================================================================================================
+            if($post_name == $level1->post_name) {
+                $level1_parent_id = $level1->ID;
+                echo '<h2 class="head-secondary ' . implode(' ', $level1->classes) . '">' . $level1->title . '</h2>';
+                
+                if(has_children($menu_items, $level1_parent_id)) {
+                    echo '<ul>';
+                    // level2 ==================================================================================================
+                    foreach($menu_items as $level2) {
+                        if($level2->menu_item_parent == $level1_parent_id){
+                            $level2_parent_id = $level2->ID;
+                            
+                            echo '<li class="secondary-link">';
+                                echo '<a href="' . $level2->url . '">'; 
+                                    echo $level2->title;
+                                echo '</a>';
+                            echo '</li>';
+                            
+                            // level3 ==================================================================================================
+                            if(has_children($menu_items, $level2_parent_id)) {
+                                echo '<li>';
+                                    echo '<ul class="nested">';
+                                        foreach($menu_items as $level3) {
+                                            if($level3->menu_item_parent == $level2_parent_id){
+                                                echo '<li><a href="' . $level3->url . '">' . $level3->title . '</a></li>';
+                                            }
+                                        }
+                                    echo '</ul>';
+                                echo '</li>';
+                            }
+                            
+                        }
+                    }
+                    echo '</ul>';
+                }
+                
+            }
+        }
+        
+    }
+    
+}
+
 /**
  * Gets the 'main-nav' custom menu and outputs it into the page. 
  * If the menu location 'main-nav' is not set return false.
