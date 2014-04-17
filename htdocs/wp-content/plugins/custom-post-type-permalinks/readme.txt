@@ -1,9 +1,9 @@
 === Custom Post Type Permalinks ===
 Contributors: Toro_Unit
 Tags: permalink,permalinks,custom post type,custom taxonomy,cms
-Requires at least: 3.4
-Tested up to: 3.6
-Stable tag: 0.9.3.3
+Requires at least: 3.7
+Tested up to: 3.9
+Stable tag: 0.9.5.4
 
 Lets you edit the permalink of custom post type.
 
@@ -12,6 +12,8 @@ Lets you edit the permalink of custom post type.
 Custom Post Type Permalinks lets you edit the permalink structure of custom post type.
 
 Change custom taxonomy archive's permalink to "example.org/post_type/taxonomy_name/term_slug". Can disable this fix.
+
+And support wp_get_archives( "post_type=foo" ).
 
 [This Plugin published on GitHub.](https://github.com/torounit/custom-post-type-permalinks)
 
@@ -38,6 +40,27 @@ That's it. You can access the permalinks setting by going to *Settings -> Permal
 
 
 == Changelog ==
+
+= 0.9.5.4 =
+* archive link bug fix.
+* Tested Up 3.9
+
+= 0.9.5.3 =
+* “/”bug fix.
+* taxonomy tmplate bug fix.
+
+= 0.9.5.2 =
+* Archives Rewrite Fix.
+
+= 0.9.5.1 =
+* Admin Bug Fix.
+
+= 0.9.5 =
+* Big change plugin architecture.
+* Show has_archive, with_front.
+
+= 0.9.4 =
+* Internal release.
 
 = 0.9.3.3 =
 * has_archive Bug Fix.

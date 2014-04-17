@@ -61,7 +61,7 @@
 										<section class="entry-content">
 											<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
 										</section>
-										<footer class="article-footer">
+		 								<footer class="article-footer">
 												<p><?php _e("This is the error message in the custom posty type archive template.", "bonestheme"); ?></p>
 										</footer>
 									</article>
