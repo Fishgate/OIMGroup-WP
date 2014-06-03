@@ -6,6 +6,17 @@ Disallow: /wp-admin/
 Disallow: /wp-includes/
 Disallow: /wp-content/
 
-
-Sitemap: http://www.oimgroup.com/sitemap.xml
-
+Sitemap: http://192.168.1.11/OIM/website/htdocs/sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/sitemap_index.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/post-sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/page-sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/slide-sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/products_services-sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/team_members-sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/clients_list-sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/client_case_studies-sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/category-sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/post_tag-sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/products_services_cat-sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/products_services_tag-sitemap.xml
+Sitemap: http://192.168.1.11/OIM/website/htdocs/slideshow-sitemap.xml

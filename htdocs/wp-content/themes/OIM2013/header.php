@@ -10,16 +10,15 @@
 
 		<!-- Google Chrome Frame for IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-		<title><?php echo get_field('title'); ?></title>
-		<meta name="description" content="<?php echo get_field('mdescription');?>">
-
+                
+                <title><?php wp_title(); ?></title>
+                
 		<!-- mobile meta (hooray!) -->
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		<!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
+		<!-- icons & favicons -->
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 		<!--[if IE]>
@@ -68,7 +67,7 @@
 
 					<!-- if you'd like to use the site description you can un-comment it below -->
                                         <h2 id="tagline">
-					<?php  bloginfo('description'); ?>
+                                            <?php  bloginfo('description'); ?>
                                         </h2>
                                         
                                         <div id="menu-mobile" class="right">
